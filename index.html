@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url('https://jpg.mac89.com/pic/202105/19112220_34233788ce.jpeg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+      }
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        filter: blur(20px);
+        background-image: inherit;
+        z-index: -1;
+      }
+      a {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        background-color: #4CAF50;
+      }
+      .subtitles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 30px;
+      }
+      .subtitles > a {
+        justify-self: center;
+      }
+      .subtitles > a:nth-child(3),
+      .subtitles > a:nth-child(4) {
+        margin-top: 20px;
+      }
+      .subtitles > a:not(:last-child) {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center; font-size: 60;">YFAMILY</h1>
+    <div class="subtitles">
+      <a href="Loon.html">Loon</a>
+      <a href="Quantumultx.html">QuantumultX</a>
+      <a href="Shadowrocket.html">Shadowrocket</a>
+      <a href="Surge.html">Surge</a>
+    </div>
+  </body>
+</html>
