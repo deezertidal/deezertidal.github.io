@@ -70,6 +70,12 @@ function handleClick(element) {
     </script>
   </head>
   <body>
+<button onclick="goHome()"><i class="fa-solid fa-house"></i>回到主页</button>
+<script>
+    function goHome() {
+        window.location.href = 'https://ybnet.ga';
+    }
+</script>
     <h1>Loon插件</h1>
     <div class="container">
 	    <h6><p><a href="#" onclick="handleClick(this); return false;" data-href="loon://import?plugin=https%3A%2F%2Fybnet.ga%2Fplugin%2FBaiduCloud.plugin"><button class="myButton">百度云加速</button></a></p></h6>
