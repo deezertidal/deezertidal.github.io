@@ -1,23 +1,20 @@
 name: updata
-
 on:
   workflow_dispatch:
   schedule:
     - cron: "0 * * * *"
-
 jobs:
   copy_proxy_file:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-
       - name: Create Proxy Directory
         run: |
           mkdir -p proxy
       - name: Copy Proxy File
         run: |
-          curl -o proxy/proxy.txt https://raw.githubusercontent.com/rxsweet/proxies/main/sub/v.txt
+          curl -o proxy/proxy.txt ${{ secrets.NONAME }}
       - name: Commit Changes
         run: |
           git config --global user.name "GitHub Action"
