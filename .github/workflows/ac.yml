@@ -1,0 +1,32 @@
+name: update
+
+on:
+  schedule:
+    - cron: '0 */3 * * *' 
+
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: updata
+        run: |
+          SOURCE_FILE=https://raw.githubusercontent.com/rxsweet/proxies/main/sub/v.txt
+          TARGET_FILE=proxy.txt
+
+
+          if [ ! -f $TARGET_FILE ]; then
+            touch $TARGET_FILE
+          fi
+
+
+          SOURCE_MD5=$(curl -s $SOURCE_FILE | md5sum | cut -d ' ' -f 1)
+          TARGET_MD5=$(cat $TARGET_FILE | md5sum | cut -d ' ' -f 1)
+
+
+          if [ $SOURCE_MD5 != $TARGET_MD5 ]; then
+            curl -s $SOURCE_FILE > $TARGET_FILE
+          fi
