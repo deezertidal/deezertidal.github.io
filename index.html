@@ -20,6 +20,27 @@
 
   gtag('config', 'G-Q10V31V29W');
 </script>
+<script>
+function copyLink() {
+  const link = document.querySelector('a[href="proxy/proxy.txt"]').href;
+  navigator.clipboard.writeText(link);
+  showToast();
+}
+
+function showToast() {
+  const toast = document.createElement('div');
+  toast.innerText = '链接已复制';
+  toast.style = 'position: fixed; top: 20px; left: 50%; transform: translateX(-50%); padding: 10px 20px; border-radius: 7px; background-color: rgba(0, 0, 0, 0.6); color: white; font-size: 20px; z-index: 9999; transition: opacity 0.5s;';
+  document.body.appendChild(toast);
+  setTimeout(() => {
+    toast.style.opacity = 0;
+    setTimeout(() => {
+      toast.remove();
+    }, 500);
+  }, 2000);
+}
+</script>
+
     <style>
       body {
         background-image: url('https://ybnet.ga/background.webp');
@@ -82,7 +103,7 @@
     <a href="surge.html">Surge</a>
     <a href="airport.html">机场推荐</a>
     <a href="troll.html">巨魔应用</a>
-	<a href="proxy/proxy.txt">免费节点</a>
+    <a href="proxy/proxy.txt" onclick="copyLink()">免费节点</a>
     <a href="about.html">关于</a>
 </div>
 <div style="display: flex; margin: 30px 0;">
