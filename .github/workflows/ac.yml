@@ -8,12 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
+      - name: Copy proxy file
         run: |
-          curl -O https://raw.githubusercontent.com/rxsweet/proxies/main/sub/v.txt v.txt && mv v.txt proxy.txt
+          curl -O https://raw.githubusercontent.com/rxsweet/proxies/main/sub/v.txt
+          mv v.txt proxy.txt
       - name: Commit changes
         run: |
           git config --global user.email "you@example.com"
           git config --global user.name "action"
-          git commit -am "proxy.txt"
+          git add proxy.txt
+          git commit -m "Update proxy.txt"
           git push
