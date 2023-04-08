@@ -1,0 +1,19 @@
+name: update
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */3 * * *'
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        run: |
+          curl -O https://raw.githubusercontent.com/rxsweet/proxies/main/sub/v.txt v.txt && mv v.txt proxy.txt
+      - name: Commit changes
+        run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "action"
+          git commit -am "proxy.txt"
+          git push
