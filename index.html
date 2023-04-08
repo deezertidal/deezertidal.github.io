@@ -1,68 +1,75 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="shadowrocket 小火箭 quantumultx 圈X loon surge 配置 模块 插件 重写 脚本 解锁 去广告">
-  <meta charset="UTF-8">
-  <title> YBNET 模块 插件 重写 脚本 解锁 去广告 </title>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4631656380634463"
-     crossorigin="anonymous"></script>
-	 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q10V31V29W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="shadowrocket 小火箭 quantumultx 圈X loon surge 配置 模块 插件 重写 脚本 解锁 去广告">
+    <meta charset="UTF-8">
+    <title> YBNET 模块 插件 重写 脚本 解锁 去广告 </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4631656380634463" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q10V31V29W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Q10V31V29W');
+    </script>
+    <script>
+        function copyLink() {
+              const link = "https://ybnet.ga/proxy/proxy.txt";
+            navigator.clipboard.writeText(link);
+            showToast();
+            return false;
+        }
 
-  gtag('config', 'G-Q10V31V29W');
-</script>
-<script>
-function copyLink() {
-  const link = document.querySelector('a[href="proxy/proxy.txt"]').href;
-  navigator.clipboard.writeText(link);
-  showToast();
-}
+        function showToast() {
+            const toast = document.createElement('div');
+            toast.innerText = '链接已复制';
+            toast.style = 'position: fixed; top: 20px; left: 50%; transform: translateX(-50%); padding: 10px 20px; border-radius: 7px; background-color: rgba(0, 0, 0, 0.6); color: white; font-size: 20px; z-index: 9999; transition: opacity 0.5s;';
+            document.body.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = 0;
+                setTimeout(() => {
+                    toast.remove();
+                }, 500);
+            }, 2000);
+        }
 
-function showToast() {
-  const toast = document.createElement('div');
-  toast.innerText = '链接已复制';
-  toast.style = 'position: fixed; top: 20px; left: 50%; transform: translateX(-50%); padding: 10px 20px; border-radius: 7px; background-color: rgba(0, 0, 0, 0.6); color: white; font-size: 20px; z-index: 9999; transition: opacity 0.5s;';
-  document.body.appendChild(toast);
-  setTimeout(() => {
-    toast.style.opacity = 0;
-    setTimeout(() => {
-      toast.remove();
-    }, 500);
-  }, 2000);
-}
-</script>
+        // Prevent link from being opened
+        const freeNodeLink = document.querySelector('#free-node-link');
+        freeNodeLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            copyLink();
+        });
+
+    </script>
 
     <style>
-      body {
-        background-image: url('https://ybnet.ga/background.webp');
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-      }
-      body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        filter: blur(20px);
-        background-image: inherit;
-        z-index: -1;
-      }
-      a {
-        display: inline-block;
-        padding: 10px 20px;
-        border-radius: 7px;
+        body {
+            background-image: url('https://ybnet.ga/background.webp');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            filter: blur(20px);
+            background-image: inherit;
+            z-index: -1;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 7px;
         text-decoration: none;
         color: white;
         background-color: #2F4F4F;
@@ -103,7 +110,7 @@ function showToast() {
     <a href="surge.html">Surge</a>
     <a href="airport.html">机场推荐</a>
     <a href="troll.html">巨魔应用</a>
-    <a href="proxy/proxy.txt" onclick="copyLink()">免费节点</a>
+    <a href<button onclick="copyLink()">免费节点</button></a>
     <a href="about.html">关于</a>
 </div>
 <div style="display: flex; margin: 30px 0;">
