@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
+  <script src="https://kit.fontawesome.com/9f832cfba5.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="shadowrocket 小火箭 quantumultx 圈X loon surge 配置 模块 插件 重写 脚本 解锁 去广告">
+    <meta name="description" content="随笔 日记 医疗 游玩 科技 美食">
     <meta charset="UTF-8">
-    <title> YBNET 模块 插件 重写 脚本 解锁 去广告 </title>
+    <title> 随笔日记 </title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -17,35 +18,6 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-Q10V31V29W');
-    </script>
-    <script>
-        function copyLink() {
-              const link = "https://ybnet.ga/proxy/proxy.txt";
-            navigator.clipboard.writeText(link);
-            showToast();
-            return false;
-        }
-
-        function showToast() {
-            const toast = document.createElement('div');
-            toast.innerText = '链接已复制';
-            toast.style = 'position: fixed; top: 20px; left: 50%; transform: translateX(-50%); padding: 10px 20px; border-radius: 7px; background-color: rgba(0, 0, 0, 0.6); color: white; font-size: 20px; z-index: 9999; transition: opacity 0.5s;';
-            document.body.appendChild(toast);
-            setTimeout(() => {
-                toast.style.opacity = 0;
-                setTimeout(() => {
-                    toast.remove();
-                }, 500);
-            }, 2000);
-        }
-
-        // Prevent link from being opened
-        const freeNodeLink = document.querySelector('#free-node-link');
-        freeNodeLink.addEventListener('click', (e) => {
-            e.preventDefault();
-            copyLink();
-        });
-
     </script>
 
     <style>
@@ -89,15 +61,20 @@
 	  .subtitles > a:nth-child(5),
 	  .subtitles > a:nth-child(6),
 	  .subtitles > a:nth-child(7),
-      .subtitles > a:nth-child(8),
-	  .subtitles > a:nth-child(9) {
+      .subtitles > a:nth-child(8) {
         margin-top: 50px;
       }
     </style>
   </head>
   <body>
-<h1 style="text-align: center; font-size: 40px; color: #2F4F4F;">YBNET</h1>
-<p style="text-align: center; font-size: 15px; color: #2F4F4F;">Shadowrocket(小火箭) Loon QuantumultX(圈X) Surge的相关配置 模块 重写 插件</p> 
+<button onclick="goHome()"><i class="fa-solid fa-house"></i>回到主页</button>
+<script>
+    function goHome() {
+        window.location.href = 'https://ybnet.ga';
+    }
+</script>
+<h1 style="text-align: center; font-size: 40px; color: #2F4F4F;">Articles</h1>
+<p style="text-align: center; font-size: 15px; color: #2F4F4F;">随笔短文</p> 
 <div style="display: flex; margin: 30px 0;">
   <span style="flex: 1; height: 3px; background-color: #4285F4;"></span>
   <span style="flex: 1; height: 3px; background-color: #DB4437;"></span>
@@ -105,15 +82,10 @@
   <span style="flex: 1; height: 3px; background-color: #0F9D58;"></span>
 </div>
 <div class="subtitles">
-    <a href="shadowrocket.html">Shadowrocket</a>
-    <a href="loon.html">Loon</a>
-    <a href="quantumultx.html">QuantumultX</a>
-    <a href="surge.html">Surge</a>
-    <a href="airport.html">机场推荐</a>
-    <a href="troll.html">巨魔应用</a>
-    <a href<button onclick="copyLink()">免费节点</button></a>
-    <a href="aticle.html">随笔</a>
-    <a href="about.html">关于</a>
+    <a href="tech.html">科技</a>
+    <a href="food.html">美食</a>
+    <a href="med.html">医疗</a>
+    <a href="trav.html">游玩</a>
 </div>
 <div style="display: flex; margin: 30px 0;">
   <span style="flex: 1; height: 3px; background-color: #0F9D58;"></span>
