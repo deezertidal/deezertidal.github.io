@@ -35,8 +35,6 @@
         z-index: -1;
       }
     </style>
-  </head>
-  <body>
 <button onclick="goHome()"><i class="fa-solid fa-house"></i>回到主页</button>
 <script>
     function goHome() {
@@ -44,29 +42,6 @@
     }
 </script>
 
-<style>
-.column {
-  width: 100%;
-  padding: 5px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.content {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  max-width: 75%;
-}
-p {
-  text-indent: 2em;
-}
-</style>
 </head>
 <body>
 
@@ -76,11 +51,9 @@ p {
   <span style="flex: 1; height: 3px; background-color: #F4B400;"></span>
   <span style="flex: 1; height: 3px; background-color: #DB4437;"></span>
   <span style="flex: 1; height: 3px; background-color: #4285F4;"></span>
-</div>
-<div class="row">
-  <div class="column">
+
     <h3><ul><li>旅行的魅力</li></ul></h3>
-    <div id="content1" class="content">
+
 <p>旅行是一种非常美妙的体验，它可以让我们放松身心，体验不同的文化和风情。当我们走出家门，踏上旅途时，我们就开始了一段新的冒险。</p>
 
 <p>旅行可以让我们看到世界的多样性。每个地方都有它独特的文化、历史和风景。当我们走在异国他乡的街头，感受着那里的气息时，我们就能更深入地了解这个世界。</p>
@@ -118,25 +91,7 @@ p {
 <p>最后，我们还需要注意与他人的交流。在旅行中，我们应该礼貌待人，与当地居民友好交流。这不仅能让我们结交新朋友，还能让我们更好地了解当地文化。</p>
 
 <p>在旅行中，我们需要注意安全、健康、文明和交流等问题。这些都可以让我们更好地享受旅行。</p>
-    </div>
-    <button onclick="myFunction('content1')">阅读更多</button>
-  </div>
 
-<script>
-function myFunction(id) {
-  var x = document.getElementById(id);
-  var button = x.nextElementSibling;
-  if (x.style.webkitLineClamp === "unset") {
-    x.style.display = "-webkit-box";
-    x.style.webkitLineClamp = "2";
-    button.innerHTML = "阅读更多";
-  } else {
-    x.style.display = "block";
-    x.style.webkitLineClamp = "unset";
-    button.innerHTML = "收起";
-  }
-}
-</script>
 
 </body>
 </html>

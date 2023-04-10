@@ -44,29 +44,6 @@
     }
 </script>
 
-<style>
-.column {
-  width: 100%;
-  padding: 5px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.content {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-p {
-  text-indent: 2em;
-}
-</style>
-
 <h2>随笔日记-科技</h2>
   <div style="display: flex; margin: 30px 0;">
   <span style="flex: 1; height: 3px; background-color: #0F9D58;"></span>
@@ -74,10 +51,8 @@ p {
   <span style="flex: 1; height: 3px; background-color: #DB4437;"></span>
   <span style="flex: 1; height: 3px; background-color: #4285F4;"></span>
 </div>
-<div class="row">
-  <div class="column">
+
     <p><h3><ul><li>网络调试工具-Shadowrocket</li></ul></h3></p>
-    <div id="content2" class="content">
 <p>Shadowrocket，又称小火箭，是一款非常受欢迎的iOS代理软件。它的价格非常低廉，只需要3美元，因此受到了众多消费者的喜爱。它支持多种协议，如SS、SSR、Vmess、HTTP(S)、Socks5、Snell和Trojan协议等，并且支持混淆和加密功能。它的操作界面简洁明了，即使是新手也能轻松掌握。</p>
 
 <p>Shadowrocket的优势在于它的价格非常低廉。相比于其他代理软件超过几十元的价格，小火箭确实是便宜的不得了。作为现如今性价比最高的科学上网代理软件，无论它是否成为大家整个代理过程当中的主力军，都不会在金钱方面损失什么。</p>
@@ -89,13 +64,9 @@ p {
 <p>然而小火箭的优势远不止如此。能够如此火热毕定拥有很多原因。如果大家对于科学上网的定制化要求不高的话。小火箭确实是很多人的不二之选。只不过在使用过程当中也会出现一定的弊端。希望大家对不足之处进行充分地了解。比如使用过程当中耗电量比较大、稳定性表现相对比较平庸，远不如Surge和Quantumult&nbsp;X、而且不支持负载均衡、功能方面相对来说比较简单(策略组和脚本)、可定制性相对来说比较差、而且在使用过程当中广告比较多，去广告能力有限和MitM不稳定等。</p>
 
 <p>总之，Shadowrocket是一款非常优秀且性价比高的代理软件。它的价格低廉，支持多种协议，并且操作简单易懂。它非常适合新手使用，可以帮助大家快速上手科学上网。当然，它也有一些不足之处，如耗电量较大、稳定性一般、不支持负载均衡、功能相对简单、可定制性差、广告较多等。但是，这些缺点并不影响它成为一款优秀的代理软件。如果您对科学上网的定制化要求不高，那么小火箭绝对是您的不二之选。</p>
-    </div>
-    <button onclick="myFunction('content2')">阅读更多</button>
-  </div>
-  <div class="column">
+
     <h3><ul><li>十大必备APP</li></ul></h3>
 
-    <div id="content3" class="content">
 <p>App&nbsp;Store是世界上最大的应用商店之一，提供了丰富多样的应用程序，从社交媒体到游戏，再到办公工具和教育应用。无论你是正在寻找新的应用程序，还是想要更新你的应用程序库，这里有十个必备的美区App&nbsp;Store应用程序，可以帮助你更好地生活和工作。</p>
 
 <p>Facebook&nbsp;-&nbsp;社交媒体<br>
@@ -129,26 +100,6 @@ Duolingo是一个流行的语言学习应用程序，可用于学习超过30种�
 Headspace是一个流行的冥想和放松应用程序，可帮助用户减轻压力和焦虑。Headspace的应用程序提供了冥想和放松练习，可以帮助用户放松身心，提高注意力和注意力。此外，Headspace还提供了睡眠音频和呼吸练习等高级功能，适用于想要在快节奏的生活中找到平衡和宁静的人们。</p>
 
 <p>综上所述，这十个美区App&nbsp;Store应用程序是生活和工作中的必备工具，可帮助用户保持联系、提高效率、学习新技能和放松身心。无论你是普通用户还是专业人士，这些应用程序都能为你的日常生活带来便利和愉悦。</p>
-    </div>
-    <button onclick="myFunction('content3')">阅读更多</button>
-  </div>
-</div>
-
-<script>
-function myFunction(id) {
-  var x = document.getElementById(id);
-  var button = x.nextElementSibling;
-  if (x.style.webkitLineClamp === "unset") {
-    x.style.display = "-webkit-box";
-    x.style.webkitLineClamp = "2";
-    button.innerHTML = "阅读更多";
-  } else {
-    x.style.display = "block";
-    x.style.webkitLineClamp = "unset";
-    button.innerHTML = "收起";
-  }
-}
-</script>
 
 </body>
 </html>
