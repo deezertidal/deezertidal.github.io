@@ -1,0 +1,53 @@
+name: update
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 * * * *"
+jobs:
+  copy_proxy_file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      - name: Create Rule Directory
+        run: |
+          mkdir -p rule
+      - name: Sync Files to Rule
+        run: |
+          curl -o rule/ai.list https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/ai.list
+          curl -o rule/AdvertisingLite.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite.list
+          curl -o rule/Microsoft.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list
+          curl -o rule/Apple.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list
+          curl -o rule/AppStore.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppStore/AppStore.list
+          curl -o rule/Telegram.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list
+          curl -o rule/Weibo.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Weibo/Weibo.list
+          curl -o rule/WeChat.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/WeChat/WeChat.list
+          curl -o rule/Twitter.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list
+          curl -o rule/Spotify.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Spotify/Spotify.list
+          curl -o rule/PayPal.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/PayPal/PayPal.list
+          curl -o rule/Facebook.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Facebook/Facebook.list
+          curl -o rule/Reddit.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Reddit/Reddit.list
+          curl -o rule/Discord.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Discord/Discord.list
+          curl -o rule/YouTube.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list
+          curl -o rule/YouTubeMusic.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTubeMusic/YouTubeMusic.list
+          curl -o rule/Netflix.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list
+          curl -o rule/Disney.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list
+          curl -o rule/BiliBili.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BiliBili/BiliBili.list
+          curl -o rule/ChinaMedia.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMedia/ChinaMedia.list
+          curl -o rule/ProxyMedia.list https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+          curl -o rule/Google.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list
+          curl -o rule/Proxy.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list
+          curl -o rule/China.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China.list
+
+
+      - name: Commit Changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add rule
+          git commit -m "Update files in rule directory" || exit 0
+      - name: Push Changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
