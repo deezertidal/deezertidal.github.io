@@ -38,7 +38,7 @@ jobs:
           curl -o rule/Google.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list
           curl -o rule/Proxy.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list
           curl -o rule/China.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China.list
-
+          sed -i '/^\s*#/d' rule/*
 
       - name: Commit Changes
         run: |
