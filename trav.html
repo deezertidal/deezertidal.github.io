@@ -35,12 +35,39 @@
         z-index: -1;
       }
     </style>
+
 <button onclick="goHome()"><i class="fa-solid fa-house"></i>回到主页</button>
 <script>
     function goHome() {
         window.location.href = 'https://ybnet.ga';
     }
 </script>
+    <style>
+        .content {
+            display: none;
+        }
+        .arrow {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 5px 0 5px;
+            border-color: black transparent transparent transparent;
+            transform: rotate(-90deg);
+        }
+        .arrow.down {
+            transform: rotate(0deg);
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".title").click(function() {
+                $(this).next(".content").slideToggle();
+                $(this).find(".arrow").toggleClass("down");
+            });
+        });
+    </script>
 
 </head>
 <body>
@@ -52,8 +79,8 @@
   <span style="flex: 1; height: 3px; background-color: #DB4437;"></span>
   <span style="flex: 1; height: 3px; background-color: #4285F4;"></span>
 </div>
-    <h3><ul><li>旅行的魅力</li></ul></h3>
-
+    <h3 class="title"><span class="arrow"></span>旅行的魅力</h3>
+	    <div class="content">
 <p>旅行是一种非常美妙的体验，它可以让我们放松身心，体验不同的文化和风情。当我们走出家门，踏上旅途时，我们就开始了一段新的冒险。</p>
 
 <p>旅行可以让我们看到世界的多样性。每个地方都有它独特的文化、历史和风景。当我们走在异国他乡的街头，感受着那里的气息时，我们就能更深入地了解这个世界。</p>
@@ -91,7 +118,7 @@
 <p>最后，我们还需要注意与他人的交流。在旅行中，我们应该礼貌待人，与当地居民友好交流。这不仅能让我们结交新朋友，还能让我们更好地了解当地文化。</p>
 
 <p>在旅行中，我们需要注意安全、健康、文明和交流等问题。这些都可以让我们更好地享受旅行。</p>
-
+    </div>
 
 </body>
 </html>

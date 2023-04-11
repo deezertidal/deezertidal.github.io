@@ -35,6 +35,33 @@
         z-index: -1;
       }
     </style>
+    <style>
+        .content {
+            display: none;
+        }
+        .arrow {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 5px 0 5px;
+            border-color: black transparent transparent transparent;
+            transform: rotate(-90deg);
+        }
+        .arrow.down {
+            transform: rotate(0deg);
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".title").click(function() {
+                $(this).next(".content").slideToggle();
+                $(this).find(".arrow").toggleClass("down");
+            });
+        });
+    </script>
+
   </head>
   <body>
 <button onclick="goHome()"><i class="fa-solid fa-house"></i>回到主页</button>
@@ -52,8 +79,8 @@
   <span style="flex: 1; height: 3px; background-color: #DB4437;"></span>
   <span style="flex: 1; height: 3px; background-color: #4285F4;"></span>
 </div>
-
-    <h3><ul><li>火锅文化</li></ul></h3>
+    <h3 class="title"><span class="arrow"></span>火锅文化</h3>
+	    <div class="content">
 <p>火锅文化是中国文化中的一种独特的饮食文化，也是中国人日常生活中不可或缺的一部分。它不仅是一种美食，更是一种社交方式，传统的火锅聚餐是中国人之间加深友谊和感情的重要方式之一。在中国，无论是冬天还是夏天，火锅都是人们喜爱的美食之一。在这篇文章中，我们将探讨火锅文化的历史、种类和餐桌礼仪等方面。</p>
 
 <p>历史</p>
@@ -107,9 +134,9 @@
 <p>火锅中的食材新鲜美味，应该尽可能多地品尝各种食材，但也要注意食用安全，避免生食。</p>
 
 <p>火锅文化是中国饮食文化中的一部分，它不仅是一种美食，更是一种社交方式。在中国，火锅种类繁多，每一种都有其独特的风味。在火锅聚餐中，应该注意一些餐桌礼仪，以便更好地享受美食和加强人与人之间的关系。</p>
-
-    <h3><ul><li>中国烧烤</li></ul></h3>
-
+    </div>
+<h3 class="title"><span class="arrow"></span>中国烧烤</h3>
+<div class="content">
 <p>中国的烧烤文化可以说是非常独特而又丰富多彩的，不仅有各种不同的风味口感的烤肉，还有各种美食小吃以及一些与之相关的文化元素。在中国，烧烤文化早已深入人心，成为人们日常生活中不可或缺的一部分。下面，我们来一起了解一下中国烧烤文化。</p>
 
 <p>一、烧烤文化的起源</p>
@@ -189,9 +216,9 @@
 <p>五、结语</p>
 
 <p>烧烤文化是中国人的一种重要文化形式，它不仅是中国美食文化的重要组成部分，更是中国人的一种生活方式和文化习惯。各地的烧烤文化各具特色，有着不同的口味和烤法，同时也反映了不同地区的风土人情和文化传承。我们应该积极参与和传承烧烤文化，将这种美食文化发扬光大，让更多的人了解和喜爱中国的烧烤文化。</p>
-
-    <h3><ul><li>糖醋排骨</li></ul></h3>
-
+</div>
+<h3 class="title"><span class="arrow"></span>糖醋排骨</h3>
+<div class="content">
 <p>糖醋排骨是一道口感酸甜适中、肉质鲜嫩、香气扑鼻的经典美食。它是中国传统美食之一，尤其在南方地区广受欢迎。这道美食历史悠久，流传至今已有数百年之久。糖醋排骨的制作方法简单易学，下面我们来一起看看吧。</p>
 
 <p>首先，让我们来了解一下糖醋排骨的制作原料。制作糖醋排骨需要用到排骨、酱油、白糖、醋、料酒、生姜、葱等材料。排骨要选用猪肉后脊骨上的短肋骨，鲜嫩可口，口感更佳。而酱油、白糖、醋等是制作糖醋汁的主要原料，要根据个人口味调整比例。同时，生姜和葱可以起到去腥提味的作用，料酒则可以去除肉腥味，使得口感更加醇香。</p>
@@ -207,5 +234,6 @@
 <p>此外，糖醋排骨还有着广泛的食用方法。除了作为主食外，还可以作为下酒菜、家庭聚餐和朋友聚会的佳肴。在宴请客人时，一盘鲜美的糖醋排骨常常可以让客人们品尝到家庭的温馨和温暖。</p>
 
 <p>在中国的餐桌上，糖醋排骨是一道备受喜爱的传统美食。它的制作方法简单，风味鲜美，营养丰富，可以满足不同人的口味需求。无论是在家中还是在餐馆中，都可以轻松地品尝到这道美食。如果您还没有尝试过糖醋排骨，那么不妨趁此机会亲手制作一次，感受其中的美味与独特魅力。</p> 
+</div>
 </body>
 </html>
