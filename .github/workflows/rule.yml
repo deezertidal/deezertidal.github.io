@@ -39,7 +39,7 @@ jobs:
           curl -o rule/Proxy.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list
           curl -o rule/China.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China.list
           curl -o rule/ASN-China.list https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list
-          sed -i '/^\\s*#/d; /.*\\/\\/.*$/d' rule/*
+          sed -i '/^\\s*#/d; /.*\\\\/\\\\/.*$/d' rule/*
 
       - name: Commit Changes
         run: |
