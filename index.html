@@ -91,6 +91,7 @@
         margin-top: 50px;
       }
     </style>
+
   </head>
   <body>
 <h1 style="text-align: center; font-size: 40px; color: #2F4F4F;">YBNET</h1>
@@ -119,5 +120,20 @@
   <span style="flex: 1; height: 3px; background-color: #DB4437;"></span>
   <span style="flex: 1; height: 3px; background-color: #4285F4;"></span>
 </div>
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'location.href', // 可选。默认为 location.href
+  owner: 'deezertidal',
+  repo: 'fee-based',
+  oauth: {
+    client_id: 'ef11e388a82b4df11c22',
+    client_secret: '84b5b33518a09656f11dadee600646249d1cbc82',
+  },
+})
+gitment.render('container')
+</script>
   </body>
 </html>
