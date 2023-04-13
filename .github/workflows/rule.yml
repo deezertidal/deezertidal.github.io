@@ -16,6 +16,7 @@ jobs:
         run: |
           curl -o rule/ai.list https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/ai.list
           curl -o rule/AdvertisingLite.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite.list
+          curl -o rule/AntiAD.list https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt
           curl -o rule/Microsoft.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list
           curl -o rule/Apple.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list
           curl -o rule/AppStore.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppStore/AppStore.list
