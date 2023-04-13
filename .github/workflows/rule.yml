@@ -38,7 +38,29 @@ jobs:
           curl -o rule/Google.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list
           curl -o rule/Proxy.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list
           curl -o rule/China.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China.list
-          curl -o rule/ASN-China.list https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list
+          curl -o rule/ASN-China.list https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list 
+          curl -o rule/OneDrive.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OneDrive/OneDrive.list
+          curl -o rule/AppleMusic.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMusic/AppleMusic.list
+          curl -o rule/Line.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Line/Line.list
+          curl -o rule/TikTok.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list
+          curl -o rule/Cloudflare.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloudflare/Cloudflare.list
+          curl -o rule/Wikipedia.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Wikipedia/Wikipedia.list
+          curl -o rule/BBC.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BBC/BBC.list
+          curl -o rule/Amazon.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Amazon/Amazon.list
+          curl -o rule/Instagram.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Instagram/Instagram.list
+          curl -o rule/Whatsapp.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Whatsapp/Whatsapp.list
+          curl -o rule/Bahamut.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list
+          curl -o rule/HBO.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/HBO.list
+          curl -o rule/Fox.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Fox/Fox.list
+          curl -o rule/Hulu.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hulu/Hulu.list
+          curl -o rule/KKBOX.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/KKBOX/KKBOX.list
+          curl -o rule/TIDAL.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TIDAL/TIDAL.list
+          curl -o rule/TVB.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TVB/TVB.list
+          curl -o rule/Emby.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Emby/Emby.list
+          curl -o rule/NetEaseMusic.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/NetEaseMusic/NetEaseMusic.list
+          curl -o rule/GitHub.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitHub/GitHub.list
+          curl -o rule/Dropbox.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list
+          curl -o rule/Duckduckgo.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Duckduckgo/Duckduckgo.list
           sed -i '/^\s*#/d' rule/*
 
       - name: Commit Changes
