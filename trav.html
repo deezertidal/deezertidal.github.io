@@ -2,7 +2,6 @@
 <html lang="zh">
 <head>
 <meta charset="UTF-8">
-<script src="https://kit.fontawesome.com/9f832cfba5.js" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="随笔 博客 游玩">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4631656380634463"
@@ -17,17 +16,7 @@
 
   gtag('config', 'G-Q10V31V29W');
 </script>
-<button onclick="goHome()"><i class="fa-solid fa-house" style="color: #2F4F4F;"></i>回到主页</button>
-<button onclick="goBack()"><i class="fa-solid fa-arrow-right fa-rotate-180" style="color: #2F4F4F;"></i>返回上一页</button>
 
-<script>
-    function goHome() {
-        window.location.href = 'https://ybnet.ga';
-    }
-	function goBack() {
-  window.location.href = 'https://ybnet.ga/article.html';
-}
-</script>
     <style>
         .content {
             display: none;
@@ -54,10 +43,43 @@
             });
         });
     </script>
+<style>
+    .breadcrumb {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
 
+    .breadcrumb li {
+      margin-right: 5px;
+    }
+
+    .breadcrumb li a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 2px 4px;
+      border-radius: 4px;
+      background-color:  #2F4F4F;
+      color: white;
+    }
+
+    .breadcrumb li::after {
+      content: ">>";
+      margin: 0 4px;
+    }
+
+    .breadcrumb li:last-child::after {
+      content: "";
+    }
+  </style>
 </head>
 <body>
-
+<ul class="breadcrumb">
+    <li><a href="https://ybnet.ga">YBNET主页</a></li>
+    <li><a href="article.html">随笔</a></li>
+    <li><a href="trav.html">游玩</a></li>
+</ul>
 <h2>随笔日记-游玩</h2>
   <div style="display: flex; margin: 30px 0;">
   <span style="flex: 1; height: 3px; background-color: #0F9D58;"></span>

@@ -2,7 +2,6 @@
 <html lang="zh">
 <head>
 <meta charset="UTF-8">
-<script src="https://kit.fontawesome.com/9f832cfba5.js" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="小火箭 配置 模块 代理分组 教程">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4631656380634463"
@@ -43,8 +42,37 @@ img {
         }
         .arrow.down {
             transform: rotate(0deg);
-        }
-    </style>
+			    </style>
+  <style>
+    .breadcrumb {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .breadcrumb li {
+      margin-right: 5px;
+    }
+
+    .breadcrumb li a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 2px 4px;
+      border-radius: 4px;
+      background-color:  #2F4F4F;
+      color: white;
+    }
+
+    .breadcrumb li::after {
+      content: ">>";
+      margin: 0 4px;
+    }
+
+    .breadcrumb li:last-child::after {
+      content: "";
+    }
+  </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
@@ -57,17 +85,12 @@ img {
 
   </head>
   <body>
-<button onclick="goHome()"><i class="fa-solid fa-house" style="color: #2F4F4F;"></i>回到主页</button>
-<button onclick="goBack()"><i class="fa-solid fa-arrow-right fa-rotate-180" style="color: #2F4F4F;"></i>返回上一页</button>
+<ul class="breadcrumb">
+    <li><a href="https://ybnet.ga">YBNET主页</a></li>
+    <li><a href="shadowrocket.html">小火箭配置模块</a></li>
+    <li><a href="manual.html">教程</a></li>
+</ul>
 
-<script>
-    function goHome() {
-        window.location.href = 'https://ybnet.ga';
-    }
-	function goBack() {
-  window.location.href = 'https://ybnet.ga/shadowrocket.html';
-}
-</script>
 
 <h2 style="text-align: center;color: #2F4F4F;"> 小火箭 配置 模块 代理分组 教程 </h2>
   <div style="display: flex; margin: 30px 0;">
