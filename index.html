@@ -96,8 +96,6 @@
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
     </style>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
   </head>
   <body>
@@ -127,19 +125,5 @@
   <span style="flex: 1; height: 3px; background-color: #DB4437;"></span>
   <span style="flex: 1; height: 3px; background-color: #4285F4;"></span>
 </div>
-<div id="gitalk-container"></div>
-<Script>
-var gitalk = new Gitalk({
-  clientID: 'ef11e388a82b4df11c22',
-  clientSecret: '84b5b33518a09656f11dadee600646249d1cbc82',
-  repo: 'fee-based',
-  owner: 'deezertidal',
-  admin: ['deezertidal'],
-  id: location.pathname,      // Ensure uniqueness and length less than 50
-  distractionFreeMode: false  // Facebook-like distraction free mode
-})
-
-gitalk.render('gitalk-container')
-</script>
   </body>
 </html>
