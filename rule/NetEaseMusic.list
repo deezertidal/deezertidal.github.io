@@ -8,6 +8,7 @@ DOMAIN-SUFFIX,music.126.com
 DOMAIN-SUFFIX,music.126.net
 DOMAIN-SUFFIX,music.163.com
 DOMAIN-SUFFIX,music.163.com.163jiasu.com
+DOMAIN-SUFFIX,yun-app.net
 IP-CIDR,101.71.154.241/32,no-resolve
 IP-CIDR,103.126.92.13/32,no-resolve
 IP-CIDR,103.126.92.132/31,no-resolve
