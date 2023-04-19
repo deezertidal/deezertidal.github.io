@@ -14,7 +14,7 @@ jobs:
           mkdir -p proxy
       - name: Copy Proxy File
         run: |
-          curl -o proxy/proxy.txt ${{ secrets.NONAME }}
+          curl -o proxy/freeproxy.txt ${{ secrets.NONAME }}
       - name: Commit Changes
         run: |
           git config --global user.name "GitHub Action"
