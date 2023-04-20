@@ -459,33 +459,38 @@
     <h6><p><a href="#" onclick="handleClick(this); return false;" data-href="shadowrocket://install?module=https://ybnet.ga/module/aliyun.module"><button class="myButton">阿里云盘签到</button></a></p></h6>
     </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  var searchBar = $("#searchBar");
 
-  searchBar.on("input", function() {
-    search();
-  });
-
-  function search() {
-    var keyword = searchBar.val().trim().toLowerCase();
-    var searchResults = $("#searchResults");
-    searchResults.empty();
-
-    if (keyword === "") {
-      $(".myButton").show();
-      return;
-    }
-
-    $(".myButton").hide().each(function() {
-      var buttonText = $(this).text().trim().toLowerCase();
-
-      if (buttonText.indexOf(keyword) !== -1) {
-        var newButton = $(this).clone();
-        searchResults.append(newButton);
-        newButton.show();
+    <script>
+      var searchBar = $("#searchBar");
+      searchBar.on("input", function() {
+        search();
+      });
+      function search() {
+        var keyword = searchBar.val().trim().toLowerCase();
+        var searchResults = $("#searchResults");
+        searchResults.empty();
+        if (keyword === "") {
+          $(".myButton").show();
+          return;
+        }
+        $(".myButton").hide().each(function() {
+          var buttonText = $(this).text().trim().toLowerCase();
+          if (buttonText.indexOf(keyword) !== -1) {
+            var newButton = $(this).clone();
+            var href = $(this).parent().attr("href");
+            newButton.wrap($("<a>").attr("href", href));
+            searchResults.append(newButton.parent());
+            newButton.show();
+          }
+        });
       }
-    });
-  }
-</script>
+      $("#searchResults").on("click", ".myButton", function(event) {
+        var target = $(event.target);
+        var buttonText = target.text().trim().toLowerCase();
+        // 在这里检查 buttonText 是否与你期望的文本相同
+        var href = target.parent().attr("href");
+        window.open(href);
+      });
+    </script>
   </body>
 </html>
