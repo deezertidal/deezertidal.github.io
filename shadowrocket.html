@@ -44,7 +44,7 @@
  function handleClick(element) {
   var link = element.getAttribute('data-href');
   if (/(iPhone|iPad|iPod)/i.test(navigator.userAgent)) {
-    window.location.replace(link);
+    window.open(link, '_blank');
   } else {
     link = link.replace(/shadowrocket:\/\/(install\?module=|config\/add\/)/, '');
     var tempInput = document.createElement("textarea");
