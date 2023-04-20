@@ -41,21 +41,21 @@
 
     </style>
     <script>
-      function handleClick(element) {
-        var link = element.getAttribute('data-href');
-        if (/(iPhone|iPad|iPod)/i.test(navigator.userAgent)) {
-          window.location.href = link;
-        } else {
-          link = link.replace(/shadowrocket:\/\/(install\?module=|config\/add\/)/, '');
-          var tempInput = document.createElement("textarea");
-          tempInput.value = link;
-          document.body.appendChild(tempInput);
-          tempInput.select();
-          document.execCommand("copy");
-          document.body.removeChild(tempInput);
-          alert("链接已复制");
-        }
-      }
+ function handleClick(element) {
+  var link = element.getAttribute('data-href');
+  if (/(iPhone|iPad|iPod)/i.test(navigator.userAgent)) {
+    window.location.replace(link);
+  } else {
+    link = link.replace(/shadowrocket:\/\/(install\?module=|config\/add\/)/, '');
+    var tempInput = document.createElement("textarea");
+    tempInput.value = link;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    alert("链接已复制");
+  }
+}
 
         var buttons = document.querySelectorAll('.myButton');
         var maxWidth = 0;
