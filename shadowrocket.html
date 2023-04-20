@@ -484,13 +484,13 @@
           }
         });
       }
-      $("#searchResults").on("click", ".myButton", function(event) {
-        var target = $(event.target);
-        var buttonText = target.text().trim().toLowerCase();
-        // 在这里检查 buttonText 是否与你期望的文本相同
-        var href = target.parent().attr("href");
-        window.open(href);
-      });
+
+$("#searchResults").on("click", ".myButton", function(event) {
+  var target = $(event.target);
+  var buttonText = target.text().trim().toLowerCase();
+  var href = target.parent().attr("href");
+  window.location.href = href;
+});
     </script>
   </body>
 </html>
