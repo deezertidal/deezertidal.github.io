@@ -16,34 +16,6 @@
 
   gtag('config', 'G-Q10V31V29W');
 </script>
-
-<script>
-
-function handleClick(element) {
-  var link = element.getAttribute('data-href');
-  if (/(iPhone|iPad|iPod)/i.test(navigator.userAgent)) {
-    if ($("#searchBar").val().trim() !== "") {
-      // 如果正在搜索，将链接替换为不带scheme的原始链接
-      link = link.replace(/shadowrocket:\/\/(install\?module=|config\/add\/)/, '');
-      element.setAttribute('href', link);
-    }
-    window.location.href = link;
-  } else {
-    if ($("#searchBar").val().trim() !== "") {
-      // 如果正在搜索，将链接替换为不带scheme的原始链接
-      link = link.replace(/shadowrocket:\/\/(install\?module=|config\/add\/)/, '');
-    }
-    var tempInput = document.createElement("textarea");
-    tempInput.value = link;
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    document.execCommand("copy");
-    document.body.removeChild(tempInput);
-    alert("链接已复制");
-  }
-}
-
-</script>
 <style>
 .myButton {
   font-size: 15px;
@@ -69,21 +41,21 @@ function handleClick(element) {
 
     </style>
     <script>
- function handleClick(element) {
-  var link = element.getAttribute('data-href');
-  if (/(iPhone|iPad|iPod)/i.test(navigator.userAgent)) {
-    window.open(link, '_blank');
-  } else {
-    link = link.replace(/shadowrocket:\/\/(install\?module=|config\/add\/)/, '');
-    var tempInput = document.createElement("textarea");
-    tempInput.value = link;
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    document.execCommand("copy");
-    document.body.removeChild(tempInput);
-    alert("链接已复制");
-  }
-}
+      function handleClick(element) {
+        var link = element.getAttribute('data-href');
+        if (/(iPhone|iPad|iPod)/i.test(navigator.userAgent)) {
+          window.location.href = link;
+        } else {
+          link = link.replace(/shadowrocket:\/\/(install\?module=|config\/add\/)/, '');
+          var tempInput = document.createElement("textarea");
+          tempInput.value = link;
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand("copy");
+          document.body.removeChild(tempInput);
+          alert("链接已复制");
+        }
+      }
 
         var buttons = document.querySelectorAll('.myButton');
         var maxWidth = 0;
@@ -487,38 +459,33 @@ function handleClick(element) {
     <h6><p><a href="#" onclick="handleClick(this); return false;" data-href="shadowrocket://install?module=https://ybnet.ga/module/aliyun.module"><button class="myButton">阿里云盘签到</button></a></p></h6>
     </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  var searchBar = $("#searchBar");
 
-    <script>
-      var searchBar = $("#searchBar");
-      searchBar.on("input", function() {
-        search();
-      });
-      function search() {
-        var keyword = searchBar.val().trim().toLowerCase();
-        var searchResults = $("#searchResults");
-        searchResults.empty();
-        if (keyword === "") {
-          $(".myButton").show();
-          return;
-        }
-        $(".myButton").hide().each(function() {
-          var buttonText = $(this).text().trim().toLowerCase();
-          if (buttonText.indexOf(keyword) !== -1) {
-            var newButton = $(this).clone();
-            var href = $(this).parent().attr("href");
-            newButton.wrap($("<a>").attr("href", href));
-            searchResults.append(newButton.parent());
-            newButton.show();
-          }
-        });
+  searchBar.on("input", function() {
+    search();
+  });
+
+  function search() {
+    var keyword = searchBar.val().trim().toLowerCase();
+    var searchResults = $("#searchResults");
+    searchResults.empty();
+
+    if (keyword === "") {
+      $(".myButton").show();
+      return;
+    }
+
+    $(".myButton").hide().each(function() {
+      var buttonText = $(this).text().trim().toLowerCase();
+
+      if (buttonText.indexOf(keyword) !== -1) {
+        var newButton = $(this).clone();
+        searchResults.append(newButton);
+        newButton.show();
       }
-
-$("#searchResults").on("click", ".myButton", function(event) {
-  var target = $(event.target);
-  var buttonText = target.text().trim().toLowerCase();
-  var href = target.parent().attr("href");
-  window.location.href = href;
-});
-    </script>
+    });
+  }
+</script>
   </body>
 </html>
