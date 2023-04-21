@@ -20,7 +20,7 @@
 <style>
 .myButton {
   font-size: 15px;
-  background-color: #2F4F4F;
+  text-shadow: 2px 4px 10px black;
   color: white;
   width: 120px; 
   height: 50px; 
@@ -59,7 +59,7 @@
     padding: 1px 5px; 
     font-size: 14px; 
     border-radius: 10px;
-    background-color: #2F4F4F;
+    background-color: #064571;
     color: white;
   }
 
@@ -133,7 +133,7 @@
 
 </ul>
 
-<h1 style="text-align: center; color: #2F4F4F;background-color: #F0F0F0;">TrollStore巨魔应用</h1>
+<h1 style="text-align: center; color: #064571;background-color: #F0F0F0;">TrollStore巨魔应用</h1>
   <div style="display: flex; margin: 30px 0;">
   <span style="flex: 1; height: 3px; background-color: #0F9D58;"></span>
   <span style="flex: 1; height: 3px; background-color: #F4B400;"></span>
@@ -203,6 +203,20 @@
   var href = $(this).attr("href");
   window.location.href = href;
 });
+</script>
+<script>
+var colors = ['#4285F4', '#DB4437', '#F4B400', '#0F9D58'];
+var buttons = document.querySelectorAll('.myButton');
+var prevColorIndex = -1;
+for (var i = 0; i < buttons.length; i++) {
+  var availableColors = [...colors]; 
+  if (prevColorIndex > -1) {
+    availableColors.splice(prevColorIndex, 1); 
+  }
+  var randomIndex = Math.floor(Math.random() * availableColors.length);
+  buttons[i].style.backgroundColor = availableColors[randomIndex];
+  prevColorIndex = colors.indexOf(availableColors[randomIndex]); 
+}
 </script>
   </body>
 </html>

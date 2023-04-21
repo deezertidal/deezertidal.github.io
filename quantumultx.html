@@ -19,9 +19,9 @@
 </script>
 <style>
 .myButton {
+    text-shadow: 2px 4px 10px black;
   text-transform: capitalize;
   font-size: 15px;
-  background-color: #2F4F4F;
   color: white;
   width: 120px; 
   height: 50px; 
@@ -36,8 +36,7 @@
   grid-gap: 10px; 
 }
 
-.myButton:hover {
-  background-color: #DB4437; 
+.myButton:hover { 
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
 }
 
@@ -60,7 +59,7 @@
     padding: 1px 5px; 
     font-size: 14px; 
     border-radius: 10px;
-    background-color: #2F4F4F;
+    background-color: #064571;
     color: white;
   }
 
@@ -134,7 +133,7 @@
 
 </ul>
 
-<h1 style="text-align: center; color: #2F4F4F;background-color: #F0F0F0;">
+<h1 style="text-align: center; color: #064571;background-color: #F0F0F0;">
   <img src="https://ybnet.ga/IMG/qx.png" alt="Quantumultx重写" style="width:30px; height: 30px; margin-right: 10px;">Quantumultx重写
 </h1>
   <div style="display: flex; margin: 30px 0;">
@@ -446,10 +445,23 @@
       $("#searchResults").on("click", ".myButton", function(event) {
         var target = $(event.target);
         var buttonText = target.text().trim().toLowerCase();
-        // 在这里检查 buttonText 是否与你期望的文本相同
         var href = target.parent().attr("href");
         window.open(href);
       });
     </script>
+	<script>
+var colors = ['#4285F4', '#DB4437', '#F4B400', '#0F9D58'];
+var buttons = document.querySelectorAll('.myButton');
+var prevColorIndex = -1;
+for (var i = 0; i < buttons.length; i++) {
+  var availableColors = [...colors]; 
+  if (prevColorIndex > -1) {
+    availableColors.splice(prevColorIndex, 1); 
+  }
+  var randomIndex = Math.floor(Math.random() * availableColors.length);
+  buttons[i].style.backgroundColor = availableColors[randomIndex];
+  prevColorIndex = colors.indexOf(availableColors[randomIndex]); 
+}
+</script>
   </body>
 </html>

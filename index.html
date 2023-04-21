@@ -33,8 +33,9 @@
     </script>
   
 
-    <style>
-	.subtitles > a {
+<style>
+.subtitles > a {
+  text-shadow: 2px 4px 10px black;
   width: 120px;
   height: 40px;
   line-height: 40px;
@@ -43,67 +44,80 @@
   justify-content: center;
   align-items: center;
 }
-        a {
-            display: inline-block;
-            padding: 10px 20px;
-            border-radius: 7px;
-        text-decoration: none;
-        color: white;
-        background-color: #2F4F4F;
-      }
-      .subtitles {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        font-size: 15px;
-      }
-      .subtitles > a {
-        justify-self: center;
-      }
-      .subtitles > a:nth-child(1),
-      .subtitles > a:nth-child(2),
-	  .subtitles > a:nth-child(3),
-	  .subtitles > a:nth-child(4),
-	  .subtitles > a:nth-child(5),
-	  .subtitles > a:nth-child(6),
-	  .subtitles > a:nth-child(7),
-      .subtitles > a:nth-child(8),
-	  .subtitles > a:nth-child(9),
-	  .subtitles > a:nth-child(10){
-        margin-top: 50px;
-      }
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  color: white;
+}
+.subtitles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 15px;
+}
+.subtitles > a {
+  justify-self: center;
+}
+.subtitles > a:nth-child(1),
+.subtitles > a:nth-child(2),
+.subtitles > a:nth-child(3),
+.subtitles > a:nth-child(4),
+.subtitles > a:nth-child(5),
+.subtitles > a:nth-child(6),
+.subtitles > a:nth-child(7),
+.subtitles > a:nth-child(8),
+.subtitles > a:nth-child(9),
+.subtitles > a:nth-child(10){
+  margin-top: 50px;
+}
 .subtitles a:hover {
-  background-color: #DB4437; 
-  color: #fff; 
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-    </style>
+</style>
 
   </head>
   <body>
-<h1 style="text-align: center; color: #2F4F4F;background-color: #F0F0F0;">YBNET</h1>
-<p style="text-align: center; font-size: 15px; color: #2F4F4F;">Shadowrocket(小火箭) Loon QuantumultX(圈X) Surge的相关配置 模块 重写 插件</p> 
+<h1 style="text-align: center; color: #064571;background-color: #F0F0F0;">YBNET</h1>
+<p style="text-align: center; font-size: 15px; color: #064571;">Shadowrocket(小火箭) Loon QuantumultX(圈X) Surge的相关配置 模块 重写 插件</p> 
 <div style="display: flex; margin: 30px 0;">
   <span style="flex: 1; height: 3px; background-color: #4285F4;"></span>
   <span style="flex: 1; height: 3px; background-color: #DB4437;"></span>
   <span style="flex: 1; height: 3px; background-color: #F4B400;"></span>
   <span style="flex: 1; height: 3px; background-color: #0F9D58;"></span>
 </div>
-<div class="subtitles">
-    <a href="shadowrocket.html">Shadowrocket</a>
-    <a href="loon.html">Loon</a>
-    <a href="quantumultx.html">QuantumultX</a>
-    <a href="surge.html">Surge</a>
-    <a href="rule.html">分流规则</a>	
-    <a href="airport.html">机场推荐</a>
-    <a href="troll.html">巨魔应用</a>
-    <a href="article.html">随笔</a>
-    <a href="about.html">关于</a>
-</div>
+  <div class="subtitles">
+    <a href="shadowrocket.html" class="myButton">Shadowrocket</a>
+    <a href="loon.html" class="myButton">Loon</a>
+    <a href="quantumultx.html" class="myButton">QuantumultX</a>
+    <a href="surge.html" class="myButton">Surge</a>
+    <a href="rule.html" class="myButton">分流规则</a> 
+    <a href="airport.html" class="myButton">机场推荐</a>
+    <a href="troll.html" class="myButton">巨魔应用</a>
+    <a href="article.html" class="myButton">随笔</a>
+    <a href="about.html" class="myButton">关于</a>
+  </div>
 <div style="display: flex; margin: 30px 0;">
   <span style="flex: 1; height: 3px; background-color: #0F9D58;"></span>
   <span style="flex: 1; height: 3px; background-color: #F4B400;"></span>
   <span style="flex: 1; height: 3px; background-color: #DB4437;"></span>
   <span style="flex: 1; height: 3px; background-color: #4285F4;"></span>
 </div>
+<script>
+var colors = ['#4285F4', '#DB4437', '#F4B400', '#0F9D58'];
+var buttons = document.querySelectorAll('.myButton');
+
+var prevColorIndex = -1;
+for (var i = 0; i < buttons.length; i++) {
+  var availableColors = [...colors]; 
+  if (prevColorIndex > -1) {
+    availableColors.splice(prevColorIndex, 1); 
+  }
+  var randomIndex = Math.floor(Math.random() * availableColors.length);
+  buttons[i].style.backgroundColor = availableColors[randomIndex];
+  prevColorIndex = colors.indexOf(availableColors[randomIndex]); 
+}
+
+</script>
   </body>
 </html>

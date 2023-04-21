@@ -18,9 +18,10 @@
 </script>
 <style>
 .myButton {
+  text-shadow: 2px 4px 10px black;
   text-transform: capitalize;
   font-size: 15px;
-  background-color: #2F4F4F;
+  background-color: #064571;
   color: white;
   width: 120px; 
   height: 50px; 
@@ -36,7 +37,6 @@
 }
 
 .myButton:hover {
-  background-color: #DB4437; 
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
 }
 
@@ -88,7 +88,7 @@
     padding: 1px 5px; 
     font-size: 14px; 
     border-radius: 10px;
-    background-color: #2F4F4F;
+    background-color: #064571;
     color: white;
   }
 
@@ -162,23 +162,23 @@
     <li><a href="https://ybnet.ga">YBNET主页</a></li>
     <li><a href="shadowrocket.html">小火箭配置模块</a></li>
 </ul>
-<h1 style="text-align: center; color: #2F4F4F;background-color: #F0F0F0;">
+<h1 style="text-align: center; color: #064571;background-color: #F0F0F0;">
   <img src="https://ybnet.ga/IMG/shadowrocket.png" alt="shadowrocket" style="width:30px; height: 30px; margin-right: 10px;">小火箭-Shadowrocket
-<h5 style="text-align: center; color: #2F4F4F;">————小火箭Shadowrocket配置 教程 模块</h5>
+<h5 style="text-align: center; color: #064571;">————小火箭Shadowrocket配置 教程 模块</h5>
 	<div style="display: flex; margin: 30px 0;">
   <span style="flex: 1; height: 3px; background-color: #0F9D58;"></span>
   <span style="flex: 1; height: 3px; background-color: #F4B400;"></span>
   <span style="flex: 1; height: 3px; background-color: #DB4437;"></span>
   <span style="flex: 1; height: 3px; background-color: #4285F4;"></span>
 </div>
-<h2 style="text-align: center; color: #2F4F4F;">配置-Config</h2>
+<h2 style="text-align: center; color: #064571;">配置-Config</h2>
     <div class="container">
     <h6><p><button class="myButton" onclick="handleClick(this)" data-href="shadowrocket://config/add/https://ybnet.ga/config/shadowrocket_basic.conf">配置文件</button>
     <h6><p><a href="https://ybnet.ga/manual.html"><button class="myButton">教程-Manual</button></a></p></h6>
     </div>
-<div style="height: 1px; background-color: #2F4F4F;margin: 10px 0;"></div>
+<div style="height: 1px; background-color: #064571;margin: 10px 0;"></div>
 <br>
-<h2 style="text-align: center; color: #2F4F4F;">模块-Modules</h2>
+<h2 style="text-align: center; color: #064571;">模块-Modules</h2>
 <div class="search-bar">
   <input id="searchBar" type="text" placeholder="搜索 Search...">
 </div>
@@ -488,6 +488,20 @@
       }
     });
   }
+</script>
+<script>
+var colors = ['#4285F4', '#DB4437', '#F4B400', '#0F9D58'];
+var buttons = document.querySelectorAll('.myButton');
+var prevColorIndex = -1;
+for (var i = 0; i < buttons.length; i++) {
+  var availableColors = [...colors]; 
+  if (prevColorIndex > -1) {
+    availableColors.splice(prevColorIndex, 1); 
+  }
+  var randomIndex = Math.floor(Math.random() * availableColors.length);
+  buttons[i].style.backgroundColor = availableColors[randomIndex];
+  prevColorIndex = colors.indexOf(availableColors[randomIndex]); 
+}
 </script>
   </body>
 </html>
