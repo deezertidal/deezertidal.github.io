@@ -196,8 +196,13 @@
         var target = $(event.target);
         var buttonText = target.text().trim().toLowerCase();
         var href = target.parent().attr("href");
-        window.open(href);
+        window.location.href = href;
       });
+	  $("#content").on("click", "a", function(event) {
+  event.preventDefault();
+  var href = $(this).attr("href");
+  window.location.href = href;
+});
 </script>
   </body>
 </html>
