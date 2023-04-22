@@ -87,5 +87,27 @@ img {
 <h2><a href="https://yyds.emovpn.top/#/register?code=7KLxhYOS">EMO</a></h2>
 <p>免费：300G/月。
 最低付费套餐：5元/1000G/月（不限终端，不限速，解锁流媒体）<br/><img alt="Image text" src="https://raw.githubusercontent.com/deezertidal/freevpn/main/img/EMO.png"/>  </p>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$('button').on('click', function() {
+    var bgColor = $(this).css('background-color');
+    bgColor = bgColor.replace('rgb(', '').replace(')', '').split(',');
+    var r = 255 - parseInt(bgColor[0]);
+    var g = 255 - parseInt(bgColor[1]);
+    var b = 255 - parseInt(bgColor[2]);
+    $(this).css('background-color', 'rgb(' + r + ',' + g + ',' + b + ')');
+});
+if (window.matchMedia) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        $('body').css('background-color', '#2c2c2e');
+        $('body').css('color', 'white');
+		$('a').css('color', 'white');
+    } else {
+        $('body').css('background-color', 'white');
+        $('body').css('color', 'black');
+    }
+} else {
+}
+</script>
   </body>
 </html>
