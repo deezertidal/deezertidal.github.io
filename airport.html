@@ -58,6 +58,25 @@ img {
     content: "";
   }
 </style>
+<style>
+.myButton {
+  font-size: 30px;
+  text-shadow: 2px 4px 10px black;
+  text-transform: capitalize;
+  color: white;
+  width: 180px; 
+  height: 50px; 
+  border-radius: 7px;
+  border: none;
+}
+
+
+.myButton:hover {
+  background-color: #DB4437; 
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
+}
+
+    </style>
   </head>
   <body>
 <ul class="breadcrumb">
@@ -74,21 +93,37 @@ img {
   <span style="flex: 1; height: 3px; background-color: #DB4437;"></span>
   <span style="flex: 1; height: 3px; background-color: #4285F4;"></span>
 </div>
-<h2><a href="https://www.bygcloud.com/#/register?code=DX4iT5B4">白月光</a></h2>
+     <h2><p><a href="https://www.bygcloud.com/#/register?code=DX4iT5B4" target="_blank"><button class="myButton">白月光</button></a></p></h2>
 <p>66元/季，每月重置140G流量<br/>84元/季，每月重置230G流量<br/>120元/季，每月重置400G流量<br/>...<br/><img alt="Image text" src="https://raw.githubusercontent.com/deezertidal/fee-based/main/IMG/baiyg.png"/>  </p>
 
 <hr/>
 
-<h2><a href="https://2220.it/register?aff=GNs68S4XWT">魔法学院</a></h2>
+     <h2><p><a href="https://2220.it/register?aff=GNs68S4XWT" target="_blank"><button class="myButton">魔法学院</button></a></p></h2>
 免费：暂无<br/>最低付费套餐：1元体验套餐<br/><img alt="Image text" src="https://raw.githubusercontent.com/deezertidal/freevpn/main/img/mgschool.png"/>  </li></ul>
 
 <hr/>
 
-<h2><a href="https://yyds.emovpn.top/#/register?code=7KLxhYOS">EMO</a></h2>
+     <h2><p><a href="https://yyds.emovpn.top/#/register?code=7KLxhYOS" target="_blank"><button class="myButton">EMO</button></a></p></h2>
 <p>免费：300G/月。
 最低付费套餐：5元/1000G/月（不限终端，不限速，解锁流媒体）<br/><img alt="Image text" src="https://raw.githubusercontent.com/deezertidal/freevpn/main/img/EMO.png"/>  </p>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<script>
+var colors = ['#4285F4', '#DB4437', '#F4B400', '#0F9D58'];
+var buttons = document.querySelectorAll('.myButton');
+var prevColorIndex = -1;
+for (var i = 0; i < buttons.length; i++) {
+  var availableColors = [...colors]; 
+  if (prevColorIndex > -1) {
+    availableColors.splice(prevColorIndex, 1); 
+  }
+  var randomIndex = Math.floor(Math.random() * availableColors.length);
+  buttons[i].style.backgroundColor = availableColors[randomIndex];
+  prevColorIndex = colors.indexOf(availableColors[randomIndex]); 
+}
+</script>
 <script>
+
 $('button').on('click', function() {
     var bgColor = $(this).css('background-color');
     bgColor = bgColor.replace('rgb(', '').replace(')', '').split(',');
