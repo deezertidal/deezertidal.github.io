@@ -4,23 +4,23 @@ on:
   schedule:
     - cron: "0 22 * * *"
 jobs:
-  copy_proxy_file:
+  userscript:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-      - name: Create Proxy Directory
+      - name: Create userscript Directory
         run: |
-          mkdir -p proxy
-      - name: Copy Proxy File
+          mkdir -p userscript
+      - name: update
         run: |
-          curl -o proxy/freeproxy.txt ${{ secrets.NONAME }}
+          curl -o userscript/chatgpt.user.js ${{ secrets.NONAME }}
       - name: Commit Changes
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add proxy
-          git commit -m "Update proxy file" || exit 0
+          git add userscript
+          git commit -m "Update" || exit 0
       - name: Push Changes
         uses: ad-m/github-push-action@v0.6.0
         with:
