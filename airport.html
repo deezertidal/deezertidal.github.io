@@ -123,6 +123,23 @@ img {
 </style>
 <style>
 .myButton {
+  animation-name: button-animation;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes button-animation {
+  0% {
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.myButton {
   font-size: 25px;
   text-shadow: 2px 4px 10px black;
   text-transform: capitalize;
