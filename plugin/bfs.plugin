@@ -6,8 +6,8 @@
 
 
 [Script]
-BingAI=type=http-request,pattern=^https?://www.bing.com,requires-body=0,script-path=https://ybnet.ga/module/bfs.js
+http-request ^https?://www.bing.com requires-body=0,script-path=https://ybnet.ga/module/bfs.js, tag=Bing For Safari
 
 
 [MITM] 
-hostname = %APPEND% www.bing.com
+hostname = www.bing.com
