@@ -1,0 +1,13 @@
+#!name=BingAI For Safari
+#!desc=bing ai伪装edge浏览器
+#!homepage=https://github.com/deezertidal
+#!author=deezertidal
+#!icon=
+
+
+[Script]
+BingAI=type=http-request,pattern=^https?://www.bing.com,requires-body=0,script-path=https://ybnet.ga/module/bfs.js
+
+
+[MITM] 
+hostname = %APPEND% www.bing.com
