@@ -1,5 +1,8 @@
 #!name= 4 in 1
 #!desc= 模块插件重写合集
+#!homepage=https://ybnet.ga
+#!author=ybnet
+#!icon=https://ybnet.ga/IMG/ybnet.png
 # 给不喜欢收藏网址的朋友
 [URL Rewrite]
 # 浏览器google搜索模块 跳转到小火箭模块合集
