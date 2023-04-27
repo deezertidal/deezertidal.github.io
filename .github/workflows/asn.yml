@@ -1,17 +1,16 @@
-name: Run Python script and update data
+name: Run ASN Python
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '25 * * * *' 
+    - cron: '25 * * * *'
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
-
     steps:
     - name: Check out repository
       uses: actions/checkout@v3
-
     - name: Set up Python
       uses: actions/setup-python@v4.6.0
       with:
@@ -37,17 +36,17 @@ jobs:
         if not table:
             print('not found')
             exit()
-        time_str = datetime.now().strftime('#%Y%m%d%H%M')
-        lines = [time_str]
+        time_str = datetime.now().strftime('%Y%m%d%H%M')
+        lines = ['# 由ybnet.ga自动维护 '+ time_str]
         rows = table.findAll('tr')[1:]
         for row in rows:
             cols = row.findAll('td')
-            if cols[2].text.strip() == '0':  
+            if cols[2].text.strip() == '0':
                 continue
-            asn = cols[0].text.strip()[2:]  
+            asn = cols[0].text.strip()[2:]
             desc = cols[1].text.strip()
             ip_asn = f'IP-ASN,{asn} // {desc}'
-            print(ip_asn)  
+            print(ip_asn)
             lines.append(ip_asn)
         with open('./rule/ASN-China.list', 'w', encoding='utf-8') as f:
             f.write('\n'.join(lines))
