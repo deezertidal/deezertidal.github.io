@@ -2,7 +2,7 @@ name: rule
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 16 * * *"
+    - cron: "30 * * * *"
 jobs:
   copy_proxy_file:
     runs-on: ubuntu-latest
@@ -61,8 +61,7 @@ jobs:
           curl -o rule/GitHub.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitHub/GitHub.list
           curl -o rule/Dropbox.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Dropbox/Dropbox.list
           curl -o rule/Duckduckgo.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Duckduckgo/Duckduckgo.list
-          sed -i '/^\s*#/d' rule/*
-
+          find rule -type f ! -name "asn-china.list" -exec sed -i '/^\s*#/d' {} +
       - name: Commit Changes
         run: |
           git config --global user.name "GitHub Action"
