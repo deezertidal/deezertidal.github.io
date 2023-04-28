@@ -29,7 +29,7 @@
 // @include           *://*.acfun.cn/v/*
 // @include           *://*.acfun.cn/bangumi/*
 // @include           *://*.1905.com/play/*
- 
+
 // @include           *://m.v.qq.com/x/page/*
 // @include           *://m.v.qq.com/x/cover/*
 // @include           *://m.v.qq.com/*
@@ -55,9 +55,9 @@
 // @charset		      UTF-8
 // @license           GPL License
 // ==/UserScript==
- 
+
 const util = (function () {
- 
+
     function findTargetElement(targetContainer) {
         const body = window.document;
         let tabContainer;
@@ -70,7 +70,7 @@ const util = (function () {
                     startTimestamp = timestamp;
                 }
                 const elapsedTime = timestamp - startTimestamp;
- 
+
                 if (elapsedTime >= 500) {
                     GM_log("查找元素：" + targetContainer + "，第" + tryTime + "次");
                     tabContainer = body.querySelector(targetContainer);
@@ -86,11 +86,11 @@ const util = (function () {
                     requestAnimationFrame(tryFindElement);
                 }
             }
- 
+
             requestAnimationFrame(tryFindElement);
         });
     }
- 
+
     function urlChangeReload() {
         const oldHref = window.location.href;
         let interval = setInterval(() => {
@@ -101,7 +101,7 @@ const util = (function () {
             }
         }, 500);
     }
- 
+
     function reomveVideo() {
         setInterval(() => {
             for (let video of document.getElementsByTagName("video")) {
@@ -114,7 +114,7 @@ const util = (function () {
             }
         }, 500);
     }
- 
+
     function syncRequest(option) {
         return new Promise((resolve, reject) => {
             option.onload = (res) => {
@@ -126,7 +126,7 @@ const util = (function () {
             GM_xmlhttpRequest(option);
         });
     }
- 
+
     return {
         req: (option) => syncRequest(option),
         findTargetEle: (targetEle) => findTargetElement(targetEle),
@@ -134,10 +134,10 @@ const util = (function () {
         reomveVideo: () => reomveVideo()
     }
 })();
- 
- 
+
+
 const superVip = (function () {
- 
+
     const _CONFIG_ = {
         isMobile: navigator.userAgent.match(/(Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini)/i),
         currentPlayerNode: null,
@@ -163,7 +163,7 @@ const superVip = (function () {
             {"name": "M3U8TV", "type": "1,3", "url": "https://jx.m3u8.tv/jiexi/?url="},
             {"name": "铭人云", "type": "1,3", "url": "https://parse.123mingren.com/?url="},
             {"name": "4kdv", "type": "1,3", "url": "https://jx.4kdv.com/?url="},
- 
+
             {"name": "1717", "type": "1,3", "url": "https://ckmov.ccyjjd.com/ckmov/?url="},
             {"name": "8090", "type": "1,3", "url": "https://www.8090g.cn/?url="},
             {"name": "qianqi", "type": "1,3", "url": "https://api.qianqi.net/vip/?url="},
@@ -187,7 +187,7 @@ const superVip = (function () {
                 name: "Default",
                 displayNodes: [".mod_vip_popup", "[class^=app_],[class^=app-],[class*=_app_],[class*=-app-],[class$=_app],[class$=-app]", "div[dt-eid=open_app_bottom]", "div.video_function.video_function_new", "a[open-app]", "section.mod_source", "section.mod_box.mod_sideslip_h.mod_multi_figures_h,section.mod_sideslip_privileges,section.mod_game_rec",".at-app-banner"]
             },
- 
+
             {host: "w.mgtv.com", container: "#mgtv-player-wrap", name: "Default", displayNodes: []},
             {host: "www.mgtv.com", container: "#mgtv-player-wrap", name: "Default", displayNodes: []},
             {
@@ -231,7 +231,7 @@ const superVip = (function () {
                     .then((container) => this.postHandle(container));
             }
         }
- 
+
         preHandle(container) {
             _CONFIG_.currentPlayerNode.displayNodes.forEach((item, index) => {
                 util.findTargetEle(item)
@@ -240,7 +240,7 @@ const superVip = (function () {
             });
             return new Promise((resolve, reject) => resolve(container));
         }
- 
+
         generateElement(container) {
             GM_addStyle(`
                         #${_CONFIG_.vipBoxId} {cursor:pointer; position:fixed; top:120px; left:0px; z-index:9999999; text-align:left;}
@@ -254,14 +254,14 @@ const superVip = (function () {
                         #${_CONFIG_.vipBoxId} .vip_list::-webkit-scrollbar-track{box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.2); background:#F1F1F1;}
                         #${_CONFIG_.vipBoxId} li.selected{color:#1c84c6; border:1px solid #1c84c6;}
 						`);
- 
+
             if (_CONFIG_.isMobile) {
                 GM_addStyle(`
                     #${_CONFIG_.vipBoxId} {top:300px;}
                     #${_CONFIG_.vipBoxId} .vip_list {width:300px;}
                     `);
             }
- 
+
             let type_1_str = "";
             let type_2_str = "";
             let type_3_str = "";
@@ -276,9 +276,9 @@ const superVip = (function () {
                     type_3_str += `<li class="tc-li" title="${item.name}" data-index="${index}">${item.name}</li>`;
                 }
             });
- 
+
             let autoPlay = !!GM_getValue(_CONFIG_.autoPlayerKey, null) ? "开" : "关";
- 
+
             $(container).append(`
                 <div id="${_CONFIG_.vipBoxId}">
                     <div class="vip_icon">
@@ -318,7 +318,7 @@ const superVip = (function () {
                 </div>`);
             return new Promise((resolve, reject) => resolve(container));
         }
- 
+
         bindEvent(container) {
             const vipBox = $(`#${_CONFIG_.vipBoxId}`);
             if (_CONFIG_.isMobile) {
@@ -327,7 +327,7 @@ const superVip = (function () {
                 vipBox.find(".vip_icon").on("mouseover", () => vipBox.find(".vip_list").show());
                 vipBox.find(".vip_icon").on("mouseout", () => vipBox.find(".vip_list").hide());
             }
- 
+
             let _this = this;
             vipBox.find(".vip_list .nq-li").each((liIndex, item) => {
                 item.addEventListener("click", () => {
@@ -347,7 +347,7 @@ const superVip = (function () {
                     GM_openInTab(url, {active: true, insert: true, setParent: true});
                 });
             });
- 
+
             //右键移动位置
             vipBox.mousedown(function (e) {
                 if (e.which !== 3) {
@@ -358,19 +358,19 @@ const superVip = (function () {
                 const positionDiv = $(this).offset();
                 let distenceX = e.pageX - positionDiv.left;
                 let distenceY = e.pageY - positionDiv.top;
- 
+
                 $(document).mousemove(function (e) {
                     let x = e.pageX - distenceX;
                     let y = e.pageY - distenceY;
                     const windowWidth = $(window).width();
                     const windowHeight = $(window).height();
- 
+
                     if (x < 0) {
                         x = 0;
                     } else if (x > windowWidth - vipBox.outerWidth(true) - 100) {
                         x = windowWidth - vipBox.outerWidth(true) - 100;
                     }
- 
+
                     if (y < 0) {
                         y = 0;
                     } else if (y > windowHeight - vipBox.outerHeight(true)) {
@@ -389,7 +389,7 @@ const superVip = (function () {
             });
             return new Promise((resolve, reject) => resolve(container));
         }
- 
+
         autoPlay(container) {
             const vipBox = $(`#${_CONFIG_.vipBoxId}`);
             vipBox.find("#vip_auto").on("click", function () {
@@ -405,13 +405,13 @@ const superVip = (function () {
                     window.location.reload();
                 }, 200);
             });
- 
+
             if (!!GM_getValue(_CONFIG_.autoPlayerKey, null)) {
                 this.selectPlayer(container);
             }
             return new Promise((resolve, reject) => resolve(container));
         }
- 
+
         selectPlayer(container) {
             let index = GM_getValue(_CONFIG_.autoPlayerVal, 2);
             let autoObj = _CONFIG_.videoParseList[index];
@@ -425,7 +425,7 @@ const superVip = (function () {
                 }, 2500);
             }
         }
- 
+
         showPlayerWindow(videoObj) {
             util.findTargetEle(_CONFIG_.currentPlayerNode.container)
                 .then((container) => {
@@ -446,7 +446,7 @@ const superVip = (function () {
                     }
                 });
         }
- 
+
         postHandle(container) {
             if (!!GM_getValue(_CONFIG_.autoPlayerKey, null)) {
                 util.urlChangeReload();
@@ -464,12 +464,12 @@ const superVip = (function () {
                 }, 1000);
             }
         }
- 
+
     }
- 
+
     class DefaultConsumer extends BaseConsumer {
     }
- 
+
     return {
         start: () => {
             GM_setValue(_CONFIG_.flag, null);
@@ -485,9 +485,9 @@ const superVip = (function () {
             targetConsumer.parse();
         }
     }
- 
+
 })();
- 
+
 (function () {
     superVip.start();
 })();

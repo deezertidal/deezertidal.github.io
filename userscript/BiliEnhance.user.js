@@ -108,7 +108,7 @@
 // @original-script   https://greasyfork.org/zh-CN/scripts/390952
 // @run-at            document-idle
 // ==/UserScript==
- 
+
 (function () {
 	'use strict';
 	
@@ -954,7 +954,7 @@
 			
 		},
 		this.removeVideoAdBlock_vqq = function(){
- 
+
 		},
 		this.removeVideoAdBlock_youku = function(){
 			
@@ -1144,7 +1144,7 @@
 		};
 		this.runEvent = function(){	 //事件运行
 			const self = this;
- 
+
 			//初始化
 			var playObject = self.getPlayObjectBySelect();
 			$('#start_analysis_outer_'+self.elementId).attr("href", playObject.url + window.location.href);
@@ -1927,15 +1927,15 @@
 			if(platform=="taobao"){
 				goodsId = this.getParamterQueryUrl("id");
 				goodsName=$(".tb-main-title").text();
- 
+
 			}else if(platform=="tmall"){
 				goodsId = this.getParamterQueryUrl("id");
 				goodsName=$(".tb-detail-hd").text();
- 
+
 			}else if(platform=="jd"){
 				goodsName=$("div.sku-name").text();
 				goodsId = this.getEndHtmlIdByUrl(href);
- 
+
 			}
 			var data={"goodsId":goodsId, "goodsName":this.filterStr(goodsName)}
 			return data;
@@ -1991,7 +1991,7 @@
 			if(!platform || !goodsId) return;
 			var goodsCouponUrl = "http://tt.shuqiandiqiu.com/api/coupon/discover?no=5&v=1.0.2&pl="+platform+"&id="+goodsId+"&qu="+goodsName;
 			var goodsPrivateUrl = "http://tt.shuqiandiqiu.com/api/private/change/coupon?no=5&v=1.0.2&platform="+platform+"&id=";
- 
+
 			this.request("GET", goodsCouponUrl, null).then((resutData)=>{
 				if(resutData.result==="success" && !!resutData.json){
 					var data = JSON.parse(resutData.json).data;

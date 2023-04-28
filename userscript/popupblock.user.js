@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         骚扰拦截
-// @version      1.3.54
+// @version      1.3.55
 // @namespace    airbash/AnnoyancesInterception
 // @homepageURL  https://github.com/AirBashX/UserScript
 // @author       airbash
@@ -9,7 +9,6 @@
 // @match      	 *://*.jianshu.com/*
 // @match        *://juejin.cn/*
 // @match        *://*.zhihu.com/*
-// @exclude      *://www.zhihu.com/signin*
 // @match        *://tieba.baidu.com/*
 // @match        *://baijiahao.baidu.com/s*
 // @match        *://mbd.baidu.com/newspage/data/*
@@ -61,6 +60,7 @@
 // @match        *://huaweicloud.csdn.net/*
 // @match        *://m.36kr.com/p/*
 // @match        *://xueqiu.com/*
+// @match        *://www.w3cschool.cn/*
 // @match        *://m.tianyancha.com/*
 // @match        *://www.xiaohongshu.com/*
 // @match        *://wap.cnki.net/*
@@ -70,10 +70,10 @@
 // @grant        none
 // @license      GPL-3.0
 // ==/UserScript==
- 
+
 (function () {
 	"use strict";
- 
+
 	/**
 	 * 规则列表
 	 * @type {name/url/items}
@@ -117,7 +117,7 @@
 						}
 					}
 				};
- 
+
 				//是否拦截:默认拦截
 				let LoginFlag = true;
 				document.onreadystatechange = function () {
@@ -133,7 +133,7 @@
 							let observer = new MutationObserver(removeLoginNotice);
 							observer.observe(document, { childList: true, subtree: true });
 						}
- 
+
 						if (document.querySelector(".toolbarBack")) {
 							let css = document.createElement("style");
 							css.innerText += ".passport-login-container {display: none !important}";
@@ -165,12 +165,14 @@
 				".byte-drawer",
 				//PC端:下方拓展弹窗
 				".recommend-box",
+				//PC端:登录弹窗
+				".login-popover",
 			],
 			overflow: true,
 		},
 		{
 			name: "知乎手机版",
-			url: "m.zhihu.com",
+			url: "zhihu.com",
 			items: [
 				//悬浮按钮:打开知乎(主页),打开
 				".OpenInAppButton",
@@ -179,6 +181,8 @@
 		{
 			name: "知乎PC版",
 			url: "www.zhihu.com/question",
+			items: [
+			],
 			fun: function () {
 				/**
 				 * PC端:屏蔽登录弹窗
@@ -205,14 +209,14 @@
 						}
 					}
 				};
- 
+
 				//是否拦截:默认拦截
 				let LoginFlag = true;
 				document.onreadystatechange = function () {
 					if (document.readyState === "interactive") {
 						let loginBtn = document.querySelector(".AppHeader-profile button");
 						let loginCls = loginBtn.getAttribute("class").includes("Button");
- 
+
 						if (loginCls) {
 							//未登录:添加事件,不拦截
 							loginBtn.addEventListener("click", function () {
@@ -255,14 +259,19 @@
 						}
 					}
 				};
- 
+
 				//是否拦截:默认拦截
 				let LoginFlag = true;
 				document.onreadystatechange = function () {
 					if (document.readyState === "interactive") {
 						let loginBtn = document.querySelector(".ColumnPageHeader-profile button");
-						let loginCls = loginBtn.getAttribute("class").includes("Button");
- 
+						let loginCls;
+						try {
+						loginCls = loginBtn.getAttribute("class").includes("Button");
+						} catch (error) {
+							/* empty */
+						}
+
 						if (loginCls) {
 							//未登录:添加事件,不拦截
 							loginBtn.addEventListener("click", function () {
@@ -700,7 +709,7 @@
 			items: [
 				//悬浮按钮：App内打开(底部)
 				".float-activate-button-container",
-				".download-bar__container"
+				".download-bar__container",
 			],
 		},
 		{
@@ -924,8 +933,29 @@
 				".app-opener",
 			],
 		},
+		{
+			name: "w3cschool",
+			url: "www.w3cschool.cn/",
+			items: [],
+			fun: function () {
+				//复制文件时的弹窗
+				onload = function () {
+					let mo = new MutationObserver(function name(mutations) {
+						for (let mutation of mutations) {
+							for (let node of mutation.addedNodes) {
+								console.log(node.nodeName);
+								if (node.nodeName == "DIV" && node.className == "") {
+									node.style.display = "none";
+								}
+							}
+						}
+					});
+					mo.observe(document, { childList: true, subtree: true });
+				};
+			},
+		},
 	];
- 
+
 	/**
 	 * 主体部分
 	 */
@@ -951,7 +981,7 @@
 			}
 		}
 	}
- 
+
 	/**
 	 * 通过内容(xpath)获取节点
 	 *
