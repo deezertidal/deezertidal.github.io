@@ -228,24 +228,29 @@ if (window.matchMedia) {
 </script>
     <div id="ip-info"></div>
 
-    <script>
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                var data = JSON.parse(this.responseText);
-                var info = "<h4>当前IP信息</h4>";
-                info += "<ul>";
-                info += "<li>IP地址: " + data.ip + "</li>";
-                info += "<li>服务商: " + data.isp + "</li>";
-                info += "<li>国家或地区: " + data.country + "</li>";
-                info += "<li>ASN: " + data.asn + "</li>";
-                info += "</ul>";
-                document.getElementById("ip-info").innerHTML = info;
-            }
-        };
-        xhr.open("GET", "https://api.ip.sb/geoip", true);
-        xhr.send();
-    </script>
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var data = JSON.parse(this.responseText);
+            var info = "<h4>当前IP信息</h4>";
+            info += "<ul>";
+            info += "<li>IP地址: " + data.ip + "</li>";
+            info += "<li>服务商: " + data.isp + "</li>";
+            info += "<li>国家或地区: " + getFlag(data.country_code) + " " + data.country + "</li>";
+            info += "<li>ASN: " + data.asn + "</li>";
+            info += "</ul>";
+            document.getElementById("ip-info").innerHTML = info;
+        }
+    };
+    xhr.open("GET", "https://api.ip.sb/geoip", true);
+    xhr.send();
+
+    function getFlag(countryCode) {
+        const codePoints = countryCode.toUpperCase().split('').map(char => 127397 + char.charCodeAt());
+        return String.fromCodePoint(...codePoints);
+    }
+</script>
 <button id="share-button">分享到</button>
 <div id="share-options" style="display: none;">
   <a href="https://telegram.me/share/url?url=https://ybnet.ga/"><img src="https://ybnet.ga/IMG/tg.png" alt="Telegram"></a>
