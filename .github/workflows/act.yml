@@ -23,9 +23,9 @@ jobs:
         run: curl -o userscript/mediavip.user.js https://greasyfork.org/scripts/438657-%E5%85%A8%E7%BD%91vip%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3-%E4%B8%93%E6%B3%A8%E4%B8%80%E4%B8%AA%E8%84%9A%E6%9C%AC%E5%8F%AA%E5%81%9A%E4%B8%80%E4%BB%B6%E4%BA%8B%E4%BB%B6-%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0-%E6%94%BE%E5%BF%83%E4%BD%BF%E7%94%A8/code/%E5%85%A8%E7%BD%91VIP%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3%E3%80%90%E4%B8%93%E6%B3%A8%E4%B8%80%E4%B8%AA%E8%84%9A%E6%9C%AC%E5%8F%AA%E5%81%9A%E4%B8%80%E4%BB%B6%E4%BA%8B%E4%BB%B6%E3%80%91%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0%EF%BC%8C%E6%94%BE%E5%BF%83%E4%BD%BF%E7%94%A8.user.js
       - name: d4
         run: curl -o userscript/popupblock.user.js https://greasyfork.org/scripts/440871-%E9%AA%9A%E6%89%B0%E6%8B%A6%E6%88%AA/code/%E9%AA%9A%E6%89%B0%E6%8B%A6%E6%88%AA.user.js
-       - name: d5
+      - name: d5
         run: curl -o userscript/translate.user.js https://greasyfork.org/scripts/457196-immersive-translate/code/Immersive%20Translate.user.js
-       - name: d6
+      - name: d6
         run: curl -o userscript/autopage.user.js https://greasyfork.org/scripts/438684-pagetual/code/Pagetual.user.js
 
       - name: Commit and push changes
