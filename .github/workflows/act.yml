@@ -29,7 +29,7 @@ jobs:
         with:
           commit_message: Update userscripts
           commit_options: '--no-verify'
-          branch: main
+          branch: master
           commit_user_name: action
           commit_user_email: actions@github.com
           push_options: '--no-verify'
