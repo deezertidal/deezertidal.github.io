@@ -3,7 +3,7 @@ name: Run ASN Python
 on:
   workflow_dispatch:
   schedule:
-    - cron: '25 * * * *'
+    - cron: '0 * * * *'
 
 jobs:
   run-script:
