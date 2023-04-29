@@ -33,6 +33,7 @@ jobs:
           cp -r tmp/rule/AntiAD.list rule/
           cp -r tmp/rule/AppStore.list rule/
           cp -r tmp/rule/Apple.list rule/
+          cp -r tmp/rule/AppleMusic.list rule/
           cp -r tmp/rule/BBC.list rule/
           cp -r tmp/rule/Bahamut.list rule/
           cp -r tmp/rule/BiliBili.list rule/
