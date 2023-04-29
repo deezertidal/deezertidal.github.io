@@ -426,6 +426,7 @@ DOMAIN-SUFFIX,news.push.126.net
 DOMAIN-SUFFIX,pg-ad-b2.ws.126.net
 DOMAIN-SUFFIX,pimg1.126.net
 DOMAIN-SUFFIX,webstat.ws.126.net
+DOMAIN-SUFFIX,ads.music.126.net
 DOMAIN-SUFFIX,iadmat.nosdn.127.net
 DOMAIN-SUFFIX,pg-ad-b1.nosdn.127.net
 DOMAIN-SUFFIX,yt-adp.nosdn.127.net
@@ -9650,7 +9651,7 @@ DOMAIN-SUFFIX,tob-cms.bj.bcebos.com
 DOMAIN-SUFFIX,vv84.bj.bcebos.com
 DOMAIN-SUFFIX,wenku-cms.bj.bcebos.com
 DOMAIN-SUFFIX,xsapp.cdn.bcebos.com
-DOMAIN-SUFFIX,staticsns.cdn.bcebos.com
+DOMAIN-SUFFIX,mobads-pre-config.cdn.bcebos.com
 DOMAIN-SUFFIX,httpdns.bcelive.com
 DOMAIN-SUFFIX,bcenuvkijj.com
 DOMAIN-SUFFIX,bcf8fbea24.com
@@ -15186,6 +15187,7 @@ DOMAIN-SUFFIX,cm-analysis.com
 DOMAIN-SUFFIX,cm-trk3.com
 DOMAIN-SUFFIX,cm-trk5.com
 DOMAIN-SUFFIX,campaigns.cm.be
+DOMAIN-SUFFIX,mbads.paas.cmbchina.com
 DOMAIN-SUFFIX,cmbestsrv.com
 DOMAIN-SUFFIX,cmblom.cn
 DOMAIN-SUFFIX,cmbpdk.cn
@@ -34140,7 +34142,6 @@ DOMAIN-SUFFIX,ldimnveryldgittl.com.ua
 DOMAIN-SUFFIX,ldimnveryldgitwe.xyz
 DOMAIN-SUFFIX,ldisgmftfxanwb.com
 DOMAIN-SUFFIX,ldlwdsx.com
-DOMAIN-SUFFIX,ldmnq.com
 DOMAIN-SUFFIX,sp.ldnews.com
 DOMAIN-SUFFIX,ldnlyap.com
 DOMAIN-SUFFIX,ldpiecesonth.xyz
@@ -62714,6 +62715,7 @@ DOMAIN-SUFFIX,xhlzokzxoxykxf.com
 DOMAIN-SUFFIX,xhmybanjia.cn
 DOMAIN-SUFFIX,xhqg.xyz
 DOMAIN-SUFFIX,xhr0.xyz
+DOMAIN-SUFFIX,ads-img-al.xhscdn.com
 DOMAIN-SUFFIX,xhsrw.xyz
 DOMAIN-SUFFIX,c.xhsxgmt.cn
 DOMAIN-SUFFIX,s.xhsxgmt.cn
