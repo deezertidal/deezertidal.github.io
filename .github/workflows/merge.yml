@@ -1,4 +1,4 @@
-name: Run ASN Python
+name: Run Merge
 
 on:
   workflow_dispatch:
