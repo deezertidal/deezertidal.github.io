@@ -18,7 +18,7 @@ jobs:
           repository: deezertidal/sync
           token: ${{ secrets.PAT }}
           ref: master
-          path: .
+          path: tmp
 
       - name: Create folder if
         run: |
@@ -27,12 +27,12 @@ jobs:
           fi
       - name: File
         run: |
-          cp -rf ./userscript/BiliEnhance.user.js userscript/
-          cp -rf ./userscript/chatgpt.user.js userscript/
-          cp -rf ./userscript/autopage.user.js userscript/
-          cp -rf ./userscript/mediavip.user.js userscript/
-          cp -rf ./userscript/popupblock.user.js userscript/
-          cp -rf ./userscript/translate.user.js userscript/
+          cp -r tmp/userscript/BiliEnhance.user.js userscript/
+          cp -r tmp/userscript/chatgpt.user.js userscript/
+          cp -r tmp/userscript/autopage.user.js userscript/
+          cp -r tmp/userscript/mediavip.user.js userscript/
+          cp -r tmp/userscript/popupblock.user.js userscript/
+          cp -r tmp/userscript/translate.user.js userscript/
       - name: Commit and push changes
         run: |
           git config --global user.email "actions@github.com"
@@ -40,3 +40,6 @@ jobs:
           git add .
           git commit -m "Sync js files"
           git push -u origin master
+      - name: sync
+        run: |
+          rm -rf tmp
