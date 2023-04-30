@@ -15,6 +15,7 @@ jobs:
           ref: master
       - name: Copy files
         run: |
+          mkdir rule
           cp -f rule1/ASN-CN.list rule/
           cp -f rule1/AdvertisingLite.list rule/
           cp -f rule1/Amazon.list rule/
