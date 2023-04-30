@@ -13,6 +13,15 @@ jobs:
           repository: deezertidal/sync
           token: ${{ secrets.PAT }} 
           ref: master
+      - name: Check source directory
+        run: |
+          ls -al rule1/
+
+      - name: Create destination directory
+        run: |
+          if [ ! -d "rule" ]; then
+            mkdir rule
+          fi
       - name: Copy files
         run: |
           cp -r rule1/ASN-CN.list rule/
@@ -63,6 +72,10 @@ jobs:
           cp -r rule1/YouTube.list rule/
           cp -r rule1/YouTubeMusic.list rule/
           cp -r rule1/ai.list rule/
+      - name: Check destination directory
+        run: |
+          ls -al rule/
+
       - name: Check for uncommitted changes
         id: check_changes
         run: |
