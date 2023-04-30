@@ -13,11 +13,6 @@ jobs:
           repository: deezertidal/sync
           token: ${{ secrets.PAT }} 
           ref: master
-      - name: Create 
-        run: |
-          if [ ! -d "userscript1" ]; then
-            mkdir userscript1
-          fi
       - name: Copy files
         run: |
           cp -r userscript1/BiliEnhance.user.js userscript/
