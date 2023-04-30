@@ -12,27 +12,15 @@ jobs:
       - name: Checkout public repo
         uses: actions/checkout@v2
 
-      - name: Checkout private repo
-        uses: actions/checkout@v2
-        with:
-          repository: deezertidal/sync
-          token: ${{ secrets.PAT }}
-          ref: master
-          path: tmp
+      - name: Copy files from private repo
+        run: |
+          cp -r userscript/BiliEnhance.user.js userscript/
+          cp -r userscript/chatgpt.user.js userscript/
+          cp -r userscript/autopage.user.js userscript/
+          cp -r userscript/mediavip.user.js userscript/
+          cp -r userscript/popupblock.user.js userscript/
+          cp -r userscript/translate.user.js userscript/
 
-      - name: Create folder if
-        run: |
-          if [ ! -d "userscript" ]; then
-            mkdir userscript
-          fi
-      - name: File
-        run: |
-          cp -r tmp/userscript/BiliEnhance.user.js userscript/
-          cp -r tmp/userscript/chatgpt.user.js userscript/
-          cp -r tmp/userscript/autopage.user.js userscript/
-          cp -r tmp/userscript/mediavip.user.js userscript/
-          cp -r tmp/userscript/popupblock.user.js userscript/
-          cp -r tmp/userscript/translate.user.js userscript/
       - name: Commit and push changes
         run: |
           set -e
@@ -41,7 +29,3 @@ jobs:
           git add .
           git commit -m "Sync js files"
           git push -u origin master
-      - name: sync
-        run: |
-          set -e
-          rm -rf tmp
