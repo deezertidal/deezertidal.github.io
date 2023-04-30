@@ -14,12 +14,18 @@ jobs:
 
       - name: Copy files from private repo
         run: |
-          cp -r userscript/BiliEnhance.user.js userscript/
-          cp -r userscript/chatgpt.user.js userscript/
-          cp -r userscript/autopage.user.js userscript/
-          cp -r userscript/mediavip.user.js userscript/
-          cp -r userscript/popupblock.user.js userscript/
-          cp -r userscript/translate.user.js userscript/
+          rm -f userscript/BiliEnhance.user.js
+          cp -f userscript/BiliEnhance.user.js userscript/
+          rm -f userscript/chatgpt.user.js
+          cp -f userscript/chatgpt.user.js userscript/
+          rm -f userscript/autopage.user.js
+          cp -f userscript/autopage.user.js userscript/
+          rm -f userscript/mediavip.user.js
+          cp -f userscript/mediavip.user.js userscript/
+          rm -f userscript/popupblock.user.js
+          cp -f userscript/popupblock.user.js userscript/
+          rm -f userscript/translate.user.js
+          cp -f userscript/translate.user.js userscript/
 
       - name: Commit and push changes
         run: |
