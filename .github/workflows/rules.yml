@@ -13,11 +13,6 @@ jobs:
           repository: deezertidal/sync
           token: ${{ secrets.PAT }} 
           ref: master
-      - name: Create 
-        run: |
-          if [ ! -d "rule1" ]; then
-            mkdir rule1
-          fi
       - name: Copy files
         run: |
           cp -r rule1/ASN-CN.list rule/
