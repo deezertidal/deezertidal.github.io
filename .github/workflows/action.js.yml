@@ -16,27 +16,27 @@ jobs:
         run: |
           if [ -f "userscript/BiliEnhance.user.js" ]; then
             rm -f userscript/BiliEnhance.user.js
-            cp -f tmp/userscript/BiliEnhance.user.js userscript/
+            cp -f ./userscript/BiliEnhance.user.js userscript/
           fi
           if [ -f "userscript/chatgpt.user.js" ]; then
             rm -f userscript/chatgpt.user.js
-            cp -f tmp/userscript/chatgpt.user.js userscript/
+            cp -f ./userscript/chatgpt.user.js userscript/
           fi
           if [ -f "userscript/autopage.user.js" ]; then
             rm -f userscript/autopage.user.js
-            cp -f tmp/userscript/autopage.user.js userscript/
+            cp -f ./userscript/autopage.user.js userscript/
           fi
           if [ -f "userscript/mediavip.user.js" ]; then
             rm -f userscript/mediavip.user.js
-            cp -f tmp/userscript/mediavip.user.js userscript/
+            cp -f ./userscript/mediavip.user.js userscript/
           fi
           if [ -f "userscript/popupblock.user.js" ]; then
             rm -f userscript/popupblock.user.js
-            cp -f tmp/userscript/popupblock.user.js userscript/
+            cp -f ./userscript/popupblock.user.js userscript/
           fi
           if [ -f "userscript/translate.user.js" ]; then
             rm -f userscript/translate.user.js
-            cp -f tmp/userscript/translate.user.js userscript/
+            cp -f ./userscript/translate.user.js userscript/
           fi
 
       - name: Commit and push changes
