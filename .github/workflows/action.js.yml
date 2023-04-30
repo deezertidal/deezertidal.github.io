@@ -18,7 +18,7 @@ jobs:
           repository: deezertidal/sync
           token: ${{ secrets.PAT }}
           ref: master
-          path: tmp
+          path: .
 
       - name: Create folder if
         run: |
