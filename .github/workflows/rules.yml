@@ -15,54 +15,54 @@ jobs:
           ref: master
       - name: Copy files
         run: |
-          cp -r rule1/ASN-CN.list 
-          cp -r rule1/AdvertisingLite.list 
-          cp -r rule1/Amazon.list 
-          cp -r rule1/AntiAD.list 
-          cp -r rule1/AppStore.list 
-          cp -r rule1/Apple.list 
-          cp -r rule1/AppleMusic.list 
-          cp -r rule1/BBC.list 
-          cp -r rule1/Bahamut.list 
-          cp -r rule1/BiliBili.list 
-          cp -r rule1/China.list 
-          cp -r rule1/ChinaMedia.list 
-          cp -r rule1/Cloudflare.list 
-          cp -r rule1/Discord.list 
-          cp -r rule1/Disney.list 
-          cp -r rule1/Dropbox.list 
-          cp -r rule1/Duckduckgo.list 
-          cp -r rule1/Emby.list 
-          cp -r rule1/Facebook.list 
-          cp -r rule1/Fox.list 
-          cp -r rule1/GitHub.list 
-          cp -r rule1/Google.list 
-          cp -r rule1/HBO.list 
-          cp -r rule1/Hulu.list 
-          cp -r rule1/Instagram.list 
-          cp -r rule1/KKBOX.list 
-          cp -r rule1/Line.list 
-          cp -r rule1/Microsoft.list 
-          cp -r rule1/NetEaseMusic.list 
-          cp -r rule1/Netflix.list 
-          cp -r rule1/OneDrive.list 
-          cp -r rule1/PayPal.list 
-          cp -r rule1/Proxy.list 
-          cp -r rule1/ProxyMedia.list 
-          cp -r rule1/Reddit.list 
-          cp -r rule1/Spotify.list 
-          cp -r rule1/TIDAL.list 
-          cp -r rule1/TVB.list 
-          cp -r rule1/Telegram.list 
-          cp -r rule1/TikTok.list 
-          cp -r rule1/Twitter.list 
-          cp -r rule1/WeChat.list 
-          cp -r rule1/Weibo.list 
-          cp -r rule1/Whatsapp.list 
-          cp -r rule1/Wikipedia.list 
-          cp -r rule1/YouTube.list 
-          cp -r rule1/YouTubeMusic.list 
-          cp -r rule1/ai.list 
+          cp -r rule1/ASN-CN.list rule/
+          cp -r rule1/AdvertisingLite.list rule/
+          cp -r rule1/Amazon.list rule/
+          cp -r rule1/AntiAD.list rule/
+          cp -r rule1/AppStore.list rule/
+          cp -r rule1/Apple.list rule/
+          cp -r rule1/AppleMusic.list rule/
+          cp -r rule1/BBC.list rule/
+          cp -r rule1/Bahamut.list rule/
+          cp -r rule1/BiliBili.list rule/
+          cp -r rule1/China.list rule/
+          cp -r rule1/ChinaMedia.list rule/
+          cp -r rule1/Cloudflare.list rule/
+          cp -r rule1/Discord.list rule/
+          cp -r rule1/Disney.list rule/
+          cp -r rule1/Dropbox.list rule/
+          cp -r rule1/Duckduckgo.list rule/
+          cp -r rule1/Emby.list rule/
+          cp -r rule1/Facebook.list rule/
+          cp -r rule1/Fox.list rule/
+          cp -r rule1/GitHub.list rule/
+          cp -r rule1/Google.list rule/
+          cp -r rule1/HBO.list rule/
+          cp -r rule1/Hulu.list rule/
+          cp -r rule1/Instagram.list rule/
+          cp -r rule1/KKBOX.list rule/
+          cp -r rule1/Line.list rule/
+          cp -r rule1/Microsoft.list rule/
+          cp -r rule1/NetEaseMusic.list rule/
+          cp -r rule1/Netflix.list rule/
+          cp -r rule1/OneDrive.list rule/
+          cp -r rule1/PayPal.list rule/
+          cp -r rule1/Proxy.list rule/
+          cp -r rule1/ProxyMedia.list rule/
+          cp -r rule1/Reddit.list rule/
+          cp -r rule1/Spotify.list rule/
+          cp -r rule1/TIDAL.list rule/
+          cp -r rule1/TVB.list rule/
+          cp -r rule1/Telegram.list rule/
+          cp -r rule1/TikTok.list rule/
+          cp -r rule1/Twitter.list rule/
+          cp -r rule1/WeChat.list rule/
+          cp -r rule1/Weibo.list rule/
+          cp -r rule1/Whatsapp.list rule/
+          cp -r rule1/Wikipedia.list rule/
+          cp -r rule1/YouTube.list rule/
+          cp -r rule1/YouTubeMusic.list rule/
+          cp -r rule1/ai.list rule/
 
 
       - name: Check for uncommitted changes
@@ -81,7 +81,6 @@ jobs:
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
-          git add rule/
           git commit -m "Sync"
           git push -u origin master
 
