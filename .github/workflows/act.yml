@@ -1,0 +1,39 @@
+name: sync userscripts
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '50 * * * *'
+
+jobs:
+  copy_userscripts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Create directory
+        run: mkdir -p userscript
+
+      - name: d1
+        run: curl -o userscript/chatgpt.user.js https://greasyfork.org/scripts/462804-keepchatgpt/code/KeepChatGPT.user.js
+      - name: d2
+        run: curl -o userscript/BiliEnhance.user.js https://greasyfork.org/scripts/418804-b%E7%AB%99%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E4%BD%BF%E7%94%A8%E5%A2%9E%E5%BC%BA-%E5%85%A8%E7%BD%91vip%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3%E5%8E%BB%E5%B9%BF%E5%91%8A-%E5%85%A8%E7%BD%91%E9%9F%B3%E4%B9%90%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD-%E7%9F%A5%E4%B9%8E%E4%BD%BF%E7%94%A8%E5%A2%9E%E5%BC%BA-%E7%9F%AD%E8%A7%86%E9%A2%91%E6%97%A0%E6%B0%B4%E5%8D%B0%E4%B8%8B%E8%BD%BD-%E6%B2%B9%E7%AE%A1-facebook%E7%AD%89%E5%9B%BD%E5%A4%96%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90%E4%B8%8B%E8%BD%BD-%E7%BD%91%E7%9B%98%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%A0%B4%E8%A7%A3%E6%97%A0%E9%99%90%E4%B8%8B%E8%BD%BD%E7%AD%89/code/B%E7%AB%99%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E4%BD%BF%E7%94%A8%E5%A2%9E%E5%BC%BA%EF%BC%8C%E5%85%A8%E7%BD%91VIP%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3%E5%8E%BB%E5%B9%BF%E5%91%8A%EF%BC%8C%E5%85%A8%E7%BD%91%E9%9F%B3%E4%B9%90%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD%EF%BC%8C%E7%9F%A5%E4%B9%8E%E4%BD%BF%E7%94%A8%E5%A2%9E%E5%BC%BA%EF%BC%8C%E7%9F%AD%E8%A7%86%E9%A2%91%E6%97%A0%E6%B0%B4%E5%8D%B0%E4%B8%8B%E8%BD%BD%EF%BC%8C%E6%B2%B9%E7%AE%A1%E3%80%81Facebook%E7%AD%89%E5%9B%BD%E5%A4%96%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90%E4%B8%8B%E8%BD%BD%EF%BC%8C%E7%BD%91%E7%9B%98%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%A0%B4%E8%A7%A3%E6%97%A0%E9%99%90%E4%B8%8B%E8%BD%BD%E7%AD%89.user.js
+      - name: d3
+        run: curl -o userscript/mediavip.user.js https://greasyfork.org/scripts/438657-%E5%85%A8%E7%BD%91vip%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3-%E4%B8%93%E6%B3%A8%E4%B8%80%E4%B8%AA%E8%84%9A%E6%9C%AC%E5%8F%AA%E5%81%9A%E4%B8%80%E4%BB%B6%E4%BA%8B%E4%BB%B6-%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0-%E6%94%BE%E5%BF%83%E4%BD%BF%E7%94%A8/code/%E5%85%A8%E7%BD%91VIP%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3%E3%80%90%E4%B8%93%E6%B3%A8%E4%B8%80%E4%B8%AA%E8%84%9A%E6%9C%AC%E5%8F%AA%E5%81%9A%E4%B8%80%E4%BB%B6%E4%BA%8B%E4%BB%B6%E3%80%91%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0%EF%BC%8C%E6%94%BE%E5%BF%83%E4%BD%BF%E7%94%A8.user.js
+      - name: d4
+        run: curl -o userscript/popupblock.user.js https://greasyfork.org/scripts/440871-%E9%AA%9A%E6%89%B0%E6%8B%A6%E6%88%AA/code/%E9%AA%9A%E6%89%B0%E6%8B%A6%E6%88%AA.user.js
+      - name: d5
+        run: curl -o userscript/translate.user.js https://greasyfork.org/scripts/457196-immersive-translate/code/Immersive%20Translate.user.js
+      - name: d6
+        run: curl -o userscript/autopage.user.js https://greasyfork.org/scripts/438684-pagetual/code/Pagetual.user.js
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update userscripts
+          commit_options: '--no-verify'
+          branch: master
+          commit_user_name: action
+          commit_user_email: actions@github.com
+          push_options: '--no-verify'
