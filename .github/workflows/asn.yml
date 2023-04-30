@@ -1,0 +1,61 @@
+name: Run ASN Python
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4.6.0
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        pip install requests
+        pip install beautifulsoup4
+    - name: Run script
+      run: |
+        python -c "
+        import requests
+        from bs4 import BeautifulSoup
+        from datetime import datetime
+        url = 'https://bgp.he.net/country/CN'
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+        }
+        response = requests.get(url, headers=headers)
+        soup = BeautifulSoup(response.content, 'html.parser')
+        table = soup.find('table', {'id': 'asns', 'class': 'sortable'})
+        if not table:
+            print('not found')
+            exit()
+        time_str = datetime.now().strftime('%Y%m%d%H%M')
+        lines = ['# 由ybnet.ga自动维护 '+ time_str]
+        rows = table.findAll('tr')[1:]
+        for row in rows:
+            cols = row.findAll('td')
+            if cols[2].text.strip() == '0':
+                continue
+            asn = cols[0].text.strip()[2:]
+            desc = cols[1].text.strip()
+            ip_asn = f'IP-ASN,{asn} // {desc}'
+            print(ip_asn)
+            lines.append(ip_asn)
+        with open('./rule/ASN-China.list', 'w', encoding='utf-8') as f:
+            f.write('\n'.join(lines))
+        print('ASN-China.lis更新成功')
+        "
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'action'
+        git config --global user.email 'action@example.com'
+        git add -A
+        git commit -m 'Update data'
+        git push
