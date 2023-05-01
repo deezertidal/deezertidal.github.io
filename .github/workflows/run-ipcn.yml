@@ -13,7 +13,6 @@ jobs:
       uses: actions/setup-python@v4.6.0
       with:
         python-version: 3.9
-
     - name: Install dependencies
       run: |
         pip install requests
@@ -33,9 +32,11 @@ jobs:
             for line in lines:
                 match = pattern.search(line)
                 if match:
-                    ip = "IP-CIDR," + match.group().replace(",", "/")
+                    ip = "IP-CIDR," + match.group().replace(",", "/") + ",no-resolve"
                     ip_list.append(ip)
         unique_ips = sorted(set(ip_list))
+        now = datetime.datetime.now().strftime("%Y%m%d%H%M")
+        unique_ips.insert(0, f"# 由ybnet.ga自动维护 {now} ")
         with open("rule/IPs-CN.list", "w") as f:
             for ip in unique_ips:
                 f.write(ip + "\n")
