@@ -33,7 +33,7 @@ jobs:
             for line in lines:
                 match = pattern.search(line)
                 if match:
-                    ip = "IP-CIDR," + match.group().replace(",", "/") + ",no-resolve"
+                    ip = "IP-CIDR," + match.group().replace(",", "/") 
                     ip_list.append(ip)
         unique_ips = sorted(set(ip_list))
         now = datetime.datetime.now().strftime("%Y%m%d%H%M")
