@@ -20,17 +20,10 @@ jobs:
         pip install beautifulsoup4
     - name: Run script
       run: |
-        python -c "
+        python -c '
         import urllib.request
         import re
-        url_list = [
-            "https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list",
-            "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt",
-            "https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rules/Region/ChinaIP.list",
-            "https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt",
-            "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt",
-            "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Domestic%20IPs.yaml"
-        ]
+        url_list = [    "https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list",    "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt",    "https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rules/Region/ChinaIP.list",    "https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt",    "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt",    "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Domestic%20IPs.yaml"]
         pattern = re.compile(r"([0-9]{1,3}\.){3}[0-9]{1,3}/[0-9]{1,2}")
         ip_list = []
         for url in url_list:
@@ -46,7 +39,7 @@ jobs:
         with open("rule/IPs-CN.list", "w") as f:
             for ip in unique_ips:
                 f.write(ip + "\n")
-        "
+        '
     - name: Commit and push changes
       run: |
         git config --global user.name 'action'
