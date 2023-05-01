@@ -1,30 +1,17 @@
-DOMAIN-SUFFIX,atom.io
-DOMAIN-SUFFIX,dependabot.com
-DOMAIN-SUFFIX,ghcr.io
-DOMAIN-SUFFIX,git.io
-DOMAIN-SUFFIX,github-atom-io-herokuapp-com.freetls.fastly.net
-DOMAIN-SUFFIX,github-avatars.oss-cn-hongkong.aliyuncs.com
-DOMAIN-SUFFIX,github-cloud.s3.amazonaws.com
-DOMAIN-SUFFIX,github.blog
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,github.community
-DOMAIN-SUFFIX,github.dev
-DOMAIN-SUFFIX,github.io
-DOMAIN-SUFFIX,githubapp.com
-DOMAIN-SUFFIX,githubassets.com
-DOMAIN-SUFFIX,githubhackathon.com
-DOMAIN-SUFFIX,githubnext.com
-DOMAIN-SUFFIX,githubpreview.dev
-DOMAIN-SUFFIX,githubstatus.com
-DOMAIN-SUFFIX,githubuniverse.com
-DOMAIN-SUFFIX,githubusercontent.com
-DOMAIN-SUFFIX,myoctocat.com
-DOMAIN-SUFFIX,npm.community
-DOMAIN-SUFFIX,npmjs.com
-DOMAIN-SUFFIX,npmjs.org
-DOMAIN-SUFFIX,opensource.guide
-DOMAIN-SUFFIX,rawgit.com
-DOMAIN-SUFFIX,rawgithub.com
-DOMAIN-SUFFIX,repo.new
-DOMAIN-SUFFIX,thegithubshop.com
-DOMAIN-KEYWORD,github
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>503 Backend unavailable, socket(2) failed</title>
+  </head>
+  <body>
+    <h1>Error 503 Backend unavailable, socket(2) failed</h1>
+    <p>Backend unavailable, socket(2) failed</p>
+    <h3>Error 54113</h3>
+    <p>Details: cache-sjc1000098-SJC 1682951514 1381369403</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
