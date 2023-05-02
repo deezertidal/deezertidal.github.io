@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              KeepChatGPT
 // @description       ChatGPT畅聊插件。解决所有报错，让我们的AI体验无比顺畅、丝滑、高效。持续更新的增强功能，如取消审计等。解决的报错如下: (1) NetworkError when attempting to fetch resource. (2) Something went wrong. If this issue persists please contact us through our help center at help.openai.com. (3) Conversation not found. (4) This content may violate our content policy.
-// @version           11.2
+// @version           11.6
 // @author            xcanwin
 // @namespace         https://github.com/xcanwin/KeepChatGPT/
 // @supportURL        https://github.com/xcanwin/KeepChatGPT/
@@ -341,7 +341,6 @@
             }, `input`, parseInt(gv("k_interval", 30)));
         };
         $('#nmenuid_cc').onclick = function() {
-            toggleMenu('hide');
             if ($('.checkbutton', this).classList.contains('checked')) {
                 sv("k_clonechat", false);
             } else {
@@ -350,7 +349,6 @@
             $('.checkbutton', this).classList.toggle('checked');
         };
         $('#nmenuid_ch').onclick = function() {
-            toggleMenu('hide');
             if ($('.checkbutton', this).classList.contains('checked')) {
                 sv("k_cleanlyhome", false);
             } else {
@@ -388,7 +386,7 @@
         if ($("main").kcg !== undefined) {
             if ($(symbol1_class)) {
                 $("main").kcg.innerHTML = $("main").kcg._symbol1_innerHTML;
-                symbol_prt = $(symbol1_class).parentElement;
+                symbol_prt = $(symbol1_class).closest("nav.flex");
             } else if ($(symbol2_class)) {
                 $("main").kcg.innerHTML = $("main").kcg._symbol2_innerHTML;
                 symbol_prt = $(symbol2_class).parentElement;
@@ -424,7 +422,7 @@
 
         if ($(symbol1_class)) {
             ndivkcg.innerHTML = ndivkcg._symbol1_innerHTML;
-            symbol_prt = $(symbol1_class).parentElement;
+            symbol_prt = $(symbol1_class).closest("nav.flex");
         } else if ($(symbol2_class)) {
             ndivkcg.innerHTML = ndivkcg._symbol2_innerHTML;
             symbol_prt = $(symbol2_class).parentElement;
@@ -669,10 +667,13 @@ nav {
 
     const cloneChat = function() {
         $$(".rounded-sm").forEach(function(e) {
+            if ($('text', this) && $('text', this).innerHTML === "ChatGPT") {
+                $('text', this).remove();
+            }
             if (gv("k_clonechat", false) === true) {
                 e.style.cursor = "pointer";
                 e.onclick = function() {
-                    const content = this.closest('div.text-base').innerText;
+                    const content = this.closest('div.text-base').innerText.trim();
                     $("form.stretch textarea").value = "";
                     $("form.stretch textarea").focus();
                     document.execCommand('insertText', false, content);
@@ -686,7 +687,7 @@ nav {
 
     const cleanlyHome = function() {
         if (location.href.match(/https:\/\/chat\.openai\.com\/\??/) && gv("k_cleanlyhome", false) === true) {
-            if ($("main h1") && $("main h1").parentElement.childNodes[1]) {
+            if ($("main h1") && $("main h1").innerText === "ChatGPT" && $("main h2").innerText === "Examples") {
                 $("main h1").parentElement.childNodes[1].remove();
                 const nSpan = document.createElement('span');
                 nSpan.className = 'rounded-md bg-yellow-200 py-1.5 px-1.5 text-xs font-medium uppercase text-gray-800';
@@ -717,7 +718,7 @@ nav {
     let nInterval2 = setInterval(nInterval2Fun, 1000 * interval2Time);
 
     const u = `/api/${GM_info.script.namespace.slice(33, 34)}uth/s${GM_info.script.namespace.slice(28, 29)}ssion`;
-    const symbol1_class = 'nav a.flex';
+    const symbol1_class = 'nav.flex a.flex';
     const symbol2_class = 'button.justify-center';
 
 })();
