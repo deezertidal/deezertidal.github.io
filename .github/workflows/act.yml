@@ -3,7 +3,7 @@ name: sync userscripts
 on:
   workflow_dispatch:
   schedule:
-    - cron: '50 * * * *'
+    - cron: '50 2-23/3 * * *'
 
 jobs:
   copy_userscripts:

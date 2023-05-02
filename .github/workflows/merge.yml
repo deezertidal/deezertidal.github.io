@@ -3,7 +3,7 @@ name: Run Merge
 on:
   workflow_dispatch:
   schedule:
-    - cron: '25 * * * *'
+    - cron: '30 2-23/3 * * *'
 
 jobs:
   run-script:

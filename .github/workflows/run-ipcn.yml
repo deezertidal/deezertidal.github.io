@@ -2,7 +2,7 @@ name: Run IPCN Python
 on:
   workflow_dispatch:
   schedule:
-    - cron: '40 * * * *'
+    - cron: '10 1-22/3 * * *'
 jobs:
   run-script:
     runs-on: ubuntu-latest

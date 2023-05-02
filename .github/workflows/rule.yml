@@ -2,7 +2,7 @@ name: rule
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 * * * *"
+    - cron: "20 0-21/3 * * *"
 jobs:
   copy_proxy_file:
     runs-on: ubuntu-latest
