@@ -1319,10 +1319,10 @@
         addToHpRules(instead) {
             try {
                 if (!this.hpRules) this.hpRules = [];
-                let url = this.curSiteRule.url, self = this;
+                let url = this.curSiteRule && this.curSiteRule.url, self = this;
                 let href = location.href.slice(0, 500);
                 let matchedRules = this.hpRules.filter(rule => rule != self.curSiteRule && new RegExp(rule.url, "i").test(href) && self.ruleMatch(rule));
-                matchedRules.push(this.curSiteRule);
+                if (url) matchedRules.push(this.curSiteRule);
                 matchedRules.sort((a, b) => {
                     if ((a.include || a.exclude) && (!b.include && !b.exclude)) {
                         return -1;
@@ -1348,7 +1348,7 @@
                     return item && !matchedRules.find(rule => item.url == rule.url && JSON.stringify(item) == JSON.stringify(rule));
                 });
                 if (instead) {
-                    this.hpRules.unshift(this.curSiteRule);
+                    if (url) this.hpRules.unshift(this.curSiteRule);
                 } else {
                     this.hpRules = matchedRules.concat(this.hpRules);
                 }
@@ -1897,6 +1897,7 @@
                 body.querySelector("a[data-pagination=next]") ||
                 body.querySelector("ul.pagination>li.active+li>a") ||
                 body.querySelector("[class^=pag] .current+a") ||
+                body.querySelector(".pageButtonsCurrent+a") ||
                 body.querySelector("a[class*=nextpage]") ||
                 body.querySelector("li.page-current+li>a") ||
                 body.querySelector(".pager-section a[rel=next]") ||
@@ -3797,6 +3798,10 @@
                 }
                 if (tempRule.value) {
                     ruleParser.customRules.unshift(editTemp);
+                    ruleParser.curSiteRule = editTemp;
+                } else {
+                    ruleParser.curSiteRule = {};
+                    isPause = true;
                 }
                 storage.setItem("customRules", ruleParser.customRules);
                 if (ruleParser.hpRules && ruleParser.curSiteRule && !ruleParser.curSiteRule.singleUrl) {
