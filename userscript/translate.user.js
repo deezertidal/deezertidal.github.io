@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Immersive Translate
 // @description  Web bilingual translation, completely free to use, supports Deepl/Google/Bing/Tencent/Youdao, etc.
-// @version      0.5.0
+// @version      0.5.2
 // @namespace    https://immersive-translate.owenyoung.com/
 // @author       Owen Young
 // @homepageURL    https://immersive-translate.owenyoung.com/
@@ -84,7 +84,7 @@
   }, __privateSet = (obj, member, value, setter) => (__accessCheck(obj, member, "write to private field"), setter ? setter.call(obj, value) : member.set(obj, value), value);
 
   // <define:process.env>
-  var define_process_env_default = { BUILD_TIME: "2023-05-05T12:49:57.419Z", VERSION: "0.5.0", PROD: "1", REDIRECT_URL: "https://immersive-translate.owenyoung.com/auth-done/", IMMERSIVE_TRANSLATE_INJECTED_CSS: `:root {
+  var define_process_env_default = { BUILD_TIME: "2023-05-05T17:33:44.014Z", VERSION: "0.5.2", PROD: "1", REDIRECT_URL: "https://immersive-translate.owenyoung.com/auth-done/", IMMERSIVE_TRANSLATE_INJECTED_CSS: `:root {
   --immersive-translate-theme-underline-borderColor: #72ece9;
   --immersive-translate-theme-nativeUnderline-borderColor: #72ece9;
   --immersive-translate-theme-nativeDashed-borderColor: #72ece9;
@@ -5780,13 +5780,13 @@ body {
       ]
     }
   ], PureTranslationServices = {
-    google: {
-      name: "Google",
-      homepage: "https://translate.google.com/"
-    },
     bing: {
       name: "\u5FAE\u8F6F\u7FFB\u8BD1",
       homepage: "https://www.bing.com/translator"
+    },
+    google: {
+      name: "Google",
+      homepage: "https://translate.google.com/"
     },
     deepl: {
       name: "DeepL",
@@ -5804,11 +5804,6 @@ body {
     transmart: {
       name: "Transmart",
       homepage: "https://transmart.qq.com/"
-    },
-    chatgpt: {
-      name: "ChatGPT Plus",
-      homepage: "https://chat.openai.com",
-      beta: !0
     },
     openai: {
       name: "Open AI",
@@ -5845,7 +5840,7 @@ body {
           descriptionKey: "description.limitPerSecond",
           descriptionLink1: "https://immersive-translate.owenyoung.com/services/openai",
           type: "number",
-          default: 3
+          default: 5
         },
         {
           name: "maxTextLengthPerRequest",
@@ -5895,6 +5890,11 @@ body {
           optional: !0
         }
       ]
+    },
+    chatgpt: {
+      name: "ChatGPT Plus",
+      homepage: "https://chat.openai.com",
+      beta: !0
     },
     youdao: {
       name: "Youdao",
@@ -8756,6 +8756,9 @@ body {
     }
     return toCheck === CHROME && currentBrowser === CHROME || toCheck === FIREFOX && currentBrowser === FIREFOX || toCheck === DENO && currentBrowser === DENO;
   }
+  function isChrome() {
+    return isBrowser(CHROME);
+  }
   function isDeno2() {
     return typeof Deno < "u";
   }
@@ -8908,7 +8911,7 @@ body {
         placeholderDelimiters: ["{{", "}}"],
         immediateTranslationTextCount: 3e3,
         translationDebounce: 300,
-        limit: 3,
+        limit: 5,
         interval: 1350,
         maxTextGroupLengthPerRequest: 1,
         prompt: `Translate the text to {{to}}:
@@ -13374,7 +13377,7 @@ ${injectedCss}}
     deepl: new RateLimiter({ limit: 10, interval: 1050 }),
     transmart: new RateLimiter({ limit: 30, interval: 1050 }),
     papago: new RateLimiter({ limit: 3, interval: 1150 }),
-    openai: new RateLimiter({ limit: 10, interval: 65e3 }),
+    openai: new RateLimiter({ limit: 5, interval: 1300 }),
     chatgpt: new RateLimiter({ limit: 1, interval: 1350 })
   };
   function getLimiter(key) {
@@ -15219,7 +15222,7 @@ ${injectedCss}}
       )), serviceConfig && serviceConfig.systemPrompt && (this.systemPrompt = serviceConfig.systemPrompt);
     }
     getDefaultRateLimit() {
-      return { limit: 3, interval: 1300 };
+      return { limit: 5, interval: 1300 };
     }
     translate(payload) {
       return this.model.includes("003") ? (this.maxTextGroupLength = 1, this.translate3(payload)) : this.translate3_5(payload);
@@ -15274,7 +15277,7 @@ ${injectedCss}}
           messages
         })
       }, randomKey = this.getRandomKey();
-      randomKey && (options2.headers.Authorization = "Bearer " + randomKey, options2.headers["api-key"] = randomKey, randomKey.startsWith("immersiveopenai_"), options2.url = this.immersiveApiUrl);
+      randomKey && (options2.headers.Authorization = "Bearer " + randomKey, options2.headers["api-key"] = randomKey, randomKey.startsWith("immersiveopenai_") && (options2.url = this.immersiveApiUrl));
       let response = await request2(options2);
       if (response && response.choices && response.choices.length > 0 && response.choices[0].message && response.choices[0].message.content) {
         let text2 = response.choices[0].message.content.trim();
@@ -17108,7 +17111,7 @@ ${injectedCss}}
     manifest_version: 3,
     name: "__MSG_brandName__",
     description: "__MSG_brandDescription__",
-    version: "0.5.0",
+    version: "0.5.2",
     default_locale: "en",
     background: {
       service_worker: "background.js"
@@ -20132,7 +20135,10 @@ ${injectedCss}}
     }, handleMouseTranslateTriggerConfig = (trigger) => {
       setSettings((state) => ({
         ...state,
-        mouseTranslateTrigger: trigger
+        generalRule: {
+          ...state.generalRule,
+          mouseHoverHoldKey: trigger
+        }
       }));
     };
     return !config || !ctx ? null : /* @__PURE__ */ p5(
@@ -20405,7 +20411,7 @@ ${injectedCss}}
     return !!(!str || /^[\d\.:%\(\),%\s\-]+$/.test(str) || str.length < 5);
   }
   function isDivide(str) {
-    return str ? (str == str[0].repeat(str.length), str == str[0].repeat(str.length)) : !0;
+    return str ? str == str[0].repeat(str.length) : !0;
   }
   function equal(left, right, cap = 5) {
     return Math.abs(left - right) <= cap;
@@ -20452,8 +20458,8 @@ ${injectedCss}}
   function isSameLine({ prevLineP }, { bottom }) {
     return equal(prevLineP.bottom, bottom, 1);
   }
-  function isSubSymbol({ scale, prevLineP }, { fontSize, top, str }) {
-    return fontSize < prevLineP.fontSize && equal(top, prevLineP.top, prevLineP.fontSize * scale * 0.1) && str.length <= 2;
+  function isSubSymbol({ scale, prevLineP }, { fontSize, top, left }) {
+    return fontSize <= prevLineP.fontSize * 0.8 && equal(top, prevLineP.top, 2) && equal(prevLineP.nextLeft, left, prevLineP.fontSize * scale);
   }
   function equalFont(prevP, { fontSize, fontName }, checkFont = !1) {
     return checkFont ? equal(prevP.fontSize, fontSize, 1) && prevP.fontName == fontName : equal(prevP.fontSize, fontSize, 1);
@@ -20527,11 +20533,11 @@ ${injectedCss}}
     ps.forEach((p6) => {
       if (!p6.str)
         return;
-      let width = p6.mergedTimes > 0 ? `${(p6.width * 100 / (pageWidth * scale) + 1).toFixed(2)}%` : "auto", left = `${(p6.left * 100 / (pageWidth * scale)).toFixed(2)}%`, top = `${(p6.top * 100 / (pageHeight * scale)).toFixed(2)}%`, fontSize = `calc(var(--scale-factor)*${Math.min(p6.fontSize - 1, 24).toFixed(0)}px)`, fontFamily = `${p6.fontName},serif`;
+      let width = p6.mergedTimes > 0 ? `${(p6.width * 100 / (pageWidth * scale) + 1).toFixed(2)}%` : "auto", left = `${(p6.left * 100 / (pageWidth * scale)).toFixed(2)}%`, top = `${(p6.top * 100 / (pageHeight * scale)).toFixed(2)}%`, f_scale = isChrome() && p6.fontSize < 7 ? `transform: scale(${p6.fontSize / 10});` : "", fontSize = `calc(var(--scale-factor)*${Math.min(p6.fontSize - 1, 24)}px)`, fontFamily = `${p6.fontName},serif`;
       hasAbsolute && (positionStyle = `position: absolute; left: ${left}; top: ${top};width: ${width};max-width:${maxWidth};`);
       let className = isTranslateSkip(p6.str) ? "" : "translate-pending", text = p6.str;
       p6.translateStatus == "success" && (text = p6.translatedStr, className = ""), html.push(
-        `<p id='${p6.id}' class='${className}' style="${positionStyle} font-size: ${fontSize}; font-family: ${fontFamily};white-space: pre-line;">${text}</p>`
+        `<p id='${p6.id}' class='${className}' style="${positionStyle} ${f_scale} font-size: ${fontSize}; font-family: ${fontFamily};white-space: pre-line;">${text}</p>`
       );
     });
   }
