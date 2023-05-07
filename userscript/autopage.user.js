@@ -10,7 +10,7 @@
 // @name:it      Pagetual
 // @name:ko      東方永頁機
 // @namespace    hoothin
-// @version      1.9.36.17
+// @version      1.9.36.19
 // @description  Perpetual pages - Most powerful auto-pager script. Auto loading next paginated web pages and inserting into current page. Support thousands of web sites without any rule.
 // @description:zh-CN  终极自动翻页 - 加载并拼接下一分页内容至当前页尾，智能适配任意网页
 // @description:zh-TW  終極自動翻頁 - 加載並拼接下一分頁內容至當前頁尾，智能適配任意網頁
@@ -74,7 +74,7 @@
 
     if (window.top != window.self) {
         try {
-            if (window.self.innerWidth < 100 || window.self.innerHeight < 100) {
+            if (window.self.innerWidth < 300 || window.self.innerHeight < 300) {
                 return;
             }
         } catch(e) {
@@ -1490,7 +1490,10 @@
                 let bodyHeight = parseInt(body.offsetHeight || body.scrollHeight);
                 let curHeight = bodyHeight, curWidth = 0;
                 let windowHeight = window.innerHeight || document.documentElement.clientHeight;
-                let needCheckNext = (doc == document && this.initNext);
+                let needCheckNext = (doc == document && this.initNext), nextLeftPos = 0;
+                if (needCheckNext && this.initNext.getBoundingClientRect) {
+                    nextLeftPos = this.initNext.getBoundingClientRect().left;
+                }
                 function checkElement(ele) {
                     if (/^(PRE|CODE)$/i.test(ele.nodeName)) {
                         self.curSiteRule.pageElement = geneSelector(ele.parentNode);
@@ -1557,6 +1560,12 @@
                         if (isNaN(h) || isNaN(w)) continue;
                         isHori = preOffsetTop == curNode.offsetTop ? true : (preOffsetTop == -1 && curNode.nextElementSibling && curNode.nextElementSibling.offsetTop == curNode.offsetTop);
                         if (isHori && h <= 50) continue;
+                        if (isHori && nextLeftPos && curMaxEle && curWidth > 500 && curHeight > 500) {
+                            let curRect = curNode.getBoundingClientRect();
+                            if (curRect.left <= nextLeftPos && curRect.right > nextLeftPos) {
+                                continue;
+                            }
+                        }
                         let a = h * w, moreChild = curNode.children[0];
                         while (moreChild) {
                             let ch = self.getValidHeight(moreChild);
@@ -1636,8 +1645,10 @@
                     self.curSiteRule.pageElement = geneSelector(ele);
                     let pf = false;
                     if (ele.parentNode) {
-                        let paDisplay = curWin.getComputedStyle(ele.parentNode).display;
-                        pf = paDisplay.indexOf('flex') !== -1 || paDisplay.indexOf('grid') !== -1;
+                        let paStyle = curWin.getComputedStyle(ele.parentNode);
+                        let paDisplay = paStyle.display;
+                        let paOverflow = paStyle.overflow;
+                        pf = paDisplay.indexOf('flex') !== -1 || paDisplay.indexOf('grid') !== -1 || paOverflow == "hidden";
                     }
                     if (ele.children.length > 1) {
                         if (articleNum > 1) {
@@ -5719,7 +5730,7 @@
                         if (!ruleParser.nextLinkHref) {
                             isLoading = false;
                         }
-                        if (!pageReady && !ruleImportUrlReg.test(href)) location.reload();
+                        //if (!pageReady && !ruleImportUrlReg.test(href)) location.reload();
                     }
                 }, 500);
             }
@@ -6622,7 +6633,7 @@
                 }
                 if (/^UL$/i.test(pageEle[0].nodeName)) pageEle = pageEle[0].children;
                 pageEle = pageEle[parseInt((pageEle.length - 1) / 2)];
-                while(pageEle && (!pageEle.offsetParent || (!/^IMG$/i.test(pageEle.nodeName) && !pageEle.innerHTML.trim()))) {
+                while(pageEle && ((pageEle.scrollHeight && pageEle.scrollHeight < 50) || !pageEle.offsetParent || (!/^IMG$/i.test(pageEle.nodeName) && !pageEle.innerHTML.trim()))) {
                     if (pageEle.nextElementSibling) pageEle = pageEle.nextElementSibling;
                     else break;
                 }
@@ -6674,7 +6685,7 @@
                 checkItem = eles;
                 if (/^UL$/i.test(eles[0].nodeName)) checkItem = eles[0].children;
                 checkItem = checkItem[parseInt((checkItem.length - 1) / 2)];
-                while(checkItem && (!checkItem.offsetParent || (!/^IMG$/i.test(checkItem.nodeName) && !checkItem.innerHTML.trim()))) {
+                while(checkItem && ((checkItem.scrollHeight && checkItem.scrollHeight < 50) || !checkItem.offsetParent || (!/^IMG$/i.test(checkItem.nodeName) && !checkItem.innerHTML.trim()))) {
                     if (checkItem.nextElementSibling) checkItem = checkItem.nextElementSibling;
                     else break;
                 }
