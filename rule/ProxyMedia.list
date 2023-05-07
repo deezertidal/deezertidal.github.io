@@ -296,6 +296,13 @@ DOMAIN-SUFFIX,olevod.io
 DOMAIN-SUFFIX,olevod.tv
 DOMAIN-SUFFIX,olevodtv.com
 
+DOMAIN-KEYWORD,openai
+DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,stripe.com
+
 USER-AGENT,PBS*
 DOMAIN-SUFFIX,pbs.org
 
