@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              全网VIP视频免费破解【专注一个脚本只做一件事件】长期更新，放心使用
 // @namespace         http://tampermonkey.net/
-// @version           1.5.7
+// @version           1.5.8
 // @description       全网VIP视频免费破解【专注一个脚本只做一件事件】长期更新，放心使用。支持：腾讯、爱奇艺、优酷、芒果、Bilibili、pptv、乐视等其它网站；
 // @icon              data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAkACQAAD//gAUU29mdHdhcmU6IFNuaXBhc3Rl/9sAQwADAgIDAgIDAwMDBAMDBAUIBQUEBAUKBwcGCAwKDAwLCgsLDQ4SEA0OEQ4LCxAWEBETFBUVFQwPFxgWFBgSFBUU/9sAQwEDBAQFBAUJBQUJFA0LDRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQU/8AAEQgAGgAeAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A8/stTivZLhFV0eBtrhwB+PXpXc/Bj4bXXxy1ObTdE1XTrDUE3GO31PzkMyqMsytHE64Gf4iD6A15TrUx0fUriVQcXcBUY/vjivpb9hGz+w/GLTocYK6dcbvqQCa/Q6ec46dWth21zUFNzdt3zfuvS8btng5rwnkuCy3DZrSi3DGyoqiuZ6JQf1m/flq2hG+yMPTf2e9X1nVPEFlZa9olx/YTmO9nDXKxo4LB1G6AMxUockDB7E1i+Jvg/rnhzw/peuRSWut6RqP+pu9MMjgHBIDK6KwOAe3bBwa+g/hQEPiP41CVmSM6ndbmRdxA3zZIGRn8xXkniP42Wdr4C0Dwp4XhvPI0/wDeTX2oIsbyvhshUR2AGWJ5Y9h71+cUuKuK8ZxVisry6KqUqFSkpJxSiqc6DnKUp7qXPyqKV7pv3WtV8NWyzLKGAhXrNxlNTtZ3fNGdkku3Le/5njU1tDcbfNiSXacrvUHB9q3/AA/438R+Eo5o9D1/VNGSYhpV0+8kgDkdCwRhn8axaK/od0abbbitd9N7bXPh/rNflhDndo3sruyvvbtfrbc6Kf4j+LLq4uJ5vFGszT3CCOaSTUJmaVBnCsS2SBk8H1Nc7RRUU8NRoylOlBRcrXaSTdtFfvZbGU6tSpbnk3buz//Z
 // @author            w__yi
@@ -194,7 +194,7 @@ const superVip = (function () {
                 host: "m.mgtv.com",
                 container: ".video-area",
                 name: "Default",
-                displayNodes: ["div[class^=mg-app]",".video-area-bar"]
+                displayNodes: ["div[class^=mg-app]",".video-area-bar",".open-app-popup"]
             },
             {host: "www.bilibili.com", container: "#player_module,#bilibiliPlayer,#bilibili-player", name: "Default", displayNodes: []},
             {host: "m.bilibili.com", container: ".player-wrapper,.player-container,.mplayer", name: "Default", displayNodes: []},
@@ -207,7 +207,7 @@ const superVip = (function () {
             },
             {host: "www.iq.com", container: ".intl-video-wrap", name: "Default", displayNodes: []},
             {host: "v.youku.com", container: "#player", name: "Default", displayNodes: ["#iframaWrapper"]},
-            {host: "m.youku.com", container: "#player,.h5-detail-player", name: "Default", displayNodes: []},
+            {host: "m.youku.com", container: "#player,.h5-detail-player", name: "Default", displayNodes: [".callEnd_box", ".h5-detail-guide",".h5-detail-vip-guide"]},
             {host: "tv.sohu.com", container: "#player", name: "Default", displayNodes: []},
             {host: "film.sohu.com", container: "#playerWrap", name: "Default", displayNodes: []},
             {host: "www.le.com", container: "#le_playbox", name: "Default", displayNodes: []},
