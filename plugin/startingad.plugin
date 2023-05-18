@@ -4,7 +4,7 @@
 #!homepage=https://ybnet.ga
 #!author=ddgksf2013
 # 融合：通用开屏，高德地图，微信小程序，B站，菜鸟裹裹，bing,keep style,网易云，随手记，微信公众号，小红书，喜马拉雅
-# 由ybnet.ga自动维护 202305182013
+# 由ybnet.ga自动维护 202305182244
 [URL Rewrite]
 ^https?:\/\/2023.05.15\/v2.0.307 reject
 ^https?:\/\/app\.58\.com\/api\/home\/(advertising|appadv) reject
@@ -378,8 +378,6 @@ http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(hotWords|
 http-response ^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList) requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
 
 http-response ^https?:\/\/open-cms-api\.uc\.cn\/open-cms requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/quark.js
-
-http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ requires-body=1,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 
 http-response https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/shunfeng_json.js
 
