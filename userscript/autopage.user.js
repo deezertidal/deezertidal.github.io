@@ -10,7 +10,7 @@
 // @name:it      Pagetual
 // @name:ko      東方永頁機
 // @namespace    hoothin
-// @version      1.9.36.27
+// @version      1.9.36.28
 // @description  Perpetual pages - Most powerful auto-pager script. Auto loading next paginated web pages and inserting into current page. Support thousands of web sites without any rule.
 // @description:zh-CN  终极自动翻页 - 加载并拼接下一分页内容至当前页尾，智能适配任意网页
 // @description:zh-TW  終極自動翻頁 - 加載並拼接下一分頁內容至當前頁尾，智能適配任意網頁
@@ -1228,7 +1228,7 @@
                         let waitTime = 500;
                         let checkReady = () => {
                             setTimeout(() => {
-                                if (!self.waitElement(document, r.waitElement)) {
+                                if (!self.waitElement(document, r.waitElement) || !self.ruleMatchReady(r)) {
                                     checkReady();
                                 } else {
                                     setRule(r);
@@ -2976,7 +2976,7 @@
 
         beginLoading() {
             isLoading = true;
-            lastScrollTop = getBody(document).scrollTop || document.documentElement.scrollTop;
+            let lastScrollTop = getBody(document).scrollTop || document.documentElement.scrollTop;
             ruleParser.insertElement(loadingDiv);
             if (forceState == 2) {
                 getBody(document).appendChild(loadingDiv);
@@ -2991,7 +2991,6 @@
             }
             getBody(document).scrollTop = lastScrollTop;
             document.documentElement.scrollTop = lastScrollTop;
-            lastScrollTop = 0;
         }
 
         insertElement(ele) {
@@ -3013,7 +3012,6 @@
             let oldTitle = this.pageDoc.title;
             this.pageDoc = doc;
             this.curUrl = url;
-            if (lastScrollTop == 0) lastScrollTop = getBody(document).scrollTop || document.documentElement.scrollTop;
             isLoading = true;
             let nextLink = await this.getNextLink(doc);
             this.nextTitle = "";
@@ -3034,6 +3032,7 @@
                 isLoading = false;
                 return false;
             }
+            let lastScrollTop = getBody(document).scrollTop || document.documentElement.scrollTop;
             if (callback) callback(eles);
             this.getInsert();
             var self = this, newEles = [];
@@ -3065,7 +3064,6 @@
             loadPageOver();
             getBody(document).scrollTop = lastScrollTop;
             document.documentElement.scrollTop = lastScrollTop;
-            lastScrollTop = 0;
             this.pageAction(doc, newEles);
             let enableHistory = this.curSiteRule.history;
             let enableHistoryAfterInsert = false;
@@ -7194,7 +7192,6 @@
         return curIframe;
     }
 
-    let lastScrollTop;
     function loadPageOver() {
         isLoading = false;
         stopScroll = true;
@@ -7244,7 +7241,7 @@
                 nextLink = ruleParser.nextLinkHref;
             }
             if (!nextLink) {
-                if (curPage == 1 && (ruleParser.curSiteRule.pinUrl || tryTimes++ <= 5)) {
+                if (curPage == 1 && (ruleParser.curSiteRule.pinUrl || tryTimes++ <= 3)) {
                     setTimeout(() => {isLoading = false}, 500);
                 }
                 return;
