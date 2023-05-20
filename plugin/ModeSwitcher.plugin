@@ -1,4 +1,4 @@
-#!name=模式切换
+﻿#!name=模式切换
 #!desc=根据网络环境切换代理策略
 #!author=Modified Script
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/network_change.png

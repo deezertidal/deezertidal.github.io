@@ -1,4 +1,4 @@
-#!name=FabulousPremium
+﻿#!name=FabulousPremium
 #!desc=FabulousPremium
 [Script]
 FabulousPremium=type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/fabulous.js

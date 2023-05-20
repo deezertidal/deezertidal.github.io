@@ -1,4 +1,4 @@
-#!name=Fimo
+﻿#!name=Fimo
 #!desc=Fimo
 [Script]
 Fimo=type=http-response,pattern=^https://server.yoyiapp.com/fimo-user/user$,requires-body=1,script-path=https://github.com/deezertidal/private/raw/master/js-backup/Crack/fimo.js

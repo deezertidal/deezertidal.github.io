@@ -1,4 +1,4 @@
-#!name=Smallpdf解锁
+﻿#!name=Smallpdf解锁
 #!desc=Smallpdf解锁
 [Script]
 Smallpdf解锁=type=http-response,pattern=https://pro.smallpdf.com/pro/account,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/smallpdf.js

@@ -1,4 +1,4 @@
-#!name=SoundCloudGo+
+﻿#!name=SoundCloudGo+
 #!desc=SoundCloudGo+
 [Script]
 SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js

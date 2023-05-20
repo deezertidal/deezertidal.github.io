@@ -1,4 +1,4 @@
-#!name =屏蔽iOS更新
+﻿#!name =屏蔽iOS更新
 #!desc= 屏蔽 iOS 系统更新且需匹配REJECT策略组
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Update.png
 
