@@ -10,7 +10,7 @@
 // @name:it      Pagetual
 // @name:ko      東方永頁機
 // @namespace    hoothin
-// @version      1.9.36.28
+// @version      1.9.36.29
 // @description  Perpetual pages - Most powerful auto-pager script. Auto loading next paginated web pages and inserting into current page. Support thousands of web sites without any rule.
 // @description:zh-CN  终极自动翻页 - 加载并拼接下一分页内容至当前页尾，智能适配任意网页
 // @description:zh-TW  終極自動翻頁 - 加載並拼接下一分頁內容至當前頁尾，智能適配任意網頁
@@ -1941,7 +1941,7 @@
                 body.querySelector(".nextPage") ||
                 body.querySelector(".pagination-next>a") ||
                 body.querySelector("a[data-pagination=next]") ||
-                body.querySelector("ul.pagination>li.active+li>a") ||
+                body.querySelector(".pagination li.active~li>a") ||
                 body.querySelector("[class^=pag] .current+a") ||
                 body.querySelector(".pageButtonsCurrent+a") ||
                 body.querySelector("a[class*=nextpage]") ||
@@ -2729,20 +2729,20 @@
             return this.insert;
         }
 
-        pageInit(doc,eles){
-            let code=this.curSiteRule.pageInit;
-            if(code){
-                let initFunc=((typeof _unsafeWindow.pagetualPageInit=='undefined') ? Function("doc", "eles", '"use strict";' + code) : _unsafeWindow.pagetualPageInit);
-                let checkInit=(resolve)=>{
-                    try{
-                        if(initFunc(doc, eles)===false){
-                            setTimeout(()=>{
+        pageInit(doc, eles) {
+            let code = this.curSiteRule.pageInit;
+            if (code) {
+                let initFunc = ((typeof _unsafeWindow.pagetualPageInit == 'undefined') ? Function("doc", "eles", '"use strict";' + code) : _unsafeWindow.pagetualPageInit);
+                let checkInit = (resolve) => {
+                    try {
+                        if (initFunc(doc, eles) === false) {
+                            setTimeout(() => {
                                 checkInit(resolve);
-                            },100);
+                            }, 100);
                         } else {
                             resolve(true);
                         }
-                    }catch(e){
+                    } catch(e) {
                         resolve(false);
                         debug(e);
                     }
@@ -2755,7 +2755,7 @@
             }
         }
 
-        pageAction(doc,eles) {
+        pageAction(doc, eles) {
             let code = this.curSiteRule.pageAction;
             if (code) {
                 try {
@@ -6708,6 +6708,26 @@
                 checkIframe();
             }, waitTime);
         };
+        let code = ruleParser.curSiteRule.iframeInit;
+        if (code) {
+            let checkReady = setInterval(() => {
+                let doc;
+                try {
+                    doc = iframe.contentDocument || (iframe.contentWindow && iframe.contentWindow.document);
+                } catch(e) {
+                    clearInterval(checkReady);
+                    return;
+                }
+                if (doc) {
+                    try {
+                        Function('win', 'iframe', '"use strict";' + code)(iframe.contentWindow, iframe);
+                        clearInterval(checkReady);
+                    } catch(e) {
+                        debug(e);
+                    }
+                }
+            }, 50);
+        }
         window.addEventListener('message', loadedHandler, false);
         iframe.addEventListener('load', loadedHandler, false);
         iframe.src = url;
@@ -6760,11 +6780,11 @@
             if (!orgPage) {
                 if (!loadmoreEnd) {
                     loadmoreBtn = getLoadMore(iframeDoc);
-                    if (loadmoreBtn && isVisible(loadmoreBtn, iframeDoc.defaultView)) {
+                    if (loadmoreBtn && isVisible(loadmoreBtn, emuIframe.contentWindow)) {
                         emuClick(loadmoreBtn);
                         let intv = setInterval(() => {
                             loadmoreBtn = getLoadMore(iframeDoc);
-                            if (!loadmoreBtn || !getBody(document).contains(loadmoreBtn) || !isVisible(loadmoreBtn, iframeDoc.defaultView)) {
+                            if (!loadmoreBtn || !getBody(document).contains(loadmoreBtn) || !isVisible(loadmoreBtn, emuIframe.contentWindow)) {
                                 clearInterval(intv);
                                 loadmoreEnd = true;
                                 setTimeout(() => {
@@ -6787,7 +6807,7 @@
                     return;
                 } else {
                     if (!nextLink || !nextLink.offsetParent) nextLink = await ruleParser.getNextLink(iframeDoc);
-                    if (nextLink) pageEle = ruleParser.getPageElement(iframeDoc, iframeDoc.defaultView, true);
+                    if (nextLink) pageEle = ruleParser.getPageElement(iframeDoc, emuIframe.contentWindow, true);
                     if (!pageEle || pageEle.length == 0 || !nextLink) {
                         if (waitTimes-- > 0) {
                             setTimeout(() => {
@@ -6832,7 +6852,7 @@
                         orgContent = orgPage.innerHTML;
                     }
                     preContent = orgContent;
-                    if (!isVisible(nextLink, iframeDoc.defaultView)) {
+                    if (!isVisible(nextLink, emuIframe.contentWindow)) {
                         returnFalse("Stop as next hide when emu");
                     } else {
                         emuClick(nextLink);
@@ -6850,7 +6870,7 @@
                 returnFalse("Stop as timeout when emu");
                 return;
             }
-            let eles = ruleParser.getPageElement(iframeDoc, iframeDoc.defaultView, true), checkItem;
+            let eles = ruleParser.getPageElement(iframeDoc, emuIframe.contentWindow, true), checkItem;
             if (eles && eles.length > 0) {
                 checkItem = eles;
                 if (/^UL$/i.test(eles[0].nodeName)) checkItem = eles[0].children;
@@ -6941,7 +6961,7 @@
                     let code = ruleParser.curSiteRule.init;
                     if (code) {
                         try {
-                            Function('doc','win','iframe','"use strict";' + code)(iframeDoc, iframeDoc.defaultView, emuIframe);
+                            Function('doc','win','iframe','"use strict";' + code)(iframeDoc, emuIframe.contentWindow, emuIframe);
                         } catch(e) {
                             debug(e);
                         }
@@ -6951,6 +6971,25 @@
                     checkPage();
                 }, 500);
             });
+            let code = ruleParser.curSiteRule.iframeInit;
+            if (code) {
+                let checkReady = setInterval(() => {
+                    try {
+                        iframeDoc = emuIframe.contentDocument || (emuIframe.contentWindow && emuIframe.contentWindow.document);
+                    } catch(e) {
+                        clearInterval(checkReady);
+                        return;
+                    }
+                    if (iframeDoc) {
+                        try {
+                            Function('win', 'iframe', '"use strict";' + code)(emuIframe.contentWindow, emuIframe);
+                            clearInterval(checkReady);
+                        } catch(e) {
+                            debug(e);
+                        }
+                    }
+                }, 50);
+            }
             if (!lastActiveUrl) lastActiveUrl = location.href;
             emuIframe.src = lastActiveUrl;
             getBody(document).appendChild(emuIframe);
@@ -7082,7 +7121,7 @@
                     return null;
                 } else {
                     if (!pageElement || pageElement.length === 0 || !pageElement[0].offsetParent) {
-                        pageElement = ruleParser.getPageElement(iframeDoc, iframeDoc.defaultView);
+                        pageElement = ruleParser.getPageElement(iframeDoc, curIframe.contentWindow);
                     }
                     return pageElement;
                 }
@@ -7108,6 +7147,25 @@
                 return isloaded || callback(false);
             }
         }, 500);
+        let code = ruleParser.curSiteRule.iframeInit;
+        if (code) {
+            let checkReady = setInterval(() => {
+                try {
+                    iframeDoc = curIframe.contentDocument || (curIframe.contentWindow && curIframe.contentWindow.document);
+                } catch(e) {
+                    clearInterval(checkReady);
+                    return;
+                }
+                if (iframeDoc) {
+                    try {
+                        Function('win', 'iframe', '"use strict";' + code)(curIframe.contentWindow, curIframe);
+                        clearInterval(checkReady);
+                    } catch(e) {
+                        debug(e);
+                    }
+                }
+            }, 50);
+        }
         curIframe.name = 'pagetual-iframe';
         curIframe.sandbox = "allow-same-origin allow-scripts allow-popups allow-forms";
         curIframe.frameBorder = '0';
@@ -7137,7 +7195,7 @@
             let code = ruleParser.curSiteRule.init;
             if (code) {
                 try {
-                    Function('doc','win','iframe','"use strict";' + code)(iframeDoc,iframeDoc.defaultView,curIframe);
+                    Function('doc', 'win', 'iframe', '"use strict";' + code)(iframeDoc, curIframe.contentWindow, curIframe);
                 } catch(e) {
                     debug(e);
                 }
@@ -7161,7 +7219,7 @@
                     } else if (checkTimes >= 10) {
                         foundNext();
                     } else if (checkTimes >= 3 && !findPageEle) {
-                        if (!pageElement) pageElement = ruleParser.getPageElement(iframeDoc, iframeDoc.defaultView);
+                        if (!pageElement) pageElement = ruleParser.getPageElement(iframeDoc, curIframe.contentWindow);
                         if (!pageElement) {
                             inAction = true;
                             curIframe.contentWindow.location.reload();
