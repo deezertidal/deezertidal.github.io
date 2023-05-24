@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              B站哔哩哔哩使用增强，全网VIP视频免费破解去广告，全网音乐直接下载，知乎使用增强，短视频无水印下载，油管、Facebook等国外视频解析下载，网盘搜索引擎破解无限下载等
 // @namespace         super_video_helper_cat
-// @version           4.4.9
+// @version           4.4.10
 // @description       【❤️视频解析❤️，适配PC+移动 】功能可选择性打开：1、B站使用增强：支持视频下载(👉支持多P批量快速下载👈)、浏览记录提示、一键三连、描述文本网址转链接等；2、全网VIP视频解析：爱奇艺、腾讯、优酷、bilibili等视频免费解析(支持自定义解析接口)；3、知乎使用助手：内容种类标识、问答显示优化、视频下载等；4、短视频去水印下载：支持知乎、抖音、快手等；5、全网VIP音乐解析：网易云音乐、QQ音乐、喜马拉雅等免客户端下载；6、油管、Facebook等国外视频解析下载；7、网盘搜索引擎(来搜一下,小猪快盘)无限下载；8、优惠券查询等；9、搜索引擎导航,支持自定义网址【脚本长期维护更新，完全免费，无广告】
 // @author            爱画画的猫,小艾特
 // @icon              data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACS0lEQVRYR8WXz2oTURTGv3MnpqhNKy1UWmxRTGdaiLSQRKkKIoK4FVrRPoHu7BMYn0B3+gQquuiuiC6kaFVsAhGEZkKqG/+Vrtp0YWsyR27KlEwz0xnnT3LgwjB37vl+97tzz9whdDiow/pwBCjofN0AJohwKQgkMxYF8Dmt0bxdnhaAQoWTXMczENJBhFvGMgqk4GY6SZXmPgvAmy/cnYijGqrwvmTVHSQup2jLvG0ByJf5EYDbUQIAeJxR6U4LQHGV1VodesTijfQxBdrkaSrL6z0Hlst8i4An7QBgYDar0lMrgM45ItxrCwDjflajnC+AtR8Gvn8zGpz9xwVOjor/Zma/ANt/GIsLNWxt8p7o4IiAmlLQP+C9pvkG+FoyUPxYs52xhFDPKIh3uRviG2ClWIdsTpHoJYymFNdliQzABBsaEZg4p+DwUftliRxAggwOC0xdidma1RaAI92Ea9OHOgcwPqlANruI1AElhsa2dBKXQJEBnDglGlvxWN/BNcE3gKyCS69b64AUlMISwEv4BpDJ3778i/Xfu5XQtFtaLq+9RiCA6gZj/dcuQN8Audod6kvodYZuz9k7UOK7JPDAbXAY/WxgLjtGDy2f408VPi8MLIUh4JbDELhwNknvLQDyQNoTh87AkFuCIP0E/NzcgWYeTC0bdrkNp6Lm9bc4YM4qr/NzEGaCzNJxLONFRqMbzf22JSu/wlcphhwzpsIAIcIHriGXGadX+/MdWDPflTjRxcH+kLYJhYtj5Piz4/0gF4YVNjk6DvAPDb0aMEr8/nEAAAAASUVORK5CYII=
@@ -2719,7 +2719,7 @@
 				if(window.location.href.indexOf("www.zhihu.com/question/")!=-1){
 					this.startDealwithQuestion();
 				}
-				this.downloadVideo();
+				//this.downloadVideo();
 			}
 		};
 	}
