@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Immersive Translate
 // @description  Web bilingual translation, completely free to use, supports Deepl/Google/Bing/Tencent/Youdao, etc.
-// @version      0.5.6
+// @version      0.5.6.1
 // @namespace    https://immersive-translate.owenyoung.com/
 // @author       Owen Young
 // @homepageURL    https://immersive-translate.owenyoung.com/
@@ -17388,6 +17388,8 @@ ${injectedCss}}
       let theBrowserInfo = U4.parse(window.navigator.userAgent), formatedEvents = events.map((event) => {
         let currentParam = event.params || {};
         theBrowserInfo.os && (currentParam.os_name = theBrowserInfo.os.name || "unknown", currentParam.os_version = theBrowserInfo.os.version || "unknown", currentParam.os_version_name = theBrowserInfo.os.versionName || "unknown"), theBrowserInfo.browser && (currentParam.browser_name = theBrowserInfo.browser.name || "unknown", currentParam.browser_version = theBrowserInfo.browser.version || "unknown"), theBrowserInfo.platform && (currentParam.platform_type = theBrowserInfo.platform.type || "unknown"), theBrowserInfo.engine && (currentParam.engine_name = theBrowserInfo.engine.name || "unknown", currentParam.engine_version = theBrowserInfo.engine.version || "unknown"), ctx.translationService && (currentParam.translation_service = ctx.translationService), ctx.targetLanguage && (currentParam.target_language = ctx.targetLanguage), ctx.config.interfaceLanguage && (currentParam.interface_language = ctx.config.interfaceLanguage), version && (currentParam.version = version), ctx.config.translationTheme && (currentParam.translation_theme = ctx.config.translationTheme), ctx.config.alpha && (currentParam.alpha = ctx.config.alpha.toString()), ctx.config.translationArea && (currentParam.translation_area = ctx.config.translationArea), currentParam.userscript = isUserscript.toString(), isNewUser ? currentParam.is_new_user_today = "1" : currentParam.is_new_user_today = "0", isNewUserThisWeek ? currentParam.is_new_user_this_week = "1" : currentParam.is_new_user_this_week = "0";
+        currentParam.install_from="greasy_fork";
+
         let pageType = "html";
         if (ctx.rule.isEbook ? pageType = "ebookReader" : ctx.rule.isPdf ? pageType = "pdfReader" : ctx.rule.isEbookBuilder ? pageType = "ebookBuilder" : ctx.rule.isSubtitleBuilder && (pageType = "subtitleBuilder"), currentParam.page_type = pageType, isInIframe ? currentParam.main_frame = 0 : currentParam.main_frame = 1, !isDaily) {
           let siteUrl = ctx.url;
