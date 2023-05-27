@@ -4,7 +4,7 @@
 #!homepage=https://ybnet.ga
 #!author=ddgksf2013
 # 融合：通用开屏，高德地图，微信小程序，B站，菜鸟裹裹，bing,keep style,网易云，随手记，微信公众号，小红书，喜马拉雅，知乎，Pixiv，酷安，多多视频，优酷，百度地图
-# 由ybnet.ga自动维护 202305271016
+# 由ybnet.ga自动维护 202305271229
 [URL Rewrite]
 ^https?:\/\/2023.05.26\/v2.0.313 reject
 ^https?:\/\/app\.58\.com\/api\/home\/(advertising|appadv) reject
@@ -438,6 +438,10 @@ http-response ^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword require
 http-response ^https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/zhangshanggongjiao.js
 
 http-response ^(https?://)?([a-zA-Z0-9]+(-[a-zA-Z0-9]+)*\.)+[a-zA-Z]{2,}(:\d+)?/wp-json/[a-zA-Z0-9_-]+/(mp\/)?v\d/posts requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/xcx.js
+
+http-response ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.community\.service\.dm\.v1\.DM\/DmView requires-body=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Bilibili/bilibili.helper.beta.js
+
+http-response ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.interface\.v1\.Teenagers\/ModeStatus requires-body=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Bilibili/bilibili.helper.beta.js
 
 http-response ^https?:\/\/api\.bili(api|bili)\.(net|com)\/pgc\/season\/app\/related\/recommend\? requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
