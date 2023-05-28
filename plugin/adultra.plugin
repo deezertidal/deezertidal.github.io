@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://ybnet.ga
 #!author=Mixed
-# 由ybnet.ga自动维护 202305281611
+# 由ybnet.ga自动维护 202305282010
 [URL Rewrite]
 ^https?://(www.)?(g|google)\.cn 302 https://www.google.com
 ^https?://(ditu|maps)\.google\.cn 302 https://maps.google.com
