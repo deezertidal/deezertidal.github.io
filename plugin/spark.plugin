@@ -1,0 +1,14 @@
+#!name=Spark Mail
+#!desc=Spark Mail解锁会员
+#!homepage=https://ybnet.ga
+#!author=yqc007
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/spark.png
+
+
+
+
+[Script]
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36}|subscribers\/\w{14})$ requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/SparkMailProCrack.js
+
+[MITM] 
+hostname = api.revenuecat.com

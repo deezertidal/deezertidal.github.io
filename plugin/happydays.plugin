@@ -1,0 +1,11 @@
+#!name=Happy:Days
+#!desc=Happy:Days解锁会员
+#!homepage=https://ybnet.ga
+#!author=yqc007
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/happydays.png
+
+
+[Script]
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36}|subscribers\/\$RCAnonymousID%3A\w{32})$ requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/HappyDaysUnlock.js
+[MITM] 
+hostname = api.revenuecat.com

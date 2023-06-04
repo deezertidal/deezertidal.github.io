@@ -1,0 +1,15 @@
+#!name=小决定
+#!desc=小决定解锁会员
+#!homepage=https://ybnet.ga
+#!author=yqc007
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/xjd.png
+
+
+[Script]
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/DecisionProCrack.js
+
+
+
+
+[MITM] 
+hostname = api.revenuecat.com
