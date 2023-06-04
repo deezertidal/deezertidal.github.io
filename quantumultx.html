@@ -17,6 +17,7 @@
 
   gtag('config', 'G-Q10V31V29W');
 </script>
+
 <style>
 #share-button {
   position: fixed;
@@ -583,6 +584,32 @@ if (window.matchMedia) {
       $('#share-options').toggle();
     });
   });
+</script>
+<script>
+var buttons = document.getElementsByClassName("myButton");
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    
+    var link = this.getAttribute("href");
+    
+    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    
+    if (isIOS) {
+      window.location.href = "quantumult-x:///add-resource?remote-resource={\"rewrite_remote\":[\"" + link + "\"]}";
+    } else {
+      var dummyInput = document.createElement("input");
+      dummyInput.setAttribute("value", link);
+      document.body.appendChild(dummyInput);
+      dummyInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(dummyInput);
+      
+      alert("链接已复制！");
+    }
+  });
+}
+
 </script>
   </body>
 </html>
