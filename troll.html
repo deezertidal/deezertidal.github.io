@@ -314,16 +314,6 @@ $('button').on('click', function() {
     var b = 255 - parseInt(bgColor[2]);
     $(this).css('background-color', 'rgb(' + r + ',' + g + ',' + b + ')');
 });
-if (window.matchMedia) {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        $('body').css('background-color', '#65665e');
-        $('body').css('color', 'white');
-    } else {
-        $('body').css('background-color', 'white');
-        $('body').css('color', 'black');
-    }
-} else {
-}
 </script>
 <button id="share-button">分享到</button>
 <div id="share-options" style="display: none;">
