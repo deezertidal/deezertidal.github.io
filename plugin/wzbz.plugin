@@ -1,0 +1,11 @@
+#!name=问真八字
+#!desc=问真八字解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://ybnet.ga
+#!author=yqc007
+[Script]
+http-response ^https?:\/\/bzpp2\.iwzbz\.com\/api\/v1\.1\/user\/getpwnewios requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WzbzDiamondVipCrack.js
+
+
+[MITM]
+hostname = bzpp2.iwzbz.com

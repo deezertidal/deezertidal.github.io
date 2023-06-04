@@ -1,0 +1,12 @@
+#!name=小鹿声文
+#!desc=小鹿声文解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://ybnet.ga
+#!author=89996462
+[Script]
+http-response ^http[s]?:\/\/ttlnt.wedo-lnt.com\/serviceVideoApp\/user-info\/left-time-space requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/XLSW.js
+
+
+
+[MITM]
+hostname = ttlnt.wedo-lnt.com

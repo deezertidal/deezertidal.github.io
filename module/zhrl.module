@@ -1,0 +1,11 @@
+#!name=中华日历
+#!desc=中华日历解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://ybnet.ga
+#!author=89996462
+[Script]
+zhrl=type=http-response,pattern=^http[s]?:\/\/wnl28.jiemengjia.com\/api\/get_member_info,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zhrl.js
+
+
+[MITM]
+hostname = %APPEND% wnl28.jiemengjia.com

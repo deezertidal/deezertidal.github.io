@@ -1,0 +1,11 @@
+#!name=看剧学英语
+#!desc=看剧学英语解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://ybnet.ga
+#!author=89996462
+[Script]
+http-response ^http[s]?:\/\/buy.itunes.apple.com\/verifyReceipt requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/kjXyy.js
+
+
+[MITM]
+hostname = buy.itunes.apple.com

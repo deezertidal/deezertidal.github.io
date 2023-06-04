@@ -1,0 +1,11 @@
+#!name=分贝仪
+#!desc=分贝仪解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://ybnet.ga
+#!author=89996462
+[Script]
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fenbeiyi.js
+
+
+[MITM]
+hostname = api.revenuecat.com

@@ -1,0 +1,11 @@
+#!name=Koan 提问日记
+#!desc=Koan 提问日记解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://ybnet.ga
+#!author=89996462
+[Script]
+http-response ^http[s]?:\/\/koan.bopulab.cn\/user\/getBriefByUserIdV3 requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Koan.js
+
+
+[MITM]
+hostname = koan.bopulab.cn

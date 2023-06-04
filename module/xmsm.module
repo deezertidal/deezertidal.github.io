@@ -1,0 +1,11 @@
+#!name=熊猫睡眠
+#!desc=熊猫睡眠解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://ybnet.ga
+#!author=89996462
+[Script]
+navolove=type=http-response,pattern=^http[s]?:\/\/sleep.navolove.com\/api\/refresh_user_info,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/navolove.js
+
+
+[MITM]
+hostname = %APPEND% sleep.navolove.com

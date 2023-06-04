@@ -1,0 +1,11 @@
+#!name=You're So Great
+#!desc=You're So Great解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://ybnet.ga
+#!author=89996462
+[Script]
+http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/You.js
+
+
+[MITM]
+hostname = buy.itunes.apple.com

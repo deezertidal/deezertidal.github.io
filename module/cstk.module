@@ -1,0 +1,11 @@
+#!name=才士题库
+#!desc=才士题库解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://ybnet.ga
+#!author=89996462
+[Script]
+caishi=type=http-response,pattern=^http[s]?:\/\/gateway-pro.caishi.cn,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/caishi.js
+
+
+[MITM]
+hostname = %APPEND% gateway-pro.caishi.cn

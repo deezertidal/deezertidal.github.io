@@ -1,0 +1,12 @@
+#!name=小熊录屏
+#!desc=小熊录屏解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://ybnet.ga
+#!author=89996462
+[Script]
+XXLP=type=http-response,pattern=^http[s]?:\/\/donate-api.recorder.duapps.com,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/XXLP.js
+
+
+
+[MITM]
+hostname = %APPEND% donate-api.recorder.duapps.com

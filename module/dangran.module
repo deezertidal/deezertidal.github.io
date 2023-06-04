@@ -1,0 +1,11 @@
+#!name=当燃
+#!desc=当燃 - 运动健身饮食卡路里热量管理
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://ybnet.ga
+#!author=89996462
+[Script]
+wayxtech=type=http-response,pattern=^http[s]?:\/\/sportlight.wayxtech.com\/miniapp\/user\/getUserInfo,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/wayxtech.js
+
+
+[MITM]
+hostname = %APPEND% sportlight.wayxtech.com

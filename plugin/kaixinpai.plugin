@@ -1,0 +1,11 @@
+#!name=开心拍
+#!desc=开心拍解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://ybnet.ga
+#!author=89996462
+[Script]
+http-response https://face.app.superclear.cn/hw/apple/subscribe/v1 requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/kaiXinPai.js
+
+
+[MITM]
+hostname = face.app.superclear.cn
