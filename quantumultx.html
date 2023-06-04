@@ -587,14 +587,15 @@ if (window.matchMedia) {
 </script>
 <script>
 var buttons = document.getElementsByClassName("myButton");
+
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function(event) {
     event.preventDefault();
     
-    var link = this.getAttribute("href");
+    var link = this.parentElement.getAttribute("href");
     
     var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    
+
     if (isIOS) {
       window.location.href = "quantumult-x:///add-resource?remote-resource={\"rewrite_remote\":[\"" + link + "\"]}";
     } else {
@@ -604,11 +605,12 @@ for (var i = 0; i < buttons.length; i++) {
       dummyInput.select();
       document.execCommand("copy");
       document.body.removeChild(dummyInput);
-      
+
       alert("链接已复制！");
     }
   });
 }
+
 
 </script>
   </body>
