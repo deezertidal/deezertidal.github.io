@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://yfamily.ml
 #!author=Mixed
-# 由yfamily.ml自动维护 202306050643
+# 由yfamily.ml自动维护 202306050747
 [URL Rewrite]
 ^https?://(www.)?(g|google)\.cn https://www.google.com 302
 ^https?://(ditu|maps)\.google\.cn https://maps.google.com 302
@@ -621,8 +621,6 @@ https://community.feidee.com/api/v1/home/top reject-200
 https://yun.feidee.net/cab-query-ws/v1/comet/vtable/score-card reject-dict
 https://moneymarket.ssjlicai.com/finance-common-operation-ws/api/actShelve/v1/actShelveShowTipInfo reject
 https://yun.feidee.net/cab-draw-activity-ws/terminal/v1/draw-record/user-draw-result reject-dict
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/(advertisement_report|cps_product_info|wapcommreport|jsreport|jsmonitor) reject
-^https?:\/\/wxa\.wxs\.qq\.com\/tmpl\/kf\/base_tmpl\.html reject
 ^https?:\/\/api\.weibo\.cn\/\d\/profile\/recommend_popuser reject-dict
 ^https?:\/\/boot.*weibo\.com\/v\d\/ad\/realtime reject-200
 ^https?:\/\/api\.weibo\.cn\/\d\/!\/huati\/discovery_home_bottom_getdotinfo reject-dict
