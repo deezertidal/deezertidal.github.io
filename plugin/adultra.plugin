@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://yfamily.ml
 #!author=Mixed
-# 由yfamily.ml自动维护 202306050543
+# 由yfamily.ml自动维护 202306050643
 [URL Rewrite]
 ^https?://(www.)?(g|google)\.cn 302 https://www.google.com
 ^https?://(ditu|maps)\.google\.cn 302 https://maps.google.com
