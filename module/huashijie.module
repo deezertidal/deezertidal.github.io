@@ -1,7 +1,7 @@
 #!name=画世界
 #!desc=画世界解锁
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
-#!homepage=https://ybnet.ga
+#!homepage=https://yfamily.ml
 #!author=89996462
 [Script]
 huashijie=type=http-response,pattern=^http[s]?:\/\/app.huashijie.art\/api\/user\/getPerson,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/huashijie.js

@@ -1,7 +1,7 @@
 #!name=轻图
 #!desc=轻图解锁
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
-#!homepage=https://ybnet.ga
+#!homepage=https://yfamily.ml
 #!author=yqc007
 [Script]
 http-response ^https?:\/\/purchase-qingtu-api\.b612kaji\.com\/v1\/purchase\/subscription\/subscriber/status$ requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/PhotoVisionProCrack.js

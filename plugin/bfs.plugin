@@ -1,12 +1,12 @@
 ﻿#!name=BingAI For Safari
 #!desc=bing ai伪装edge浏览器
-#!homepage=https://ybnet.ga/
+#!homepage=https://yfamily.ml/
 #!author=deezertidal
-#!icon=https://ybnet.ga/IMG/bing.png
+#!icon=https://yfamily.ml/IMG/bing.png
 
 
 [Script]
-http-request ^https?://www.bing.com requires-body=0,script-path=https://ybnet.ga/module/bfs.js, tag=Bing For Safari
+http-request ^https?://www.bing.com requires-body=0,script-path=https://yfamily.ml/module/bfs.js, tag=Bing For Safari
 
 
 [MITM] 

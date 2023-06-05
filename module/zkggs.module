@@ -1,7 +1,7 @@
 #!name=站酷高高手
 #!desc=站酷高高手解锁
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
-#!homepage=https://ybnet.ga
+#!homepage=https://yfamily.ml
 #!author=89996462
 [Script]
 zkggs=type=http-response,pattern=^https:\/\/api\.gogoup\.com,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zkggs.js

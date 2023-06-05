@@ -1,7 +1,7 @@
 #!name=薄荷壁纸
 #!desc=薄荷壁纸解锁
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
-#!homepage=https://ybnet.ga
+#!homepage=https://yfamily.ml
 #!author=yqc007
 [Script]
 MintPaperVipCrack=type=http-response,pattern=^https?:\/\/mars-prod\.whalean\.com\/hestia-service\/api\/(wpUser\/getUserInfo|wallpaper\/ai\/count\/detail),requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/MintPaperVipCrack.js

@@ -1,7 +1,7 @@
 #!name=得间小说
 #!desc=得间小说解锁
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
-#!homepage=https://ybnet.ga
+#!homepage=https://yfamily.ml
 #!author=89996462
 [Script]
 djxs=type=http-response,pattern=^http[s]?:\/\/dj.palmestore.com\/zyuc\/api\/user\/accountInfo,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/djxs.js

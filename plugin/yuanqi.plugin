@@ -1,7 +1,7 @@
 #!name=元气桌面壁纸
 #!desc=元气桌面壁纸解锁
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
-#!homepage=https://ybnet.ga
+#!homepage=https://yfamily.ml
 #!author=89996462
 [Script]
 http-response ^http[s]?:\/\/mobile-ios-wallpaper-api.zhhainiao.com\/v1\/user\/info requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/yqzmbz.js

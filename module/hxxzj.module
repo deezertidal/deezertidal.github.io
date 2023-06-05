@@ -1,7 +1,7 @@
 #!name=呼吸 小组件
 #!desc=呼吸 小组件解锁
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
-#!homepage=https://ybnet.ga
+#!homepage=https://yfamily.ml
 #!author=89996462
 [Script]
 fXXzj=type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fXXzj.js
