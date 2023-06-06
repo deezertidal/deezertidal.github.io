@@ -1,0 +1,7 @@
+#!name=keep ybnet
+#!desc=恢复ybnet.ga远程资源
+
+[Url Rewrite]
+^https:\/\/ybnet\.ga/(.*)$ https://yfamily.ml/$1 302
+[MITM]
+hostname = %APPEND% ybnet.ga,yfamily.ml
