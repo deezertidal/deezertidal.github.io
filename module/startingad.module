@@ -4,7 +4,7 @@
 #!homepage=https://yfamily.ml
 #!author=ddgksf2013
 # 融合：通用开屏，高德地图，微信小程序，B站，菜鸟裹裹，bing,keep style,网易云，随手记，微信公众号，小红书，喜马拉雅，知乎，Pixiv，酷安，多多视频，优酷，百度地图
-# 由yfamily.ml自动维护 202306062343
+# 由yfamily.ml自动维护 202306070305
 [URL Rewrite]
 ^https?:\/\/2023.06.05\/v2.0.317 reject
 ^https?:\/\/app\.58\.com\/api\/home\/(advertising|appadv) reject
