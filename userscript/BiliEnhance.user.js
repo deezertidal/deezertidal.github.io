@@ -1,14 +1,15 @@
 // ==UserScript==
-// @name              B站哔哩哔哩使用增强，全网VIP视频免费破解去广告，全网音乐直接下载，知乎使用增强，短视频无水印下载，油管、Facebook等国外视频解析下载，网盘搜索引擎破解无限下载等
+// @name              B站哔哩哔哩使用增强，全网VIP视频免费破解去广告，全网音乐直接下载，知乎使用增强，短视频无水印下载，油管、Facebook等国外视频解析下载等
 // @namespace         super_video_helper_cat
-// @version           4.4.10
-// @description       【❤️视频解析❤️，适配PC+移动 】功能可选择性打开：1、B站使用增强：支持视频下载(👉支持多P批量快速下载👈)、浏览记录提示、一键三连、描述文本网址转链接等；2、全网VIP视频解析：爱奇艺、腾讯、优酷、bilibili等视频免费解析(支持自定义解析接口)；3、知乎使用助手：内容种类标识、问答显示优化、视频下载等；4、短视频去水印下载：支持知乎、抖音、快手等；5、全网VIP音乐解析：网易云音乐、QQ音乐、喜马拉雅等免客户端下载；6、油管、Facebook等国外视频解析下载；7、网盘搜索引擎(来搜一下,小猪快盘)无限下载；8、优惠券查询等；9、搜索引擎导航,支持自定义网址【脚本长期维护更新，完全免费，无广告】
+// @version           4.4.11
+// @description       【❤️视频解析❤️，适配PC+移动 】功能可选择性打开：1、B站使用增强：支持视频下载(👉支持多P批量快速下载👈)、浏览记录提示、一键三连、描述文本网址转链接等；2、全网VIP视频解析：爱奇艺、腾讯、优酷、bilibili等视频免费解析(支持自定义解析接口)；3、知乎使用助手：内容种类标识、问答显示优化、视频下载等；4、短视频去水印下载：支持知乎、抖音、快手等；5、全网VIP音乐解析：网易云音乐、QQ音乐、喜马拉雅等免客户端下载；6、油管、Facebook等国外视频解析下载；7、优惠券查询等；8、搜索引擎导航,支持自定义网址【脚本长期维护更新，完全免费，无广告，仅限学习交流！！】
 // @author            爱画画的猫,小艾特
 // @icon              data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACS0lEQVRYR8WXz2oTURTGv3MnpqhNKy1UWmxRTGdaiLSQRKkKIoK4FVrRPoHu7BMYn0B3+gQquuiuiC6kaFVsAhGEZkKqG/+Vrtp0YWsyR27KlEwz0xnnT3LgwjB37vl+97tzz9whdDiow/pwBCjofN0AJohwKQgkMxYF8Dmt0bxdnhaAQoWTXMczENJBhFvGMgqk4GY6SZXmPgvAmy/cnYijGqrwvmTVHSQup2jLvG0ByJf5EYDbUQIAeJxR6U4LQHGV1VodesTijfQxBdrkaSrL6z0Hlst8i4An7QBgYDar0lMrgM45ItxrCwDjflajnC+AtR8Gvn8zGpz9xwVOjor/Zma/ANt/GIsLNWxt8p7o4IiAmlLQP+C9pvkG+FoyUPxYs52xhFDPKIh3uRviG2ClWIdsTpHoJYymFNdliQzABBsaEZg4p+DwUftliRxAggwOC0xdidma1RaAI92Ea9OHOgcwPqlANruI1AElhsa2dBKXQJEBnDglGlvxWN/BNcE3gKyCS69b64AUlMISwEv4BpDJ3778i/Xfu5XQtFtaLq+9RiCA6gZj/dcuQN8Audod6kvodYZuz9k7UOK7JPDAbXAY/WxgLjtGDy2f408VPi8MLIUh4JbDELhwNknvLQDyQNoTh87AkFuCIP0E/NzcgWYeTC0bdrkNp6Lm9bc4YM4qr/NzEGaCzNJxLONFRqMbzf22JSu/wlcphhwzpsIAIcIHriGXGadX+/MdWDPflTjRxcH+kLYJhYtj5Piz4/0gF4YVNjk6DvAPDb0aMEr8/nEAAAAASUVORK5CYII=
 // @include           *://*.youku.com/v_*
 // @include           *://*.iqiyi.com/v_*
 // @include           *://*.iqiyi.com/w_*
 // @include           *://*.iqiyi.com/a_*
+// @include           *://*.iqiyi.com/resource/pcw/play/*
 // @include           *://*.le.com/ptv/vplay/*
 // @include           *://v.qq.com/x/cover/*
 // @include           *://v.qq.com/x/page/*
@@ -65,8 +66,6 @@
 // @include           *://*item.jd.com/*
 // @include           *://item.yiyaojd.com/*
 // @include           *://npcitem.jd.hk/*
-// @include           *://www.laisoyixia.com/download/detail**
-// @include           *://www.xiaozhukuaipan.com/download/**
 //----------------------------------------------------
 // @include           *://www.baidu.com/*
 // @include           *://www.so.com/s*
@@ -597,14 +596,14 @@
 	if(!functionController){
 		functionController={
 			"bilibiliHelper":true,"superVideoHelper":true,"superMusicHelper":true,"abroadVideoHelper":true,
-			"wangpanSearchEnginesHelper":true,"searchEnginesNavigation":true,"zhihuHelper":true,
+			"searchEnginesNavigation":true,"zhihuHelper":true,
 			"shortVideoDownload":true
 		}
 	}	
 	//用户功能设置函数
 	function usersSeting(){
 		var bilibiliHelper=true, superVideoHelper=true, superMusicHelper=true, abroadVideoHelper=true, 
-		wangpanSearchEnginesHelper=true, searchEnginesNavigation=true, zhihuHelper=true, shortVideoDownload=true;
+		searchEnginesNavigation=true, zhihuHelper=true, shortVideoDownload=true;
 		var isUpdateStorage = false;
 		if(!functionController.hasOwnProperty("bilibiliHelper")){
 			functionController.bilibiliHelper = true;
@@ -629,12 +628,6 @@
 			isUpdateStorage = true;
 		}else{
 			abroadVideoHelper = functionController.abroadVideoHelper;
-		}
-		if(!functionController.hasOwnProperty("wangpanSearchEnginesHelper")){
-			functionController.wangpanSearchEnginesHelper = true;
-			isUpdateStorage = true;
-		}else{
-			wangpanSearchEnginesHelper = functionController.wangpanSearchEnginesHelper;
 		}
 		if(!functionController.hasOwnProperty("searchEnginesNavigation")){
 			functionController.searchEnginesNavigation = true;
@@ -664,7 +657,6 @@
 			{"tag":"superMusicHelper", "name":"全网VIP音乐解析(支持网易云音乐、QQ音乐等)", "checked":superMusicHelper},
 			{"tag":"shortVideoDownload", "name":"短视频去水印下载(支持抖音、快手等)", "checked":shortVideoDownload},
 			{"tag":"abroadVideoHelper", "name":"国外视频解析下载(支持油管、Facebook等)", "checked":abroadVideoHelper},
-			{"tag":"wangpanSearchEnginesHelper", "name":"网盘搜索引擎破解无限下载", "checked":wangpanSearchEnginesHelper},
 			{"tag":"searchEnginesNavigation", "name":"搜索引擎资源导航(适配百度、360、搜狗、必应等)", "checked":searchEnginesNavigation},
 		]
 		var content = "";
@@ -701,7 +693,6 @@
 		functionController.bilibiliHelper = false;
 		functionController.abroadVideoHelper = false;
 		functionController.superMusicHelper = false;
-		functionController.wangpanSearchEnginesHelper = false;
 		functionController.searchEnginesNavigation = false;
 		functionController.zhihuHelper = false;
 	}
@@ -723,7 +714,8 @@
 		this.defaultQuicklyInterfaceIndex = 1;
 		this.isRun = function(){ //判断是否运行
 			const host = window.location.host;
-			const urls = ["www.iqiyi.com","v.qq.com","youku.com", "www.le.com","mgtv.com","sohu.com", "acfun.cn","bilibili.com","baofeng.com","pptv.com","1905.com","miguvideo.com"];
+			const urls = ["www.iqiyi.com","v.qq.com","youku.com", "www.le.com","mgtv.com","sohu.com", "acfun.cn","bilibili.com",
+				"baofeng.com","pptv.com","1905.com","miguvideo.com","sports.iqiyi.com"];
 			var result = false;
 			if(!host.startsWith("m.")){ //不是移动端执行
 				for(var i=0; i<urls.length;i++){ //不是B站直接判断
@@ -2194,24 +2186,7 @@
 			}
 		};
 	}
-	
-	/**
-	 * 来搜一下，网盘搜索引擎无线下载
-	 */
-	function wangpanSearchEnginesHelper(){
-		this.start = function(){
-			let $that = this, host = window.location.host;
-			if(host==="www.laisoyixia.com" || host==="www.xiaozhukuaipan.com"){
-				var $downloadBtn = $("#downloadHandler");
-				var downloadurl = $downloadBtn.data("downloadurl");
-				if(!!downloadurl){
-					var wangpanUrl = window.atob(downloadurl);
-					$downloadBtn.after("<div style='padding:15px;background-color:#eee;margin-top:15px;'>插件提取所得：<a target='_blank' href='"+wangpanUrl+"'>"+wangpanUrl+"</a></div>")
-				}
-			}
-		}
-	}
-	
+		
 	/**
 	 * 搜索引擎资源提醒
 	 */
@@ -2231,8 +2206,6 @@
 		this.getNavigationData = function(element, elementInput){
 			const defaultNavigationData = [
 				{"name":"资源搜索","list":[
-					{"name":"书签搜索", "url":"https://www.bookmarkearth.com/s/search?q=@@&currentPage=1"},
-					{"name":"网盘搜索", "url":"https://www.xiaozhukuaipan.com/s/search?q=@@&currentPage=1"},
 					{"name":"财经搜索", "url":"https://www.shaduizi.com/s/search?q=@@&currentPage=1"},
 					{"name":"百度百科", "url":"https://baike.baidu.com/item/@@"},
 					{"name":"知乎搜索", "url":"https://www.zhihu.com/search?type=content&q=@@"},
@@ -2244,12 +2217,10 @@
 					{"name":"电影搜索", "url":"https://www.cupfox.com/search?key=@@"},
 					{"name":"维基百科", "url":"https://en.wikipedia.org/w/index.php?search=@@"},
 					{"name":"法律法规", "url":"https://www.pkulaw.com/law/chl?Keywords=@@"},
-					{"name":"聊聊学-AI", "url":"https://www.chatchatstudy.cn/"},
 					{"name":"icon搜索", "url":"https://www.iconfont.cn/search/index?searchType=icon&q=@@"},
 					{"name":"github", "url":"https://github.com/search?q=@@"},
 					{"name":"csdn", "url":"https://so.csdn.net/so/search?q=@@&t=&u="},
-					{"name":"手机用油猴", "url":"https://blog.csdn.net/haoning7788/article/details/125344294"},
-					{"name":"chatGPT中文", "url":"http://whatbuytoday.com/re/chat"}
+					{"name":"stackoverflow", "url":"https://stackoverflow.com/"},
 				]},
 				{"name":"搜索引擎","list":[
 					{"name":"百度", "url":"https://www.baidu.com/s?wd=@@"},
@@ -2943,15 +2914,7 @@
 	}catch(e){
 		console.log("B站视频下载：error："+e);
 	}
-	
-	try{
-		if(functionController.wangpanSearchEnginesHelper){
-			new wangpanSearchEnginesHelper(commonFunctionObject).start();
-		}
-	}catch(e){
-		console.log("网盘搜索引擎破解：error："+e);
-	}
-	
+		
 	try{
 		if(functionController.searchEnginesNavigation){
 			new searchEnginesNavigation(commonFunctionObject).start();
