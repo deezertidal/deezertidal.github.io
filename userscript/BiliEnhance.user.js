@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              B站哔哩哔哩使用增强，全网VIP视频免费破解去广告，全网音乐直接下载，知乎使用增强，短视频无水印下载，油管、Facebook等国外视频解析下载等
 // @namespace         super_video_helper_cat
-// @version           4.4.11
+// @version           5.0.1
 // @description       【❤️视频解析❤️，适配PC+移动 】功能可选择性打开：1、B站使用增强：支持视频下载(👉支持多P批量快速下载👈)、浏览记录提示、一键三连、描述文本网址转链接等；2、全网VIP视频解析：爱奇艺、腾讯、优酷、bilibili等视频免费解析(支持自定义解析接口)；3、知乎使用助手：内容种类标识、问答显示优化、视频下载等；4、短视频去水印下载：支持知乎、抖音、快手等；5、全网VIP音乐解析：网易云音乐、QQ音乐、喜马拉雅等免客户端下载；6、油管、Facebook等国外视频解析下载；7、优惠券查询等；8、搜索引擎导航,支持自定义网址【脚本长期维护更新，完全免费，无广告，仅限学习交流！！】
 // @author            爱画画的猫,小艾特
 // @icon              data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACS0lEQVRYR8WXz2oTURTGv3MnpqhNKy1UWmxRTGdaiLSQRKkKIoK4FVrRPoHu7BMYn0B3+gQquuiuiC6kaFVsAhGEZkKqG/+Vrtp0YWsyR27KlEwz0xnnT3LgwjB37vl+97tzz9whdDiow/pwBCjofN0AJohwKQgkMxYF8Dmt0bxdnhaAQoWTXMczENJBhFvGMgqk4GY6SZXmPgvAmy/cnYijGqrwvmTVHSQup2jLvG0ByJf5EYDbUQIAeJxR6U4LQHGV1VodesTijfQxBdrkaSrL6z0Hlst8i4An7QBgYDar0lMrgM45ItxrCwDjflajnC+AtR8Gvn8zGpz9xwVOjor/Zma/ANt/GIsLNWxt8p7o4IiAmlLQP+C9pvkG+FoyUPxYs52xhFDPKIh3uRviG2ClWIdsTpHoJYymFNdliQzABBsaEZg4p+DwUftliRxAggwOC0xdidma1RaAI92Ea9OHOgcwPqlANruI1AElhsa2dBKXQJEBnDglGlvxWN/BNcE3gKyCS69b64AUlMISwEv4BpDJ3778i/Xfu5XQtFtaLq+9RiCA6gZj/dcuQN8Audod6kvodYZuz9k7UOK7JPDAbXAY/WxgLjtGDy2f408VPi8MLIUh4JbDELhwNknvLQDyQNoTh87AkFuCIP0E/NzcgWYeTC0bdrkNp6Lm9bc4YM4qr/NzEGaCzNJxLONFRqMbzf22JSu/wlcphhwzpsIAIcIHriGXGadX+/MdWDPflTjRxcH+kLYJhYtj5Piz4/0gF4YVNjk6DvAPDb0aMEr8/nEAAAAASUVORK5CYII=
@@ -552,37 +552,7 @@
 	//解析接口配置
 	//showType=1(仅PC), showType=2(仅mobile), showType=3(同时显示)
 	const originalInterfaceList = [
-		{"name":"综合/B站","url":"https://jx.jsonplayer.com/player/?url=", "showType":3},
-		{"name":"爱豆","url":"https://jx.aidouer.net/?url=", "showType":1},
-		{"name":"虾米","url":"https://jx.xmflv.com/?url=", "showType":1},
-		{"name":"yangtu","url":"https://jx.yangtu.top/?url=", "showType":1},
-		{"name":"纯净/B站","url":"https://im1907.top/?jx=", "showType":3},
-		{"name":"OK解析","url":"https://okjx.cc/?url=", "showType":3},
-		{"name":"诺讯","url":"https://www.nxflv.com/?url=", "showType":1},
-		{"name":"夜幕","url":"https://www.yemu.xyz/?url=", "showType":3},
-		{"name":"M3U8.TV","url":"https://jx.m3u8.tv/jiexi/?url=", "showType":3},
-		{"name":"人人迷","url":"https://jx.blbo.cc:4433/?url=", "showType":3},
-		{"name":"全民","url":"https://jx.blbo.cc:4433/?url=", "showType":3},
-		{"name":"七哥","url":"https://jx.nnxv.cn/tv.php?url=", "showType":3},
-		{"name":"冰豆","url":"https://api.qianqi.net/vip/?url=", "showType":3},
-		{"name":"迪奥","url":"https://123.1dior.cn/?url=", "showType":1},
-		{"name":"CK","url":"https://www.ckplayer.vip/jiexi/?url=", "showType":1},
-		{"name":"ckmov","url":"https://www.ckmov.vip/api.php?url=", "showType":1},
-		{"name":"playerjy/B站","url":"https://jx.playerjy.com/?url=", "showType":3},
-		{"name":"ccyjjd","url":"https://ckmov.ccyjjd.com/ckmov/?url=", "showType":1},
-		{"name":"诺诺","url":"https://www.ckmov.com/?url=", "showType":1},
-		{"name":"H8","url":"https://www.h8jx.com/jiexi.php?url=", "showType":1},
-		{"name":"BL","url":"https://vip.bljiex.com/?v=", "showType":1},
-		{"name":"解析la","url":"https://api.jiexi.la/?url=", "showType":1},
-		{"name":"MUTV","url":"https://jiexi.janan.net/jiexi/?url=", "showType":1},
-		{"name":"MAO","url":"https://www.mtosz.com/m3u8.php?url=", "showType":1},
-		{"name":"盘古","url":"https://www.pangujiexi.cc/jiexi.php?url=", "showType":1},
-		{"name":"0523","url":"https://go.yh0523.cn/y.cy?url=", "showType":1},
-		{"name":"17云","url":"https://www.1717yun.com/jx/ty.php?url=", "showType":1},
-		{"name":"4K","url":"https://jx.4kdv.com/?url=", "showType":1},
-		{"name":"8090","url":"https://www.8090g.cn/?url=", "showType":1},
-		{"name":"180","url":"https://jx.000180.top/jx/?url=", "showType":1},
-		{"name":"无名","url":"https://www.administratorw.com/video.php?url=", "showType":1}
+		
 	];
 	
 	//全局统一方法对象
@@ -839,12 +809,10 @@
 													对现有接口不满意？可添加自定义接口哟~<span id="img_set_6667897iio" style="display:inline-block;border-radius:2px;margin-left:5px;padding:3px 5px;background-color:#CCC;cursor:pointer;">添加接口</span>
 												</div>
 												<div class='title`+this.elementId+`'>
-													<a style="font-size:13px;color:blue;" href="https://share.shuoaini.xyz/plugin/recommend" target="_blank">
-														超级好用的浏览器插件推荐集合（PS: 解析接口可能包含自带广告，可点击此链接中的列表安装”Adblock Plus“去除）
-													</a>
+													<a style="font-size:13px;color:blue;" href="javascript:void(0);" target="_blank">接口请自行添加~</a>
 												</div>
 											</div>
-											<div class='item_box`+this.elementId+`'>
+											<div class='item_box`+this.elementId+`' style='min-height:80px;border:1px dashed #000;'>
 												<div class='interface_box`+this.elementId+`'>
 													` + category_1_html + `
 												</div>
@@ -852,7 +820,7 @@
 											<div class='item_box`+this.elementId+`'>
 												<div class='title`+this.elementId+`'><b>免责声明：</b></div>
 												<div class='content`+this.elementId+`'>
-													1、VIP视频解析中所用到的解析接口全部收集自互联网（源码可见），版权问题请联系相关解析接口所有者，脚本不承担相关责任！"<br>
+													1、<b style='color:red;'>需要使用VIP视频解析的，请自行添加接口</b>，版权问题请联系相关解析接口所有者，脚本不承担相关责任！"<br>
 													2、为创造良好的创作氛围，请大家支持正版！<br>
 													3、脚本仅限个人学习交流，使用即已代表您已经充分了解相关问题，否则后果自负，特此声明！<br>
 												</div>
@@ -860,7 +828,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="img_box`+this.elementId+`" id="img_quickly_6667897iio"><img src='`+quicklyBase64+`' title='快速开始(当前所选接口：`+currentQuicklyInterfaceObject.name+`)'/></div>
+								<div class="img_box`+this.elementId+`" id="img_quickly_6667897iio"><img src='`+quicklyBase64+`' title='快速开始(当前所选接口：`+(currentQuicklyInterfaceObject==null ? '无' : currentQuicklyInterfaceObject.name)+`)'/></div>
 							</div>
 							`;
 			$("body").append(htmlMould);
@@ -1418,11 +1386,6 @@
 								<span class="close">×</span>
 							</div>
 							<div class="page-container">
-								<div>
-									<a style="font-size:13px;color:blue;" href="https://share.shuoaini.xyz/plugin/recommend" target="_blank">
-										超级好用的浏览器插件推荐集合，千万别错过了(超好用)
-									</a>
-								</div>
 								<div class="page-wrap"></div>
 								<div class="aria2-setting">
 									<div class="setting-item">
