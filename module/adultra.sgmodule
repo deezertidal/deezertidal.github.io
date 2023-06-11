@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://yfamily.ml
 #!author=Mixed
-# 由yfamily.ml自动维护 202306110316
+# 由yfamily.ml自动维护 202306110443
 [URL Rewrite]
 ^https?://(www.)?(g|google)\.cn https://www.google.com 302
 ^https?://(ditu|maps)\.google\.cn https://maps.google.com 302
@@ -84,13 +84,13 @@
 ^https?://acs\.m\.taobao\.com/gw/mtop\.etao\.noah\.query/.+tao_splash _ reject
 ^https?://acs\.m\.taobao\.com/gw/mtop\.alimama\.etao\.config\.query/.+?etao_advertise _ reject
 ^https?://acs\.m\.taobao\.com/gw/mtop\.film\.mtopadvertiseapi\.(queryadvertise|queryloadingbanner)/ _ reject
-^https?://amap\-aos\-info\-nogw\.amap\.com/ws/aos/alimama/ _ reject
+^https?://amap-aos-info-nogw\.amap\.com/ws/aos/alimama/ _ reject
 ^https?://m\d\.amap\.com/ws/message/notice/list? _ reject
 ^https?://m\d\.amap\.com/ws/shield/scene/recommend _ reject
 ^https?://m\d\.amap\.com/ws/valueadded/alimama/splash_screen? _ reject
 ^https?://optimus-ads\.amap\.com/uploadimg/ _ reject
 ^https?://render-oss-cdn\.amap\.com/render/studio-dev/image/ _ reject
-^https?://sns\.amap\.com/ws/msgbox/pull _ reject
+^https?://sns\.amap\.com/ws/msgbox/pull(_mp)? _ reject
 ^https?://.+?\.ott\.cibntv\.net/[\w/-]+.mp4\?sid= _ reject
 ^https?://gw\.kaola\.com/gw/dgmobile/newOpenAd _ reject
 ^https?://api-new\.app\.acfun\.cn/rest/app/flash/screen/ _ reject
