@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://yfamily.ml
 #!author=Mixed
-# 由yfamily.ml自动维护 202306110223
+# 由yfamily.ml自动维护 202306110316
 [URL Rewrite]
 ^https?://(www.)?(g|google)\.cn 302 https://www.google.com
 ^https?://(ditu|maps)\.google\.cn 302 https://maps.google.com
@@ -86,10 +86,11 @@
 ^https?://acs\.m\.taobao\.com/gw/mtop\.film\.mtopadvertiseapi\.(queryadvertise|queryloadingbanner)/ reject-200
 ^https?://amap\-aos\-info\-nogw\.amap\.com/ws/aos/alimama/ reject-200
 ^https?://m\d\.amap\.com/ws/message/notice/list? reject-200
+^https?://m\d\.amap\.com/ws/shield/scene/recommend reject-dict
 ^https?://m\d\.amap\.com/ws/valueadded/alimama/splash_screen? reject-200
 ^https?://optimus-ads\.amap\.com/uploadimg/ reject-200
 ^https?://render-oss-cdn\.amap\.com/render/studio-dev/image/ reject-200
-^https?://sns\.amap\.com/ws/msgbox/pull? reject-200
+^https?://sns\.amap\.com/ws/msgbox/pull reject-dict
 ^https?://.+?\.ott\.cibntv\.net/[\w/-]+.mp4\?sid= reject-200
 ^https?://gw\.kaola\.com/gw/dgmobile/newOpenAd reject-200
 ^https?://api-new\.app\.acfun\.cn/rest/app/flash/screen/ reject
