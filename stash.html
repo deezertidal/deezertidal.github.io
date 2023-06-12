@@ -578,6 +578,18 @@
 </script>
 
 <script>
+  var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  if (!isIOS) {
+    $("#searchResults").on("click", ".myButton", function(event) {
+      var target = $(event.target);
+      var href = target.parent().attr("href");
+      var trimmedLink = href.replace("https://link.stash.ws/install-override/", "");
+      navigator.clipboard.writeText(trimmedLink);
+      alert("链接已复制: " + trimmedLink);
+      return false;
+    });
+  }
+
   var searchBar = $("#searchBar");
   searchBar.on("input", function() {
     search();
@@ -605,36 +617,28 @@
     });
   }
 
-  $("#searchResults").on("click", ".myButton", function(event) {
-    var target = $(event.target);
-    var buttonText = target.text().trim().toLowerCase();
-    var href = target.parent().attr("href");
-    window.open(href);
-  });
-</script>
-<script>
-var colors = ['#4285F4', '#DB4437', '#0F9D58'];
-var buttons = document.querySelectorAll('.myButton');
-var prevColorIndex = -1;
-for (var i = 0; i < buttons.length; i++) {
-  var availableColors = [...colors]; 
-  if (prevColorIndex > -1) {
-    availableColors.splice(prevColorIndex, 1); 
+  var colors = ['#4285F4', '#DB4437', '#0F9D58'];
+  var buttons = document.querySelectorAll('.myButton');
+  var prevColorIndex = -1;
+
+  for (var i = 0; i < buttons.length; i++) {
+    var availableColors = [...colors];
+    if (prevColorIndex > -1) {
+      availableColors.splice(prevColorIndex, 1);
+    }
+    var randomIndex = Math.floor(Math.random() * availableColors.length);
+    buttons[i].style.backgroundColor = availableColors[randomIndex];
+    prevColorIndex = colors.indexOf(availableColors[randomIndex]);
   }
-  var randomIndex = Math.floor(Math.random() * availableColors.length);
-  buttons[i].style.backgroundColor = availableColors[randomIndex];
-  prevColorIndex = colors.indexOf(availableColors[randomIndex]); 
-}
-</script>
-<script>
-$('button').on('click', function() {
+
+  $('button').on('click', function() {
     var bgColor = $(this).css('background-color');
     bgColor = bgColor.replace('rgb(', '').replace(')', '').split(',');
     var r = 255 - parseInt(bgColor[0]);
     var g = 255 - parseInt(bgColor[1]);
     var b = 255 - parseInt(bgColor[2]);
     $(this).css('background-color', 'rgb(' + r + ',' + g + ',' + b + ')');
-});
+  });
 </script>
 <button id="share-button">分享到</button>
 <div id="share-options" style="display: none;">
