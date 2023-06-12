@@ -3,7 +3,7 @@ name: kelabizhi
 desc: 克拉壁纸
 http:
   mitm:
-    - 'claritywallpaper.com'
+    - "claritywallpaper.com"
   script:
     - match: ^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll)
       name: kelabizhi

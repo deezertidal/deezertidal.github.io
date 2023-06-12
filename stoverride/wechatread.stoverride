@@ -6,7 +6,7 @@ name: weixinzidongyuedu
 desc: 微信自动阅读积分兑换
 http:
   mitm:
-    - 'mp.weixin.qq.com'
+    - "mp.weixin.qq.com"
   script:
     - match: ^https?://mp\.weixin\.qq\.com/s\?.*
       name: weixinzidongyuedu

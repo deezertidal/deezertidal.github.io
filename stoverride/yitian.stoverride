@@ -6,7 +6,7 @@ name: yitianxiangji
 desc: 一甜相机解锁会员 
 http:
   mitm:
-    - 'm2u-api.getkwai.com'
+    - "m2u-api.getkwai.com"
   script:
     - match: ^https?:\/\/m2u-api\.getkwai\.com\/api-server\/api\/v2\/vip\/vipUserInfo
       name: yitianxiangji

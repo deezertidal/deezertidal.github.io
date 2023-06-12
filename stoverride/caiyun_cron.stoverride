@@ -6,8 +6,8 @@ name: caiyuntianqi
 desc: 自动定位 异常天气预警 实时天气预报
 http:
   mitm:
-    - 'weather-data.apple.com
-    - 'api.weather.com'
+    - "weather-data.apple.com"
+    - "api.weather.com"
   script:
     - match: https:\/\/((weather-data\.apple)|(api.weather))\.com
       name: caiyuntianqi

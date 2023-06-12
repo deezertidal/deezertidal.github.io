@@ -3,7 +3,7 @@ name: shiguangshouzhangjiesuo
 desc: 时光手账解锁
 http:
   mitm:
-    - 'api.shouzhang.com'
+    - "api.shouzhang.com"
   script:
     - match: https://api.shouzhang.com/memcenterlk/member
       name: shiguangshouzhangjiesuo

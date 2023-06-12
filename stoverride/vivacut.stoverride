@@ -6,7 +6,7 @@ name: Vivacut
 desc: Vivacut解锁会员
 http:
   mitm:
-    - 'medi.dxzzy321.top'
+    - "medi.dxzzy321.top"
   script:
     - match: ^https:\/\/medi\.dxzzy321\.top\/api\/rest\/commerce\/integrate\/vip\/perform
       name: Vivacut

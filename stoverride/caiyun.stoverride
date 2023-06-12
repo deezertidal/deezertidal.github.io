@@ -3,10 +3,10 @@ name: caiyuntianqipro
 desc: 彩云天气pro
 http:
   mitm:
-    - '*.caiyunapp.com
-    - '*.cyapi.com
-    - '*.cyapi.cn
-    - '*.caiyunapp.cn'
+    - "*.caiyunapp.com"
+    - "*.cyapi.com"
+    - "*.cyapi.cn"
+    - "*.caiyunapp.cn"
   script:
     - match: ^http[s]?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)\/v2\/user.*$
       name: caiyuntianqipro

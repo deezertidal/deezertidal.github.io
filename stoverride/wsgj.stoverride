@@ -6,7 +6,7 @@ name: wangsuguanjia
 desc: 网速管家解锁会员
 http:
   mitm:
-    - 'api-v3.speedtest.cn'
+    - "api-v3.speedtest.cn"
   script:
     - match: ^https:\/\/api-v3\.speedtest\.cn\/user\/info
       name: wangsuguanjia

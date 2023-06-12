@@ -7,7 +7,7 @@ name: xiaoxiongluping
 desc: 小熊录屏解锁
 http:
   mitm:
-    - 'donate-api.recorder.duapps.com'
+    - "donate-api.recorder.duapps.com"
   script:
     - match: ^http[s]?:\/\/donate-api.recorder.duapps.com
       name: xiaoxiongluping

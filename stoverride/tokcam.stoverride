@@ -6,7 +6,7 @@ name: TOKCAM
 desc: TOKCAM解锁永久订阅
 http:
   mitm:
-    - 'buy.itunes.apple.com'
+    - "buy.itunes.apple.com"
   script:
     - match: ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
       name: TOKCAM

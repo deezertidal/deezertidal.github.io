@@ -6,7 +6,7 @@ name: Lingokids
 desc: Lingokids解锁会员
 http:
   mitm:
-    - 'api.lingokids.com'
+    - "api.lingokids.com"
   script:
     - match: ^https:\/\/api\.lingokids\.com\/v1\/renovate_session
       name: Lingokids

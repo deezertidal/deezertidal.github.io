@@ -6,7 +6,7 @@ name: yimujizhang
 desc: 一木记账解锁会员
 http:
   mitm:
-    - 'yimuapp.com'
+    - "yimuapp.com"
   script:
     - match: ^https?:\/\/yimuapp\.com(:8082)?\/bookkeeping\/user\/getUser\/
       name: yimujizhang

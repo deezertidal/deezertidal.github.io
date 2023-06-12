@@ -7,7 +7,7 @@ name: Happy:Days
 desc: Happy:Days解锁会员
 http:
   mitm:
-    - 'api.revenuecat.com'
+    - "api.revenuecat.com"
   script:
     - match: ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36}|subscribers\/\$RCAnonymousID%3A\w{32})$
       name: Happy:Days

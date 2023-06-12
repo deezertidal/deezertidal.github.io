@@ -6,7 +6,7 @@ name: Vistakantianxia
 desc: Vista看天下会员解锁
 http:
   mitm:
-    - 'open3.vistastory.com'
+    - "open3.vistastory.com"
   script:
     - match: ^https?:\/\/open3\.vistastory\.com\/v\d\/api\/(article\/article_detail|vip\/get_vip|my\/home\/get_home_center)
       name: Vistakantianxia

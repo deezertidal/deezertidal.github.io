@@ -6,7 +6,7 @@ name: lingganzuji
 desc: 灵敢足迹解锁会员
 http:
   mitm:
-    - 'footprint-api.quthing.com'
+    - "footprint-api.quthing.com"
   script:
     - match: ^https:\/\/footprint-api\.quthing\.com\/vip\/state
       name: lingganzuji

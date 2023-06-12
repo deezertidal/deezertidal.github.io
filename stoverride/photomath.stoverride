@@ -6,7 +6,7 @@ name: Photomath
 desc: Photomath会员解锁
 http:
   mitm:
-    - 'lapi.photomath.net'
+    - "lapi.photomath.net"
   script:
     - match: https://lapi.photomath.net/v4/me
       name: Photomath

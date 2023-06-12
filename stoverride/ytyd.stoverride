@@ -7,7 +7,7 @@ name: yitianyuedu
 desc: 一天阅读解锁
 http:
   mitm:
-    - 'novel.test.onedayapp.cn'
+    - "novel.test.onedayapp.cn"
   script:
     - match: ^https:\/\/novel\.test\.onedayapp\.cn\/login\/sync
       name: yitianyuedu

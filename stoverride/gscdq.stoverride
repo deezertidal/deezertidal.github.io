@@ -6,7 +6,7 @@ name: gushicidaquan
 desc: 古诗词大全解锁会员
 http:
   mitm:
-    - 'gushici.91iread.com'
+    - "gushici.91iread.com"
   script:
     - match: ^http[s]?:\/\/gushici.91iread.com
       name: gushicidaquan

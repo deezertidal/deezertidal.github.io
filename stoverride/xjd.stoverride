@@ -7,7 +7,7 @@ name: xiaojueding
 desc: 小决定解锁会员
 http:
   mitm:
-    - 'api.revenuecat.com'
+    - "api.revenuecat.com"
   script:
     - match: ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$
       name: xiaojueding

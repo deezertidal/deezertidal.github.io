@@ -7,7 +7,7 @@ name: xiongmaoshuimian
 desc: 熊猫睡眠解锁
 http:
   mitm:
-    - 'sleep.navolove.com'
+    - "sleep.navolove.com"
   script:
     - match: ^http[s]?:\/\/sleep.navolove.com\/api\/refresh_user_info
       name: xiongmaoshuimian

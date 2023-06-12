@@ -6,7 +6,7 @@ name: FoMz
 desc: FoMz解锁会员
 http:
   mitm:
-    - 'fz68resapi.imendon.com'
+    - "fz68resapi.imendon.com"
   script:
     - match: ^https:\/\/fz68resapi\.imendon\.com\/v2\/purchase\/vip\/verification
       name: FoMz

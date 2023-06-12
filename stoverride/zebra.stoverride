@@ -6,7 +6,7 @@ name: banmahaibao
 desc: 斑马海报解锁会员
 http:
   mitm:
-    - 'zebra.maka.im'
+    - "zebra.maka.im"
   script:
     - match: https://zebra.maka.im/api/user/info
       name: banmahaibao

@@ -5,7 +5,7 @@ name: EMBY
 desc: Emby插件
 http:
   mitm:
-    - 'mb3admin.com'
+    - "mb3admin.com"
   script:
     - match: ^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice
       name: EMBY

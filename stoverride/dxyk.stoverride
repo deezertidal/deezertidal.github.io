@@ -7,7 +7,7 @@ name: dingxiangyikao
 desc: 丁香医考解锁
 http:
   mitm:
-    - 'exam.dxy.cn'
+    - "exam.dxy.cn"
   script:
     - match: ^http[s]?:\/\/exam.dxy.cn
       name: dingxiangyikao

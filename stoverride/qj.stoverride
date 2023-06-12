@@ -6,7 +6,7 @@ name: qianji
 desc: 钱迹解锁会员
 http:
   mitm:
-    - 'qianji.xxoojoke.com'
+    - "qianji.xxoojoke.com"
   script:
     - match: ^https:\/\/qianji\.xxoojoke\.com\/vip\/configios
       name: qianji

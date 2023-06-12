@@ -6,7 +6,7 @@ name: Flomo
 desc: Flomo解锁会员
 http:
   mitm:
-    - 'flomoapp.com'
+    - "flomoapp.com"
   script:
     - match: ^https:\/\/flomoapp\.com\/api\/v1\/user\/me
       name: Flomo

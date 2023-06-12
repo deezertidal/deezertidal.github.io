@@ -6,7 +6,7 @@ name: xiaoxiguan
 desc: 小习惯解锁会员
 http:
   mitm:
-    - 'xianbeikeji.com'
+    - "xianbeikeji.com"
   script:
     - match: https://xianbeikeji.com/daily/app/user/query
       name: xiaoxiguan

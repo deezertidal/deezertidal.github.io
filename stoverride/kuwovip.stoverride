@@ -5,7 +5,7 @@ name: kuwohuiyuan
 desc: 解锁酷我年费会员
 http:
   mitm:
-    - 'vip1.kuwo.cn'
+    - "vip1.kuwo.cn"
   script:
     - match: ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice)
       name: kuwohuiyuan

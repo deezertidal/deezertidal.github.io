@@ -3,7 +3,7 @@ name: naiyoubizhihuiyuan
 desc: 奶由壁纸会员
 http:
   mitm:
-    - 'nz-api.duitang.com'
+    - "nz-api.duitang.com"
   script:
     - match: https://nz-api.duitang.com/account/me
       name: naiyoubizhihuiyuan

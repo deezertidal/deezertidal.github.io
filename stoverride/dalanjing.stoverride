@@ -6,7 +6,7 @@ name: dalanjing
 desc: 大蓝鲸解锁会员
 http:
   mitm:
-    - '*.jstv.com'
+    - "*.jstv.com"
   script:
     - match: ^https?:\/\/(publish-dalanjing|publish-dalanjing|user-dalanjing)\.jstv\.com\/(search\/byArticleType|nav\/1554|PassportUser\/userinfo\/get)
       name: dalanjing

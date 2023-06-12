@@ -7,7 +7,7 @@ name: lanjiyin
 desc: 蓝基因解锁
 http:
   mitm:
-    - '*.lanjiyin.com.cn'
+    - "*.lanjiyin.com.cn"
   script:
     - match: ^https:\/\/(tk|course)\.lanjiyin\.com\.cn
       name: lanjiyin

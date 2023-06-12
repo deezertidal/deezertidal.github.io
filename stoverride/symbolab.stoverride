@@ -6,7 +6,7 @@ name: Symbolab
 desc: Symbolab Pro
 http:
   mitm:
-    - 'scibug.com'
+    - "scibug.com"
   script:
     - match: ^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy)
       name: Symbolab

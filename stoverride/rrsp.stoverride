@@ -6,7 +6,7 @@ name: renrenshipinquguanggao
 desc: 人人（多多）视频去广告
 http:
   mitm:
-    - 'api.rr.tv'
+    - "api.rr.tv"
   script:
     - match: ^https?:\/\/api\.rr\.tv\/\w{3}\/level\/info
       name: renrenshipinquguanggao

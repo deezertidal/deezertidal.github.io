@@ -6,7 +6,7 @@ name: Molycam
 desc: Molycam会员解锁
 http:
   mitm:
-    - 'pay.wecut.com'
+    - "pay.wecut.com"
   script:
     - match: https:\/\/pay\.wecut\.com\/apple\/(iosVerifyReceipt|iosAppVerifyReceipt)\.php
       name: Molycam

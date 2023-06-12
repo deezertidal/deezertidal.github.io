@@ -6,7 +6,7 @@ name: 1blocker
 desc: 1blocker会员解锁
 http:
   mitm:
-    - 'api.revenuecat.com'
+    - "api.revenuecat.com"
   script:
     - match: ^https:\/\/api\.revenuecat\.com\/v1\/subscribers
       name: 1blocker

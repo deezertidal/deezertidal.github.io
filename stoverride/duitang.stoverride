@@ -6,7 +6,7 @@ name: duitang
 desc: 堆糖解锁会员
 http:
   mitm:
-    - 'api.duitang.com'
+    - "api.duitang.com"
   script:
     - match: ^https:\/\/api\.duitang\.com\/napi
       name: duitang

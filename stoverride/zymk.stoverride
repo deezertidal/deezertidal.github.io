@@ -6,7 +6,7 @@ name: zhiyinmanke
 desc: 解锁知音漫客付费章节 (需登录)
 http:
   mitm:
-    - 'apigate.zymk.cn'
+    - "apigate.zymk.cn"
   script:
     - match: ^https:\/\/apigate\.zymk\.cn\/(zymk-getuserinfo-api\/v1\/getuserinfo|zymk-userpurchased-api\/v1\/userpurchased\/paychapters)\/
       name: zhiyinmanke

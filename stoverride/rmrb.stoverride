@@ -6,7 +6,7 @@ name: renminribaoquguanggao
 desc: 人民日报去广告
 http:
   mitm:
-    - 'app.peopleapp.com'
+    - "app.peopleapp.com"
   script:
     - match: ^https:\/\/app\.peopleapp\.com\/Api\/\d+\/HomeApi\/getContentList
       name: renminribaoquguanggao

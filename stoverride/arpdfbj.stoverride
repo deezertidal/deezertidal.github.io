@@ -6,7 +6,7 @@ name: aoruanPDFbianji
 desc: 傲软PDF编辑解锁会员
 http:
   mitm:
-    - 'gw.aoscdn.com'
+    - "gw.aoscdn.com"
   script:
     - match: ^https:\/\/gw\.aoscdn\.com\/base\/vip\/client\/authorizations
       name: aoruanPDFbianji

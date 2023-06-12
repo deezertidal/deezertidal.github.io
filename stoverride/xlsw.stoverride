@@ -7,7 +7,7 @@ name: xiaolushengwen
 desc: 小鹿声文解锁
 http:
   mitm:
-    - 'ttlnt.wedo-lnt.com'
+    - "ttlnt.wedo-lnt.com"
   script:
     - match: ^http[s]?:\/\/ttlnt.wedo-lnt.com\/serviceVideoApp\/user-info\/left-time-space
       name: xiaolushengwen

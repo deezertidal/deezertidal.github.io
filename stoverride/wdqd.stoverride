@@ -6,7 +6,7 @@ name: wandouqingdan
 desc: 豌豆清单解锁会员
 http:
   mitm:
-    - 'www.40sishi.com'
+    - "www.40sishi.com"
   script:
     - match: ^https:\/\/www\.40sishi\.com\/list\/user\/profile$
       name: wandouqingdan

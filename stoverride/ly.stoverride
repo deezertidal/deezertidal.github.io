@@ -6,7 +6,7 @@ name: laiyinzhinengpeilian
 desc: 来音智能陪练解锁
 http:
   mitm:
-    - 'partner-ai-api.quthing.com'
+    - "partner-ai-api.quthing.com"
   script:
     - match: ^https:\/\/partner-ai-api\.quthing\.com\/ai\/vip\/state
       name: laiyinzhinengpeilian

@@ -6,7 +6,7 @@ name: hanbaoertonggushi
 desc: 汉堡儿童故事解锁会员
 http:
   mitm:
-    - 'www.babybooks.top'
+    - "www.babybooks.top"
   script:
     - match: ^http[s]?:\/\/www.babybooks.top\/v0\/profile
       name: hanbaoertonggushi

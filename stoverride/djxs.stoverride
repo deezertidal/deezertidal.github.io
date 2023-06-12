@@ -7,7 +7,7 @@ name: dejianxiaoshuo
 desc: 得间小说解锁
 http:
   mitm:
-    - 'dj.palmestore.com'
+    - "dj.palmestore.com"
   script:
     - match: ^http[s]?:\/\/dj.palmestore.com\/zyuc\/api\/user\/accountInfo
       name: dejianxiaoshuo

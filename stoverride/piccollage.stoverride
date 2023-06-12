@@ -3,7 +3,7 @@ name: Piccollagejiesuo
 desc: Piccollage解锁
 http:
   mitm:
-    - 'piccollage.com'
+    - "piccollage.com"
   script:
     - match: https://piccollage.com/api/graphql
       name: Piccollagejiesuo

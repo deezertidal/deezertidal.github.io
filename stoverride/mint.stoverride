@@ -7,7 +7,7 @@ name: bohebizhi
 desc: 薄荷壁纸解锁
 http:
   mitm:
-    - 'mars-prod.whalean.com'
+    - "mars-prod.whalean.com"
   script:
     - match: ^https?:\/\/mars-prod\.whalean\.com\/hestia-service\/api\/(wpUser\/getUserInfo|wallpaper\/ai\/count\/detail)
       name: bohebizhi

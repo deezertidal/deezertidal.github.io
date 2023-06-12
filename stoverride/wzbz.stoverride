@@ -7,7 +7,7 @@ name: wenzhenbazi
 desc: 问真八字解锁
 http:
   mitm:
-    - 'bzpp2.iwzbz.com'
+    - "bzpp2.iwzbz.com"
   script:
     - match: ^https?:\/\/bzpp2\.iwzbz\.com\/api\/v1\.1\/user\/getpwnewios
       name: wenzhenbazi

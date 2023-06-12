@@ -6,7 +6,7 @@ name: jingshuguoxue
 desc: 精塾国学解锁会员
 http:
   mitm:
-    - '47.104.228.152:9100'
+    - "47.104.228.152:9100"
   script:
     - match: ^https?:\/\/47\.104\.228\.152:9100\/api\/apiAppUser\/getUser
       name: jingshuguoxue

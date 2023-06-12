@@ -6,7 +6,7 @@ name: yiyan
 desc: 一言解锁会员
 http:
   mitm:
-    - 'app.yiyan.art'
+    - "app.yiyan.art"
   script:
     - match: ^https:\/\/app\.yiyan\.art\/yiyan\/
       name: yiyan

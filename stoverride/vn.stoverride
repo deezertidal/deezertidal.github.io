@@ -7,7 +7,7 @@ name: VNshipinjianji
 desc: VN视频剪辑解锁会员
 http:
   mitm:
-    - 'api2.vlognow.me'
+    - "api2.vlognow.me"
   script:
     - match: ^https?:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status
       name: VNshipinjianji

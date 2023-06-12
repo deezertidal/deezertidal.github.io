@@ -6,7 +6,7 @@ name: HyperWeb
 desc: hyperweb会员解锁
 http:
   mitm:
-    - 'zy6kcqa01a.execute-api.us-east-2.amazonaws.com'
+    - "zy6kcqa01a.execute-api.us-east-2.amazonaws.com"
   script:
     - match: ^https://zy6kcqa01a.execute-api.us-east-2.amazonaws.com/prod/verifyReceipt
       name: HyperWeb

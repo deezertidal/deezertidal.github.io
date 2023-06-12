@@ -6,7 +6,7 @@ name: manhuatailite
 desc: 漫画台lite微信小程序解锁
 http:
   mitm:
-    - 'comic.321mh.com'
+    - "comic.321mh.com"
   script:
     - match: ^https?:\/\/comic\.321mh\.com\/app_api\/v\d\/getcomicinfo_body
       name: manhuatailite

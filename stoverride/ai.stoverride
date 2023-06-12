@@ -6,7 +6,7 @@ name: AIhuanlianxiu
 desc: AI换脸秀会员解锁
 http:
   mitm:
-    - 'changeclothes.szsszykj.com'
+    - "changeclothes.szsszykj.com"
   script:
     - match: ^https:\/\/changeclothes\.szsszykj\.com\/interface\/GetIosVip.php
       name: AIhuanlianxiu

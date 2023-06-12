@@ -6,7 +6,7 @@ name: maotouyingwenjian
 desc: 猫头鹰文件解锁会员
 http:
   mitm:
-    - 'www.skyjos.cn'
+    - "www.skyjos.cn"
   script:
     - match: ^https:\/\/www\.skyjos\.cn:58080\/ws\/loadaccountinfo
       name: maotouyingwenjian

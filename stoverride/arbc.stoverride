@@ -6,7 +6,7 @@ name: AI Remove Background-Collart
 desc: AI Remove Background解锁会员
 http:
   mitm:
-    - 'iap.etm.tech'
+    - "iap.etm.tech"
   script:
     - match: ^https:\/\/iap\.etm\.tech\/receipts
       name: AI Remove Background-Collart

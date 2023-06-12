@@ -7,7 +7,7 @@ name: huxi xiaozujian
 desc: 呼吸 小组件解锁
 http:
   mitm:
-    - 'buy.itunes.apple.com'
+    - "buy.itunes.apple.com"
   script:
     - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
       name: huxi xiaozujian

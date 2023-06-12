@@ -7,7 +7,7 @@ name: yuedujilu
 desc: 阅读记录解锁
 http:
   mitm:
-    - 'app.yidiansz.com'
+    - "app.yidiansz.com"
   script:
     - match: ^http[s]?:\/\/app.yidiansz.com
       name: yuedujilu

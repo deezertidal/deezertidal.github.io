@@ -6,7 +6,7 @@ name: dianziqingjianzhizuo
 desc: 电子请柬制作解锁会员
 http:
   mitm:
-    - 'cn.invit.vip'
+    - "cn.invit.vip"
   script:
     - match: ^https:\/\/cn\.invit\.vip\/users\/info
       name: dianziqingjianzhizuo

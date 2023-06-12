@@ -6,7 +6,7 @@ name: Sorted
 desc: Sorted日历解锁
 http:
   mitm:
-    - 'api.sortedapp.com'
+    - "api.sortedapp.com"
   script:
     - match: ^https:\/\/api\.sortedapp\.com\/receipts\/verify
       name: Sorted

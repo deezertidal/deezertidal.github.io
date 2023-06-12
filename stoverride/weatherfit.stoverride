@@ -7,7 +7,7 @@ name: Weather Fit
 desc: Weather Fit解锁
 http:
   mitm:
-    - 'api.revenuecat.com'
+    - "api.revenuecat.com"
   script:
     - match: ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$
       name: Weather Fit

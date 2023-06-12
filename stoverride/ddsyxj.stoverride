@@ -6,7 +6,7 @@ name: dingdingshuiyinxiangji
 desc: 叮叮水印相机解锁会员
 http:
   mitm:
-    - 'zip.jinzitao.com'
+    - "zip.jinzitao.com"
   script:
     - match: https://zip.jinzitao.com/refreshuinfo
       name: dingdingshuiyinxiangji

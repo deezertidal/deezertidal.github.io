@@ -6,7 +6,7 @@ name: luozhidayuwen
 desc: 螺畤大语文解锁会员
 http:
   mitm:
-    - 'api8.luosijiaoyu.com'
+    - "api8.luosijiaoyu.com"
   script:
     - match: ^https?:\/\/api8\.luosijiaoyu\.com\/api\/(HZLSJY20200817Controller\/selectFMVideoById\.html|LsjyMyContoller\/selectUserInfo\.html)
       name: luozhidayuwen

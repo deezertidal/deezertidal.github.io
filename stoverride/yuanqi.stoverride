@@ -7,7 +7,7 @@ name: yuanqizhuomianbizhi
 desc: 元气桌面壁纸解锁
 http:
   mitm:
-    - 'mobile-ios-wallpaper-api.zhhainiao.com'
+    - "mobile-ios-wallpaper-api.zhhainiao.com"
   script:
     - match: ^http[s]?:\/\/mobile-ios-wallpaper-api.zhhainiao.com\/v1\/user\/info
       name: yuanqizhuomianbizhi

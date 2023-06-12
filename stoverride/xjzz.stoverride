@@ -7,7 +7,7 @@ name: xiaojizhuanzhu
 desc: 小鸡专注解锁
 http:
   mitm:
-    - 'buy.itunes.apple.com'
+    - "buy.itunes.apple.com"
   script:
     - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
       name: xiaojizhuanzhu

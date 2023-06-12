@@ -6,7 +6,7 @@ name: qimaoxiaoshuo
 desc: 七猫小说解锁
 http:
   mitm:
-    - '*.wtzw.com'
+    - "*.wtzw.com"
   script:
     - match: ^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/
       name: qimaoxiaoshuo

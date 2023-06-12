@@ -6,7 +6,7 @@ name: yunting
 desc: 云听解锁会员
 http:
   mitm:
-    - 'getway.radio.cn'
+    - "getway.radio.cn"
   script:
     - match: http://getway.radio.cn/app*
       name: yunting

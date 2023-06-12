@@ -6,7 +6,7 @@ name: jisusaomiaoyi
 desc: 极速扫描仪解锁会员
 http:
   mitm:
-    - 'scanner.jianse.tv'
+    - "scanner.jianse.tv"
   script:
     - match: ^https:\/\/scanner\.jianse\.tv\/api\/users\/loginUser
       name: jisusaomiaoyi

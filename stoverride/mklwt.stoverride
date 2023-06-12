@@ -6,7 +6,7 @@ name: makalongwantu
 desc: 马卡龙玩图解锁会员
 http:
   mitm:
-    - 'app.api.versa-ai.com'
+    - "app.api.versa-ai.com"
   script:
     - match: https://app.api.versa-ai.com/pay/order/iap/check
       name: makalongwantu

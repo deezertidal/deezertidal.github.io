@@ -6,7 +6,7 @@ name: meipian
 desc: 美篇解锁vip
 http:
   mitm:
-    - 'poster.meipian.cn'
+    - "poster.meipian.cn"
   script:
     - match: ^https:\//poster.meipian.cn\/5.3\/user\/info
       name: meipian

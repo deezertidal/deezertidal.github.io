@@ -6,7 +6,7 @@ name: tutujizhang
 desc: 图图记账解锁永久高级版
 http:
   mitm:
-    - 'api.revenuecat.com'
+    - "api.revenuecat.com"
   script:
     - match: ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$
       name: tutujizhang

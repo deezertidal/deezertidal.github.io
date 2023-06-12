@@ -6,7 +6,7 @@ name: xiaozujianhezi
 desc: 小组件盒子解锁会员
 http:
   mitm:
-    - 'widget-box-api.codefuture.top'
+    - "widget-box-api.codefuture.top"
   script:
     - match: ^https:\/\/widget-box-api\.codefuture\.top\/v1\/users\/me
       name: xiaozujianhezi

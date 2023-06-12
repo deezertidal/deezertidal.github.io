@@ -3,7 +3,7 @@ name: Musixmatchjiesuo
 desc: Musixmatch解锁
 http:
   mitm:
-    - 'apic.musixmatch.com'
+    - "apic.musixmatch.com"
   script:
     - match: https://apic.musixmatch.com/ws/1.1/config.get
       name: Musixmatchjiesuo

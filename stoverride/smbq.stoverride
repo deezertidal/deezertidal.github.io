@@ -6,7 +6,7 @@ name: shanmengbiaoqing
 desc: 闪萌表情解锁会员
 http:
   mitm:
-    - 'hi.weshine.im'
+    - "hi.weshine.im"
   script:
     - match: ^https:\/\/hi\.weshine\.im\/v3\.0\/account\/profile
       name: shanmengbiaoqing

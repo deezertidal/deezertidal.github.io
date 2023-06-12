@@ -7,7 +7,7 @@ name: dashenshuiyin
 desc: 大神水印解锁
 http:
   mitm:
-    - 'dashen.shuiyinyu.com'
+    - "dashen.shuiyinyu.com"
   script:
     - match: ^http[s]?:\/\/dashen.shuiyinyu.com\/m\/user\/get_user_info
       name: dashenshuiyin

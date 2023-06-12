@@ -6,7 +6,7 @@ name: FainTV
 desc: FainTV解锁会员去广告
 http:
   mitm:
-    - 'ftvn.hawsing.com'
+    - "ftvn.hawsing.com"
   script:
     - match: ^http:\/\/ftvn\.hawsing\.com\.tw:3000\/client\/login
       name: FainTV

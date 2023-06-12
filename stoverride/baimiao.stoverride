@@ -6,7 +6,7 @@ name: baimiao
 desc: 白描黄金会员
 http:
   mitm:
-    - 'baimiao.uzero.cn'
+    - "baimiao.uzero.cn"
   script:
     - match: ^https?:\/\/baimiao\.uzero\.cn\/api\/v\d\.user\/appLaunchWithUser$
       name: baimiao

@@ -6,7 +6,7 @@ name: huizhongkao
 desc: 汇中考解锁会员
 http:
   mitm:
-    - 'www.zhongkao66.com'
+    - "www.zhongkao66.com"
   script:
     - match: ^http[s]?:\/\/www.zhongkao66.com
       name: huizhongkao

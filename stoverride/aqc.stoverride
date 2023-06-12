@@ -6,7 +6,7 @@ name: aiqicha
 desc: 爱企查vip
 http:
   mitm:
-    - 'aiqicha.baidu.com'
+    - "aiqicha.baidu.com"
   script:
     - match: ^https:\//aiqicha.baidu.com\/usercenter\/getvipinfoajax
       name: aiqicha

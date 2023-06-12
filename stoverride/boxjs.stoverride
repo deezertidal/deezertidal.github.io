@@ -3,7 +3,7 @@ name: BoxJs
 desc: http://boxjs.com
 http:
   mitm:
-    - ''
+    - ""
   script:
     - match: https?:\/\/boxjs\.(com|net)
       name: BoxJs

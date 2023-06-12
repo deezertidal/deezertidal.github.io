@@ -6,7 +6,7 @@ name: yishuyike
 desc: 一书一课解锁会员
 http:
   mitm:
-    - 'api.chiyue365.com'
+    - "api.chiyue365.com"
   script:
     - match: ^https:\/\/api\.chiyue365\.com
       name: yishuyike

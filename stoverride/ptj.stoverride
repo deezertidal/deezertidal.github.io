@@ -6,7 +6,7 @@ name: pintujiang
 desc: 拼图酱解锁会员
 http:
   mitm:
-    - 'buy.itunes.apple.com'
+    - "buy.itunes.apple.com"
   script:
     - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
       name: pintujiang

@@ -7,7 +7,7 @@ name: qupai
 desc: 趣拍解锁
 http:
   mitm:
-    - 's.mcwifi.cn/hw'
+    - "s.mcwifi.cn/hw"
   script:
     - match: ^http[s]?:\/\/s.mcwifi.cn/hw\/apple\/subscribe\/v1
       name: qupai

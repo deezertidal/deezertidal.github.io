@@ -6,7 +6,7 @@ name: youdaocidian
 desc: 有道词典会员解锁
 http:
   mitm:
-    - 'dict.youdao.com'
+    - "dict.youdao.com"
   script:
     - match: ^https:\/\/dict\.youdao\.com\/vip\/user\/status
       name: youdaocidian

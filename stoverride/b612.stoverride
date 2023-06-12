@@ -6,7 +6,7 @@ name: B612kaji
 desc: B612咔叽会员解锁
 http:
   mitm:
-    - 'user-kaji-api.b612kaji.com'
+    - "user-kaji-api.b612kaji.com"
   script:
     - match: https://user-kaji-api.b612kaji.com/v1/purchase/subscription/subscriber/status
       name: B612kaji

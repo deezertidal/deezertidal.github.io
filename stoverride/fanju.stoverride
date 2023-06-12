@@ -7,7 +7,7 @@ name: fanjujianfei
 desc: 饭橘减肥解锁
 http:
   mitm:
-    - 'funjoy-api.aiyouaiyou.cn'
+    - "funjoy-api.aiyouaiyou.cn"
   script:
     - match: ^https?:\/\/funjoy-api\.aiyouaiyou\.cn\/api\/User\/GetInfoByCode$
       name: fanjujianfei

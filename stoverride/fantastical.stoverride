@@ -6,7 +6,7 @@ name: Fantastical
 desc: Fantastical解锁会员
 http:
   mitm:
-    - 'api.flexibits.com'
+    - "api.flexibits.com"
   script:
     - match: ^https:\/\/api\.flexibits\.com\/(v1\/auth\/device|v1\/account\/details)
       name: Fantastical

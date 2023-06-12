@@ -6,7 +6,7 @@ name: aliyunpanqiandao
 desc: 阿里云盘定时签到
 http:
   mitm:
-    - 'auth.aliyundrive.com'
+    - "auth.aliyundrive.com"
   script:
     - match: https:\/\/auth.aliyundrive.com\/v2\/account\/token
       name: aliyunpanqiandao

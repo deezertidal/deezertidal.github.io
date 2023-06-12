@@ -7,7 +7,7 @@ name: buzhedieshurufa
 desc: 不折叠输入法解锁
 http:
   mitm:
-    - 'api.keyboard.buzhedie.com'
+    - "api.keyboard.buzhedie.com"
   script:
     - match: ^http[s]?:\/\/api.keyboard.buzhedie.com\/input\/member_info\/
       name: buzhedieshurufa

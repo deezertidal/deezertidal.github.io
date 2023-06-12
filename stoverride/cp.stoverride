@@ -6,8 +6,8 @@ name: caipudaquan&xianghacaipu
 desc: 菜谱大全&香哈菜谱解锁会员
 http:
   mitm:
-    - 'apiios_dq.xiangha.com
-    - 'apiios.xiangha.com'
+    - "apiios_dq.xiangha.com"
+    - "apiios.xiangha.com"
   script:
     - match: ^https?:\/\/apiios\.xiangha\.com\/main\d+\/
       name: caipudaquan&xianghacaipu

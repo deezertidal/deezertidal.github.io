@@ -6,7 +6,7 @@ name: taopiaopiaopingfen
 desc: 支付宝内淘票票显示豆瓣评分
 http:
   mitm:
-    - 'guide-acs.m.taobao.com'
+    - "guide-acs.m.taobao.com"
   script:
     - match: ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopshowapi\.getextendshowbyid
       name: taopiaopiaopingfen

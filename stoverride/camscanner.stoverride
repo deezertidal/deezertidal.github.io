@@ -5,7 +5,7 @@ name: saomiaoquannengwang
 desc: 解锁扫描全能王
 http:
   mitm:
-    - 'ap*.intsig.net'
+    - "ap*.intsig.net"
   script:
     - match: https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?
       name: saomiaoquannengwang

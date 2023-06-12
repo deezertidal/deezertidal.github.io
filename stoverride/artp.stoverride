@@ -6,7 +6,7 @@ name: aoruantouping
 desc: 傲软投屏解锁会员
 http:
   mitm:
-    - 'awvp.aoscdn.com'
+    - "awvp.aoscdn.com"
   script:
     - match: ^https:\/\/awvp\.aoscdn\.com\/base\/vip\/client\/authorizations
       name: aoruantouping

@@ -6,7 +6,7 @@ name: Emmo
 desc: Emmo解锁会员
 http:
   mitm:
-    - '106.54.2.168'
+    - "106.54.2.168"
   script:
     - match: ^http://106.54.2.168/emmoDiary/user/getUser
       name: Emmo

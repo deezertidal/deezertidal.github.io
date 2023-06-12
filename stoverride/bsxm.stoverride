@@ -6,7 +6,7 @@ name: boshangxiaomai
 desc: 博商小麦解锁会员
 http:
   mitm:
-    - 'yyy.bosum.com'
+    - "yyy.bosum.com"
   script:
     - match: http:\/\/yyy\.bosum\.com\/enterprise
       name: boshangxiaomai

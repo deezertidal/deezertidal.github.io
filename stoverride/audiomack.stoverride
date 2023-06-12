@@ -6,7 +6,7 @@ name: AudioMack
 desc: AudioMack解锁永久订阅
 http:
   mitm:
-    - 'api.revenuecat.com'
+    - "api.revenuecat.com"
   script:
     - match: ^https?:\/\/api\.revenuecat\.com\/v1\/subscribers\/(identify|\d+)$
       name: AudioMack

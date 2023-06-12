@@ -7,7 +7,7 @@ name: danbo
 desc: 蛋啵解锁会员
 http:
   mitm:
-    - 'api-sub.meitu.com'
+    - "api-sub.meitu.com"
   script:
     - match: ^https:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json
       name: danbo

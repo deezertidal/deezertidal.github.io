@@ -6,8 +6,8 @@ name: kuwoyinyuehuiyuan
 desc: 新版酷我若无效 请更换酷我音乐纯净版
 http:
   mitm:
-    - '*.kuwo.cn
-    - '*.lrts.me'
+    - "*.kuwo.cn"
+    - "*.lrts.me"
   script:
     - match: ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*
       name: kuwoyinyuehuiyuan

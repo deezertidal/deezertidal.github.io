@@ -3,7 +3,7 @@ name: Tidal Plusshixiaozhong
 desc: 解锁 Tidal订阅
 http:
   mitm:
-    - 'api.tidal.com'
+    - "api.tidal.com"
   script:
     - match: ^https?:\/\/api\.tidal\.com\/v1\/(pages\/album|(user|track|page)s\/(\d+)\/(state|subscription|lyrics|onboarding|playbackinfopostpaywall))
       name: Tidal Plusshixiaozhong

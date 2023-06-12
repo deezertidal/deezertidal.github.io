@@ -6,7 +6,7 @@ name: yijianhuanlian
 desc: 一键换脸解锁会员
 http:
   mitm:
-    - 'c-api.wjpaa.cn'
+    - "c-api.wjpaa.cn"
   script:
     - match: ^https:\/\/c-api\.wjpaa\.cn\/capi\/wxRegisterLogin
       name: yijianhuanlian

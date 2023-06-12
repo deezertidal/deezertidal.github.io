@@ -6,12 +6,12 @@ name: xiangjiaoshipin
 desc: 解锁观看限制
 http:
   mitm:
-    - 'ios.fuliapps.com
-    - 'apple.fuliapps.com
-    - 'ios.xiangjiaoapps.com
-    - 'apple.xiangjiaoapps.com
-    - '*.xiangxiangapps.com
-    - '*.pipiapps.com'
+    - "ios.fuliapps.com"
+    - "apple.fuliapps.com"
+    - "ios.xiangjiaoapps.com"
+    - "apple.xiangjiaoapps.com"
+    - "*.xiangxiangapps.com"
+    - "*.pipiapps.com"
   script:
     - match: https?:\/\/.+?\.(pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|(\/|)vod\/reqplay\/)
       name: xiangjiaoshipin

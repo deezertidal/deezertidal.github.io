@@ -7,7 +7,7 @@ name: quyan
 desc: 趣颜解锁
 http:
   mitm:
-    - 'quyan.aifaceshow.com'
+    - "quyan.aifaceshow.com"
   script:
     - match: ^http[s]?:\/\/quyan.aifaceshow.com\/api\/user
       name: quyan

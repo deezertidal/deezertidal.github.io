@@ -7,7 +7,7 @@ name: jianying
 desc: 简影解锁
 http:
   mitm:
-    - 'api.jianmovie.com'
+    - "api.jianmovie.com"
   script:
     - match: ^http[s]?:\/\/api.jianmovie.com
       name: jianying

@@ -6,7 +6,7 @@ name: lijingtianqi
 desc: 莉景天气解锁会员
 http:
   mitm:
-    - 'ljwapi.baichuan.tech'
+    - "ljwapi.baichuan.tech"
   script:
     - match: ^https:\/\/ljwapi\.baichuan\.tech
       name: lijingtianqi

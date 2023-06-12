@@ -6,7 +6,7 @@ name: jikeyundong
 desc: 即刻运动解锁会员
 http:
   mitm:
-    - 'ec.myjkyd.com'
+    - "ec.myjkyd.com"
   script:
     - match: http:\/\/ec\.myjkyd\.com\/ftec
       name: jikeyundong

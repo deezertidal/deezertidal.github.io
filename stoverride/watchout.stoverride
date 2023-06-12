@@ -6,7 +6,7 @@ name: Watchout
 desc: Watchout小组件解锁会员
 http:
   mitm:
-    - 'api.pengranapp.com'
+    - "api.pengranapp.com"
   script:
     - match: ^https:\/\/api\.pengranapp\.com\/1\.1\/classes\/UserInfo
       name: Watchout

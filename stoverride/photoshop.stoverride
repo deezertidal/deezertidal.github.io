@@ -6,7 +6,7 @@ name: PhotoshopExpress
 desc: PhotoshopExpress解锁高级订阅
 http:
   mitm:
-    - 'lcs-mobile-cops.adobe.io'
+    - "lcs-mobile-cops.adobe.io"
   script:
     - match: ^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile
       name: PhotoshopExpress

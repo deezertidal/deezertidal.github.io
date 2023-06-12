@@ -7,7 +7,7 @@ name: quling
 desc: 趣铃解锁
 http:
   mitm:
-    - '47.108.54.158'
+    - "47.108.54.158"
   script:
     - match: ^http[s]?:\/\/47.108.54.158
       name: quling

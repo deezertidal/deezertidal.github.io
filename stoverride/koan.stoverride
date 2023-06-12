@@ -7,7 +7,7 @@ name: Koan tiwenriji
 desc: Koan 提问日记解锁
 http:
   mitm:
-    - 'koan.bopulab.cn'
+    - "koan.bopulab.cn"
   script:
     - match: ^http[s]?:\/\/koan.bopulab.cn\/user\/getBriefByUserIdV3
       name: Koan tiwenriji

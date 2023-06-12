@@ -6,7 +6,7 @@ name: Documents
 desc: Documents解锁会员
 http:
   mitm:
-    - 'license.pdfexpert.com'
+    - "license.pdfexpert.com"
   script:
     - match: ^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh
       name: Documents

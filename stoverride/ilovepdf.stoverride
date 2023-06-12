@@ -3,7 +3,7 @@ name: ILovePDF
 desc: ILovePDF
 http:
   mitm:
-    - 'service.ilovepdf.com'
+    - "service.ilovepdf.com"
   script:
     - match: https://service.ilovepdf.com/v1/user
       name: ILovePDF

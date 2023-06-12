@@ -3,7 +3,7 @@ name: bazaarthuiyuanjiesuo
 desc: bazaart会员解锁
 http:
   mitm:
-    - 'buy.itunes.apple.com'
+    - "buy.itunes.apple.com"
   script:
     - match: https://buy.itunes.apple.com/verifyReceipt
       name: bazaarthuiyuanjiesuo

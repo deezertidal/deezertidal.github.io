@@ -6,7 +6,7 @@ name: ergediandian
 desc: 儿歌点点会员
 http:
   mitm:
-    - 'gateway.ergedd.com'
+    - "gateway.ergedd.com"
   script:
     - match: http:\/\/gateway\.ergedd\.com\/dduser\/user\/center\/set
       name: ergediandian

@@ -6,7 +6,7 @@ name: Todoqingdan
 desc: Todo清单解锁会员
 http:
   mitm:
-    - 'www.evestudio.cn'
+    - "www.evestudio.cn"
   script:
     - match: ^https:\/\/www\.evestudio\.cn\/todoList\/getDetailUser
       name: Todoqingdan

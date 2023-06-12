@@ -6,7 +6,7 @@ name: Cubox
 desc: Cubox解锁
 http:
   mitm:
-    - 'cubox.pro'
+    - "cubox.pro"
   script:
     - match: ^https:\/\/cubox\.pro\/c\/api\/userInfo
       name: Cubox

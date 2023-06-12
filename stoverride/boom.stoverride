@@ -3,7 +3,7 @@ name: Boom
 desc: Boom
 http:
   mitm:
-    - 'apimboom2.globaldelight.net'
+    - "apimboom2.globaldelight.net"
   script:
     - match: ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$
       name: Boom

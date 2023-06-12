@@ -6,7 +6,7 @@ name: Endel
 desc: Endel解锁会员
 http:
   mitm:
-    - 'api-production.endel.io'
+    - "api-production.endel.io"
   script:
     - match: ^https:\/\/api-production\.endel\.io\/v4\/call
       name: Endel

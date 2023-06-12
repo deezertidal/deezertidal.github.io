@@ -3,7 +3,7 @@ name: ellabook
 desc: ellabook
 http:
   mitm:
-    - 'bookapi.ellabook.cn'
+    - "bookapi.ellabook.cn"
   script:
     - match: https?:\/\/bookapi\.ellabook\.cn\/rest\/api\/service$
       name: ellabook

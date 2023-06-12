@@ -3,7 +3,7 @@ name: kikajiesuo
 desc: kika解锁
 http:
   mitm:
-    - 'api.kikakeyboard.com'
+    - "api.kikakeyboard.com"
   script:
     - match: https://api.kikakeyboard.com/v1/ios/subscription/check/user
       name: kikajiesuo

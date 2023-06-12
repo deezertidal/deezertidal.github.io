@@ -6,7 +6,7 @@ name: peiyin
 desc: 配音解锁会员
 http:
   mitm:
-    - 'xihongshi.dicallapp.com'
+    - "xihongshi.dicallapp.com"
   script:
     - match: ^http[s]?:\/\/xihongshi.dicallapp.com
       name: peiyin

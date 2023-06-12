@@ -3,7 +3,7 @@ name: aoruankoutu
 desc: 奥软抠图
 http:
   mitm:
-    - 'gw.aoscdn.com'
+    - "gw.aoscdn.com"
   script:
     - match: https?:\/\/gw\.aoscdn\.com\/base\/vip\/client\/authorizations$
       name: aoruankoutu

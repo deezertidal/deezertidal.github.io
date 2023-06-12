@@ -6,7 +6,7 @@ name: AccuWeather
 desc: AccuWeather解锁会员
 http:
   mitm:
-    - 'app-subscription-proxy.accuweather.com'
+    - "app-subscription-proxy.accuweather.com"
   script:
     - match: https://app-subscription-proxy.accuweather.com/subscriptions/v1/apple/validate
       name: AccuWeather

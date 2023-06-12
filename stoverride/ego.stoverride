@@ -5,7 +5,7 @@ name: Ego Reader
 desc: Ego Reader解锁会员
 http:
   mitm:
-    - 'api.pxmage.com'
+    - "api.pxmage.com"
   script:
     - match: ^https?:\/\/api\.pxmage\.com\/egoreader\/user\/info
       name: Ego Reader

@@ -7,7 +7,7 @@ name: zhonghuarili
 desc: 中华日历解锁
 http:
   mitm:
-    - 'wnl28.jiemengjia.com'
+    - "wnl28.jiemengjia.com"
   script:
     - match: ^http[s]?:\/\/wnl28.jiemengjia.com\/api\/get_member_info
       name: zhonghuarili

@@ -3,7 +3,7 @@ name: liulishuo·yuedu
 desc: 流利说·阅读
 http:
   mitm:
-    - 'vira.llsapp.com'
+    - "vira.llsapp.com"
   script:
     - match: ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$
       name: liulishuo·yuedu

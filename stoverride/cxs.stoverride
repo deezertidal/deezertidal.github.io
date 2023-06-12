@@ -6,7 +6,7 @@ name: zhangxiangsi
 desc: 长相思解锁会员
 http:
   mitm:
-    - 'poetry.yuan9.cn'
+    - "poetry.yuan9.cn"
   script:
     - match: ^https?:\/\/poetry\.yuan9\.cn\/api\/(order\/applesuccess|account\/login|User\/loginUserInfo)
       name: zhangxiangsi

@@ -7,7 +7,7 @@ name: hunlijingxuan
 desc: 婚礼精选解锁
 http:
   mitm:
-    - 'www.lovewith.me'
+    - "www.lovewith.me"
   script:
     - match: ^http[s]?:\/\/www.lovewith.me
       name: hunlijingxuan

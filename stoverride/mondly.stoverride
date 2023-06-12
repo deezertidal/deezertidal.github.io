@@ -6,7 +6,7 @@ name: Mondly
 desc: Mondly解锁会员
 http:
   mitm:
-    - 'api.mondlylanguages.com'
+    - "api.mondlylanguages.com"
   script:
     - match: ^https:\/\/api\.mondlylanguages\.com\/v3\/ios\/user\/sync
       name: Mondly

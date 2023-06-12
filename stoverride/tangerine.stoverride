@@ -3,7 +3,7 @@ name: Tangerinejiesuo
 desc: Tangerine解锁
 http:
   mitm:
-    - 'api.revenuecat.com'
+    - "api.revenuecat.com"
   script:
     - match: https://api.revenuecat.com/v1/(receipts|subscribers)/*
       name: Tangerinejiesuo

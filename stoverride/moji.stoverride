@@ -7,7 +7,7 @@ name: MOJicishu
 desc: MOJi辞書解锁
 http:
   mitm:
-    - 'api.mojidict.com'
+    - "api.mojidict.com"
   script:
     - match: ^https:\/\/api\.mojidict\.com\/parse\/functions\/getNPrivileges
       name: MOJicishu

@@ -3,7 +3,7 @@ name: JibJab
 desc: JibJab
 http:
   mitm:
-    - 'origin-prod-phoenix.jibjab.com'
+    - "origin-prod-phoenix.jibjab.com"
   script:
     - match: https:\/\/origin-prod-phoenix\.jibjab\.com\/v1\/user
       name: JibJab

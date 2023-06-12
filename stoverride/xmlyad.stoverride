@@ -6,8 +6,8 @@ name: ximalayaquguanggao
 desc: 喜马拉雅去广告
 http:
   mitm:
-    - '*.xima*.*
-    - '*.xmcdn.*'
+    - "*.xima*.*"
+    - "*.xmcdn.*"
   script:
     - match: ^https?:\/\/.*\.xima.*\.com\/discovery-feed\/v\d\/mix
       name: ximalayaquguanggao

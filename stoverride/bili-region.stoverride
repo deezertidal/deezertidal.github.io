@@ -3,8 +3,8 @@ name: bilibilizidonghuanqu
 desc: 哔哩哔哩, 港澳台番剧自动切换地区 & 显示豆瓣评分
 http:
   mitm:
-    - 'ap?.bili*i.com
-    - 'ap?.bili*i.net'
+    - "ap?.bili*i.com"
+    - "ap?.bili*i.net"
   script:
     - match: ^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/v\d\/search\/defaultwords)\?access_key
       name: bilibilizidonghuanqu

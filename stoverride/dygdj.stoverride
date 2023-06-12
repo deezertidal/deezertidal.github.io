@@ -7,7 +7,7 @@ name: dianyingeDJjiesuo
 desc: 电音阁DJ
 http:
   mitm:
-    - 'api.dianyinge.com'
+    - "api.dianyinge.com"
   script:
     - match: http:\/\/api\.dianyinge\.com\/apis\/user\/user_info
       name: dianyingeDJjiesuo

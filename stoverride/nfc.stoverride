@@ -5,7 +5,7 @@ name: NFCmenjinkagongjiaoka
 desc: NFC门禁卡公交卡读写神器
 http:
   mitm:
-    - 'app.mobileto.vip'
+    - "app.mobileto.vip"
   script:
     - match: https://app.mobileto.vip/nfc/app/v2/is-vip
       name: NFCmenjinkagongjiaoka

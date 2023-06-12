@@ -6,7 +6,7 @@ name: huiyingzimu
 desc: 绘影字幕解锁会员
 http:
   mitm:
-    - 'api.bluepulse.cn'
+    - "api.bluepulse.cn"
   script:
     - match: ^https:\/\/api\.bluepulse\.cn\/bluepulse-caption-server-front\/api\/v1\/\/user\/app-vip-info
       name: huiyingzimu

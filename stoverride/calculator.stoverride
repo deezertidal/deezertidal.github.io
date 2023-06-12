@@ -6,7 +6,7 @@ name: jisuanqiHD
 desc: 计算器HD解锁会员
 http:
   mitm:
-    - 'www.40sishi.com'
+    - "www.40sishi.com"
   script:
     - match: ^https?:\/\/www\.40sishi\.com\/(list|currency|calculator)\/user\/profile$
       name: jisuanqiHD

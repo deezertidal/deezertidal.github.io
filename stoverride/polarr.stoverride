@@ -3,7 +3,7 @@ name: Polarr
 desc: Polarr
 http:
   mitm:
-    - 'api.polaxiong.com'
+    - "api.polaxiong.com"
   script:
     - match: ^https:\/\/api\.polaxiong\.com\/v1\/payments\/appleiap\/receipts\/confirmation
       name: Polarr

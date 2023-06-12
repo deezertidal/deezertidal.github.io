@@ -6,7 +6,7 @@ name: secai
 desc: 色采解锁会员
 http:
   mitm:
-    - 'buy.itunes.apple.com'
+    - "buy.itunes.apple.com"
   script:
     - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
       name: secai

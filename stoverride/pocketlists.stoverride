@@ -6,7 +6,7 @@ name: Pocket Lists
 desc: Pocket Lists解锁会员
 http:
   mitm:
-    - 'pocketlists.com'
+    - "pocketlists.com"
   script:
     - match: ^https:\/\/pocketlists\.com\/api\/v1\/pocketlists.me.get
       name: Pocket Lists

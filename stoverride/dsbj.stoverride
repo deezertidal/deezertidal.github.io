@@ -6,7 +6,7 @@ name: dushubiji
 desc: 读书笔记解锁会员
 http:
   mitm:
-    - 'xrckeji.com'
+    - "xrckeji.com"
   script:
     - match: https://xrckeji.com/union/app/user/query
       name: dushubiji

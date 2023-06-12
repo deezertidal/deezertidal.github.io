@@ -6,7 +6,7 @@ name: huanyingxiangce
 desc: 幻影相册VIP
 http:
   mitm:
-    - 'buy.itunes.apple.com'
+    - "buy.itunes.apple.com"
   script:
     - match: ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
       name: huanyingxiangce

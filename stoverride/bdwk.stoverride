@@ -6,7 +6,7 @@ name: baiduwenku
 desc: 解锁文档阅读权限
 http:
   mitm:
-    - 'appwk.baidu.com'
+    - "appwk.baidu.com"
   script:
     - match: ^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo
       name: baiduwenku

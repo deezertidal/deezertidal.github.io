@@ -3,7 +3,7 @@ name: 10percentjiesuo
 desc: 10percent解锁
 http:
   mitm:
-    - 'api.changecollective.com'
+    - "api.changecollective.com"
   script:
     - match: https://api.changecollective.com/api/v3/user
       name: 10percentjiesuo

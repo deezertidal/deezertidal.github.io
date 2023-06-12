@@ -6,7 +6,7 @@ name: jianxun
 desc: 简讯解锁会员
 http:
   mitm:
-    - 'api.tipsoon.com'
+    - "api.tipsoon.com"
   script:
     - match: ^https:\/\/api\.tipsoon\.com\/api\/v1\/user\/info
       name: jianxun

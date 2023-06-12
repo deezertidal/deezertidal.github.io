@@ -6,7 +6,7 @@ name: dianshijia
 desc: 电视家解锁会员
 http:
   mitm:
-    - '123.56.125.184'
+    - "123.56.125.184"
   script:
     - match: ^http[s]?:\/\/123.56.125.184
       name: dianshijia

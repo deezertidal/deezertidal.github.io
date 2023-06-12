@@ -6,7 +6,7 @@ name: shimowendang
 desc: 石墨文档解锁
 http:
   mitm:
-    - 'shimo.im'
+    - "shimo.im"
   script:
     - match: ^https:\//shimo.im\/lizard-api\/users\/me
       name: shimowendang

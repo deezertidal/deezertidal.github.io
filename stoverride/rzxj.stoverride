@@ -6,9 +6,9 @@ name: rizaxiangji
 desc: 日杂相机解锁会员
 http:
   mitm:
-    - 'rzres86api.imendon.com
-    - 'rzres86api.imendon.com
-    - 'api-access.pangolin-sdk-toutiao.com'
+    - "rzres86api.imendon.com"
+    - "rzres86api.imendon.com"
+    - "api-access.pangolin-sdk-toutiao.com"
   script:
     - match: ^https:\/\/rzres86api\.imendon\.com\/v2\/purchase\/vip\/verification
       name: rizaxiangji

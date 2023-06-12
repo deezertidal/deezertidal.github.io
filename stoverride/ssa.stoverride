@@ -6,7 +6,7 @@ name: SSAsishe
 desc: SSA丝社解锁会员
 http:
   mitm:
-    - 'www.ssalegs.store'
+    - "www.ssalegs.store"
   script:
     - match: ^https?:\/\/www\.ssalegs\.store\/cms\/Appapi\/username\/username\/\d+
       name: SSAsishe

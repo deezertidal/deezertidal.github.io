@@ -6,7 +6,7 @@ name: naitangxiaozujian
 desc: 乃糖小组件解锁会员
 http:
   mitm:
-    - 'awvp.aoscdn.com'
+    - "awvp.aoscdn.com"
   script:
     - match: ^https:\/\/awvp\.aoscdn\.com\/base\/vip\/client\/authorizations
       name: naitangxiaozujian

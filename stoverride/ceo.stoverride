@@ -6,7 +6,7 @@ name: CEOzhouke
 desc: CEO周课解锁
 http:
   mitm:
-    - 'user.xiaozaoapp.com'
+    - "user.xiaozaoapp.com"
   script:
     - match: ^https:\/\/user\.xiaozaoapp\.com\/app\/ceouser\/loginAuto
       name: CEOzhouke

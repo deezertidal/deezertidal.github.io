@@ -7,7 +7,7 @@ name: lUV-wannengxiaozujian
 desc: lUV-万能小组件解锁
 http:
   mitm:
-    - 'widgets-api.kaixinyf.cn'
+    - "widgets-api.kaixinyf.cn"
   script:
     - match: ^http[s]?:\/\/widgets-api.kaixinyf.cn\/User\/GetInfoByUserCode
       name: lUV-wannengxiaozujian

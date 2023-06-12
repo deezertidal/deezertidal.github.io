@@ -7,7 +7,7 @@ name: Spark Mail
 desc: Spark Mail解锁会员
 http:
   mitm:
-    - 'api.revenuecat.com'
+    - "api.revenuecat.com"
   script:
     - match: ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36}|subscribers\/\w{14})$
       name: Spark Mail

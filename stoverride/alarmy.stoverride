@@ -5,7 +5,7 @@ name: Alarmy Premium
 desc: 使命闹钟会员解锁
 http:
   mitm:
-    - 'ars.alar.my'
+    - "ars.alar.my"
   script:
     - match: https://ars.alar.my/api/v2/user/sync
       name: Alarmy Premium

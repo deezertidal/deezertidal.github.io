@@ -6,7 +6,7 @@ name: WallCraft
 desc: WallCraft解锁永久专业版
 http:
   mitm:
-    - '*.wallpaperscraft.com'
+    - "*.wallpaperscraft.com"
   script:
     - match: ^https?:\/\/billing-ios\.wallpaperscraft\.com\/verify_receipt\/remove_ads$
       name: WallCraft

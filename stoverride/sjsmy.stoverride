@@ -6,7 +6,7 @@ name: shoujisaomiaoyi
 desc: 手机扫描仪会员解锁
 http:
   mitm:
-    - 'saomiao.34354.com'
+    - "saomiao.34354.com"
   script:
     - match: ^https?:\/\/saomiao\.34354\.com\/api\/open\/member\/level$
       name: shoujisaomiaoyi

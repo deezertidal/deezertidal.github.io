@@ -7,7 +7,7 @@ name: qingtu
 desc: 轻图解锁
 http:
   mitm:
-    - 'purchase-qingtu-api.b612kaji.com'
+    - "purchase-qingtu-api.b612kaji.com"
   script:
     - match: ^https?:\/\/purchase-qingtu-api\.b612kaji\.com\/v1\/purchase\/subscription\/subscriber/status$
       name: qingtu

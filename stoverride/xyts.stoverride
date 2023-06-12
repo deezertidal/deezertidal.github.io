@@ -6,7 +6,7 @@ name: xinyutingshu
 desc: 新语听书解锁会员
 http:
   mitm:
-    - 'i.xinyulib.com.cn'
+    - "i.xinyulib.com.cn"
   script:
     - match: ^https?:\/\/i\.xinyulib\.com\.cn\/api\/querytoken.+
       name: xinyutingshu

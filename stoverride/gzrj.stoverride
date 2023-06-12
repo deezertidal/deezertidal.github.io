@@ -6,7 +6,7 @@ name: gezhiriji
 desc: 格志日记解锁会员
 http:
   mitm:
-    - 'diary-id.sumi.io'
+    - "diary-id.sumi.io"
   script:
     - match: ^https?:\/\/diary-id\.sumi\.io\/api\/profile$
       name: gezhiriji

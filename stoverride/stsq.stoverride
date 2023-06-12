@@ -5,7 +5,7 @@ name: soutushenqi
 desc: 搜图神器解锁会员
 http:
   mitm:
-    - 'wallpaper.soutushenqi.com'
+    - "wallpaper.soutushenqi.com"
   script:
     - match: http:\/\/wallpaper\.soutushenqi\.com\/api\/v1\/account\/token
       name: soutushenqi

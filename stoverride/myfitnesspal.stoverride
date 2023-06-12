@@ -3,7 +3,7 @@ name: MyFitnessPal
 desc: MyFitnessPal
 http:
   mitm:
-    - 'premium-api.myfitnesspal.com'
+    - "premium-api.myfitnesspal.com"
   script:
     - match: https://premium-api.myfitnesspal.com/v3/subscriptions/MFP/*
       name: MyFitnessPal

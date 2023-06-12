@@ -6,9 +6,9 @@ name: WPSdaokehuiyuan
 desc: 稻壳会员解锁
 http:
   mitm:
-    - '*.docer.wps.cn
-    - 'vipapi.wps.cn
-    - 'account.wps.cn'
+    - "*.docer.wps.cn"
+    - "vipapi.wps.cn"
+    - "account.wps.cn"
   script:
     - match: ^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips
       name: WPSdaokehuiyuan

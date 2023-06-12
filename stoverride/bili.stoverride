@@ -3,7 +3,7 @@ name: Bili1080P
 desc: Bili1080P
 http:
   mitm:
-    - 'app.bilibili.com'
+    - "app.bilibili.com"
   script:
     - match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?
       name: Bili1080P

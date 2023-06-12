@@ -7,7 +7,7 @@ name: dangran
 desc: 当燃 - 运动健身饮食卡路里热量管理
 http:
   mitm:
-    - 'sportlight.wayxtech.com'
+    - "sportlight.wayxtech.com"
   script:
     - match: ^http[s]?:\/\/sportlight.wayxtech.com\/miniapp\/user\/getUserInfo
       name: dangran

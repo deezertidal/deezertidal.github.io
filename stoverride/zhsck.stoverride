@@ -6,7 +6,7 @@ name: zhonghuashiciku
 desc: 中华诗词库解锁会员
 http:
   mitm:
-    - 'api.chuangqi.store'
+    - "api.chuangqi.store"
   script:
     - match: http:\/\/api\.chuangqi\.store\/
       name: zhonghuashiciku

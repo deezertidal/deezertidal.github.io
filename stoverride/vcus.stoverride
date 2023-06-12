@@ -6,7 +6,7 @@ name: VCUS
 desc: VCUS会员解锁
 http:
   mitm:
-    - 'sdk.api.appwheel.com'
+    - "sdk.api.appwheel.com"
   script:
     - match: ^https:\/\/sdk\.api\.appwheel\.com\/v1\/order\/restore
       name: VCUS

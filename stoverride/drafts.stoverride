@@ -6,7 +6,7 @@ name: Drafts
 desc: Drafts解锁会员
 http:
   mitm:
-    - 'backend.getdrafts.com'
+    - "backend.getdrafts.com"
   script:
     - match: ^https:\/\/backend\.getdrafts\.com\/api\/v1\/verification\/verify_receipt
       name: Drafts

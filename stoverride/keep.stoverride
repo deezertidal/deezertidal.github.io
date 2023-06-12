@@ -6,7 +6,7 @@ name: Keep
 desc: Keep解锁会员
 http:
   mitm:
-    - 'api.gotokeep.com'
+    - "api.gotokeep.com"
   script:
     - match: ^https:\/\/api\.gotokeep\.com
       name: Keep

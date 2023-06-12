@@ -6,7 +6,7 @@ name: huanxiu
 desc: 幻休解锁会员
 http:
   mitm:
-    - 'api.shaolinzen.com'
+    - "api.shaolinzen.com"
   script:
     - match: ^https:\/\/api\.shaolinzen\.com\/user\/v1\/info
       name: huanxiu

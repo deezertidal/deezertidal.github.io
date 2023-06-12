@@ -6,7 +6,7 @@ name: weixingongzhonghaoquguanggao
 desc: 微信公众号去广告
 http:
   mitm:
-    - 'mp.weixin.qq.com'
+    - "mp.weixin.qq.com"
   script:
     - match: ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad
       name: weixingongzhonghaoquguanggao

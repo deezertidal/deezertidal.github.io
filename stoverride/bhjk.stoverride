@@ -7,7 +7,7 @@ name: bohejiankang
 desc: 薄荷健康解锁
 http:
   mitm:
-    - 'api.boohee.com'
+    - "api.boohee.com"
   script:
     - match: ^https?:\/\/api\.boohee\.com\/app-interface\/.+\/user\/user_info
       name: bohejiankang

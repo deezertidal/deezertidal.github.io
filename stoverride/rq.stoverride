@@ -6,7 +6,7 @@ name: ruqi
 desc: 如期会员解锁
 http:
   mitm:
-    - 'www.freshhome.top'
+    - "www.freshhome.top"
   script:
     - match: ^https:\/\/www\.freshhome\.top\/mngruqi
       name: ruqi

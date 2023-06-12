@@ -6,7 +6,7 @@ name: 7dong
 desc: 7动解锁会员
 http:
   mitm:
-    - 'pc7dong.com'
+    - "pc7dong.com"
   script:
     - match: ^http[s]?:\/\/pc7dong.com
       name: 7dong

@@ -6,8 +6,8 @@ name: Picsart
 desc: picsart解锁会员
 http:
   mitm:
-    - 'api.picsart.c*
-    - 'api.meiease.c*'
+    - "api.picsart.c*"
+    - "api.meiease.c*"
   script:
     - match: https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json
       name: Picsart

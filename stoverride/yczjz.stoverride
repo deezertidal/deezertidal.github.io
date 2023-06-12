@@ -6,7 +6,7 @@ name: yicunzhengjianzhao
 desc: 一寸证件照解锁会员
 http:
   mitm:
-    - 'idp2api.netpock.com'
+    - "idp2api.netpock.com"
   script:
     - match: ^http[s]?:\/\/idp2api.netpock.com\/api\/user_info
       name: yicunzhengjianzhao

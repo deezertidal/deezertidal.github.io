@@ -6,7 +6,7 @@ name: kanlixiang
 desc: 看理想解锁会员
 http:
   mitm:
-    - 'api.vistopia.com.cn'
+    - "api.vistopia.com.cn"
   script:
     - match: ^https:\/\/api\.vistopia\.com\.cn\/api
       name: kanlixiang

@@ -6,7 +6,7 @@ name: youdaoyunbiji
 desc: 有道云笔记VIP
 http:
   mitm:
-    - ''
+    - ""
   script:
     - match: https://note.youdao.com/yws/(mapi/payment|api/self)
       name: youdaoyunbiji

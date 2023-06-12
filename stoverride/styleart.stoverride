@@ -6,7 +6,7 @@ name: Styleart
 desc: Styleart解锁会员
 http:
   mitm:
-    - 'api-aidraw.3dmoxiu.com'
+    - "api-aidraw.3dmoxiu.com"
   script:
     - match: ^https:\/\/api-aidraw\.3dmoxiu\.com\/v4\/aidraw\/user\/userInfo\/getUserInfoByToken
       name: Styleart

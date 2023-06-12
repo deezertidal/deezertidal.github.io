@@ -6,7 +6,7 @@ name: haitunjizhangben
 desc: 海豚记账本解锁会员
 http:
   mitm:
-    - 'book.haitunwallet.com'
+    - "book.haitunwallet.com"
   script:
     - match: https:\/\/book\.haitunwallet\.com\/app\/vip\/status
       name: haitunjizhangben

@@ -5,7 +5,7 @@ name: miandanmanhua
 desc: 免耽漫画解锁
 http:
   mitm:
-    - 'app.lalaldc.cn'
+    - "app.lalaldc.cn"
   script:
     - match: https://app.lalaldc.cn/api/lifan-customer/customer/info
       name: miandanmanhua

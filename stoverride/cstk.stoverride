@@ -7,7 +7,7 @@ name: caishitiku
 desc: 才士题库解锁
 http:
   mitm:
-    - 'gateway-pro.caishi.cn'
+    - "gateway-pro.caishi.cn"
   script:
     - match: ^http[s]?:\/\/gateway-pro.caishi.cn
       name: caishitiku

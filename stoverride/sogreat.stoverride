@@ -7,7 +7,7 @@ name: You're So Great
 desc: You're So Great解锁
 http:
   mitm:
-    - 'buy.itunes.apple.com'
+    - "buy.itunes.apple.com"
   script:
     - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
       name: You're So Great

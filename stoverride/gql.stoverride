@@ -6,7 +6,7 @@ name: guoqila
 desc: 过期啦解锁会员
 http:
   mitm:
-    - 'expire.vanemu.com'
+    - "expire.vanemu.com"
   script:
     - match: ^https:\/\/expire\.vanemu\.com\/1\.1\/functions\/getUserInfo
       name: guoqila

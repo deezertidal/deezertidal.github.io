@@ -6,7 +6,7 @@ name: weixindushu
 desc: 微信读书无限卡解锁 version:6.0.1/5.4.3
 http:
   mitm:
-    - 'i.weread.qq.com'
+    - "i.weread.qq.com"
   script:
     - match: ^https:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary
       name: weixindushu

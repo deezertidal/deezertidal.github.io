@@ -6,7 +6,7 @@ name: feiyujihua
 desc: 飞鱼计划解锁会员
 http:
   mitm:
-    - 'getway-plan.abuddz.com'
+    - "getway-plan.abuddz.com"
   script:
     - match: ^https:\/\/getway-plan\.abuddz\.com\/api\/sync\/putNeedUpdateData
       name: feiyujihua

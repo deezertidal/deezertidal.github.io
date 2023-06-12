@@ -3,7 +3,7 @@ name: FTzhongwenwang
 desc: FT中文网
 http:
   mitm:
-    - 'user.ftmailbox.cn'
+    - "user.ftmailbox.cn"
   script:
     - match: ^https?:\/\/user\.ftmailbox\.cn\/ios-receipt-validation\.php.*
       name: FTzhongwenwang

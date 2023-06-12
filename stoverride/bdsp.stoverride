@@ -3,7 +3,7 @@ name: budingsuoping
 desc: 布丁锁屏
 http:
   mitm:
-    - 'screen-lock.51wnl-cq.com'
+    - "screen-lock.51wnl-cq.com"
   script:
     - match: https?:\/\/screen-lock\.51wnl-cq\.com\/userApi\/saveUser
       name: budingsuoping

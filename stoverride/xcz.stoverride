@@ -6,7 +6,7 @@ name: xichuangzhu
 desc: 西窗烛会员解锁
 http:
   mitm:
-    - 'lchttpapi.xczim.com'
+    - "lchttpapi.xczim.com"
   script:
     - match: https://lchttpapi.xczim.com/*
       name: xichuangzhu

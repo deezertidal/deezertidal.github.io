@@ -6,7 +6,7 @@ name: Varlens
 desc: Varlens解锁会员
 http:
   mitm:
-    - 'mid.zineapi.com'
+    - "mid.zineapi.com"
   script:
     - match: ^https:\/\/mid\.zineapi\.com\/@varlens\/api\/user\/info\/
       name: Varlens

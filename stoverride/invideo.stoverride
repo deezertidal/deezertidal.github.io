@@ -3,7 +3,7 @@ name: invideohuiyuan
 desc: invideo会员
 http:
   mitm:
-    - 'payments.invideo.io'
+    - "payments.invideo.io"
   script:
     - match: https://payments.invideo.io/(verify_purchase|subscription)
       name: invideohuiyuan

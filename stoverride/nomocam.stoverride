@@ -5,7 +5,7 @@ name: NoMoCam
 desc: NoMo Cam解锁订阅
 http:
   mitm:
-    - 'nomo.dafork.com'
+    - "nomo.dafork.com"
   script:
     - match: ^https?:\/\/nomo\.dafork\.com\/api\/.+
       name: NoMoCam

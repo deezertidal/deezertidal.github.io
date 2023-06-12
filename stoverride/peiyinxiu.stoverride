@@ -6,7 +6,7 @@ name: peiyinxiu
 desc: 配音秀解锁会员
 http:
   mitm:
-    - 'iosapi.peiyinxiu.com'
+    - "iosapi.peiyinxiu.com"
   script:
     - match: ^https?:\/\/iosapi.peiyinxiu.com
       name: peiyinxiu

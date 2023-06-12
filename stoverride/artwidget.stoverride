@@ -7,7 +7,7 @@ name: Art Widget
 desc: Art Widget解锁
 http:
   mitm:
-    - 'www.40sishi.com'
+    - "www.40sishi.com"
   script:
     - match: ^https?:\/\/www\.40sishi\.com\/artwidget\/user\/profile$
       name: Art Widget

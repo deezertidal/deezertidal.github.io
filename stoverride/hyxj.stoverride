@@ -6,7 +6,7 @@ name: huangyouxiangji
 desc: 黄油相机解锁会员
 http:
   mitm:
-    - 'api4.bybutter.com'
+    - "api4.bybutter.com"
   script:
     - match: https:\/\/api4\.bybutter\.com\/v4\/*
       name: huangyouxiangji

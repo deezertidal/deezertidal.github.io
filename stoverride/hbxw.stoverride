@@ -6,7 +6,7 @@ name: hongbeixiaowu
 desc: 烘焙小屋解锁会员
 http:
   mitm:
-    - 'apiios_dq.xiangha.com'
+    - "apiios_dq.xiangha.com"
   script:
     - match: ^https?:\/\/apiios_dq\.xiangha\.com\/v4\/(dish\/info|User\/getUserData)$
       name: hongbeixiaowu

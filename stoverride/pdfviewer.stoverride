@@ -6,7 +6,7 @@ name: PDF Viewer
 desc: PDF Viewer解锁会员
 http:
   mitm:
-    - 'api.revenuecat.com'
+    - "api.revenuecat.com"
   script:
     - match: ^https:\/\/api\.revenuecat\.com\/v1\/subscribers.+
       name: PDF Viewer

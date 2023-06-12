@@ -6,7 +6,7 @@ name: icon Killer
 desc: icon Killer解锁会员
 http:
   mitm:
-    - 'api.yonekura.cn'
+    - "api.yonekura.cn"
   script:
     - match: ^http[s]?:\/\/api.yonekura.cn\/3.6.8\/uicommon\/getuser
       name: icon Killer

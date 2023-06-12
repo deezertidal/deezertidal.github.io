@@ -3,7 +3,7 @@ name: judoujiesuo
 desc: 句读解锁
 http:
   mitm:
-    - 'judouapp.com'
+    - "judouapp.com"
   script:
     - match: https://judouapp.com/api/v2/mine/profile
       name: judoujiesuo

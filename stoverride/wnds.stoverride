@@ -6,7 +6,7 @@ name: wangyiwoniudushu
 desc: 网易蜗牛读书解锁会员
 http:
   mitm:
-    - 'p.du.163.com'
+    - "p.du.163.com"
   script:
     - match: ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json
       name: wangyiwoniudushu

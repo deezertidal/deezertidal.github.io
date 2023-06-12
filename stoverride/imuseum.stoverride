@@ -6,7 +6,7 @@ name: IMuseum
 desc: IMuseum会员解锁
 http:
   mitm:
-    - 'icity-imsm.2q10.com'
+    - "icity-imsm.2q10.com"
   script:
     - match: https://icity-imsm.2q10.com/api/v1/users/mark_paid
       name: IMuseum

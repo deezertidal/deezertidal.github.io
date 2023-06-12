@@ -6,7 +6,7 @@ name: diyidan
 desc: 第一弹去广告+原画
 http:
   mitm:
-    - 'api.diyidan.net'
+    - "api.diyidan.net"
   script:
     - match: ^https:\/\/api\.diyidan\.net\/v0\.3\/(user\/personal_homepage|vip_user\/info|tv_series\/index\?appChanne)
       name: diyidan

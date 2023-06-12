@@ -3,7 +3,7 @@ name: qifu
 desc: 起伏
 http:
   mitm:
-    - 'api.risingfalling.com'
+    - "api.risingfalling.com"
   script:
     - match: https?:\/\/api\.risingfalling\.com\/api\/vip\/detail
       name: qifu

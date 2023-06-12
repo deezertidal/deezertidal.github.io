@@ -6,7 +6,7 @@ name: yuwenqupeiyin
 desc: 语文趣配音解锁会员
 http:
   mitm:
-    - 'cnapi.qupeiyin.com'
+    - "cnapi.qupeiyin.com"
   script:
     - match: ^https?:\/\/cnapi\.qupeiyin\.com\/(user\/memberData|member|top\/showTop)
       name: yuwenqupeiyin

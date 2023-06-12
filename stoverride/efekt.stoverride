@@ -6,7 +6,7 @@ name: EFEKTmeiyi
 desc: EFEKT美易解锁会员
 http:
   mitm:
-    - 'api.apphud.com'
+    - "api.apphud.com"
   script:
     - match: ^https:\/\/api\.apphud\.com\/v1\/subscriptions
       name: EFEKTmeiyi

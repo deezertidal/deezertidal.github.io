@@ -6,7 +6,7 @@ name: Panda widget
 desc: Panda桌面小组件解锁
 http:
   mitm:
-    - 'buy.itunes.apple.com'
+    - "buy.itunes.apple.com"
   script:
     - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
       name: Panda widget

@@ -6,7 +6,7 @@ name: Craft
 desc: Craft解锁会员
 http:
   mitm:
-    - 'api.craft.do'
+    - "api.craft.do"
   script:
     - match: ^https:\/\/api\.craft\.do\/auth\/v2\/profile
       name: Craft

@@ -7,7 +7,7 @@ name: zhankugaogaoshou
 desc: 站酷高高手解锁
 http:
   mitm:
-    - 'api.gogoup.com'
+    - "api.gogoup.com"
   script:
     - match: ^https:\/\/api\.gogoup\.com
       name: zhankugaogaoshou

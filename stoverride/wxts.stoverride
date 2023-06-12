@@ -6,7 +6,7 @@ name: weixintingshu
 desc: 微信听书解锁
 http:
   mitm:
-    - 'i.at.qq.com'
+    - "i.at.qq.com"
   script:
     - match: ^https:\/\/i\.at\.qq\.com\/pay\/memberinfo
       name: weixintingshu

@@ -6,7 +6,7 @@ name: Grammarly
 desc: Grammarly解锁订阅 subscription.grammarly.com
 http:
   mitm:
-    - 'subscription.grammarly.com'
+    - "subscription.grammarly.com"
   script:
     - match: ^https?:\/\/subscription\.grammarly\.com\/api\/v1\/subscription$
       name: Grammarly

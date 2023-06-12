@@ -7,7 +7,7 @@ name: huashijie
 desc: 画世界解锁
 http:
   mitm:
-    - 'app.huashijie.art'
+    - "app.huashijie.art"
   script:
     - match: ^http[s]?:\/\/app.huashijie.art\/api\/user\/getPerson
       name: huashijie

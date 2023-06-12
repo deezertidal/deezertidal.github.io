@@ -3,7 +3,7 @@ name: Spotifygecifanyi
 desc: 自行修改自己的appid和密钥
 http:
   mitm:
-    - 'spclient.wg.spotify.com'
+    - "spclient.wg.spotify.com"
   script:
     - match: ^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/
       name: Spotifygecifanyi

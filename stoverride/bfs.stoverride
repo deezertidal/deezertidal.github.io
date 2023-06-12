@@ -6,7 +6,7 @@ name: BingAI For Safari
 desc: bing ai伪装edge浏览器
 http:
   mitm:
-    - 'www.bing.com'
+    - "www.bing.com"
   script:
     - match: ^https?://www.bing.com
       name: BingAI For Safari

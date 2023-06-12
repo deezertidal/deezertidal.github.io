@@ -6,7 +6,7 @@ name: Peak
 desc: Peak解锁Pro
 http:
   mitm:
-    - 'billing.peakcloud.org'
+    - "billing.peakcloud.org"
   script:
     - match: ^https:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me?
       name: Peak

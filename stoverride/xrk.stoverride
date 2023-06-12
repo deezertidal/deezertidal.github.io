@@ -6,7 +6,7 @@ name: xiangrikuiyuedu
 desc: 向日葵阅读解锁会员
 http:
   mitm:
-    - 'api.v1.esread.com'
+    - "api.v1.esread.com"
   script:
     - match: ^https:\/\/api\.v1\.esread\.com
       name: xiangrikuiyuedu

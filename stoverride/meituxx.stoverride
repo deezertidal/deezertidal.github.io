@@ -3,8 +3,8 @@ name: meituxiuxiu
 desc: 美图秀秀
 http:
   mitm:
-    - 'h5.xiuxiu.meitu.com
-    - 'api.xiuxiu.meitu.com'
+    - "h5.xiuxiu.meitu.com"
+    - "api.xiuxiu.meitu.com"
   script:
     - match: ^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/
       name: meituxiuxiu

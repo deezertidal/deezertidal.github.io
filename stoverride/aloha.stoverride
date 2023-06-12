@@ -3,7 +3,7 @@ name: AlohaVPNliulanqi
 desc: AlohaVPN浏览器
 http:
   mitm:
-    - 'api.alohaprofile.com'
+    - "api.alohaprofile.com"
   script:
     - match: https://api.alohaprofile.com/v1/profile_info
       name: AlohaVPNliulanqi

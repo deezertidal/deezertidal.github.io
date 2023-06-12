@@ -7,7 +7,7 @@ name: Silimini
 desc: Silimini解锁
 http:
   mitm:
-    - 'silimini.bigwinepot.com'
+    - "silimini.bigwinepot.com"
   script:
     - match: ^http[s]?:\/\/silimini.bigwinepot.com
       name: Silimini

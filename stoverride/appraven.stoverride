@@ -3,7 +3,7 @@ name: Appraven
 desc: Appraven
 http:
   mitm:
-    - 'appraven.net'
+    - "appraven.net"
   script:
     - match: ^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy)
       name: Appraven

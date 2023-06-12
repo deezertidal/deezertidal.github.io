@@ -6,7 +6,7 @@ name: abushuiqiangushi
 desc: 阿布睡前故事解锁会员
 http:
   mitm:
-    - 'tutugushiapi.tutuerge.com'
+    - "tutugushiapi.tutuerge.com"
   script:
     - match: http:\/\/tutugushiapi\.tutuerge\.com
       name: abushuiqiangushi

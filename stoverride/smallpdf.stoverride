@@ -3,7 +3,7 @@ name: Smallpdfjiesuo
 desc: Smallpdf解锁
 http:
   mitm:
-    - 'pro.smallpdf.com'
+    - "pro.smallpdf.com"
   script:
     - match: https://pro.smallpdf.com/pro/account
       name: Smallpdfjiesuo

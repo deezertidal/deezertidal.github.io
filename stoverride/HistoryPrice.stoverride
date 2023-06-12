@@ -3,7 +3,7 @@ name: lishijiage
 desc: 京东比价 
 http:
   mitm:
-    - 'api.m.jd.com'
+    - "api.m.jd.com"
   script:
     - match: ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig)
       name: lishijiage

@@ -6,7 +6,7 @@ name: aimeijujiesuo
 desc: 爱美剧解锁部分功能+去广告
 http:
   mitm:
-    - 'api.bjxkhc.com'
+    - "api.bjxkhc.com"
   script:
     - match: ^https?:\/\/api.bjxkhc.com\/index\.php\/app\/ios\/(vod\/show|(user|vod|topic|type)\/index)
       name: aimeijujiesuo

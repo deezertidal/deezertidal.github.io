@@ -6,7 +6,7 @@ name: LightRoom
 desc: Adobe LightRoom解锁
 http:
   mitm:
-    - 'photos.adobe.io'
+    - "photos.adobe.io"
   script:
     - match: ^https:\/\/photos\.adobe\.io\/v2\/accounts*
       name: LightRoom

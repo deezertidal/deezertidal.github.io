@@ -6,7 +6,7 @@ name: xiaoxiaoyouqu
 desc: 小小优趣解锁会员
 http:
   mitm:
-    - 'prod.ukids.cn'
+    - "prod.ukids.cn"
   script:
     - match: ^https?:\/\/prod\.ukids\.cn\/uch5\/getUser
       name: xiaoxiaoyouqu

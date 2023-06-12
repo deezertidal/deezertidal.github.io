@@ -6,7 +6,7 @@ name: kepai
 desc: 可拍解锁会员
 http:
   mitm:
-    - 'fxshot-api.afunapp.com'
+    - "fxshot-api.afunapp.com"
   script:
     - match: http:\/\/fxshot-api\.afunapp\.com\/order_api\/apple_query
       name: kepai

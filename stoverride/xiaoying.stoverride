@@ -6,8 +6,8 @@ name: xiaoying
 desc: 小影解锁
 http:
   mitm:
-    - 'xy-viva.kakalili.com
-    - 'api-chn.rthdo.com'
+    - "xy-viva.kakalili.com"
+    - "api-chn.rthdo.com"
   script:
     - match: ^https:\/\/(xy-viva\.kakalili|api-chn.rthdo)\.com\/api\/rest\/u\/vipVerifyReceipt
       name: xiaoying

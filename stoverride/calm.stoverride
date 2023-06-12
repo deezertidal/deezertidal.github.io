@@ -3,7 +3,7 @@ name: Calmjiesuoxianzhi
 desc: Calm解锁限制
 http:
   mitm:
-    - 'api.calm.com'
+    - "api.calm.com"
   script:
     - match: https://api.calm.com/(me|device|ios/receipt)
       name: Calmjiesuoxianzhi

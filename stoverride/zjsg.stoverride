@@ -3,7 +3,7 @@ name: zhijianshiguangjiesuo
 desc: 指尖时光解锁
 http:
   mitm:
-    - 'integral.dasyibalang.com'
+    - "integral.dasyibalang.com"
   script:
     - match: https://integral.dasyibalang.com/User
       name: zhijianshiguangjiesuo

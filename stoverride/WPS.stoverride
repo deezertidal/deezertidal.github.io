@@ -5,8 +5,8 @@ name: WPShuiyuan
 desc: WPS解锁本地会员
 http:
   mitm:
-    - 'account.wps.cn
-    - '*account.wps.com'
+    - "account.wps.cn"
+    - "*account.wps.com"
   script:
     - match: ^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$
       name: WPShuiyuan

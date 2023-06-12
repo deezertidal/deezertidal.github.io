@@ -7,7 +7,7 @@ name: kaixinpai
 desc: 开心拍解锁
 http:
   mitm:
-    - 'face.app.superclear.cn'
+    - "face.app.superclear.cn"
   script:
     - match: https://face.app.superclear.cn/hw/apple/subscribe/v1
       name: kaixinpai

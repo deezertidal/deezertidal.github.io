@@ -6,7 +6,7 @@ name: qingninghaibao
 desc: 青柠海报设计解锁
 http:
   mitm:
-    - 'api.qingning6.com'
+    - "api.qingning6.com"
   script:
     - match: ^https:\/\/api\.qingning6\.com\/api\/user\/getUserInfo
       name: qingninghaibao

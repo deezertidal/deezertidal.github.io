@@ -6,7 +6,7 @@ name: Notability Plus
 desc: Notability解锁
 http:
   mitm:
-    - 'notability.com'
+    - "notability.com"
   script:
     - match: ^https://notability.com/subscriptions
       name: Notability Plus

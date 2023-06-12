@@ -6,7 +6,7 @@ name: AdGuard
 desc: AdGuard 美区 解锁会员
 http:
   mitm:
-    - 'mobile-api.adguard.org'
+    - "mobile-api.adguard.org"
   script:
     - match: ^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt
       name: AdGuard

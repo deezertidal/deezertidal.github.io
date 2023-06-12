@@ -6,7 +6,7 @@ name: jinjianyichu
 desc: 尽简衣橱解锁会员
 http:
   mitm:
-    - 'closet.jinjian.tech'
+    - "closet.jinjian.tech"
   script:
     - match: ^https:\/\/closet\.jinjian\.tech\/api\/v3\/apple_app_store\/resolve_receipt
       name: jinjianyichu

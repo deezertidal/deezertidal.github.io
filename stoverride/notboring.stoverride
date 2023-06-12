@@ -6,7 +6,7 @@ name: Notboringtaozhuang
 desc: Notboring天气+闹钟+习惯解锁
 http:
   mitm:
-    - 'api-weather.andy.works'
+    - "api-weather.andy.works"
   script:
     - match: ^https?:\/\/api-weather\.andy\.works\/v\d\/\w{18}$
       name: Notboringtaozhuang

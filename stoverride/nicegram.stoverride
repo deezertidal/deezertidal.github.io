@@ -3,7 +3,7 @@ name: Nicegramhuiyuan
 desc: Nicegram会员
 http:
   mitm:
-    - 'restore-access.indream.app'
+    - "restore-access.indream.app"
   script:
     - match: ^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$
       name: Nicegramhuiyuan

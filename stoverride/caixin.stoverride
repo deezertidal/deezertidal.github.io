@@ -3,7 +3,7 @@ name: caixinhuiyuan
 desc: 财新会员
 http:
   mitm:
-    - 'gateway.caixin.com'
+    - "gateway.caixin.com"
   script:
     - match: ^https?:\/\/gateway\.caixin\.com\/api\/app\-api\/auth\/(validate|validateAudioAuth)
       name: caixinhuiyuan
