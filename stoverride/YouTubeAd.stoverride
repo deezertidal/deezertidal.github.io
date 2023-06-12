@@ -17,11 +17,13 @@ http:
       name: YouTubequguanggao
       type: response
       require-body: true
+	  binary-mode: true
       timeout: 10
     - match: ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence)\?
       name: YouTubequguanggao
       type: request
       require-body: true
+	  binary-mode: true
       timeout: 10
   rewrite:
     - (^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
