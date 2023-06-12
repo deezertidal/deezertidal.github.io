@@ -569,7 +569,7 @@
   if (!isIOS) {
     $('button').click(function() {
       var href = $(this).parent().attr("href");
-      var trimmedLink = href.replace("https://link.stash.ws/install-override/", "");
+      var trimmedLink = href.replace("link.stash.ws/install-override/", "");
       navigator.clipboard.writeText(trimmedLink);
       alert("链接已复制: " + trimmedLink);
       return false;
