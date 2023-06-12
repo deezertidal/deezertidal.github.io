@@ -563,38 +563,66 @@
     
     </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(".myButton").on("click", function(event) {
+    event.preventDefault(); 
 
-    <script>
-      var searchBar = $("#searchBar");
-      searchBar.on("input", function() {
-        search();
-      });
-      function search() {
-        var keyword = searchBar.val().trim().toLowerCase();
-        var searchResults = $("#searchResults");
-        searchResults.empty();
-        if (keyword === "") {
-          $(".myButton").show();
-          return;
-        }
-        $(".myButton").hide().each(function() {
-          var buttonText = $(this).text().trim().toLowerCase();
-          if (buttonText.indexOf(keyword) !== -1) {
-            var newButton = $(this).clone();
-            var href = $(this).parent().attr("href");
-            newButton.wrap($("<a>").attr("href", href));
-            searchResults.append(newButton.parent());
-            newButton.show();
-          }
-        });
+    var target = $(event.target);
+    var buttonText = target.text().trim().toLowerCase();
+    var href = target.parent().attr("href");
+
+    var tempInput = $("<input>");
+    $("body").append(tempInput);
+    tempInput.val(href).select();
+    document.execCommand("copy");
+    tempInput.remove();
+
+    alert("链接已复制");
+  });
+</script>
+<script>
+  var searchBar = $("#searchBar");
+  searchBar.on("input", function() {
+    search();
+  });
+
+  function search() {
+    var keyword = searchBar.val().trim().toLowerCase();
+    var searchResults = $("#searchResults");
+    searchResults.empty();
+
+    if (keyword === "") {
+      $(".myButton").show();
+      return;
+    }
+
+    $(".myButton").hide().each(function() {
+      var buttonText = $(this).text().trim().toLowerCase();
+      if (buttonText.indexOf(keyword) !== -1) {
+        var newButton = $(this).clone();
+        var href = $(this).parent().attr("href");
+        newButton.wrap($("<a>").attr("href", href));
+        searchResults.append(newButton.parent());
+        newButton.show();
       }
-      $("#searchResults").on("click", ".myButton", function(event) {
-        var target = $(event.target);
-        var buttonText = target.text().trim().toLowerCase();
-        var href = target.parent().attr("href");
-        window.open(href);
-      });
-    </script>
+    });
+  }
+
+  $("#searchResults").on("click", ".myButton", function(event) {
+      event.preventDefault(); 
+    var target = $(event.target);
+    var buttonText = target.text().trim().toLowerCase();
+    var href = target.parent().attr("href");
+
+    var tempInput = $("<input>");
+    $("body").append(tempInput);
+    tempInput.val(href).select();
+    document.execCommand("copy");
+    tempInput.remove();
+
+    alert("链接已复制");
+  });
+</script>
 <script>
 var colors = ['#4285F4', '#DB4437', '#0F9D58'];
 var buttons = document.querySelectorAll('.myButton');
