@@ -583,7 +583,7 @@
     $("#searchResults").on("click", ".myButton", function(event) {
       var target = $(event.target);
       var href = target.parent().attr("href");
-      var trimmedLink = href.replace("https://link.stash.ws/install-override/", "");
+      var trimmedLink = href.replace("link.stash.ws/install-override/", "");
       navigator.clipboard.writeText(trimmedLink);
       alert("链接已复制: " + trimmedLink);
       return false;
