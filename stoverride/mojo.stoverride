@@ -1,0 +1,16 @@
+#!desc=MOJO会员解锁
+name: MOJOhuiyuanjiesuo
+desc: MOJO会员解锁
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: https://api.revenuecat.com/v1/(receipts|subscribers)/*
+      name: MOJOhuiyuanjiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  MOJOhuiyuanjiesuo:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/mojo.js
+    interval: 86400

@@ -1,0 +1,19 @@
+#!desc=向日葵阅读解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/xrk.png
+name: xiangrikuiyuedu
+desc: 向日葵阅读解锁会员
+http:
+  mitm:
+    - 'api.v1.esread.com'
+  script:
+    - match: ^https:\/\/api\.v1\.esread\.com
+      name: xiangrikuiyuedu
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  xiangrikuiyuedu:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xiangrikui.js
+    interval: 86400

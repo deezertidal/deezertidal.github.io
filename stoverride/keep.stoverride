@@ -1,0 +1,19 @@
+#!desc=Keep解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/keep.png
+name: Keep
+desc: Keep解锁会员
+http:
+  mitm:
+    - 'api.gotokeep.com'
+  script:
+    - match: ^https:\/\/api\.gotokeep\.com
+      name: Keep
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Keep:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/keep.js
+    interval: 86400

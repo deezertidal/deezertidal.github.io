@@ -1,0 +1,16 @@
+#!desc=JibJab
+name: JibJab
+desc: JibJab
+http:
+  mitm:
+    - 'origin-prod-phoenix.jibjab.com'
+  script:
+    - match: https:\/\/origin-prod-phoenix\.jibjab\.com\/v1\/user
+      name: JibJab
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  JibJab:
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/jibjab.js
+    interval: 86400

@@ -1,0 +1,18 @@
+#!desc=NFC门禁卡公交卡读写神器
+#!author=lutqhysky
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/nfc.png
+name: NFCmenjinkagongjiaoka
+desc: NFC门禁卡公交卡读写神器
+http:
+  mitm:
+    - 'app.mobileto.vip'
+  script:
+    - match: https://app.mobileto.vip/nfc/app/v2/is-vip
+      name: NFCmenjinkagongjiaoka
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  NFCmenjinkagongjiaoka:
+    url: https://raw.githubusercontent.com/deezertidal/private/main/nfc.js
+    interval: 86400

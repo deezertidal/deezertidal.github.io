@@ -1,0 +1,19 @@
+#!desc=谜底时钟解锁会员
+#!homepage=https://yfamily.ml
+#!author= lutqhysky
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/mdsz.png
+name: midishizhong
+desc: 谜底时钟解锁会员
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$
+      name: midishizhong
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  midishizhong:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mdsz.js
+    interval: 86400

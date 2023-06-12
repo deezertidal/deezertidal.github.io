@@ -1,0 +1,19 @@
+#!desc=Pandora订阅管理会员
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/pandora.png
+#!homepage=https://yfamily.ml
+name: Pandoradingyueguanli
+desc: Pandora订阅管理会员
+http:
+  mitm:
+    - 'buy.itunes.apple.com'
+  script:
+    - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+      name: Pandoradingyueguanli
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Pandoradingyueguanli:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Pandora.js
+    interval: 86400

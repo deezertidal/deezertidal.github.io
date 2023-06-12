@@ -1,0 +1,19 @@
+#!desc=Lifeviewer解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/lifeviewer.png
+name: Lifeviewer
+desc: Lifeviewer解锁会员
+http:
+  mitm:
+    - 'api.apphud.com'
+  script:
+    - match: ^https:\/\/api\.apphud\.com\/v1\/subscriptions
+      name: Lifeviewer
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Lifeviewer:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Lifeviewer.js
+    interval: 86400

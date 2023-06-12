@@ -1,0 +1,19 @@
+#!desc=PrettyUp视频美化解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/prettyup.png
+#!homepage=https://yfamily.ml
+#!author=89996462
+name: PrettyUp
+desc: PrettyUp视频美化解锁
+http:
+  mitm:
+    - 'buy.itunes.apple.com'
+  script:
+    - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+      name: PrettyUp
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  PrettyUp:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/upp.js
+    interval: 86400

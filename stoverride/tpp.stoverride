@@ -1,0 +1,19 @@
+#!desc=支付宝内淘票票显示豆瓣评分
+#!homepage=https://yfamily.ml
+#!author=98kevinxiao
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/tpp.png
+name: taopiaopiaopingfen
+desc: 支付宝内淘票票显示豆瓣评分
+http:
+  mitm:
+    - 'guide-acs.m.taobao.com'
+  script:
+    - match: ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopshowapi\.getextendshowbyid
+      name: taopiaopiaopingfen
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  taopiaopiaopingfen:
+    url: https://raw.githubusercontent.com/98kevinxiao/javascript/main/taopiaopiao.js
+    interval: 86400

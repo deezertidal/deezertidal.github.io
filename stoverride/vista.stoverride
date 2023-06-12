@@ -1,0 +1,19 @@
+#!desc=Vista看天下会员解锁
+#!homepage=https://yfamily.ml
+#!author=lutqhysky
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/vista.png
+name: Vistakantianxia
+desc: Vista看天下会员解锁
+http:
+  mitm:
+    - 'open3.vistastory.com'
+  script:
+    - match: ^https?:\/\/open3\.vistastory\.com\/v\d\/api\/(article\/article_detail|vip\/get_vip|my\/home\/get_home_center)
+      name: Vistakantianxia
+      type: response
+      require-body: false
+      timeout: 10
+script-providers:
+  Vistakantianxia:
+    url: https://github.com/deezertidal/private/raw/master/js-backup/Crack/ktx.js
+    interval: 86400

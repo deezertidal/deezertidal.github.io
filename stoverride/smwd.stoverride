@@ -1,0 +1,19 @@
+#!desc=石墨文档解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/smwd.png
+#!homepage=https://yfamily.ml
+#!author=litieyin
+name: shimowendang
+desc: 石墨文档解锁
+http:
+  mitm:
+    - 'shimo.im'
+  script:
+    - match: ^https:\//shimo.im\/lizard-api\/users\/me
+      name: shimowendang
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  shimowendang:
+    url: https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/shimo.js
+    interval: 86400

@@ -1,0 +1,19 @@
+#!desc=WPS解锁本地会员
+#!icon= https://raw.githubusercontent.com/deezertidal/private/main/icons/wps.png
+#!author=I-am-R-E
+name: WPShuiyuan
+desc: WPS解锁本地会员
+http:
+  mitm:
+    - 'account.wps.cn
+    - '*account.wps.com'
+  script:
+    - match: ^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$
+      name: WPShuiyuan
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  WPShuiyuan:
+    url: https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/WPSOffice/Script/WPS.js, requires-body=true, timeout=10
+    interval: 86400

@@ -1,0 +1,20 @@
+#!name=VN视频剪辑
+#!desc=VN视频剪辑解锁会员
+#!homepage=https://yfamily.ml
+#!author=yqc007
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/vn.png
+name: VNshipinjianji
+desc: VN视频剪辑解锁会员
+http:
+  mitm:
+    - 'api2.vlognow.me'
+  script:
+    - match: ^https?:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status
+      name: VNshipinjianji
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  VNshipinjianji:
+    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/VlogNowProCrack.js
+    interval: 86400

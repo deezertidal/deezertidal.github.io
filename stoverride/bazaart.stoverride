@@ -1,0 +1,16 @@
+#!desc=bazaart会员解锁
+name: bazaarthuiyuanjiesuo
+desc: bazaart会员解锁
+http:
+  mitm:
+    - 'buy.itunes.apple.com'
+  script:
+    - match: https://buy.itunes.apple.com/verifyReceipt
+      name: bazaarthuiyuanjiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  bazaarthuiyuanjiesuo:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/bazaart.js
+    interval: 86400

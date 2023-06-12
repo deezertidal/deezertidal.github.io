@@ -1,0 +1,17 @@
+#!desc=Web版豆瓣电影和电视剧添加便捷播放源按钮
+#!icon=https://raw.githubusercontent.com/Coldvvater/Loon/master/IMG/Douban.PNG
+name: doubanyingshi
+desc: Web版豆瓣电影和电视剧添加便捷播放源按钮
+http:
+  mitm:
+    - 'm.douban.com'
+  script:
+    - match: ^https?:\/\/m\.douban\.com\/movie\/subject\/\d+\/
+      name: doubanyingshi
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  doubanyingshi:
+    url: https://raw.githubusercontent.com/I-am-R-E/Surge/main/JavaScript/DouBan.js,timeout=10
+    interval: 86400

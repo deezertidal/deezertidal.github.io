@@ -1,0 +1,18 @@
+#!desc=免耽漫画解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/mdmanhua.png
+#!author=Marol62926
+name: miandanmanhua
+desc: 免耽漫画解锁
+http:
+  mitm:
+    - 'app.lalaldc.cn'
+  script:
+    - match: https://app.lalaldc.cn/api/lifan-customer/customer/info
+      name: miandanmanhua
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  miandanmanhua:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/mdmanga.js,requires-body=1,max-size=0
+    interval: 86400

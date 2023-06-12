@@ -1,0 +1,19 @@
+#!desc=proKnockout解锁会员
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/proknockout.png
+#!homepage=https://yfamily.ml
+#!author=lutqhysky
+name: proKnockout
+desc: proKnockout解锁会员
+http:
+  mitm:
+    - 'buy.itunes.apple.com'
+  script:
+    - match: https://buy.itunes.apple.com/verifyReceipt
+      name: proKnockout
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  proKnockout:
+    url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/proKnockout.js
+    interval: 86400

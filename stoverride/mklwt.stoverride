@@ -1,0 +1,19 @@
+#!desc=马卡龙玩图解锁会员
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/mklwt.png
+#!homepage=https://yfamily.ml
+#!author=CheeryTodo
+name: makalongwantu
+desc: 马卡龙玩图解锁会员
+http:
+  mitm:
+    - 'app.api.versa-ai.com'
+  script:
+    - match: https://app.api.versa-ai.com/pay/order/iap/check
+      name: makalongwantu
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  makalongwantu:
+    url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/mklwt.js
+    interval: 86400

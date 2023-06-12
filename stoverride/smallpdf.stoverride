@@ -1,0 +1,16 @@
+#!desc=Smallpdf解锁
+name: Smallpdfjiesuo
+desc: Smallpdf解锁
+http:
+  mitm:
+    - 'pro.smallpdf.com'
+  script:
+    - match: https://pro.smallpdf.com/pro/account
+      name: Smallpdfjiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Smallpdfjiesuo:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/smallpdf.js
+    interval: 86400

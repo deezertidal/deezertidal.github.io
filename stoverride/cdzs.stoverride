@@ -1,0 +1,19 @@
+#!desc=充电助手解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/cdzs.png
+name: chongdianzhushou
+desc: 充电助手解锁会员
+http:
+  mitm:
+    - 'api.yonekura.cn'
+  script:
+    - match: ^https:\/\/api\.yonekura\.cn\/3\.7\.0\/uicommon\/getuser
+      name: chongdianzhushou
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  chongdianzhushou:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/cdzs.js
+    interval: 86400

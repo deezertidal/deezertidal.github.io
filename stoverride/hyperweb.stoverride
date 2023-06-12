@@ -1,0 +1,19 @@
+#!desc=hyperweb会员解锁
+#!homepage=https://yfamily.ml
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/hyperweb.png
+name: HyperWeb
+desc: hyperweb会员解锁
+http:
+  mitm:
+    - 'zy6kcqa01a.execute-api.us-east-2.amazonaws.com'
+  script:
+    - match: ^https://zy6kcqa01a.execute-api.us-east-2.amazonaws.com/prod/verifyReceipt
+      name: HyperWeb
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  HyperWeb:
+    url: https://github.com/deezertidal/private/raw/master/js-backup/Crack/hyperweb.js
+    interval: 86400

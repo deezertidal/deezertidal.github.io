@@ -1,0 +1,19 @@
+#!desc=B612咔叽会员解锁
+#!homepage=https://yfamily.ml
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/b612.png
+name: B612kaji
+desc: B612咔叽会员解锁
+http:
+  mitm:
+    - 'user-kaji-api.b612kaji.com'
+  script:
+    - match: https://user-kaji-api.b612kaji.com/v1/purchase/subscription/subscriber/status
+      name: B612kaji
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  B612kaji:
+    url: https://github.com/deezertidal/private/raw/master/js-backup/Crack/612.js
+    interval: 86400

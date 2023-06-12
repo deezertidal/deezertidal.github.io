@@ -1,0 +1,16 @@
+#!desc=AlohaVPN浏览器
+name: AlohaVPNliulanqi
+desc: AlohaVPN浏览器
+http:
+  mitm:
+    - 'api.alohaprofile.com'
+  script:
+    - match: https://api.alohaprofile.com/v1/profile_info
+      name: AlohaVPNliulanqi
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  AlohaVPNliulanqi:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/aloha.js
+    interval: 86400

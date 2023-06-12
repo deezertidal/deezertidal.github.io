@@ -1,0 +1,18 @@
+#!desc=Emby插件
+#!icon=https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Color/EMBY.png
+#!author=Tartarus2014
+name: EMBY
+desc: Emby插件
+http:
+  mitm:
+    - 'mb3admin.com'
+  script:
+    - match: ^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice
+      name: EMBY
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  EMBY:
+    url: https://raw.githubusercontent.com/Tartarus2014/Script/master/Emby.js
+    interval: 86400

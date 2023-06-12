@@ -1,0 +1,19 @@
+#!desc=网速管家解锁会员
+#!homepage=https://yfamily.ml
+#!author= 89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/wsgj.png
+name: wangsuguanjia
+desc: 网速管家解锁会员
+http:
+  mitm:
+    - 'api-v3.speedtest.cn'
+  script:
+    - match: ^https:\/\/api-v3\.speedtest\.cn\/user\/info
+      name: wangsuguanjia
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  wangsuguanjia:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/wsgj.js
+    interval: 86400

@@ -1,0 +1,19 @@
+#!desc=Planny会员解锁
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/planny.png
+name: Planny
+desc: Planny会员解锁
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$
+      name: Planny
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Planny:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Planny.js
+    interval: 86400

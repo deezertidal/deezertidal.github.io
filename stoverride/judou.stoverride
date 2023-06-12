@@ -1,0 +1,16 @@
+#!desc=句读解锁
+name: judoujiesuo
+desc: 句读解锁
+http:
+  mitm:
+    - 'judouapp.com'
+  script:
+    - match: https://judouapp.com/api/v2/mine/profile
+      name: judoujiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  judoujiesuo:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/judu.js
+    interval: 86400

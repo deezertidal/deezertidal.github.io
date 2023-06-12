@@ -1,0 +1,19 @@
+#!desc=大蓝鲸解锁会员
+#!homepage=https://yfamily.ml
+#!author= lutqhysky
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/dalanjing.png
+name: dalanjing
+desc: 大蓝鲸解锁会员
+http:
+  mitm:
+    - '*.jstv.com'
+  script:
+    - match: ^https?:\/\/(publish-dalanjing|publish-dalanjing|user-dalanjing)\.jstv\.com\/(search\/byArticleType|nav\/1554|PassportUser\/userinfo\/get)
+      name: dalanjing
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  dalanjing:
+    url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/dalanjing/Script/dalanjing.js
+    interval: 86400

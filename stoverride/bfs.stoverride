@@ -1,0 +1,19 @@
+#!desc=bing ai伪装edge浏览器
+#!homepage=https://yfamily.ml/
+#!author=deezertidal
+#!icon=https://yfamily.ml/IMG/bing.png
+name: BingAI For Safari
+desc: bing ai伪装edge浏览器
+http:
+  mitm:
+    - 'www.bing.com'
+  script:
+    - match: ^https?://www.bing.com
+      name: BingAI For Safari
+      type: request
+      require-body: false
+      timeout: 10
+script-providers:
+  BingAI For Safari:
+    url: https://yfamily.ml/module/bfs.js
+    interval: 86400

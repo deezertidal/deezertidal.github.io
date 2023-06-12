@@ -1,0 +1,19 @@
+#!desc=7动解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/7dong.png
+name: 7dong
+desc: 7动解锁会员
+http:
+  mitm:
+    - 'pc7dong.com'
+  script:
+    - match: ^http[s]?:\/\/pc7dong.com
+      name: 7dong
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  7dong:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/7d.js
+    interval: 86400

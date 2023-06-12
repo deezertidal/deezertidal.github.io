@@ -1,0 +1,19 @@
+#!desc=来音智能陪练解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/ly.png
+#!homepage=https://yfamily.ml
+#!author=89996462
+name: laiyinzhinengpeilian
+desc: 来音智能陪练解锁
+http:
+  mitm:
+    - 'partner-ai-api.quthing.com'
+  script:
+    - match: ^https:\/\/partner-ai-api\.quthing\.com\/ai\/vip\/state
+      name: laiyinzhinengpeilian
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  laiyinzhinengpeilian:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ly.js
+    interval: 86400

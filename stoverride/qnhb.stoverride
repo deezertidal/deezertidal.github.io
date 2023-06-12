@@ -1,0 +1,19 @@
+#!desc=青柠海报设计解锁
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/qnhb.png
+#!homepage=https://yfamily.ml
+name: qingninghaibao
+desc: 青柠海报设计解锁
+http:
+  mitm:
+    - 'api.qingning6.com'
+  script:
+    - match: ^https:\/\/api\.qingning6\.com\/api\/user\/getUserInfo
+      name: qingninghaibao
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  qingninghaibao:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/qnhb.js
+    interval: 86400

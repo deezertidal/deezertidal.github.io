@@ -1,0 +1,23 @@
+#!desc=7分钟HIIT运动解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/seven.png
+name: 7fenzhongHIITyundong
+desc: 7分钟HIIT运动解锁会员
+http:
+  mitm:
+    - 'api.sevenworkouts.com'
+  script:
+    - match: ^https:\/\/api\.sevenworkouts\.com\/api\/v(\d)\/(verify-purchases|account/verify-purchases)
+      name: 7fenzhongHIITyundong
+      type: response
+      require-body: true
+      timeout: 10
+  rewrite:
+    - ^https:\/\/api\.sevenworkouts\.com\/api\/v1\/account\/subscription-purchases - reject
+    - 
+    - ^https:\/\/api\.sevenworkouts\.com\/api\/v1\/buyers\/ - reject
+script-providers:
+  7fenzhongHIITyundong:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Seven.js
+    interval: 86400

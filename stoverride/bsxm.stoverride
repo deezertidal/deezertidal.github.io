@@ -1,0 +1,19 @@
+#!desc=博商小麦解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/bsxm.png
+name: boshangxiaomai
+desc: 博商小麦解锁会员
+http:
+  mitm:
+    - 'yyy.bosum.com'
+  script:
+    - match: http:\/\/yyy\.bosum\.com\/enterprise
+      name: boshangxiaomai
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  boshangxiaomai:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/boshangxiaomai.js
+    interval: 86400

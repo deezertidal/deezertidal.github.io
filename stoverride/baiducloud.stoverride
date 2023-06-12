@@ -1,0 +1,18 @@
+#!desc=百度云倍速播放
+#!author=NobyDa
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/baiducloud.png
+name: baiduyunjiasu
+desc: 百度云倍速播放
+http:
+  mitm:
+    - 'pan.baidu.com'
+  script:
+    - match: https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user
+      name: baiduyunjiasu
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  baiduyunjiasu:
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
+    interval: 86400

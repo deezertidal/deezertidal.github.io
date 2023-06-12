@@ -1,0 +1,19 @@
+#!desc=Notability解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/notability.png
+#!homepage=https://yfamily.ml
+#!author=litieyin
+name: Notability Plus
+desc: Notability解锁
+http:
+  mitm:
+    - 'notability.com'
+  script:
+    - match: ^https://notability.com/subscriptions
+      name: Notability Plus
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Notability Plus:
+    url: https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/notability.js
+    interval: 86400

@@ -1,0 +1,19 @@
+#!desc=纸条年度会员解锁
+#!homepage=https://yfamily.ml
+#!author= lutqhysky
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/zhitiao.png
+name: zhitiao
+desc: 纸条年度会员解锁
+http:
+  mitm:
+    - '*.zuowenzhitiao.com'
+  script:
+    - match: ^https?:\/\/(app1|zwzt-h5).zuowenzhitiao.com
+      name: zhitiao
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  zhitiao:
+    url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/xiaozhitiao/Script/xiaozhitiao.js
+    interval: 86400

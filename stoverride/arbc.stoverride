@@ -1,0 +1,19 @@
+#!desc=AI Remove Background解锁会员
+#!homepage=https://yfamily.ml
+#!author=yqc007
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/arbc.png
+name: AI Remove Background-Collart
+desc: AI Remove Background解锁会员
+http:
+  mitm:
+    - 'iap.etm.tech'
+  script:
+    - match: ^https:\/\/iap\.etm\.tech\/receipts
+      name: AI Remove Background-Collart
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  AI Remove Background-Collart:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Photo.js
+    interval: 86400

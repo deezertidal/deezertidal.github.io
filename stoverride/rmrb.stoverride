@@ -1,0 +1,19 @@
+#!desc=人民日报去广告
+#!homepage=https://yfamily.ml
+#!author=
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/rmrb.png
+name: renminribaoquguanggao
+desc: 人民日报去广告
+http:
+  mitm:
+    - 'app.peopleapp.com'
+  script:
+    - match: ^https:\/\/app\.peopleapp\.com\/Api\/\d+\/HomeApi\/getContentList
+      name: renminribaoquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  renminribaoquguanggao:
+    url: https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/people-news.js
+    interval: 86400

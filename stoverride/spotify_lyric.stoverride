@@ -1,0 +1,16 @@
+#!desc=自行修改自己的appid和密钥
+name: Spotifygecifanyi
+desc: 自行修改自己的appid和密钥
+http:
+  mitm:
+    - 'spclient.wg.spotify.com'
+  script:
+    - match: ^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/
+      name: Spotifygecifanyi
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Spotifygecifanyi:
+    url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-lyric.js,argument=appid=此处填入APPID&securityKey=此处填入密钥
+    interval: 86400

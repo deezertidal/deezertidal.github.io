@@ -1,0 +1,19 @@
+#!desc=目标地图解锁
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/mbdt.png
+name: mubiaoditu
+desc: 目标地图解锁
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$
+      name: mubiaoditu
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  mubiaoditu:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mbdt.js
+    interval: 86400

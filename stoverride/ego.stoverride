@@ -1,0 +1,18 @@
+#!desc=Ego Reader解锁会员
+#!homepage=https://yfamily.ml
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/ego.png
+name: Ego Reader
+desc: Ego Reader解锁会员
+http:
+  mitm:
+    - 'api.pxmage.com'
+  script:
+    - match: ^https?:\/\/api\.pxmage\.com\/egoreader\/user\/info
+      name: Ego Reader
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Ego Reader:
+    url: https://raw.githubusercontent.com/deezertidal/private/main/ego.js
+    interval: 86400

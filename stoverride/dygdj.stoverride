@@ -1,0 +1,20 @@
+#!name=电音阁DJ解锁
+#!desc=电音阁DJ
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://yfamily.ml
+#!author=89996462
+name: dianyingeDJjiesuo
+desc: 电音阁DJ
+http:
+  mitm:
+    - 'api.dianyinge.com'
+  script:
+    - match: http:\/\/api\.dianyinge\.com\/apis\/user\/user_info
+      name: dianyingeDJjiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  dianyingeDJjiesuo:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/dygdj.js
+    interval: 86400

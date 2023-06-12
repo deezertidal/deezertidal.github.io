@@ -1,0 +1,19 @@
+#!desc=Sorted日历解锁
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/sorted.png
+name: Sorted
+desc: Sorted日历解锁
+http:
+  mitm:
+    - 'api.sortedapp.com'
+  script:
+    - match: ^https:\/\/api\.sortedapp\.com\/receipts\/verify
+      name: Sorted
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Sorted:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Sorted.js
+    interval: 86400

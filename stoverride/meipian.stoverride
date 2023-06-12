@@ -1,0 +1,19 @@
+#!desc=美篇解锁vip
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/meipian.png
+#!homepage=https://yfamily.ml
+#!author=litieyin
+name: meipian
+desc: 美篇解锁vip
+http:
+  mitm:
+    - 'poster.meipian.cn'
+  script:
+    - match: ^https:\//poster.meipian.cn\/5.3\/user\/info
+      name: meipian
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  meipian:
+    url: https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/meipian.js
+    interval: 86400

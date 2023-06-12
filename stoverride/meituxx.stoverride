@@ -1,0 +1,17 @@
+#!desc=美图秀秀
+name: meituxiuxiu
+desc: 美图秀秀
+http:
+  mitm:
+    - 'h5.xiuxiu.meitu.com
+    - 'api.xiuxiu.meitu.com'
+  script:
+    - match: ^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/
+      name: meituxiuxiu
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  meituxiuxiu:
+    url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/MeiTuXiuXiu.js
+    interval: 86400

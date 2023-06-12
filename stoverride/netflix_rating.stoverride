@@ -1,0 +1,33 @@
+#!desc= 奈菲迪士尼评分
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
+name: Display Netflix Ratings
+desc: 奈菲迪士尼评分
+http:
+  mitm:
+    - 'ios.prod.ftl.netflix.com'
+  script:
+    - match: ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+      name: Display Netflix Ratings
+      type: request
+      require-body: true
+      timeout: 10
+    - match: ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+      name: Display Netflix Ratings
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath
+      name: Display Netflix Ratings
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Display Netflix Ratings:
+    url: https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js, requires-body=true, timeout=10
+    interval: 86400
+  Display Netflix Ratings:
+    url: https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js, requires-body=true, timeout=10
+    interval: 86400
+  Display Netflix Ratings:
+    url: https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating_season.js, requires-body=true, timeout=10
+    interval: 86400

@@ -1,0 +1,20 @@
+#!desc=小影解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/xiaoying.png
+#!homepage=https://yfamily.ml
+#!author=NobyDa
+name: xiaoying
+desc: 小影解锁
+http:
+  mitm:
+    - 'xy-viva.kakalili.com
+    - 'api-chn.rthdo.com'
+  script:
+    - match: ^https:\/\/(xy-viva\.kakalili|api-chn.rthdo)\.com\/api\/rest\/u\/vipVerifyReceipt
+      name: xiaoying
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  xiaoying:
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
+    interval: 86400

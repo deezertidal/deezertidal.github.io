@@ -1,0 +1,20 @@
+#!desc=picsart解锁会员
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/picsart.png
+#!homepage=https://yfamily.ml
+#!author=NobyDa
+name: Picsart
+desc: picsart解锁会员
+http:
+  mitm:
+    - 'api.picsart.c*
+    - 'api.meiease.c*'
+  script:
+    - match: https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json
+      name: Picsart
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Picsart:
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js
+    interval: 86400

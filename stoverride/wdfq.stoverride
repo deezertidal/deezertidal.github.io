@@ -1,0 +1,19 @@
+#!desc=我的番茄解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/wdfq.png
+name: wodefanqie
+desc: 我的番茄解锁会员
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: https://api.revenuecat.com/v1/(receipts|subscribers)/*
+      name: wodefanqie
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  wodefanqie:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/wdfq.js
+    interval: 86400

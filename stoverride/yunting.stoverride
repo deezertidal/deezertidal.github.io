@@ -1,0 +1,19 @@
+#!desc=云听解锁会员
+#!homepage=https://yfamily.ml
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/yunting.png
+name: yunting
+desc: 云听解锁会员
+http:
+  mitm:
+    - 'getway.radio.cn'
+  script:
+    - match: http://getway.radio.cn/app*
+      name: yunting
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  yunting:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/yt.js
+    interval: 86400

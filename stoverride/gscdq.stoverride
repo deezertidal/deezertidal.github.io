@@ -1,0 +1,19 @@
+#!desc=古诗词大全解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/gscdq.png
+name: gushicidaquan
+desc: 古诗词大全解锁会员
+http:
+  mitm:
+    - 'gushici.91iread.com'
+  script:
+    - match: ^http[s]?:\/\/gushici.91iread.com
+      name: gushicidaquan
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  gushicidaquan:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/gscdq.js
+    interval: 86400

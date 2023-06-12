@@ -1,0 +1,20 @@
+#!name=蛋啵
+#!desc=蛋啵解锁会员
+#!homepage=https://yfamily.ml
+#!author=yqc007
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/danbo.png
+name: danbo
+desc: 蛋啵解锁会员
+http:
+  mitm:
+    - 'api-sub.meitu.com'
+  script:
+    - match: ^https:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json
+      name: danbo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  danbo:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/db.js
+    interval: 86400

@@ -1,0 +1,19 @@
+#!desc=有道云笔记VIP
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/ydybj.png
+#!homepage=https://yfamily.ml
+#!author=Alex0510
+name: youdaoyunbiji
+desc: 有道云笔记VIP
+http:
+  mitm:
+    - ''
+  script:
+    - match: https://note.youdao.com/yws/(mapi/payment|api/self)
+      name: youdaoyunbiji
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  youdaoyunbiji:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/ydybj.js
+    interval: 86400

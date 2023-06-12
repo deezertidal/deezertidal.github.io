@@ -1,0 +1,19 @@
+#!desc=Endel解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/endel.png
+name: Endel
+desc: Endel解锁会员
+http:
+  mitm:
+    - 'api-production.endel.io'
+  script:
+    - match: ^https:\/\/api-production\.endel\.io\/v4\/call
+      name: Endel
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Endel:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Endel.js
+    interval: 86400

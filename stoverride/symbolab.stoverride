@@ -1,0 +1,19 @@
+#!desc=Symbolab Pro
+#!homepage=https://yfamily.ml
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/symbolab.png
+name: Symbolab
+desc: Symbolab Pro
+http:
+  mitm:
+    - 'scibug.com'
+  script:
+    - match: ^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy)
+      name: Symbolab
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Symbolab:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/appraven.js
+    interval: 86400

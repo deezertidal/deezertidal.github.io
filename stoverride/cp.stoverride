@@ -1,0 +1,36 @@
+#!desc=菜谱大全&香哈菜谱解锁会员
+#!homepage=https://yfamily.ml
+#!author= I-am-R-E
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/cp.png
+name: caipudaquan&xianghacaipu
+desc: 菜谱大全&香哈菜谱解锁会员
+http:
+  mitm:
+    - 'apiios_dq.xiangha.com
+    - 'apiios.xiangha.com'
+  script:
+    - match: ^https?:\/\/apiios\.xiangha\.com\/main\d+\/
+      name: caipudaquan&xianghacaipu
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/apiios_dq\.xiangha\.com\/v\d\/
+      name: caipudaquan&xianghacaipu
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/appweb_dq\.xiangha\.com\/center\/pay\/home
+      name: caipudaquan&xianghacaipu
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  caipudaquan&xianghacaipu:
+    url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/XiangHaCaiPu.js
+    interval: 86400
+  caipudaquan&xianghacaipu:
+    url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiPuDaQuan.js
+    interval: 86400
+  caipudaquan&xianghacaipu:
+    url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiPuDaQuan.js
+    interval: 86400

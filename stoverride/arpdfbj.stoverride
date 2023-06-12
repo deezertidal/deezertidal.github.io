@@ -1,0 +1,19 @@
+#!desc=傲软PDF编辑解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/arpdfbj.png
+name: aoruanPDFbianji
+desc: 傲软PDF编辑解锁会员
+http:
+  mitm:
+    - 'gw.aoscdn.com'
+  script:
+    - match: ^https:\/\/gw\.aoscdn\.com\/base\/vip\/client\/authorizations
+      name: aoruanPDFbianji
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  aoruanPDFbianji:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/arpdf.js
+    interval: 86400

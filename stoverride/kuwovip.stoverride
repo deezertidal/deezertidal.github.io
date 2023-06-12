@@ -1,0 +1,18 @@
+#!desc=解锁酷我年费会员
+#!author=NobyDa
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/kuwo.png
+name: kuwohuiyuan
+desc: 解锁酷我年费会员
+http:
+  mitm:
+    - 'vip1.kuwo.cn'
+  script:
+    - match: ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice)
+      name: kuwohuiyuan
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  kuwohuiyuan:
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js
+    interval: 86400

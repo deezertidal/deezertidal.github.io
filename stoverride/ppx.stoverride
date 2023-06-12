@@ -1,0 +1,19 @@
+#!desc=皮皮虾去广告和水印
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/ppx.png
+#!homepage=https://yfamily.ml
+#!author=NobyDa
+name: pipixia
+desc: 皮皮虾去广告和水印
+http:
+  mitm:
+    - '*.snssdk.com'
+  script:
+    - match: ^https?://.*\.snssdk\.com/bds/(feed/stream|comment/cell_reply|cell/cell_comment|cell/detail|ward/list|user/favorite|user/cell_coment|user/cell_userfeed|user/publish_list)
+      name: pipixia
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  pipixia:
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Super.js
+    interval: 86400

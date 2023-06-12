@@ -1,0 +1,16 @@
+#!desc=WorkoutForWomen解锁
+name: WorkoutForWomenjiesuo
+desc: WorkoutForWomen解锁
+http:
+  mitm:
+    - 'buy.itunes.apple.com'
+  script:
+    - match: https://buy.itunes.apple.com/verifyReceipt
+      name: WorkoutForWomenjiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  WorkoutForWomenjiesuo:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/workoutForWomen.js
+    interval: 86400

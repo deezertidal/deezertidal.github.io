@@ -1,0 +1,19 @@
+#!desc=爱美剧解锁部分功能+去广告
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/amj.png
+#!homepage=https://yfamily.ml
+#!author=NobyDa
+name: aimeijujiesuo
+desc: 爱美剧解锁部分功能+去广告
+http:
+  mitm:
+    - 'api.bjxkhc.com'
+  script:
+    - match: ^https?:\/\/api.bjxkhc.com\/index\.php\/app\/ios\/(vod\/show|(user|vod|topic|type)\/index)
+      name: aimeijujiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  aimeijujiesuo:
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/aimeiju.js
+    interval: 86400

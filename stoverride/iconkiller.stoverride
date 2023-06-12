@@ -1,0 +1,19 @@
+#!desc=icon Killer解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/iconkiller.png
+name: icon Killer
+desc: icon Killer解锁会员
+http:
+  mitm:
+    - 'api.yonekura.cn'
+  script:
+    - match: ^http[s]?:\/\/api.yonekura.cn\/3.6.8\/uicommon\/getuser
+      name: icon Killer
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  icon Killer:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/lcon.js
+    interval: 86400

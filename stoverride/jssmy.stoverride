@@ -1,0 +1,19 @@
+#!desc=极速扫描仪解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/jssmy.png
+name: jisusaomiaoyi
+desc: 极速扫描仪解锁会员
+http:
+  mitm:
+    - 'scanner.jianse.tv'
+  script:
+    - match: ^https:\/\/scanner\.jianse\.tv\/api\/users\/loginUser
+      name: jisusaomiaoyi
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  jisusaomiaoyi:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/jssmy.js
+    interval: 86400

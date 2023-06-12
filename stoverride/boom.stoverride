@@ -1,0 +1,16 @@
+#!desc=Boom
+name: Boom
+desc: Boom
+http:
+  mitm:
+    - 'apimboom2.globaldelight.net'
+  script:
+    - match: ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$
+      name: Boom
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Boom:
+    url: https://github.com/deezertidal/private/raw/master/js-backup/Crack/boom.js
+    interval: 86400

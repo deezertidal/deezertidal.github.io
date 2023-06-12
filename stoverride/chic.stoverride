@@ -1,0 +1,19 @@
+#!desc=chic相机解锁会员
+#!homepage=https://yfamily.ml
+#!author=lutqhysky
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/chic.png
+name: Chic
+desc: chic相机解锁会员
+http:
+  mitm:
+    - 'api-sub.meitu.com'
+  script:
+    - match: ^https:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info\.json
+      name: Chic
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Chic:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Chic.js
+    interval: 86400

@@ -1,0 +1,19 @@
+#!desc=Watchout小组件解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/watchout.png
+name: Watchout
+desc: Watchout小组件解锁会员
+http:
+  mitm:
+    - 'api.pengranapp.com'
+  script:
+    - match: ^https:\/\/api\.pengranapp\.com\/1\.1\/classes\/UserInfo
+      name: Watchout
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Watchout:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Watchoutc.js
+    interval: 86400

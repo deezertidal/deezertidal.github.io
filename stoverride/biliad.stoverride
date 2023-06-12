@@ -1,0 +1,190 @@
+#!desc=哔哩哔哩去广告
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/biliad.png
+#!homepage=https://yfamily.ml
+#!author=ddgksf2013
+name: bilibiliquguanggao
+desc: 哔哩哔哩去广告
+http:
+  mitm:
+    - 'app.bilibili.com
+    - 'api.live.bilibili.com
+    - 'api.vc.bilibili.com
+    - 'api.bilibili.com
+    - 'manga.bilibili.com
+    - 'grpc.biliapi.net
+    - 'api.biliapi.net
+    - '-broadcast.chat.bilibili.com
+    - '-*cdn*.biliapi.net
+    - '-*tracker*.biliapi.net'
+  script:
+    - match: ^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$
+      name: bilibiliquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\?
+      name: bilibiliquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list
+      name: bilibiliquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\?
+      name: bilibiliquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?
+      name: bilibiliquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https://app.bilibili.com/x/v2/search/square
+      name: bilibiliquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index
+      name: bilibiliquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/bangumi
+      name: bilibiliquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom
+      name: bilibiliquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\?
+      name: bilibiliquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab
+      name: bilibiliquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine
+      name: bilibiliquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$
+      name: bilibiliquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https://app\.bilibili\.com/bilibili\.app\.dynamic\.v2\.Dynamic/DynAll$
+      name: bilibiliquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$
+      name: bilibiliquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+  rewrite:
+    - #～BiliBili_哔哩哔哩_屏蔽IP请求@ddgksf2013
+    - 
+    - ^https?:\/\/app\.bilibili\.com\/x\/resource\/ip - reject
+    - 
+    - #～BiliBili_哔哩哔哩_屏蔽DefaultWord@ddgksf2013
+    - 
+    - ^https?:\/\/app\.bilibili\.com\/bilibili\.app\.interface\.v1\.Search\/Default - reject
+    - 
+    - #～BiliBili_哔哩哔哩_屏蔽首页右上活动[卸载重装]@ddgksf2013
+    - 
+    - ^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity - reject-dict
+    - 
+    - 
+    - 
+    - #～BiliBili_哔哩哔哩_应用开屏去广告@bm7
+    - 
+    - ^https://app.bilibili.com/x/v2/splash/show - reject-dict
+    - 
+    - #～BiliBili_哔哩哔哩_Defaultword@ddgksf2013
+    - 
+    - ^https://app.bilibili.com/x/v2/search/defaultwords - reject-dict
+    - 
+    - #～BiliBili_哔哩哔哩_Material_Ad@ddgksf2013
+    - 
+    - ^https?:\/\/api\.bilibili\.com\/x\/vip\/ads\/material\/report - reject-dict
+    - 
+    - #～BiliBili_哔哩哔哩_小卡片广告@ddgksf2013
+    - 
+    - ^https://api.bilibili.com/pgc/season/player/cards - reject-dict
+    - 
+    - #～BiliBili_哔哩哔哩_解除SIM卡地区限制
+    - 
+    - (^https?:\/\/app\.biliintl.com\/intl\/.+)(&sim_code=\d+)(.+)-302$1$3
+    - 
+    - #～BiliBili_哔哩哔哩_去除搜索中的大家都在搜@bm7
+    - 
+    - ^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words - reject
+    - 
+    - #～BiliBili_哔哩哔哩_去除动态中的话题@bm7
+    - 
+    - ^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr - reject-dict
+    - 
+    - #～BiliBili_哔哩哔哩_可能的一些推广(beta)@bm7
+    - 
+    - ^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? - reject-dict
+    - 
+    - #～BiliBili_哔哩哔哩_漫画去广告@ddgksf2013
+    - 
+    - ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/(Flash|ListFlash) - reject-dict
+script-providers:
+  bilibiliquguanggao:
+    url: https://github.com/deezertidal/private/raw/master/js-backup/Rewrite/Function/Bilibili_CC.conf
+    interval: 86400
+  bilibiliquguanggao:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
+    interval: 86400
+  bilibiliquguanggao:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
+    interval: 86400
+  bilibiliquguanggao:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
+    interval: 86400
+  bilibiliquguanggao:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
+    interval: 86400
+  bilibiliquguanggao:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
+    interval: 86400
+  bilibiliquguanggao:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
+    interval: 86400
+  bilibiliquguanggao:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
+    interval: 86400
+  bilibiliquguanggao:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
+    interval: 86400
+  bilibiliquguanggao:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
+    interval: 86400
+  bilibiliquguanggao:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
+    interval: 86400
+  bilibiliquguanggao:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
+    interval: 86400
+  bilibiliquguanggao:
+    url: https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-proto.js
+    interval: 86400
+  bilibiliquguanggao:
+    url: https://raw.githubusercontent.com/yjqiang/surge_scripts/main/scripts/bilibili/bilibili_dynamic.js
+    interval: 86400
+  bilibiliquguanggao:
+    url: https://github.com/deezertidal/private/raw/master/js-backup/Rewrite/Function/Bilibili_CC.conf
+    interval: 86400

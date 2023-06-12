@@ -1,0 +1,16 @@
+#!desc=SoundCloudGo+
+name: SoundCloudGo+
+desc: SoundCloudGo+
+http:
+  mitm:
+    - 'api-mobile.soundcloud.com'
+  script:
+    - match: https://api-mobile.soundcloud.com/configuration/ios
+      name: SoundCloudGo+
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  SoundCloudGo+:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
+    interval: 86400

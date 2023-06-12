@@ -1,0 +1,20 @@
+#!name=丁香医考
+#!desc=丁香医考解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://yfamily.ml
+#!author=89996462
+name: dingxiangyikao
+desc: 丁香医考解锁
+http:
+  mitm:
+    - 'exam.dxy.cn'
+  script:
+    - match: ^http[s]?:\/\/exam.dxy.cn
+      name: dingxiangyikao
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  dingxiangyikao:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/dXyk.js
+    interval: 86400

@@ -1,0 +1,16 @@
+#!desc=invideo会员
+name: invideohuiyuan
+desc: invideo会员
+http:
+  mitm:
+    - 'payments.invideo.io'
+  script:
+    - match: https://payments.invideo.io/(verify_purchase|subscription)
+      name: invideohuiyuan
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  invideohuiyuan:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/filmr.js
+    interval: 86400

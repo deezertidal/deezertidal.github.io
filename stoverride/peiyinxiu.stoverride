@@ -1,0 +1,19 @@
+#!desc=配音秀解锁会员
+#!homepage=https://yfamily.ml
+#!author= lutqhysky
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/peiyinxiu.png
+name: peiyinxiu
+desc: 配音秀解锁会员
+http:
+  mitm:
+    - 'iosapi.peiyinxiu.com'
+  script:
+    - match: ^https?:\/\/iosapi.peiyinxiu.com
+      name: peiyinxiu
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  peiyinxiu:
+    url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/peiyinxiu/Script/peiyinxiu.js
+    interval: 86400

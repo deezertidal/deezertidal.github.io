@@ -1,0 +1,16 @@
+#!desc=mix相机
+name: mixxiangji
+desc: mix相机
+http:
+  mitm:
+    - 'bmall.camera360.com'
+  script:
+    - match: https?:\/\/bmall\.camera360\.com\/api\/mix\/recovery
+      name: mixxiangji
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  mixxiangji:
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/MIX.js
+    interval: 86400

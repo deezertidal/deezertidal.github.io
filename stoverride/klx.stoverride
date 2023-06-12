@@ -1,0 +1,19 @@
+#!desc=看理想解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/klx.png
+name: kanlixiang
+desc: 看理想解锁会员
+http:
+  mitm:
+    - 'api.vistopia.com.cn'
+  script:
+    - match: ^https:\/\/api\.vistopia\.com\.cn\/api
+      name: kanlixiang
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  kanlixiang:
+    url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/klx.js
+    interval: 86400

@@ -1,0 +1,16 @@
+#!desc=Musixmatch解锁
+name: Musixmatchjiesuo
+desc: Musixmatch解锁
+http:
+  mitm:
+    - 'apic.musixmatch.com'
+  script:
+    - match: https://apic.musixmatch.com/ws/1.1/config.get
+      name: Musixmatchjiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Musixmatchjiesuo:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/musixmatch.js
+    interval: 86400

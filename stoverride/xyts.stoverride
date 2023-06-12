@@ -1,0 +1,19 @@
+#!desc=新语听书解锁会员
+#!homepage=https://yfamily.ml
+#!author=yqc007
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/xyts.png
+name: xinyutingshu
+desc: 新语听书解锁会员
+http:
+  mitm:
+    - 'i.xinyulib.com.cn'
+  script:
+    - match: ^https?:\/\/i\.xinyulib\.com\.cn\/api\/querytoken.+
+      name: xinyutingshu
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  xinyutingshu:
+    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/XinYuLibraryProCrack.js,requires-body=1,tag=新语听书解锁会员
+    interval: 86400

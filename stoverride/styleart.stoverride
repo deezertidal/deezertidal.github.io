@@ -1,0 +1,19 @@
+#!desc=Styleart解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/iscreen.png
+name: Styleart
+desc: Styleart解锁会员
+http:
+  mitm:
+    - 'api-aidraw.3dmoxiu.com'
+  script:
+    - match: ^https:\/\/api-aidraw\.3dmoxiu\.com\/v4\/aidraw\/user\/userInfo\/getUserInfoByToken
+      name: Styleart
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Styleart:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/StyleArt.js
+    interval: 86400

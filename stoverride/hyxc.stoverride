@@ -1,0 +1,19 @@
+#!desc=幻影相册VIP
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/hyxc.png
+#!homepage=https://yfamily.ml
+#!author=89996462
+name: huanyingxiangce
+desc: 幻影相册VIP
+http:
+  mitm:
+    - 'buy.itunes.apple.com'
+  script:
+    - match: ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
+      name: huanyingxiangce
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  huanyingxiangce:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/hyxc.js
+    interval: 86400

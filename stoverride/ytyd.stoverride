@@ -1,0 +1,20 @@
+#!name=一天阅读
+#!desc=一天阅读解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://yfamily.ml
+#!author=89996462
+name: yitianyuedu
+desc: 一天阅读解锁
+http:
+  mitm:
+    - 'novel.test.onedayapp.cn'
+  script:
+    - match: ^https:\/\/novel\.test\.onedayapp\.cn\/login\/sync
+      name: yitianyuedu
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  yitianyuedu:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ytyd.js
+    interval: 86400

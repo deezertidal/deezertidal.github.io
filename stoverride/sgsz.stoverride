@@ -1,0 +1,16 @@
+#!desc=时光手账解锁
+name: shiguangshouzhangjiesuo
+desc: 时光手账解锁
+http:
+  mitm:
+    - 'api.shouzhang.com'
+  script:
+    - match: https://api.shouzhang.com/memcenterlk/member
+      name: shiguangshouzhangjiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  shiguangshouzhangjiesuo:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/timebook.js
+    interval: 86400

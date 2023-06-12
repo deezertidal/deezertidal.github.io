@@ -1,0 +1,19 @@
+#!desc=FoMz解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/fomz.png
+name: FoMz
+desc: FoMz解锁会员
+http:
+  mitm:
+    - 'fz68resapi.imendon.com'
+  script:
+    - match: ^https:\/\/fz68resapi\.imendon\.com\/v2\/purchase\/vip\/verification
+      name: FoMz
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  FoMz:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/FoMz.js
+    interval: 86400

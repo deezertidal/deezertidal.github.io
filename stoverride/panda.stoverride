@@ -1,0 +1,19 @@
+#!desc=Panda桌面小组件解锁
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/panda.png
+name: Panda widget
+desc: Panda桌面小组件解锁
+http:
+  mitm:
+    - 'buy.itunes.apple.com'
+  script:
+    - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+      name: Panda widget
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Panda widget:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/pandavip.js
+    interval: 86400

@@ -1,0 +1,19 @@
+#!desc=AccuWeather解锁会员
+#!homepage=https://yfamily.ml
+#!author=Marol62926
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/accu.png
+name: AccuWeather
+desc: AccuWeather解锁会员
+http:
+  mitm:
+    - 'app-subscription-proxy.accuweather.com'
+  script:
+    - match: https://app-subscription-proxy.accuweather.com/subscriptions/v1/apple/validate
+      name: AccuWeather
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  AccuWeather:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/accuWeather.js,requires-body=1,max-size=0
+    interval: 86400

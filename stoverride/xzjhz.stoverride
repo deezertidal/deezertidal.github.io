@@ -1,0 +1,19 @@
+#!desc=小组件盒子解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/xzjhz.png
+name: xiaozujianhezi
+desc: 小组件盒子解锁会员
+http:
+  mitm:
+    - 'widget-box-api.codefuture.top'
+  script:
+    - match: ^https:\/\/widget-box-api\.codefuture\.top\/v1\/users\/me
+      name: xiaozujianhezi
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  xiaozujianhezi:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xzjhz.js
+    interval: 86400

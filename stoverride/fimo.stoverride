@@ -1,0 +1,16 @@
+#!desc=Fimo
+name: Fimo
+desc: Fimo
+http:
+  mitm:
+    - 'server.yoyiapp.com'
+  script:
+    - match: ^https://server.yoyiapp.com/fimo-user/user$
+      name: Fimo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Fimo:
+    url: https://github.com/deezertidal/private/raw/master/js-backup/Crack/fimo.js
+    interval: 86400

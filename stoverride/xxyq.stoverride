@@ -1,0 +1,19 @@
+#!desc=小小优趣解锁会员
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/xxyq.png
+#!homepage=https://yfamily.ml
+#!author=lutqhysky
+name: xiaoxiaoyouqu
+desc: 小小优趣解锁会员
+http:
+  mitm:
+    - 'prod.ukids.cn'
+  script:
+    - match: ^https?:\/\/prod\.ukids\.cn\/uch5\/getUser
+      name: xiaoxiaoyouqu
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  xiaoxiaoyouqu:
+    url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/xiaoxiaoyouqu/Script/xxyq.js
+    interval: 86400

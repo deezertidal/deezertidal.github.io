@@ -1,0 +1,19 @@
+#!desc=Drafts解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/drafts.png
+name: Drafts
+desc: Drafts解锁会员
+http:
+  mitm:
+    - 'backend.getdrafts.com'
+  script:
+    - match: ^https:\/\/backend\.getdrafts\.com\/api\/v1\/verification\/verify_receipt
+      name: Drafts
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Drafts:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Drafts.js
+    interval: 86400

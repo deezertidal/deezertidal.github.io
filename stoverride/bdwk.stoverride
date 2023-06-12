@@ -1,0 +1,19 @@
+#!desc=解锁文档阅读权限
+#!homepage=https://yfamily.ml
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/bdwk.png
+name: baiduwenku
+desc: 解锁文档阅读权限
+http:
+  mitm:
+    - 'appwk.baidu.com'
+  script:
+    - match: ^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo
+      name: baiduwenku
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  baiduwenku:
+    url: https://github.com/deezertidal/private/raw/master/js-backup/Crack/baidulibrary.js
+    interval: 86400

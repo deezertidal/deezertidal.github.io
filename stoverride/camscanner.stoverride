@@ -1,0 +1,18 @@
+#!desc=解锁扫描全能王
+#!author=NobyDa
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/cs.png
+name: saomiaoquannengwang
+desc: 解锁扫描全能王
+http:
+  mitm:
+    - 'ap*.intsig.net'
+  script:
+    - match: https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?
+      name: saomiaoquannengwang
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  saomiaoquannengwang:
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
+    interval: 86400

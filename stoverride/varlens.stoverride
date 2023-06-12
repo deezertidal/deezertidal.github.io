@@ -1,0 +1,19 @@
+#!desc=Varlens解锁会员
+#!homepage=https://yfamily.ml
+#!author= I-am-R-E
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/varlens.png
+name: Varlens
+desc: Varlens解锁会员
+http:
+  mitm:
+    - 'mid.zineapi.com'
+  script:
+    - match: ^https:\/\/mid\.zineapi\.com\/@varlens\/api\/user\/info\/
+      name: Varlens
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Varlens:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Varlens.js
+    interval: 86400

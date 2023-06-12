@@ -1,0 +1,20 @@
+#!name=轻图
+#!desc=轻图解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://yfamily.ml
+#!author=yqc007
+name: qingtu
+desc: 轻图解锁
+http:
+  mitm:
+    - 'purchase-qingtu-api.b612kaji.com'
+  script:
+    - match: ^https?:\/\/purchase-qingtu-api\.b612kaji\.com\/v1\/purchase\/subscription\/subscriber/status$
+      name: qingtu
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  qingtu:
+    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/PhotoVisionProCrack.js
+    interval: 86400

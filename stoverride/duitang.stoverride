@@ -1,0 +1,19 @@
+#!desc=堆糖解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/duitang.png
+name: duitang
+desc: 堆糖解锁会员
+http:
+  mitm:
+    - 'api.duitang.com'
+  script:
+    - match: ^https:\/\/api\.duitang\.com\/napi
+      name: duitang
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  duitang:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/duitang.js
+    interval: 86400

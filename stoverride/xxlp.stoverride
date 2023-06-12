@@ -1,0 +1,20 @@
+#!name=小熊录屏
+#!desc=小熊录屏解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://yfamily.ml
+#!author=89996462
+name: xiaoxiongluping
+desc: 小熊录屏解锁
+http:
+  mitm:
+    - 'donate-api.recorder.duapps.com'
+  script:
+    - match: ^http[s]?:\/\/donate-api.recorder.duapps.com
+      name: xiaoxiongluping
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  xiaoxiongluping:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/XXLP.js
+    interval: 86400

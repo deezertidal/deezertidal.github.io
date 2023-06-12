@@ -1,0 +1,16 @@
+#!desc=流利说·阅读
+name: liulishuo·yuedu
+desc: 流利说·阅读
+http:
+  mitm:
+    - 'vira.llsapp.com'
+  script:
+    - match: ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$
+      name: liulishuo·yuedu
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  liulishuo·yuedu:
+    url: https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/LiuLiShuoYueDu/Script/LiuLiShuoYueDu.js
+    interval: 86400

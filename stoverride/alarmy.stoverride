@@ -1,0 +1,18 @@
+#!desc=使命闹钟会员解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/alarmy.png
+#!author=Marol62926
+name: Alarmy Premium
+desc: 使命闹钟会员解锁
+http:
+  mitm:
+    - 'ars.alar.my'
+  script:
+    - match: https://ars.alar.my/api/v2/user/sync
+      name: Alarmy Premium
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Alarmy Premium:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/alarmy.js,requires-body=1,max-size=0
+    interval: 86400

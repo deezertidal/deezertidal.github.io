@@ -1,0 +1,16 @@
+#!desc=Piccollage解锁
+name: Piccollagejiesuo
+desc: Piccollage解锁
+http:
+  mitm:
+    - 'piccollage.com'
+  script:
+    - match: https://piccollage.com/api/graphql
+      name: Piccollagejiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Piccollagejiesuo:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/picCollage.js
+    interval: 86400

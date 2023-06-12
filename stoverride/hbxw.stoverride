@@ -1,0 +1,19 @@
+#!desc=烘焙小屋解锁会员
+#!homepage=https://yfamily.ml
+#!author=yqc007
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/hbxw.png
+name: hongbeixiaowu
+desc: 烘焙小屋解锁会员
+http:
+  mitm:
+    - 'apiios_dq.xiangha.com'
+  script:
+    - match: ^https?:\/\/apiios_dq\.xiangha\.com\/v4\/(dish\/info|User\/getUserData)$
+      name: hongbeixiaowu
+      type: response
+      require-body: false
+      timeout: 10
+script-providers:
+  hongbeixiaowu:
+    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/XiangHaBakeProCrack.js,requires-body=1
+    interval: 86400

@@ -1,0 +1,19 @@
+#!desc=格志日记解锁会员
+#!homepage=https://yfamily.ml
+#!author=yqc007
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/gzrj.png
+name: gezhiriji
+desc: 格志日记解锁会员
+http:
+  mitm:
+    - 'diary-id.sumi.io'
+  script:
+    - match: ^https?:\/\/diary-id\.sumi\.io\/api\/profile$
+      name: gezhiriji
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  gezhiriji:
+    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/GridDiary2ProCrack.js
+    interval: 86400

@@ -1,0 +1,22 @@
+#!desc=阿里云盘定时签到
+#!homepage=https://yfamily.ml
+#!author=lowking
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/aliyun.png
+name: aliyunpanqiandao
+desc: 阿里云盘定时签到
+http:
+  mitm:
+    - 'auth.aliyundrive.com'
+  script:
+    - match: https:\/\/auth.aliyundrive.com\/v2\/account\/token
+      name: aliyunpanqiandao
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  aliyunpanqiandao:
+    url: https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
+    interval: 86400
+  aliyunpanqiandao:
+    url: https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
+    interval: 86400

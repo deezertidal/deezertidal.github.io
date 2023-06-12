@@ -1,0 +1,19 @@
+#!desc=豌豆清单解锁会员
+#!homepage=https://yfamily.ml
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/wdqd.png
+name: wandouqingdan
+desc: 豌豆清单解锁会员
+http:
+  mitm:
+    - 'www.40sishi.com'
+  script:
+    - match: ^https:\/\/www\.40sishi\.com\/list\/user\/profile$
+      name: wandouqingdan
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  wandouqingdan:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/wdqd.js
+    interval: 86400

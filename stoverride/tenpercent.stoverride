@@ -1,0 +1,16 @@
+#!desc=10percent解锁
+name: 10percentjiesuo
+desc: 10percent解锁
+http:
+  mitm:
+    - 'api.changecollective.com'
+  script:
+    - match: https://api.changecollective.com/api/v3/user
+      name: 10percentjiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  10percentjiesuo:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/tenPercent.js
+    interval: 86400

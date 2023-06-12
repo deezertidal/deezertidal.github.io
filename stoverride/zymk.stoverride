@@ -1,0 +1,19 @@
+#!desc= 解锁知音漫客付费章节 (需登录)
+#!homepage=https://yfamily.ml
+#!author= NobyDa
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/zymk.png
+name: zhiyinmanke
+desc: 解锁知音漫客付费章节 (需登录)
+http:
+  mitm:
+    - 'apigate.zymk.cn'
+  script:
+    - match: ^https:\/\/apigate\.zymk\.cn\/(zymk-getuserinfo-api\/v1\/getuserinfo|zymk-userpurchased-api\/v1\/userpurchased\/paychapters)\/
+      name: zhiyinmanke
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  zhiyinmanke:
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js
+    interval: 86400

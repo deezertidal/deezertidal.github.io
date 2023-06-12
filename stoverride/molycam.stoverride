@@ -1,0 +1,19 @@
+#!desc=Molycam会员解锁
+#!homepage=https://yfamily.ml
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/molycam.png
+name: Molycam
+desc: Molycam会员解锁
+http:
+  mitm:
+    - 'pay.wecut.com'
+  script:
+    - match: https:\/\/pay\.wecut\.com\/apple\/(iosVerifyReceipt|iosAppVerifyReceipt)\.php
+      name: Molycam
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Molycam:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/mv.js
+    interval: 86400

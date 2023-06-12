@@ -1,0 +1,19 @@
+#!desc=Notboring天气+闹钟+习惯解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/notboring.png
+#!homepage=https://yfamily.ml
+#!author=Marol62926
+name: Notboringtaozhuang
+desc: Notboring天气+闹钟+习惯解锁
+http:
+  mitm:
+    - 'api-weather.andy.works'
+  script:
+    - match: ^https?:\/\/api-weather\.andy\.works\/v\d\/\w{18}$
+      name: Notboringtaozhuang
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Notboringtaozhuang:
+    url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/NotBoring/Script/NotBoring.js
+    interval: 86400

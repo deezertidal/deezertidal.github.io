@@ -1,0 +1,20 @@
+#!name=当燃
+#!desc=当燃 - 运动健身饮食卡路里热量管理
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://yfamily.ml
+#!author=89996462
+name: dangran
+desc: 当燃 - 运动健身饮食卡路里热量管理
+http:
+  mitm:
+    - 'sportlight.wayxtech.com'
+  script:
+    - match: ^http[s]?:\/\/sportlight.wayxtech.com\/miniapp\/user\/getUserInfo
+      name: dangran
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  dangran:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/wayxtech.js
+    interval: 86400

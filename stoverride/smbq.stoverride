@@ -1,0 +1,19 @@
+#!desc=闪萌表情解锁会员
+#!homepage=https://yfamily.ml
+#!author= 89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/smbq.png
+name: shanmengbiaoqing
+desc: 闪萌表情解锁会员
+http:
+  mitm:
+    - 'hi.weshine.im'
+  script:
+    - match: ^https:\/\/hi\.weshine\.im\/v3\.0\/account\/profile
+      name: shanmengbiaoqing
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  shanmengbiaoqing:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/smbq.js
+    interval: 86400

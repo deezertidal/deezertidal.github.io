@@ -1,0 +1,19 @@
+#!desc=一键换脸解锁会员
+#!homepage=https://yfamily.ml
+#!author= 89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/yjhl.png
+name: yijianhuanlian
+desc: 一键换脸解锁会员
+http:
+  mitm:
+    - 'c-api.wjpaa.cn'
+  script:
+    - match: ^https:\/\/c-api\.wjpaa\.cn\/capi\/wxRegisterLogin
+      name: yijianhuanlian
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  yijianhuanlian:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/yjhl.js
+    interval: 86400

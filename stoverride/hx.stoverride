@@ -1,0 +1,19 @@
+#!desc=幻休解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/hx.png
+name: huanxiu
+desc: 幻休解锁会员
+http:
+  mitm:
+    - 'api.shaolinzen.com'
+  script:
+    - match: ^https:\/\/api\.shaolinzen\.com\/user\/v1\/info
+      name: huanxiu
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  huanxiu:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/HX.js
+    interval: 86400

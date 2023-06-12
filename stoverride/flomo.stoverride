@@ -1,0 +1,19 @@
+#!desc=Flomo解锁会员
+#!homepage=https://yfamily.ml
+#!author= 89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/flomo.png
+name: Flomo
+desc: Flomo解锁会员
+http:
+  mitm:
+    - 'flomoapp.com'
+  script:
+    - match: ^https:\/\/flomoapp\.com\/api\/v1\/user\/me
+      name: Flomo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Flomo:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/flomo.js
+    interval: 86400

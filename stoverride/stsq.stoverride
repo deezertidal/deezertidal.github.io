@@ -1,0 +1,18 @@
+#!desc=搜图神器解锁会员
+#!author=lutqhysky
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/stsq.png
+name: soutushenqi
+desc: 搜图神器解锁会员
+http:
+  mitm:
+    - 'wallpaper.soutushenqi.com'
+  script:
+    - match: http:\/\/wallpaper\.soutushenqi\.com\/api\/v1\/account\/token
+      name: soutushenqi
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  soutushenqi:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/SearchArtifact.js
+    interval: 86400

@@ -1,0 +1,20 @@
+#!name=薄荷健康
+#!desc=薄荷健康解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://yfamily.ml
+#!author=89996462
+name: bohejiankang
+desc: 薄荷健康解锁
+http:
+  mitm:
+    - 'api.boohee.com'
+  script:
+    - match: ^https?:\/\/api\.boohee\.com\/app-interface\/.+\/user\/user_info
+      name: bohejiankang
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  bohejiankang:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/bhjk.js
+    interval: 86400

@@ -1,0 +1,19 @@
+#!desc=PhotoshopExpress解锁高级订阅
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/photoshop.png
+#!homepage=https://yfamily.ml
+#!author=litieyin
+name: PhotoshopExpress
+desc: PhotoshopExpress解锁高级订阅
+http:
+  mitm:
+    - 'lcs-mobile-cops.adobe.io'
+  script:
+    - match: ^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile
+      name: PhotoshopExpress
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  PhotoshopExpress:
+    url: https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/photoshop.js
+    interval: 86400

@@ -1,0 +1,19 @@
+#!desc=Pillow解锁会员
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/pillow.png
+#!homepage=https://yfamily.ml
+#!author=CheeryTodo
+name: Pillow
+desc: Pillow解锁会员
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts)
+      name: Pillow
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Pillow:
+    url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/pillow.js
+    interval: 86400

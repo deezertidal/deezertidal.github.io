@@ -1,0 +1,19 @@
+#!desc=Fileball会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/fileball.png
+name: Fileball
+desc: Fileball会员
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$
+      name: Fileball
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Fileball:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fileball.js
+    interval: 86400

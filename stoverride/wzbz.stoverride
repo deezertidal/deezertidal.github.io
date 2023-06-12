@@ -1,0 +1,20 @@
+#!name=问真八字
+#!desc=问真八字解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://yfamily.ml
+#!author=yqc007
+name: wenzhenbazi
+desc: 问真八字解锁
+http:
+  mitm:
+    - 'bzpp2.iwzbz.com'
+  script:
+    - match: ^https?:\/\/bzpp2\.iwzbz\.com\/api\/v1\.1\/user\/getpwnewios
+      name: wenzhenbazi
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  wenzhenbazi:
+    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/WzbzDiamondVipCrack.js
+    interval: 86400

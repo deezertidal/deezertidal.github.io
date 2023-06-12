@@ -1,0 +1,19 @@
+#!desc=米克锁屏解锁会员
+#!homepage=https://yfamily.ml
+#!author= 89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/mksp.png
+name: mikesuoping
+desc: 米克锁屏解锁会员
+http:
+  mitm:
+    - 'buy.itunes.apple.com'
+  script:
+    - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+      name: mikesuoping
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  mikesuoping:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mksp.js
+    interval: 86400

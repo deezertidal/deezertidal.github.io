@@ -1,0 +1,19 @@
+#!desc=Pocket Lists解锁会员
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/pocketlist.png
+#!homepage=https://yfamily.ml
+#!author=superuv
+name: Pocket Lists
+desc: Pocket Lists解锁会员
+http:
+  mitm:
+    - 'pocketlists.com'
+  script:
+    - match: ^https:\/\/pocketlists\.com\/api\/v1\/pocketlists.me.get
+      name: Pocket Lists
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Pocket Lists:
+    url: https://raw.githubusercontent.com/deezertidal/private/main/pocketlists.js
+    interval: 86400

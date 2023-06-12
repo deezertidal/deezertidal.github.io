@@ -1,0 +1,20 @@
+#!name=Spark Mail
+#!desc=Spark Mail解锁会员
+#!homepage=https://yfamily.ml
+#!author=yqc007
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/spark.png
+name: Spark Mail
+desc: Spark Mail解锁会员
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36}|subscribers\/\w{14})$
+      name: Spark Mail
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Spark Mail:
+    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/SparkMailProCrack.js
+    interval: 86400

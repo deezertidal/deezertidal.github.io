@@ -1,0 +1,20 @@
+#!name=趣颜
+#!desc=趣颜解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://yfamily.ml
+#!author=89996462
+name: quyan
+desc: 趣颜解锁
+http:
+  mitm:
+    - 'quyan.aifaceshow.com'
+  script:
+    - match: ^http[s]?:\/\/quyan.aifaceshow.com\/api\/user
+      name: quyan
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  quyan:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/qyX.js
+    interval: 86400

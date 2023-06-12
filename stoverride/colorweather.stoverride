@@ -1,0 +1,19 @@
+#!desc=彩云天气pro
+name: caiyuntianqipro
+desc: 彩云天气pro
+http:
+  mitm:
+    - '*.caiyunapp.*
+    - '*cyapi*'
+  script:
+    - match: ^http[s]?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)\/v2\/user.*$
+      name: caiyuntianqipro
+      type: response
+      require-body: true
+      timeout: 10
+  rewrite:
+    - ^https:\/\/ad\.caiyunapp\.com\/ - - reject
+script-providers:
+  caiyuntianqipro:
+    url: https://raw.githubusercontent.com/WeiRen0/Scripts/main/cytq.js
+    interval: 86400

@@ -1,0 +1,16 @@
+#!desc=Color桌面小组件
+name: Colorzhuomianxiaozujian
+desc: Color桌面小组件
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: https://api.revenuecat.com/v1/(receipts|subscribers)/*
+      name: Colorzhuomianxiaozujian
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Colorzhuomianxiaozujian:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/colorwidget.js
+    interval: 86400

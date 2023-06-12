@@ -1,0 +1,19 @@
+#!desc=VCUS会员解锁
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/vcus.png
+name: VCUS
+desc: VCUS会员解锁
+http:
+  mitm:
+    - 'sdk.api.appwheel.com'
+  script:
+    - match: ^https:\/\/sdk\.api\.appwheel\.com\/v1\/order\/restore
+      name: VCUS
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  VCUS:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/VCUS.js
+    interval: 86400

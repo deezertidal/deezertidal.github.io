@@ -1,0 +1,19 @@
+#!desc=西窗烛会员解锁
+#!homepage=https://yfamily.ml
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/xcz.png
+name: xichuangzhu
+desc: 西窗烛会员解锁
+http:
+  mitm:
+    - 'lchttpapi.xczim.com'
+  script:
+    - match: https://lchttpapi.xczim.com/*
+      name: xichuangzhu
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  xichuangzhu:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/xcz.js
+    interval: 86400

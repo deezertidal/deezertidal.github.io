@@ -1,0 +1,19 @@
+#!desc=尽简衣橱解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/jjyc.png
+name: jinjianyichu
+desc: 尽简衣橱解锁会员
+http:
+  mitm:
+    - 'closet.jinjian.tech'
+  script:
+    - match: ^https:\/\/closet\.jinjian\.tech\/api\/v3\/apple_app_store\/resolve_receipt
+      name: jinjianyichu
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  jinjianyichu:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/jjyc.js
+    interval: 86400

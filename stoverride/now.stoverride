@@ -1,0 +1,16 @@
+#!desc=now冥想会员
+name: nowmingxianghuiyuan
+desc: now冥想会员
+http:
+  mitm:
+    - 'nowapi.navoinfo.cn'
+  script:
+    - match: https://nowapi.navoinfo.cn/h2/user/*
+      name: nowmingxianghuiyuan
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  nowmingxianghuiyuan:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/nowPonder.js
+    interval: 86400

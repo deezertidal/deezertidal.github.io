@@ -1,0 +1,19 @@
+#!desc=Usage解锁会员
+#!homepage=https://yfamily.ml
+#!author= 89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/usage.png
+name: Usage
+desc: Usage解锁会员
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: ^https:\/\/api\.revenuecat\.com\/v1\/subscribers.+
+      name: Usage
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Usage:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Usage.js
+    interval: 86400

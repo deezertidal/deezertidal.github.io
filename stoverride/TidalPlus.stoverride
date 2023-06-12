@@ -1,0 +1,16 @@
+#!desc=解锁 Tidal订阅
+name: Tidal Plusshixiaozhong
+desc: 解锁 Tidal订阅
+http:
+  mitm:
+    - 'api.tidal.com'
+  script:
+    - match: ^https?:\/\/api\.tidal\.com\/v1\/(pages\/album|(user|track|page)s\/(\d+)\/(state|subscription|lyrics|onboarding|playbackinfopostpaywall))
+      name: Tidal Plusshixiaozhong
+      type: request
+      require-body: false
+      timeout: 10
+script-providers:
+  Tidal Plusshixiaozhong:
+    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/TIDALHiFiPlusCrack.js
+    interval: 86400

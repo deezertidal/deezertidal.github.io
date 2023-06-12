@@ -1,0 +1,19 @@
+#!desc=Peak解锁Pro
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/peak.png
+#!homepage=https://yfamily.ml
+#!author=chamberlen
+name: Peak
+desc: Peak解锁Pro
+http:
+  mitm:
+    - 'billing.peakcloud.org'
+  script:
+    - match: ^https:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me?
+      name: Peak
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Peak:
+    url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/peak.js
+    interval: 86400

@@ -1,0 +1,20 @@
+#!name=Happy:Days
+#!desc=Happy:Days解锁会员
+#!homepage=https://yfamily.ml
+#!author=yqc007
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/happydays.png
+name: Happy:Days
+desc: Happy:Days解锁会员
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36}|subscribers\/\$RCAnonymousID%3A\w{32})$
+      name: Happy:Days
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Happy:Days:
+    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/HappyDaysUnlock.js
+    interval: 86400

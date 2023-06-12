@@ -1,0 +1,16 @@
+#!desc=指尖时光解锁
+name: zhijianshiguangjiesuo
+desc: 指尖时光解锁
+http:
+  mitm:
+    - 'integral.dasyibalang.com'
+  script:
+    - match: https://integral.dasyibalang.com/User
+      name: zhijianshiguangjiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  zhijianshiguangjiesuo:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/fingertime.js
+    interval: 86400

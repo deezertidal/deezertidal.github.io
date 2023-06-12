@@ -1,0 +1,16 @@
+#!desc=万能变声器解锁
+name: wannengbianshengqijiesuo
+desc: 万能变声器解锁
+http:
+  mitm:
+    - 'www.40sishi.com'
+  script:
+    - match: https://www.40sishi.com/voice/user/profile
+      name: wannengbianshengqijiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  wannengbianshengqijiesuo:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/voiceChanger.js
+    interval: 86400

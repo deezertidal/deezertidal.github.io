@@ -1,0 +1,19 @@
+#!desc=猫头鹰文件解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/mtywj.png
+name: maotouyingwenjian
+desc: 猫头鹰文件解锁会员
+http:
+  mitm:
+    - 'www.skyjos.cn'
+  script:
+    - match: ^https:\/\/www\.skyjos\.cn:58080\/ws\/loadaccountinfo
+      name: maotouyingwenjian
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  maotouyingwenjian:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mtywj.js
+    interval: 86400

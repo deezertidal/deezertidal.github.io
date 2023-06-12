@@ -1,0 +1,19 @@
+#!desc=乃糖小组件解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/nt.png
+name: naitangxiaozujian
+desc: 乃糖小组件解锁会员
+http:
+  mitm:
+    - 'awvp.aoscdn.com'
+  script:
+    - match: ^https:\/\/awvp\.aoscdn\.com\/base\/vip\/client\/authorizations
+      name: naitangxiaozujian
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  naitangxiaozujian:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ltXzj.js
+    interval: 86400

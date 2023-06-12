@@ -1,0 +1,19 @@
+#!desc=长相思解锁会员
+#!homepage=https://yfamily.ml
+#!author= lutqhysky
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/cxs.png
+name: zhangxiangsi
+desc: 长相思解锁会员
+http:
+  mitm:
+    - 'poetry.yuan9.cn'
+  script:
+    - match: ^https?:\/\/poetry\.yuan9\.cn\/api\/(order\/applesuccess|account\/login|User\/loginUserInfo)
+      name: zhangxiangsi
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  zhangxiangsi:
+    url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/cxs/Script/cxs.js
+    interval: 86400

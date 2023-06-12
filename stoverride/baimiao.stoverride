@@ -1,0 +1,19 @@
+#!desc=白描黄金会员
+#!homepage=https://yfamily.ml
+#!author= iEwha
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/baimiao.png
+name: baimiao
+desc: 白描黄金会员
+http:
+  mitm:
+    - 'baimiao.uzero.cn'
+  script:
+    - match: ^https?:\/\/baimiao\.uzero\.cn\/api\/v\d\.user\/appLaunchWithUser$
+      name: baimiao
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  baimiao:
+    url: https://raw.githubusercontent.com/iEwha/Profiles/master/Script/baimiao.js
+    interval: 86400

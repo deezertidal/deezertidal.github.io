@@ -1,0 +1,19 @@
+#!desc=CEO周课解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/ceo.png
+#!homepage=https://yfamily.ml
+#!author=89996462
+name: CEOzhouke
+desc: CEO周课解锁
+http:
+  mitm:
+    - 'user.xiaozaoapp.com'
+  script:
+    - match: ^https:\/\/user\.xiaozaoapp\.com\/app\/ceouser\/loginAuto
+      name: CEOzhouke
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  CEOzhouke:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ceo.js
+    interval: 86400

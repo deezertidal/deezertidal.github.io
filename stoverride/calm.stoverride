@@ -1,0 +1,16 @@
+#!desc=Calm解锁限制
+name: Calmjiesuoxianzhi
+desc: Calm解锁限制
+http:
+  mitm:
+    - 'api.calm.com'
+  script:
+    - match: https://api.calm.com/(me|device|ios/receipt)
+      name: Calmjiesuoxianzhi
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Calmjiesuoxianzhi:
+    url: https://raw.githubusercontent.com/Alex0510/Eric/Alex0510/surge/surge/Script/caml.js,script-update-interval=0
+    interval: 86400

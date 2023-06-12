@@ -1,0 +1,19 @@
+#!desc=Photomath会员解锁
+#!homepage=https://yfamily.ml
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/photomath.png
+name: Photomath
+desc: Photomath会员解锁
+http:
+  mitm:
+    - 'lapi.photomath.net'
+  script:
+    - match: https://lapi.photomath.net/v4/me
+      name: Photomath
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Photomath:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/poh.js
+    interval: 86400

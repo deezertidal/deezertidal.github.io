@@ -1,0 +1,16 @@
+#!desc=Widgetsmith解锁
+name: Widgetsmithjiesuo
+desc: Widgetsmith解锁
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: https://api.revenuecat.com/v1/(receipts|subscribers)/*
+      name: Widgetsmithjiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Widgetsmithjiesuo:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/widgetSmith.js
+    interval: 86400

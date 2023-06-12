@@ -1,0 +1,20 @@
+#!name=不折叠输入法
+#!desc=不折叠输入法解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://yfamily.ml
+#!author=89996462
+name: buzhedieshurufa
+desc: 不折叠输入法解锁
+http:
+  mitm:
+    - 'api.keyboard.buzhedie.com'
+  script:
+    - match: ^http[s]?:\/\/api.keyboard.buzhedie.com\/input\/member_info\/
+      name: buzhedieshurufa
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  buzhedieshurufa:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/bzdsrf.js
+    interval: 86400

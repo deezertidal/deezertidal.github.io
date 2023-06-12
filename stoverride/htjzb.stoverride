@@ -1,0 +1,19 @@
+#!desc=海豚记账本解锁会员
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/htjzb.png
+#!homepage=https://yfamily.ml
+#!author=superuv
+name: haitunjizhangben
+desc: 海豚记账本解锁会员
+http:
+  mitm:
+    - 'book.haitunwallet.com'
+  script:
+    - match: https:\/\/book\.haitunwallet\.com\/app\/vip\/status
+      name: haitunjizhangben
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  haitunjizhangben:
+    url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/htjzb.js
+    interval: 86400

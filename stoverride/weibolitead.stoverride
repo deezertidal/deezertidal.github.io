@@ -1,0 +1,61 @@
+#!desc=微博轻享版（原国际版）去广告
+name: weiboqingxiangbanquguanggao
+desc: 微博轻享版（原国际版）去广告
+http:
+  mitm:
+    - '*api.weibo*
+    - 'sdkapp.uve.weibo.com'
+  script:
+    - match: ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/unread_hot_timeline
+      name: weiboqingxiangbanquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/friends_timeline
+      name: weiboqingxiangbanquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/cardlist
+      name: weiboqingxiangbanquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=trends
+      name: weiboqingxiangbanquguanggao
+      type: response
+      require-body: true
+      timeout: 10
+  rewrite:
+    - # ～ WeiboLite_微博国际版_sdkad
+    - 
+    - ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php - reject
+    - 
+    - # ～ WeiboLite_微博国际版_屏蔽search_suggest
+    - 
+    - ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/page\/get_search_suggest - reject-dict
+    - 
+    - # ～ WeiboLite_微博国际版_屏蔽searching_info
+    - 
+    - ^ttps?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*user&a=get_searching_info - reject
+    - 
+    - # ～ WeiboLite_微博国际版_屏蔽search_topic
+    - 
+    - ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=search_topic - reject
+    - 
+    - # ～ WeiboLite_微博国际版_屏蔽开屏广告
+    - 
+    - ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*ads - reject
+script-providers:
+  weiboqingxiangbanquguanggao:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/weibo_json.js
+    interval: 86400
+  weiboqingxiangbanquguanggao:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/weibo_json.js
+    interval: 86400
+  weiboqingxiangbanquguanggao:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/weibo_json.js
+    interval: 86400
+  weiboqingxiangbanquguanggao:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/weibo_json.js
+    interval: 86400

@@ -1,0 +1,20 @@
+#!name=TouchRetouch
+#!desc=TouchRetouch解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://yfamily.ml
+#!author=89996462
+name: TouchRetouch
+desc: TouchRetouch解锁
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$
+      name: TouchRetouch
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  TouchRetouch:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/TouchRetouch.js
+    interval: 86400

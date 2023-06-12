@@ -1,0 +1,19 @@
+#!desc=私密相册管家解锁会员
+#!homepage=https://yfamily.ml
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/smxcgj.png
+name: simixiangceguanjia
+desc: 私密相册管家解锁会员
+http:
+  mitm:
+    - 'buy.itunes.apple.com'
+  script:
+    - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+      name: simixiangceguanjia
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  simixiangceguanjia:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/smxcgj.js
+    interval: 86400

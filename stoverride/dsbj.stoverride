@@ -1,0 +1,19 @@
+#!desc=读书笔记解锁会员
+#!homepage=https://yfamily.ml
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/dsbj.png
+name: dushubiji
+desc: 读书笔记解锁会员
+http:
+  mitm:
+    - 'xrckeji.com'
+  script:
+    - match: https://xrckeji.com/union/app/user/query
+      name: dushubiji
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  dushubiji:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/mzjz.js
+    interval: 86400

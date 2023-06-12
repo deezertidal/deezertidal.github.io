@@ -1,0 +1,18 @@
+#!desc=助眠风扇解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/bedtimefan.png
+#!author=Marol62926
+name: Bedtime Fan
+desc: 助眠风扇解锁
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: https://api.revenuecat.com/v1/(receipts|subscribers)/*
+      name: Bedtime Fan
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Bedtime Fan:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/bedtimeFan.js,requires-body=1,max-size=0
+    interval: 86400

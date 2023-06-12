@@ -1,0 +1,19 @@
+#!desc=语文趣配音解锁会员
+#!homepage=https://yfamily.ml
+#!author= lutqhysky
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/ywqpy.png
+name: yuwenqupeiyin
+desc: 语文趣配音解锁会员
+http:
+  mitm:
+    - 'cnapi.qupeiyin.com'
+  script:
+    - match: ^https?:\/\/cnapi\.qupeiyin\.com\/(user\/memberData|member|top\/showTop)
+      name: yuwenqupeiyin
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  yuwenqupeiyin:
+    url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/wenyuqupeiyin/Script/yuwenqupeiyin.js
+    interval: 86400

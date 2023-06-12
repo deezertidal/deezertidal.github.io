@@ -1,0 +1,19 @@
+#!desc=Fantastical解锁会员
+#!homepage=https://yfamily.ml
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/fantastical.png
+name: Fantastical
+desc: Fantastical解锁会员
+http:
+  mitm:
+    - 'api.flexibits.com'
+  script:
+    - match: ^https:\/\/api\.flexibits\.com\/(v1\/auth\/device|v1\/account\/details)
+      name: Fantastical
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Fantastical:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/fantastical.js
+    interval: 86400

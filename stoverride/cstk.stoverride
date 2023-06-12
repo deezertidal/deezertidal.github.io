@@ -1,0 +1,20 @@
+#!name=才士题库
+#!desc=才士题库解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+#!homepage=https://yfamily.ml
+#!author=89996462
+name: caishitiku
+desc: 才士题库解锁
+http:
+  mitm:
+    - 'gateway-pro.caishi.cn'
+  script:
+    - match: ^http[s]?:\/\/gateway-pro.caishi.cn
+      name: caishitiku
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  caishitiku:
+    url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/caishi.js
+    interval: 86400

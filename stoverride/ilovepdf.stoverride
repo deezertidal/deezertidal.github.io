@@ -1,0 +1,16 @@
+#!desc=ILovePDF
+name: ILovePDF
+desc: ILovePDF
+http:
+  mitm:
+    - 'service.ilovepdf.com'
+  script:
+    - match: https://service.ilovepdf.com/v1/user
+      name: ILovePDF
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  ILovePDF:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/lovePdf.js
+    interval: 86400

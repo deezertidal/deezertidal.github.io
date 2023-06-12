@@ -1,0 +1,16 @@
+#!desc=kika解锁
+name: kikajiesuo
+desc: kika解锁
+http:
+  mitm:
+    - 'api.kikakeyboard.com'
+  script:
+    - match: https://api.kikakeyboard.com/v1/ios/subscription/check/user
+      name: kikajiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  kikajiesuo:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/kika.js
+    interval: 86400

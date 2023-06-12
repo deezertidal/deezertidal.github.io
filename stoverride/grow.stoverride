@@ -1,0 +1,27 @@
+#!desc=Grow解锁会员
+#!homepage=https://yfamily.ml
+#!author=I-am-R-E
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/grow.png
+name: Grow
+desc: Grow解锁会员
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: ^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/(\$RCAnonymousID\%)?(\w)+$
+      name: Grow
+      type: response
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/api\.revenuecat\.com\/v\d\/receipts$
+      name: Grow
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Grow:
+    url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Grow.js
+    interval: 86400
+  Grow:
+    url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Grow.js
+    interval: 86400

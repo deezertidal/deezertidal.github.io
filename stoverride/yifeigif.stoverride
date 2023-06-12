@@ -1,0 +1,17 @@
+#!desc=忆飞Gif解锁
+name: yifeiGifjiesuo
+desc: 忆飞Gif解锁
+http:
+  mitm:
+    - 'us-central1-giftr-83d83.cloudfunctions.net
+    - 'us-central1-infltr.cloudfunctions.net'
+  script:
+    - match: https://(us-central1-giftr-83d83|us-central1-infltr).cloudfunctions.net/verifySubscription
+      name: yifeiGifjiesuo
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  yifeiGifjiesuo:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/yifei.js
+    interval: 86400

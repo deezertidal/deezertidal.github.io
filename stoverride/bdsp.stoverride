@@ -1,0 +1,16 @@
+#!desc=布丁锁屏
+name: budingsuoping
+desc: 布丁锁屏
+http:
+  mitm:
+    - 'screen-lock.51wnl-cq.com'
+  script:
+    - match: https?:\/\/screen-lock\.51wnl-cq\.com\/userApi\/saveUser
+      name: budingsuoping
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  budingsuoping:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/budingsuoping.js
+    interval: 86400

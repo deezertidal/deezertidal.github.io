@@ -1,0 +1,19 @@
+#!desc=My Plate解锁会员
+#!homepage=https://yfamily.ml
+#!author=Marol62926
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/myplate.png
+name: My Plate
+desc: My Plate解锁会员
+http:
+  mitm:
+    - 'www.livestrong.com'
+  script:
+    - match: https://www.livestrong.com/service/user/profile/*
+      name: My Plate
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  My Plate:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/myPlate.js,requires-body=1,max-size=0
+    interval: 86400

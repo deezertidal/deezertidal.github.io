@@ -1,0 +1,16 @@
+#!desc=Appraven
+name: Appraven
+desc: Appraven
+http:
+  mitm:
+    - 'appraven.net'
+  script:
+    - match: ^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy)
+      name: Appraven
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  Appraven:
+    url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/appraven.js
+    interval: 86400

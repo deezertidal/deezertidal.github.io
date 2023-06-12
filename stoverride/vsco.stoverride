@@ -1,0 +1,27 @@
+#!desc=vsco解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/vsco.png
+#!homepage=https://yfamily.ml
+#!author=NobyDa
+name: VSCO
+desc: vsco解锁
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: ^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/
+      name: VSCO
+      type: request
+      require-body: true
+      timeout: 10
+    - match: ^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/
+      name: VSCO
+      type: response
+      require-body: false
+      timeout: 10
+script-providers:
+  VSCO:
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+    interval: 86400
+  VSCO:
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+    interval: 86400
