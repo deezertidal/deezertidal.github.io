@@ -16,69 +16,7 @@
 
   gtag('config', 'G-Q10V31V29W');
 </script>
-<style>
-#share-button {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 22px;
-  border: 2px solid #007aff;
-  background-color: white;
-  color: #007aff;
-  padding: 3px 6px;
-  cursor: pointer;
-  z-index: 1;
-  animation: shake 5s ease-in-out infinite;
-}
 
-@keyframes shake {
-  0% { transform: translateX(-50%); }
-  5% { transform: translateX(-49%); }
-  10% { transform: translateX(-51%); }
-  15% { transform: translateX(-49%); }
-  20% { transform: translateX(-50%); }
-  25% { transform: translateX(-51%); }
-  30% { transform: translateX(-49%); }
-  35% { transform: translateX(-51%); }
-  40% { transform: translateX(-50%); }
-  45% { transform: translateX(-49%); }
-  50% { transform: translateX(-50%); }
-  100% { transform: translateX(-50%); }
-}
-  #share-options {
-    position: fixed;
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    z-index: 1;
-  }
-  #share-options a {
-    margin: 0 20px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: transparent;
-    box-shadow: none;
-    transition: transform 0.2s;
-  }
-  #share-options a:hover {
-    transform: scale(1.1);
-  }
-  #share-options a img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  #bottom-content {
-    padding-bottom: 100px;
-  }
-</style>
 <style>
 .myButton {
   animation-name: button-animation;
@@ -655,15 +593,6 @@ $('button').on('click', function() {
     $(this).css('background-color', 'rgb(' + r + ',' + g + ',' + b + ')');
 });
 </script>
-<button id="share-button">分享到</button>
-<div id="share-options" style="display: none;">
-  <a href="https://telegram.me/share/url?url=https://yfamily.ml/shadowrocket.html"><img src="https://yfamily.ml/IMG/tg.png" alt="Telegram"></a>
-  <a href="https://www.facebook.com/sharer.php?u=https://yfamily.ml/shadowrocket.html"><img src="https://yfamily.ml/IMG/fb.png" alt="Facebook"></a>
-  <a href="https://twitter.com/intent/tweet?url=https://yfamily.ml/shadowrocket.html"><img src="https://yfamily.ml/IMG/twitter.png" alt="Twitter"></a>
-</div>
-
-<div id="bottom-content">
-</div>
 
 <script>
   $(document).ready(function(){
