@@ -1,0 +1,17 @@
+#!desc=波点音乐去广告
+#!homepage=https://yfamily.ml
+#!author=zqzess
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/bodian2.png
+name: bodianyinyue
+desc: 波点音乐去广告
+http:
+  mitm:
+    - ""
+  rewrite:
+    - ^http:\/\/bd-api\.kuwo\.cn\/api\/service\/resource\/musicResource\/.+ - - reject
+    - 
+    - ^https:\/\/bodiancdn\.kuwo\.cn\/.+\.mp4 - - reject
+    - 
+    - ^http:\/\/bd-api\.kuwo\.cn\/api\/service\/resource\/view\?uid - - reject
+    - 
+    - ^http:\/\/bd-api\.kuwo\.cn\/api\/service\/music\/recommendList\?uid - - reject
