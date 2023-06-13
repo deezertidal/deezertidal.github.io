@@ -4,9 +4,9 @@
 #!homepage=https://yfamily.ml
 #!author=ddgksf2013
 # 融合：通用开屏，高德地图，微信小程序，B站，菜鸟裹裹，bing,keep style,网易云，随手记，微信公众号，小红书，喜马拉雅，知乎，Pixiv，酷安，多多视频，优酷，百度地图
-# 由yfamily.ml自动维护 202306130843
+# 由yfamily.ml自动维护 202306131043
 [URL Rewrite]
-^https?:\/\/2023.06.12\/v2.0.318 reject
+^https?:\/\/2023.06.13\/v2.0.319 reject
 ^https?:\/\/app\.58\.com\/api\/home\/(advertising|appadv) reject
 ^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}:\d+\/api\/v\d\/advert reject
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery reject
@@ -407,7 +407,7 @@ coolapk=type=http-response,pattern=^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(re
 
 quark=type=http-response,pattern=^https?:\/\/open-cms-api\.uc\.cn\/open-cms,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/quark.js
 
-spotify-json=type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ url script-request-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
+spotify-json=type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ url script-request-header https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
 
 shunfeng_json=type=http-response,pattern=https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/shunfeng_json.js
 

@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://yfamily.ml
 #!author=Mixed
-# 由yfamily.ml自动维护 202306130843
+# 由yfamily.ml自动维护 202306131043
 [URL Rewrite]
 ^https?://(www.)?(g|google)\.cn https://www.google.com 302
 ^https?://(ditu|maps)\.google\.cn https://maps.google.com 302
@@ -305,7 +305,7 @@
 ^https?://syh\.zybang\.com/com/adx/ _ reject
 ^https?://api\.izuiyou\.com/ad/ _ reject
 ^https?://tiku\.zhan\.com/Common/newAd/ _ reject
-^https?:\/\/2023.06.12\/v2.0.318 _ reject
+^https?:\/\/2023.06.13\/v2.0.319 _ reject
 ^https?:\/\/app\.58\.com\/api\/home\/(advertising|appadv) _ reject
 ^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}:\d+\/api\/v\d\/advert _ reject
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery _ reject
@@ -763,6 +763,8 @@ jd_json=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?
 coolapk=type=http-response,pattern=^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
 
 quark=type=http-response,pattern=^https?:\/\/open-cms-api\.uc\.cn\/open-cms,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/quark.js
+
+spotify-json=type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ url script-request-header https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
 
 shunfeng_json=type=http-response,pattern=https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/shunfeng_json.js
 
