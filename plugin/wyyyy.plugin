@@ -1,0 +1,11 @@
+#!name=网易云
+#!desc=网易云音质解锁
+#!homepage=https://yfamily.ml
+#!author=WeiRen0
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/.png
+
+[Script]
+http-request ^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ script-path=https://raw.githubusercontent.com/WeiRen0/Scripts/main/wyun.js
+
+[MITM]
+hostname = *.music.163.com
