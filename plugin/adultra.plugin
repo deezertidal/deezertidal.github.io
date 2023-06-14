@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://yfamily.ml
 #!author=Mixed
-# 由yfamily.ml自动维护 202306141256
+# 由yfamily.ml自动维护 202306141443
 [URL Rewrite]
 ^https?://(www.)?(g|google)\.cn 302 https://www.google.com
 ^https?://(ditu|maps)\.google\.cn 302 https://maps.google.com
@@ -305,7 +305,7 @@
 ^https?://syh\.zybang\.com/com/adx/ reject
 ^https?://api\.izuiyou\.com/ad/ reject
 ^https?://tiku\.zhan\.com/Common/newAd/ reject
-^https?:\/\/2023.06.14\/v2.0.320 reject
+^https?:\/\/2023.06.14\/v2.0.321 reject
 ^https?:\/\/app\.58\.com\/api\/home\/(advertising|appadv) reject
 ^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}:\d+\/api\/v\d\/advert reject
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery reject

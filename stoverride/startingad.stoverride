@@ -997,7 +997,7 @@ http:
       require-body: true
       timeout: 10
   rewrite:
-    - ^https?:\/\/2023.06.14\/v2.0.320 - reject
+    - ^https?:\/\/2023.06.14\/v2.0.321 - reject
     - ^https?:\/\/app\.58\.com\/api\/home\/(advertising|appadv) - reject
     - ^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}:\d+\/api\/v\d\/advert - reject
     - ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery - reject
