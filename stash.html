@@ -154,6 +154,8 @@
 <h1 style="text-align: center; color: #064571;">
   <img src="https://yfamily.ml/IMG/stash.png" alt="Stash覆写" style="width:30px; height: 30px; margin-right: 10px;">Stash覆写
 </h1>
+
+
   <div style="display: flex; margin: 30px 0;">
   <span style="flex: 1; height: 3px; background-color: #0F9D58;"></span>
   <span style="flex: 1; height: 3px; background-color: #F4B400;"></span>
@@ -166,6 +168,7 @@
 <div id="searchResults"></div>
   <div id="content">
     <div class="container">
+	<h6><p><a href="https://yfamily.ml/strule.html"><button class="myButton openlink">🚦代理规则</button></a></p></h6>
     <h6><p><a href="https://yfamily.ml/stoverride/4in1.stoverride"><button class="myButton">Four in One</button></a></p></h6>
     <h6><p><a href="https://yfamily.ml/stoverride/bfs.stoverride"><button class="myButton">BingAI for Safari</button></a></p></h6>
     <h6><p><a href="https://yfamily.ml/stoverride/startingad.stoverride"><button class="myButton">去开屏广告融合版</button></a></p></h6>
@@ -511,7 +514,9 @@
     var target = $(event.target);
     var buttonText = target.text().trim().toLowerCase();
     var href = target.parent().attr("href");
-
+    if (target.hasClass("openlink")) {
+      window.location.href = href; 
+    } else {
     var tempInput = $("<input>");
     $("body").append(tempInput);
     tempInput.val(href).select();
@@ -519,6 +524,7 @@
     tempInput.remove();
 
     alert("链接已复制");
+	}
   });
 </script>
 <script>
@@ -554,7 +560,9 @@
     var target = $(event.target);
     var buttonText = target.text().trim().toLowerCase();
     var href = target.parent().attr("href");
-
+    if (target.hasClass("openlink")) {
+      window.location.href = href; 
+    } else {
     var tempInput = $("<input>");
     $("body").append(tempInput);
     tempInput.val(href).select();
@@ -562,6 +570,7 @@
     tempInput.remove();
 
     alert("链接已复制");
+	}
   });
 </script>
 <script>
