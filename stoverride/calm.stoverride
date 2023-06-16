@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Calmjiesuoxianzhi2:
+  Calmjiesuoxianzhi1:
     url: https://raw.githubusercontent.com/Alex0510/Eric/Alex0510/surge/surge/Script/caml.js,script-update-interval=0
     interval: 86400

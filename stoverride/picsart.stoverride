@@ -15,6 +15,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Picsart2:
+  Picsart1:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js
     interval: 86400

@@ -19,9 +19,9 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Grow3:
+  Grow1:
     url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Grow.js
     interval: 86400
-  Grow4:
+  Grow2:
     url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Grow.js
     interval: 86400

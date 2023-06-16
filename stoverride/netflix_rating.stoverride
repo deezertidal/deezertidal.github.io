@@ -22,12 +22,12 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Display Netflix Ratings4:
+  Display Netflix Ratings1:
     url: https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js, requires-body=true, timeout=10
     interval: 86400
-  Display Netflix Ratings5:
+  Display Netflix Ratings2:
     url: https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js, requires-body=true, timeout=10
     interval: 86400
-  Display Netflix Ratings6:
+  Display Netflix Ratings3:
     url: https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating_season.js, requires-body=true, timeout=10
     interval: 86400

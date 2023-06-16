@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  SoundCloudGo+2:
+  SoundCloudGo+1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
     interval: 86400

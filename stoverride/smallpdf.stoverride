@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Smallpdfjiesuo2:
+  Smallpdfjiesuo1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/smallpdf.js
     interval: 86400

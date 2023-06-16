@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  ellabook2:
+  ellabook1:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/elabook.js
     interval: 86400

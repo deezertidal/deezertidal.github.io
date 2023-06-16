@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Notability Plus2:
+  Notability Plus1:
     url: https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/notability.js
     interval: 86400

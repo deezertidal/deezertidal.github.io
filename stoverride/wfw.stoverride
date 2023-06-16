@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  WorkoutForWomenjiesuo2:
+  WorkoutForWomenjiesuo1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/workoutForWomen.js
     interval: 86400

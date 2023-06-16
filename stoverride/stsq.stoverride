@@ -13,6 +13,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  soutushenqi2:
+  soutushenqi1:
     url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/SearchArtifact.js
     interval: 86400

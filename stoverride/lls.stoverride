@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  liulishuo·yuedu2:
+  liulishuo·yuedu1:
     url: https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/LiuLiShuoYueDu/Script/LiuLiShuoYueDu.js
     interval: 86400

@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Appraven2:
+  Appraven1:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/appraven.js
     interval: 86400

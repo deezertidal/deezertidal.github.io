@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  aiqicha2:
+  aiqicha1:
     url: https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/aiqicha.js
     interval: 86400

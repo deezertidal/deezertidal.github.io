@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Fimo2:
+  Fimo1:
     url: https://github.com/deezertidal/private/raw/master/js-backup/Crack/fimo.js
     interval: 86400

@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  luozhidayuwen2:
+  luozhidayuwen1:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/luosidayuwen/Script/luosidayuwen.js
     interval: 86400

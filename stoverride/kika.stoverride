@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  kikajiesuo2:
+  kikajiesuo1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/kika.js
     interval: 86400

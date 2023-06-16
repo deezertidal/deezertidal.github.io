@@ -15,6 +15,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  TouchRetouch2:
+  TouchRetouch1:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/TouchRetouch.js
     interval: 86400

@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  aoruankoutu2:
+  aoruankoutu1:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/apowersoft.js
     interval: 86400

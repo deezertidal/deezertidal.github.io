@@ -30,9 +30,9 @@ http:
     - ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
     - ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
 script-providers:
-  YouTubequguanggao3:
+  YouTubequguanggao1:
     url: https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.response.beta.js
     interval: 86400
-  YouTubequguanggao4:
+  YouTubequguanggao2:
     url: https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.request.beta.js
     interval: 86400

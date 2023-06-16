@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Pixelcutjiesuo2:
+  Pixelcutjiesuo1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/pixelcut.js
     interval: 86400

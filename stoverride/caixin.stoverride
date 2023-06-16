@@ -11,6 +11,6 @@ http:
       require-body: false
       timeout: 10
 script-providers:
-  caixinhuiyuan2:
+  caixinhuiyuan1:
     url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/caixin.js
     interval: 86400

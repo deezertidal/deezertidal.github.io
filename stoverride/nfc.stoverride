@@ -13,6 +13,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  NFCmenjinkagongjiaoka2:
+  NFCmenjinkagongjiaoka1:
     url: https://raw.githubusercontent.com/deezertidal/private/main/nfc.js
     interval: 86400

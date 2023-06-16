@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  AlohaVPNliulanqi2:
+  AlohaVPNliulanqi1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/aloha.js
     interval: 86400

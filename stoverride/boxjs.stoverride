@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  BoxJs2:
+  BoxJs1:
     url: https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120
     interval: 86400

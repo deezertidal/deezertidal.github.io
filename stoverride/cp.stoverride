@@ -25,12 +25,12 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  caipudaquan&xianghacaipu4:
+  caipudaquan&xianghacaipu1:
     url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/XiangHaCaiPu.js
     interval: 86400
-  caipudaquan&xianghacaipu5:
+  caipudaquan&xianghacaipu2:
     url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiPuDaQuan.js
     interval: 86400
-  caipudaquan&xianghacaipu6:
+  caipudaquan&xianghacaipu3:
     url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiPuDaQuan.js
     interval: 86400

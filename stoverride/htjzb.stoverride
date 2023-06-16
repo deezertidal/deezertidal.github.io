@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  haitunjizhangben2:
+  haitunjizhangben1:
     url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/htjzb.js
     interval: 86400

@@ -13,6 +13,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Bedtime Fan2:
+  Bedtime Fan1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/bedtimeFan.js,requires-body=1,max-size=0
     interval: 86400

@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Todoqingdan2:
+  Todoqingdan1:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Todo.js
     interval: 86400

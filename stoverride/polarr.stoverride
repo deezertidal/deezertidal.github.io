@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Polarr2:
+  Polarr1:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Polarr.js
     interval: 86400

@@ -19,6 +19,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Xmindsiweidaotu2:
+  Xmindsiweidaotu1:
     url: https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Xmind/Script/Xmind.js,requires-body=true, timeout=10, tag=Xmind思维导图
     interval: 86400

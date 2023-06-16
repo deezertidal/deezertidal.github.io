@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  mixxiangji2:
+  mixxiangji1:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/MIX.js
     interval: 86400

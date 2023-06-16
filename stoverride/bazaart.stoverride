@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  bazaarthuiyuanjiesuo2:
+  bazaarthuiyuanjiesuo1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/bazaart.js
     interval: 86400

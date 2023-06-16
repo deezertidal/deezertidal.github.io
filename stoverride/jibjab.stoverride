@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  JibJab2:
+  JibJab1:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/jibjab.js
     interval: 86400

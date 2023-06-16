@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  yimujizhang2:
+  yimujizhang1:
     url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/YiMuJiZhang.js
     interval: 86400

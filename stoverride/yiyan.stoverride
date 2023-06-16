@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  yiyan2:
+  yiyan1:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/yiyan.js
     interval: 86400

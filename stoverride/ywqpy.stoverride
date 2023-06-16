@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  yuwenqupeiyin2:
+  yuwenqupeiyin1:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/wenyuqupeiyin/Script/yuwenqupeiyin.js
     interval: 86400

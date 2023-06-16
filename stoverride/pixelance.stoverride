@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Pixelance2:
+  Pixelance1:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Pixelance.js
     interval: 86400

@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Peak2:
+  Peak1:
     url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/peak.js
     interval: 86400

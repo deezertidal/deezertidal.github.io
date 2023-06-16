@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  makalongwantu2:
+  makalongwantu1:
     url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/mklwt.js
     interval: 86400

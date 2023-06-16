@@ -17,9 +17,9 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Spotify(iOS15)3:
+  Spotify(iOS15)1:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
     interval: 86400
-  Spotify(iOS15)4:
+  Spotify(iOS15)2:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
     interval: 86400

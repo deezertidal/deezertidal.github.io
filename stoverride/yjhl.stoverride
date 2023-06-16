@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  yijianhuanlian2:
+  yijianhuanlian1:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/yjhl.js
     interval: 86400

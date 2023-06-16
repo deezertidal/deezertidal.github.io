@@ -13,6 +13,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Alarmy Premium2:
+  Alarmy Premium1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/alarmy.js,requires-body=1,max-size=0
     interval: 86400

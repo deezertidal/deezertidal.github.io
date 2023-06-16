@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Emmo2:
+  Emmo1:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/emmo.js
     interval: 86400

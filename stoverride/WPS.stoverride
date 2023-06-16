@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  WPShuiyuan2:
+  WPShuiyuan1:
     url: https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/WPSOffice/Script/WPS.js, requires-body=true, timeout=10
     interval: 86400

@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  weixingongzhonghaoquguanggao2:
+  weixingongzhonghaoquguanggao1:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
     interval: 86400

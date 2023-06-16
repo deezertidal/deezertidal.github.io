@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  FTzhongwenwang2:
+  FTzhongwenwang1:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/ftchinese.js
     interval: 86400

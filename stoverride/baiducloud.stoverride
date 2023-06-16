@@ -13,6 +13,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  baiduyunjiasu2:
+  baiduyunjiasu1:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
     interval: 86400

@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  DailyYoga2:
+  DailyYoga1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/dailyYoga.js
     interval: 86400

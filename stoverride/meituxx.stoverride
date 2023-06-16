@@ -12,6 +12,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  meituxiuxiu2:
+  meituxiuxiu1:
     url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/MeiTuXiuXiu.js
     interval: 86400

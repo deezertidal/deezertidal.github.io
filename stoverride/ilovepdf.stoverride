@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  ILovePDF2:
+  ILovePDF1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/lovePdf.js
     interval: 86400

@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  dushubiji2:
+  dushubiji1:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/mzjz.js
     interval: 86400

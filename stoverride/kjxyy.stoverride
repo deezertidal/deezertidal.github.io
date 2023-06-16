@@ -15,6 +15,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  kanjuxueyingyu2:
+  kanjuxueyingyu1:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/kjXyy.js
     interval: 86400

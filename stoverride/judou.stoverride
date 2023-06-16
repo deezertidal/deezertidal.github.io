@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  judoujiesuo2:
+  judoujiesuo1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/judu.js
     interval: 86400

@@ -13,6 +13,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  saomiaoquannengwang2:
+  saomiaoquannengwang1:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
     interval: 86400

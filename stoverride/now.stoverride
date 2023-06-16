@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  nowmingxianghuiyuan2:
+  nowmingxianghuiyuan1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/nowPonder.js
     interval: 86400

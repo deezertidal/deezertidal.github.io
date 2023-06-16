@@ -15,6 +15,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  You're So Great2:
+  You're So Great1:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/You.js
     interval: 86400

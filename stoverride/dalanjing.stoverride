@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  dalanjing2:
+  dalanjing1:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/dalanjing/Script/dalanjing.js
     interval: 86400

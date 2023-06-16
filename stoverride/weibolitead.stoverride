@@ -33,15 +33,15 @@ http:
     - ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=search_topic - reject
     - ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*ads - reject
 script-providers:
-  weiboqingxiangbanquguanggao5:
+  weiboqingxiangbanquguanggao1:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/weibo_json.js
     interval: 86400
-  weiboqingxiangbanquguanggao6:
+  weiboqingxiangbanquguanggao2:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/weibo_json.js
     interval: 86400
-  weiboqingxiangbanquguanggao7:
+  weiboqingxiangbanquguanggao3:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/weibo_json.js
     interval: 86400
-  weiboqingxiangbanquguanggao8:
+  weiboqingxiangbanquguanggao4:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/weibo_json.js
     interval: 86400

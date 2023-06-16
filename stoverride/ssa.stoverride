@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  SSAsishe2:
+  SSAsishe1:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/SSA/Script/SSA.js,script-update-interval=0
     interval: 86400

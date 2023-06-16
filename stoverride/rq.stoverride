@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  ruqi2:
+  ruqi1:
     url: https://raw.githubusercontent.com/deezertidal/private/main/rq.js
     interval: 86400

@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  kelabizhi2:
+  kelabizhi1:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/clarity.js
     interval: 86400

@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  aoruanPDFbianji2:
+  aoruanPDFbianji1:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/arpdf.js
     interval: 86400

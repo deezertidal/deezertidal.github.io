@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Pillow2:
+  Pillow1:
     url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/pillow.js
     interval: 86400

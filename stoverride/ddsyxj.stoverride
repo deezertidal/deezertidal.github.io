@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  dingdingshuiyinxiangji2:
+  dingdingshuiyinxiangji1:
     url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/ddCamera.js
     interval: 86400

@@ -14,6 +14,6 @@ http:
       require-body: false
       timeout: 10
 script-providers:
-  BingAI For Safari2:
+  BingAI For Safari1:
     url: https://yfamily.ml/module/bfs.js
     interval: 86400

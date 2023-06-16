@@ -14,6 +14,6 @@ http:
       require-body: false
       timeout: 10
 script-providers:
-  TOKCAM2:
+  TOKCAM1:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/TokCamFProCrack.js,requires-body=1
     interval: 86400

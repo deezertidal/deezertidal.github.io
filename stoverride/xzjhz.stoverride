@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  xiaozujianhezi2:
+  xiaozujianhezi1:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xzjhz.js
     interval: 86400

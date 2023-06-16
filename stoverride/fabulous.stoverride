@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  FabulousPremium2:
+  FabulousPremium1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/fabulous.js
     interval: 86400

@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  AI Remove Background-Collart2:
+  AI Remove Background-Collart1:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Photo.js
     interval: 86400

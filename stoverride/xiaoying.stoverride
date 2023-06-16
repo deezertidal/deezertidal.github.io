@@ -15,6 +15,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  xiaoying2:
+  xiaoying1:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
     interval: 86400

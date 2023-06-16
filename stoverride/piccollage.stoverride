@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Piccollagejiesuo2:
+  Piccollagejiesuo1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/picCollage.js
     interval: 86400

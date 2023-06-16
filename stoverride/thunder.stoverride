@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  xunleihuiyuan2:
+  xunleihuiyuan1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/xunlei.js
     interval: 86400

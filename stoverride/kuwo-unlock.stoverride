@@ -15,6 +15,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  kuwoyinyuehuiyuan2:
+  kuwoyinyuehuiyuan1:
     url: https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js
     interval: 86400

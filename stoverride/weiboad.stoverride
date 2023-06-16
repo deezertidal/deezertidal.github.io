@@ -32,15 +32,15 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  weiboquguanggao5:
+  weiboquguanggao1:
     url: https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
     interval: 86400
-  weiboquguanggao6:
+  weiboquguanggao2:
     url: https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_launch.js
     interval: 86400
-  weiboquguanggao7:
+  weiboquguanggao3:
     url: https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
     interval: 86400
-  weiboquguanggao8:
+  weiboquguanggao4:
     url: https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
     interval: 86400

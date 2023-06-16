@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  baiduwenku2:
+  baiduwenku1:
     url: https://github.com/deezertidal/private/raw/master/js-backup/Crack/baidulibrary.js
     interval: 86400

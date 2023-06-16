@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  7dong2:
+  7dong1:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/7d.js
     interval: 86400

@@ -15,6 +15,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  danbo2:
+  danbo1:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/db.js
     interval: 86400

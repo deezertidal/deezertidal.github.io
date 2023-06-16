@@ -20,12 +20,12 @@ http:
       require-body: false
       timeout: 10
 script-providers:
-  caiyuntianqi3:
+  caiyuntianqi1:
     url: https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
     interval: 86400
-  caiyuntianqi4:
+  caiyuntianqi2:
     url: https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
     interval: 86400
-  caiyuntianqi5:
+  caiyuntianqi3:
     url: https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
     interval: 86400

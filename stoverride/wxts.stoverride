@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  weixintingshu2:
+  weixintingshu1:
     url: https://raw.githubusercontent.com/sngxmini/crack/master/wxts/wxts.js
     interval: 86400

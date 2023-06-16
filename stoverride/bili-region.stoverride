@@ -12,6 +12,6 @@ http:
       require-body: false
       timeout: 10
 script-providers:
-  bilibilizidonghuanqu2:
+  bilibilizidonghuanqu1:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js, requires-body=true
     interval: 86400

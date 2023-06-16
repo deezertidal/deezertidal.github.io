@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Documents2:
+  Documents1:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/documents.js
     interval: 86400

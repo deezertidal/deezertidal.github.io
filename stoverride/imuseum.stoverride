@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  IMuseum2:
+  IMuseum1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/imuseum.js,requires-body=1,max-size=0
     interval: 86400

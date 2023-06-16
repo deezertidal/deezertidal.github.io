@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  peiyinxiu2:
+  peiyinxiu1:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/peiyinxiu/Script/peiyinxiu.js
     interval: 86400

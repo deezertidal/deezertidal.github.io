@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  xiaoxiaoyouqu2:
+  xiaoxiaoyouqu1:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/xiaoxiaoyouqu/Script/xxyq.js
     interval: 86400

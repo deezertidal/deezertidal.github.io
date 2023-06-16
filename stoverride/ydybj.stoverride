@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  youdaoyunbiji2:
+  youdaoyunbiji1:
     url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/ydybj.js
     interval: 86400

@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  wannengbianshengqijiesuo2:
+  wannengbianshengqijiesuo1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/voiceChanger.js
     interval: 86400

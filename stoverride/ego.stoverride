@@ -13,6 +13,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Ego Reader2:
+  Ego Reader1:
     url: https://raw.githubusercontent.com/deezertidal/private/main/ego.js
     interval: 86400

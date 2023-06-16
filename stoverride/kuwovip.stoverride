@@ -13,6 +13,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  kuwohuiyuan2:
+  kuwohuiyuan1:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js
     interval: 86400

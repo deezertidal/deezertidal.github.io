@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Agenda2:
+  Agenda1:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Agenda.js
     interval: 86400

@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  zhijianshiguangjiesuo2:
+  zhijianshiguangjiesuo1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/fingertime.js
     interval: 86400

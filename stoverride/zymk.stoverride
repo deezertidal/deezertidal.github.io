@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  zhiyinmanke2:
+  zhiyinmanke1:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js
     interval: 86400

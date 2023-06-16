@@ -16,6 +16,6 @@ http:
   rewrite:
     - ^https:\/\/ad\.caiyunapp\.com\/ - - reject
 script-providers:
-  caiyuntianqipro2:
+  caiyuntianqipro1:
     url: https://raw.githubusercontent.com/WeiRen0/Scripts/main/cytq.js
     interval: 86400

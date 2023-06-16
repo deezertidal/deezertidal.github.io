@@ -12,6 +12,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  doubanyingshi2:
+  doubanyingshi1:
     url: https://raw.githubusercontent.com/I-am-R-E/Surge/main/JavaScript/DouBan.js,timeout=10
     interval: 86400

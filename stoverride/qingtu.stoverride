@@ -15,6 +15,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  qingtu2:
+  qingtu1:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/PhotoVisionProCrack.js
     interval: 86400

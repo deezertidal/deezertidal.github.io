@@ -12,6 +12,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  yifeiGifjiesuo2:
+  yifeiGifjiesuo1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/yifei.js
     interval: 86400

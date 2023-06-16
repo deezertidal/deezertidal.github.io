@@ -15,6 +15,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  aitici2:
+  aitici1:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/TeleprompterProCrack.js
     interval: 86400

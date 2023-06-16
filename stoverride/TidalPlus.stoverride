@@ -11,6 +11,6 @@ http:
       require-body: false
       timeout: 10
 script-providers:
-  Tidal Plusshixiaozhong2:
+  Tidal Plusshixiaozhong1:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/TIDALHiFiPlusCrack.js
     interval: 86400

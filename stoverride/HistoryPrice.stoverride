@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  lishijiage2:
+  lishijiage1:
     url: https://raw.githubusercontent.com/deezertidal/private/main/jdprice.js
     interval: 86400

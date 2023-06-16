@@ -14,6 +14,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  PDF Viewer2:
+  PDF Viewer1:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/PDFViewer.js
     interval: 86400

@@ -13,6 +13,6 @@ http:
       require-body: false
       timeout: 10
 script-providers:
-  NoMoCam2:
+  NoMoCam1:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/NoMoCamProCrack.js
     interval: 86400

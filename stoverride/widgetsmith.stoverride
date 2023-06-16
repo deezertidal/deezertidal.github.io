@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  Widgetsmithjiesuo2:
+  Widgetsmithjiesuo1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/widgetSmith.js
     interval: 86400

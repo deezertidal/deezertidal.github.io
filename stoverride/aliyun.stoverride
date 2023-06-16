@@ -14,9 +14,9 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  aliyunpanqiandao2:
+  aliyunpanqiandao1:
     url: https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
     interval: 86400
-  aliyunpanqiandao3:
+  aliyunpanqiandao2:
     url: https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
     interval: 86400

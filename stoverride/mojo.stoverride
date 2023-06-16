@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  MOJOhuiyuanjiesuo2:
+  MOJOhuiyuanjiesuo1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/mojo.js
     interval: 86400

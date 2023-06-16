@@ -13,6 +13,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  EMBY2:
+  EMBY1:
     url: https://raw.githubusercontent.com/Tartarus2014/Script/master/Emby.js
     interval: 86400

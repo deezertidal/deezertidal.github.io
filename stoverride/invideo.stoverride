@@ -11,6 +11,6 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  invideohuiyuan2:
+  invideohuiyuan1:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/filmr.js
     interval: 86400
