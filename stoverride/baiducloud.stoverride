@@ -8,11 +8,11 @@ http:
     - "pan.baidu.com"
   script:
     - match: https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user
-      name: baiduyunjiasu
+      name: baiduyunjiasu1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  baiduyunjiasu:
+  baiduyunjiasu2:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
     interval: 86400

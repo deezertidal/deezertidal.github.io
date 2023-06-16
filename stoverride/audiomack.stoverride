@@ -9,11 +9,11 @@ http:
     - "api.revenuecat.com"
   script:
     - match: ^https?:\/\/api\.revenuecat\.com\/v1\/subscribers\/(identify|\d+)$
-      name: AudioMack
+      name: AudioMack1
       type: response
       require-body: false
       timeout: 10
 script-providers:
-  AudioMack:
+  AudioMack2:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/AudioMackFProCrack.js,requires-body=1
     interval: 86400

@@ -9,11 +9,11 @@ http:
     - "medi.dxzzy321.top"
   script:
     - match: ^https:\/\/medi\.dxzzy321\.top\/api\/rest\/commerce\/integrate\/vip\/perform
-      name: Vivacut
+      name: Vivacut1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Vivacut:
+  Vivacut2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/vivacut.js
     interval: 86400

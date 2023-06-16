@@ -9,11 +9,11 @@ http:
     - "scibug.com"
   script:
     - match: ^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy)
-      name: Symbolab
+      name: Symbolab1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Symbolab:
+  Symbolab2:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/appraven.js
     interval: 86400

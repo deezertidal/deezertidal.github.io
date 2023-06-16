@@ -9,11 +9,11 @@ http:
     - "yyy.bosum.com"
   script:
     - match: http:\/\/yyy\.bosum\.com\/enterprise
-      name: boshangxiaomai
+      name: boshangxiaomai1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  boshangxiaomai:
+  boshangxiaomai2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/boshangxiaomai.js
     interval: 86400

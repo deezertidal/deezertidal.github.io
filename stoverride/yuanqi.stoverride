@@ -10,11 +10,11 @@ http:
     - "mobile-ios-wallpaper-api.zhhainiao.com"
   script:
     - match: ^http[s]?:\/\/mobile-ios-wallpaper-api.zhhainiao.com\/v1\/user\/info
-      name: yuanqizhuomianbizhi
+      name: yuanqizhuomianbizhi1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  yuanqizhuomianbizhi:
+  yuanqizhuomianbizhi2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/yqzmbz.js
     interval: 86400

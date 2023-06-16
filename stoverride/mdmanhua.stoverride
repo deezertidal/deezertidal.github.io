@@ -8,11 +8,11 @@ http:
     - "app.lalaldc.cn"
   script:
     - match: https://app.lalaldc.cn/api/lifan-customer/customer/info
-      name: miandanmanhua
+      name: miandanmanhua1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  miandanmanhua:
+  miandanmanhua2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/mdmanga.js,requires-body=1,max-size=0
     interval: 86400

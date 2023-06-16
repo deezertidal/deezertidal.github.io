@@ -9,11 +9,11 @@ http:
     - "billing.peakcloud.org"
   script:
     - match: ^https:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me?
-      name: Peak
+      name: Peak1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Peak:
+  Peak2:
     url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/peak.js
     interval: 86400

@@ -9,11 +9,11 @@ http:
     - "xianbeikeji.com"
   script:
     - match: https://xianbeikeji.com/daily/app/user/query
-      name: xiaoxiguan
+      name: xiaoxiguan1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  xiaoxiguan:
+  xiaoxiguan2:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/mzjz.js
     interval: 86400

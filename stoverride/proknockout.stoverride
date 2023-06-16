@@ -9,11 +9,11 @@ http:
     - "buy.itunes.apple.com"
   script:
     - match: https://buy.itunes.apple.com/verifyReceipt
-      name: proKnockout
+      name: proKnockout1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  proKnockout:
+  proKnockout2:
     url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/proKnockout.js
     interval: 86400

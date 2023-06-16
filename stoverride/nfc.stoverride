@@ -8,11 +8,11 @@ http:
     - "app.mobileto.vip"
   script:
     - match: https://app.mobileto.vip/nfc/app/v2/is-vip
-      name: NFCmenjinkagongjiaoka
+      name: NFCmenjinkagongjiaoka1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  NFCmenjinkagongjiaoka:
+  NFCmenjinkagongjiaoka2:
     url: https://raw.githubusercontent.com/deezertidal/private/main/nfc.js
     interval: 86400

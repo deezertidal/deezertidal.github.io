@@ -6,11 +6,11 @@ http:
     - "spclient.wg.spotify.com"
   script:
     - match: ^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/
-      name: Spotifygecifanyi
+      name: Spotifygecifanyi1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Spotifygecifanyi:
+  Spotifygecifanyi2:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-lyric.js,argument=appid=此处填入APPID&securityKey=此处填入密钥
     interval: 86400

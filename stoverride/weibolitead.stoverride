@@ -7,22 +7,22 @@ http:
     - "sdkapp.uve.weibo.com"
   script:
     - match: ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/unread_hot_timeline
-      name: weiboqingxiangbanquguanggao
+      name: weiboqingxiangbanquguanggao1
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/friends_timeline
-      name: weiboqingxiangbanquguanggao
+      name: weiboqingxiangbanquguanggao2
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/cardlist
-      name: weiboqingxiangbanquguanggao
+      name: weiboqingxiangbanquguanggao3
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=trends
-      name: weiboqingxiangbanquguanggao
+      name: weiboqingxiangbanquguanggao4
       type: response
       require-body: true
       timeout: 10
@@ -33,15 +33,15 @@ http:
     - ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=search_topic - reject
     - ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*ads - reject
 script-providers:
-  weiboqingxiangbanquguanggao:
+  weiboqingxiangbanquguanggao5:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/weibo_json.js
     interval: 86400
-  weiboqingxiangbanquguanggao:
+  weiboqingxiangbanquguanggao6:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/weibo_json.js
     interval: 86400
-  weiboqingxiangbanquguanggao:
+  weiboqingxiangbanquguanggao7:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/weibo_json.js
     interval: 86400
-  weiboqingxiangbanquguanggao:
+  weiboqingxiangbanquguanggao8:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/weibo_json.js
     interval: 86400

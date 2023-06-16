@@ -8,11 +8,11 @@ http:
     - "vip1.kuwo.cn"
   script:
     - match: ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice)
-      name: kuwohuiyuan
+      name: kuwohuiyuan1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  kuwohuiyuan:
+  kuwohuiyuan2:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js
     interval: 86400

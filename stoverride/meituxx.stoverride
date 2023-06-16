@@ -7,11 +7,11 @@ http:
     - "api.xiuxiu.meitu.com"
   script:
     - match: ^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/
-      name: meituxiuxiu
+      name: meituxiuxiu1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  meituxiuxiu:
+  meituxiuxiu2:
     url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/MeiTuXiuXiu.js
     interval: 86400

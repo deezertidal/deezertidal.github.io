@@ -9,11 +9,11 @@ http:
     - "comic.321mh.com"
   script:
     - match: ^https?:\/\/comic\.321mh\.com\/app_api\/v\d\/getcomicinfo_body
-      name: manhuatailite
+      name: manhuatailite1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  manhuatailite:
+  manhuatailite2:
     url: https://github.com/deezertidal/private/raw/master/js-backup/Crack/manhuatailite.js
     interval: 86400

@@ -9,11 +9,11 @@ http:
     - "api.apphud.com"
   script:
     - match: ^https:\/\/api\.apphud\.com\/v1\/subscriptions
-      name: Lifeviewer
+      name: Lifeviewer1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Lifeviewer:
+  Lifeviewer2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Lifeviewer.js
     interval: 86400

@@ -6,11 +6,11 @@ http:
     - "api.shouzhang.com"
   script:
     - match: https://api.shouzhang.com/memcenterlk/member
-      name: shiguangshouzhangjiesuo
+      name: shiguangshouzhangjiesuo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  shiguangshouzhangjiesuo:
+  shiguangshouzhangjiesuo2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/timebook.js
     interval: 86400

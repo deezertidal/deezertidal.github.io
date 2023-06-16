@@ -9,11 +9,11 @@ http:
     - "awvp.aoscdn.com"
   script:
     - match: ^https:\/\/awvp\.aoscdn\.com\/base\/vip\/client\/authorizations
-      name: naitangxiaozujian
+      name: naitangxiaozujian1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  naitangxiaozujian:
+  naitangxiaozujian2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ltXzj.js
     interval: 86400

@@ -9,11 +9,11 @@ http:
     - "mp.weixin.qq.com"
   script:
     - match: ^https?://mp\.weixin\.qq\.com/s\?.*
-      name: weixinzidongyuedu
+      name: weixinzidongyuedu1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  weixinzidongyuedu:
+  weixinzidongyuedu2:
     url: https://github.com/deezertidal/private/raw/master/js-backup/Script/wechat_auto_read.js,pattern=^https?://mp\.weixin\.qq\.com/s\?.*,max-size=131072,requires-body=true,timeout=10,enable=true
     interval: 86400

@@ -9,11 +9,11 @@ http:
     - "tutugushiapi.tutuerge.com"
   script:
     - match: http:\/\/tutugushiapi\.tutuerge\.com
-      name: abushuiqiangushi
+      name: abushuiqiangushi1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  abushuiqiangushi:
+  abushuiqiangushi2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/abushuiqiangushi.js
     interval: 86400

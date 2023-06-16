@@ -9,11 +9,11 @@ http:
     - "*.zuowenzhitiao.com"
   script:
     - match: ^https?:\/\/(app1|zwzt-h5).zuowenzhitiao.com
-      name: zhitiao
+      name: zhitiao1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  zhitiao:
+  zhitiao2:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/xiaozhitiao/Script/xiaozhitiao.js
     interval: 86400

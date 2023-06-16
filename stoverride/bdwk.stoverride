@@ -9,11 +9,11 @@ http:
     - "appwk.baidu.com"
   script:
     - match: ^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo
-      name: baiduwenku
+      name: baiduwenku1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  baiduwenku:
+  baiduwenku2:
     url: https://github.com/deezertidal/private/raw/master/js-backup/Crack/baidulibrary.js
     interval: 86400

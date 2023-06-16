@@ -9,11 +9,11 @@ http:
     - "api.revenuecat.com"
   script:
     - match: https://api.revenuecat.com/v1/(receipts|subscribers)/*
-      name: haoshifasheng
+      name: haoshifasheng1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  haoshifasheng:
+  haoshifasheng2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/hsfs.js
     interval: 86400

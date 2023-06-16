@@ -9,11 +9,11 @@ http:
     - "api.pengranapp.com"
   script:
     - match: ^https:\/\/api\.pengranapp\.com\/1\.1\/classes\/UserInfo
-      name: Watchout
+      name: Watchout1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Watchout:
+  Watchout2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Watchoutc.js
     interval: 86400

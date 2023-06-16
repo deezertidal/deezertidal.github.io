@@ -9,11 +9,11 @@ http:
     - "www.mindmeister.com"
   script:
     - match: https://www.mindmeister.com/api/v2/licenses/meistertask
-      name: MeisterTask
+      name: MeisterTask1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  MeisterTask:
+  MeisterTask2:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/meistertask.js
     interval: 86400

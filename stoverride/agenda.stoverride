@@ -9,11 +9,11 @@ http:
     - "accounts.agenda.com"
   script:
     - match: ^https:\/\/accounts\.agenda\.com\/users\/.*\/license
-      name: Agenda
+      name: Agenda1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Agenda:
+  Agenda2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Agenda.js
     interval: 86400

@@ -10,22 +10,22 @@ http:
     - "api.weather.com"
   script:
     - match: https:\/\/((weather-data\.apple)|(api.weather))\.com
-      name: caiyuntianqi
+      name: caiyuntianqi1
       type: request
       require-body: false
       timeout: 10
     - match: https:\/\/((weather-data\.apple)|(api.weather))\.com
-      name: caiyuntianqi
+      name: caiyuntianqi2
       type: request
       require-body: false
       timeout: 10
 script-providers:
-  caiyuntianqi:
+  caiyuntianqi3:
     url: https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
     interval: 86400
-  caiyuntianqi:
+  caiyuntianqi4:
     url: https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
     interval: 86400
-  caiyuntianqi:
+  caiyuntianqi5:
     url: https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
     interval: 86400

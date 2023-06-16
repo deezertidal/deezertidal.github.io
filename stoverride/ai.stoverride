@@ -9,11 +9,11 @@ http:
     - "changeclothes.szsszykj.com"
   script:
     - match: ^https:\/\/changeclothes\.szsszykj\.com\/interface\/GetIosVip.php
-      name: AIhuanlianxiu
+      name: AIhuanlianxiu1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  AIhuanlianxiu:
+  AIhuanlianxiu2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/aihlx.js
     interval: 86400

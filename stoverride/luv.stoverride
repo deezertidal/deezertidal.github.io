@@ -10,11 +10,11 @@ http:
     - "widgets-api.kaixinyf.cn"
   script:
     - match: ^http[s]?:\/\/widgets-api.kaixinyf.cn\/User\/GetInfoByUserCode
-      name: lUV-wannengxiaozujian
+      name: lUV-wannengxiaozujian1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  lUV-wannengxiaozujian:
+  lUV-wannengxiaozujian2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/luv.js
     interval: 86400

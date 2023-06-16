@@ -9,11 +9,11 @@ http:
     - "www.bing.com"
   script:
     - match: ^https?://www.bing.com
-      name: BingAI For Safari
+      name: BingAI For Safari1
       type: request
       require-body: false
       timeout: 10
 script-providers:
-  BingAI For Safari:
+  BingAI For Safari2:
     url: https://yfamily.ml/module/bfs.js
     interval: 86400

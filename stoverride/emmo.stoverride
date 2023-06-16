@@ -9,11 +9,11 @@ http:
     - "106.54.2.168"
   script:
     - match: ^http://106.54.2.168/emmoDiary/user/getUser
-      name: Emmo
+      name: Emmo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Emmo:
+  Emmo2:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/emmo.js
     interval: 86400

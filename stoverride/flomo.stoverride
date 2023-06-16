@@ -9,11 +9,11 @@ http:
     - "flomoapp.com"
   script:
     - match: ^https:\/\/flomoapp\.com\/api\/v1\/user\/me
-      name: Flomo
+      name: Flomo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Flomo:
+  Flomo2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/flomo.js
     interval: 86400

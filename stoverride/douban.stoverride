@@ -7,11 +7,11 @@ http:
     - "m.douban.com"
   script:
     - match: ^https?:\/\/m\.douban\.com\/movie\/subject\/\d+\/
-      name: doubanyingshi
+      name: doubanyingshi1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  doubanyingshi:
+  doubanyingshi2:
     url: https://raw.githubusercontent.com/I-am-R-E/Surge/main/JavaScript/DouBan.js,timeout=10
     interval: 86400

@@ -9,11 +9,11 @@ http:
     - "api.chiyue365.com"
   script:
     - match: ^https:\/\/api\.chiyue365\.com
-      name: yishuyike
+      name: yishuyike1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  yishuyike:
+  yishuyike2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ysyk.js
     interval: 86400

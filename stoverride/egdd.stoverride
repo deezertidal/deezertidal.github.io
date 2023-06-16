@@ -9,11 +9,11 @@ http:
     - "gateway.ergedd.com"
   script:
     - match: http:\/\/gateway\.ergedd\.com\/dduser\/user\/center\/set
-      name: ergediandian
+      name: ergediandian1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  ergediandian:
+  ergediandian2:
     url: https://github.com/deezertidal/private/raw/master/js-backup/Crack/egdd.js
     interval: 86400

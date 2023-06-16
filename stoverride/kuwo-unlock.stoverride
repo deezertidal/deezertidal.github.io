@@ -10,11 +10,11 @@ http:
     - "*.lrts.me"
   script:
     - match: ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*
-      name: kuwoyinyuehuiyuan
+      name: kuwoyinyuehuiyuan1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  kuwoyinyuehuiyuan:
+  kuwoyinyuehuiyuan2:
     url: https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js
     interval: 86400

@@ -9,11 +9,11 @@ http:
     - "47.104.228.152:9100"
   script:
     - match: ^https?:\/\/47\.104\.228\.152:9100\/api\/apiAppUser\/getUser
-      name: jingshuguoxue
+      name: jingshuguoxue1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  jingshuguoxue:
+  jingshuguoxue2:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/jingshuguoxue/Script/jingshuguoxue.js
     interval: 86400

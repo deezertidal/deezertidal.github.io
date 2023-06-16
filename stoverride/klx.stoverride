@@ -9,11 +9,11 @@ http:
     - "api.vistopia.com.cn"
   script:
     - match: ^https:\/\/api\.vistopia\.com\.cn\/api
-      name: kanlixiang
+      name: kanlixiang1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  kanlixiang:
+  kanlixiang2:
     url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/klx.js
     interval: 86400

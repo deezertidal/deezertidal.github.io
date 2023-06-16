@@ -10,11 +10,11 @@ http:
     - "buy.itunes.apple.com"
   script:
     - match: ^http[s]?:\/\/buy.itunes.apple.com\/verifyReceipt
-      name: gaojilianaihuashu
+      name: gaojilianaihuashu1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  gaojilianaihuashu:
+  gaojilianaihuashu2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/gjlahs.js
     interval: 86400

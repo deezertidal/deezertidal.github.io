@@ -9,11 +9,11 @@ http:
     - "sdk.api.appwheel.com"
   script:
     - match: ^https:\/\/sdk\.api\.appwheel\.com\/v1\/order\/restore
-      name: VCUS
+      name: VCUS1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  VCUS:
+  VCUS2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/VCUS.js
     interval: 86400

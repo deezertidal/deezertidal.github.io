@@ -9,11 +9,11 @@ http:
     - "buy.itunes.apple.com"
   script:
     - match: ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
-      name: TOKCAM
+      name: TOKCAM1
       type: response
       require-body: false
       timeout: 10
 script-providers:
-  TOKCAM:
+  TOKCAM2:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/TokCamFProCrack.js,requires-body=1
     interval: 86400

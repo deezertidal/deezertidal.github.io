@@ -9,11 +9,11 @@ http:
     - "123.56.125.184"
   script:
     - match: ^http[s]?:\/\/123.56.125.184
-      name: dianshijia
+      name: dianshijia1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  dianshijia:
+  dianshijia2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/dsj.js
     interval: 86400

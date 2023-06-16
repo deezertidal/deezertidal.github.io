@@ -6,11 +6,11 @@ http:
     - "server.yoyiapp.com"
   script:
     - match: ^https://server.yoyiapp.com/fimo-user/user$
-      name: Fimo
+      name: Fimo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Fimo:
+  Fimo2:
     url: https://github.com/deezertidal/private/raw/master/js-backup/Crack/fimo.js
     interval: 86400

@@ -9,11 +9,11 @@ http:
     - "*.jstv.com"
   script:
     - match: ^https?:\/\/(publish-dalanjing|publish-dalanjing|user-dalanjing)\.jstv\.com\/(search\/byArticleType|nav\/1554|PassportUser\/userinfo\/get)
-      name: dalanjing
+      name: dalanjing1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  dalanjing:
+  dalanjing2:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/dalanjing/Script/dalanjing.js
     interval: 86400

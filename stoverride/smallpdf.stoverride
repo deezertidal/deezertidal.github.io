@@ -6,11 +6,11 @@ http:
     - "pro.smallpdf.com"
   script:
     - match: https://pro.smallpdf.com/pro/account
-      name: Smallpdfjiesuo
+      name: Smallpdfjiesuo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Smallpdfjiesuo:
+  Smallpdfjiesuo2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/smallpdf.js
     interval: 86400

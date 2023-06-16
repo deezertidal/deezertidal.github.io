@@ -9,11 +9,11 @@ http:
     - "api.lingokids.com"
   script:
     - match: ^https:\/\/api\.lingokids\.com\/v1\/renovate_session
-      name: Lingokids
+      name: Lingokids1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Lingokids:
+  Lingokids2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Lingokids.js
     interval: 86400

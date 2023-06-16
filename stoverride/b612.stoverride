@@ -9,11 +9,11 @@ http:
     - "user-kaji-api.b612kaji.com"
   script:
     - match: https://user-kaji-api.b612kaji.com/v1/purchase/subscription/subscriber/status
-      name: B612kaji
+      name: B612kaji1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  B612kaji:
+  B612kaji2:
     url: https://github.com/deezertidal/private/raw/master/js-backup/Crack/612.js
     interval: 86400

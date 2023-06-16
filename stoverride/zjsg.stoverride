@@ -6,11 +6,11 @@ http:
     - "integral.dasyibalang.com"
   script:
     - match: https://integral.dasyibalang.com/User
-      name: zhijianshiguangjiesuo
+      name: zhijianshiguangjiesuo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  zhijianshiguangjiesuo:
+  zhijianshiguangjiesuo2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/fingertime.js
     interval: 86400

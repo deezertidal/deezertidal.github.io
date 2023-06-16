@@ -9,11 +9,11 @@ http:
     - "app-subscription-proxy.accuweather.com"
   script:
     - match: https://app-subscription-proxy.accuweather.com/subscriptions/v1/apple/validate
-      name: AccuWeather
+      name: AccuWeather1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  AccuWeather:
+  AccuWeather2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/accuWeather.js,requires-body=1,max-size=0
     interval: 86400

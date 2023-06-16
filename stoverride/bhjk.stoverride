@@ -10,11 +10,11 @@ http:
     - "api.boohee.com"
   script:
     - match: ^https?:\/\/api\.boohee\.com\/app-interface\/.+\/user\/user_info
-      name: bohejiankang
+      name: bohejiankang1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  bohejiankang:
+  bohejiankang2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/bhjk.js
     interval: 86400

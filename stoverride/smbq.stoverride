@@ -9,11 +9,11 @@ http:
     - "hi.weshine.im"
   script:
     - match: ^https:\/\/hi\.weshine\.im\/v3\.0\/account\/profile
-      name: shanmengbiaoqing
+      name: shanmengbiaoqing1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  shanmengbiaoqing:
+  shanmengbiaoqing2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/smbq.js
     interval: 86400

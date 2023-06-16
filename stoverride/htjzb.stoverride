@@ -9,11 +9,11 @@ http:
     - "book.haitunwallet.com"
   script:
     - match: https:\/\/book\.haitunwallet\.com\/app\/vip\/status
-      name: haitunjizhangben
+      name: haitunjizhangben1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  haitunjizhangben:
+  haitunjizhangben2:
     url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/htjzb.js
     interval: 86400

@@ -10,11 +10,11 @@ http:
     - "wnl28.jiemengjia.com"
   script:
     - match: ^http[s]?:\/\/wnl28.jiemengjia.com\/api\/get_member_info
-      name: zhonghuarili
+      name: zhonghuarili1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  zhonghuarili:
+  zhonghuarili2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zhrl.js
     interval: 86400

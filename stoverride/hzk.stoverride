@@ -9,11 +9,11 @@ http:
     - "www.zhongkao66.com"
   script:
     - match: ^http[s]?:\/\/www.zhongkao66.com
-      name: huizhongkao
+      name: huizhongkao1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  huizhongkao:
+  huizhongkao2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/hzk.js
     interval: 86400

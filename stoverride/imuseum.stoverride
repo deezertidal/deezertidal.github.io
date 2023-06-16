@@ -9,11 +9,11 @@ http:
     - "icity-imsm.2q10.com"
   script:
     - match: https://icity-imsm.2q10.com/api/v1/users/mark_paid
-      name: IMuseum
+      name: IMuseum1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  IMuseum:
+  IMuseum2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/imuseum.js,requires-body=1,max-size=0
     interval: 86400

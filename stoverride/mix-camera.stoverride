@@ -6,11 +6,11 @@ http:
     - "bmall.camera360.com"
   script:
     - match: https?:\/\/bmall\.camera360\.com\/api\/mix\/recovery
-      name: mixxiangji
+      name: mixxiangji1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  mixxiangji:
+  mixxiangji2:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/MIX.js
     interval: 86400

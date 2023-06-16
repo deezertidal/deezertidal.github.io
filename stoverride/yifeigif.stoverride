@@ -7,11 +7,11 @@ http:
     - "us-central1-infltr.cloudfunctions.net"
   script:
     - match: https://(us-central1-giftr-83d83|us-central1-infltr).cloudfunctions.net/verifySubscription
-      name: yifeiGifjiesuo
+      name: yifeiGifjiesuo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  yifeiGifjiesuo:
+  yifeiGifjiesuo2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/yifei.js
     interval: 86400

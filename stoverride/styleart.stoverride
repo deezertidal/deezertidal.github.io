@@ -9,11 +9,11 @@ http:
     - "api-aidraw.3dmoxiu.com"
   script:
     - match: ^https:\/\/api-aidraw\.3dmoxiu\.com\/v4\/aidraw\/user\/userInfo\/getUserInfoByToken
-      name: Styleart
+      name: Styleart1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Styleart:
+  Styleart2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/StyleArt.js
     interval: 86400

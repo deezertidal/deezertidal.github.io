@@ -9,11 +9,11 @@ http:
     - "pay.wecut.com"
   script:
     - match: https:\/\/pay\.wecut\.com\/apple\/(iosVerifyReceipt|iosAppVerifyReceipt)\.php
-      name: Molycam
+      name: Molycam1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Molycam:
+  Molycam2:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/mv.js
     interval: 86400

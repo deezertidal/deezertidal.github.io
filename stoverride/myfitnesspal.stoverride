@@ -6,11 +6,11 @@ http:
     - "premium-api.myfitnesspal.com"
   script:
     - match: https://premium-api.myfitnesspal.com/v3/subscriptions/MFP/*
-      name: MyFitnessPal
+      name: MyFitnessPal1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  MyFitnessPal:
+  MyFitnessPal2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/myFitnessPal.js
     interval: 86400

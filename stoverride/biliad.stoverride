@@ -18,77 +18,77 @@ http:
     - "-*tracker*.biliapi.net"
   script:
     - match: ^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$
-      name: bilibiliquguanggao
+      name: bilibiliquguanggao1
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\?
-      name: bilibiliquguanggao
+      name: bilibiliquguanggao2
       type: response
       require-body: true
       timeout: 10
     - match: ^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list
-      name: bilibiliquguanggao
+      name: bilibiliquguanggao3
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\?
-      name: bilibiliquguanggao
+      name: bilibiliquguanggao4
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?
-      name: bilibiliquguanggao
+      name: bilibiliquguanggao5
       type: response
       require-body: true
       timeout: 10
     - match: ^https://app.bilibili.com/x/v2/search/square
-      name: bilibiliquguanggao
+      name: bilibiliquguanggao6
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index
-      name: bilibiliquguanggao
+      name: bilibiliquguanggao7
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/bangumi
-      name: bilibiliquguanggao
+      name: bilibiliquguanggao8
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom
-      name: bilibiliquguanggao
+      name: bilibiliquguanggao9
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\?
-      name: bilibiliquguanggao
+      name: bilibiliquguanggao10
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab
-      name: bilibiliquguanggao
+      name: bilibiliquguanggao11
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine
-      name: bilibiliquguanggao
+      name: bilibiliquguanggao12
       type: response
       require-body: true
       timeout: 10
     - match: ^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$
-      name: bilibiliquguanggao
+      name: bilibiliquguanggao13
       type: response
       require-body: true
       timeout: 10
     - match: ^https://app\.bilibili\.com/bilibili\.app\.dynamic\.v2\.Dynamic/DynAll$
-      name: bilibiliquguanggao
+      name: bilibiliquguanggao14
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$
-      name: bilibiliquguanggao
+      name: bilibiliquguanggao15
       type: response
       require-body: true
       timeout: 10
@@ -106,48 +106,48 @@ http:
     - ^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? - reject-dict
     - ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/(Flash|ListFlash) - reject-dict
 script-providers:
-  bilibiliquguanggao:
+  bilibiliquguanggao16:
     url: https://github.com/deezertidal/private/raw/master/js-backup/Rewrite/Function/Bilibili_CC.conf
     interval: 86400
-  bilibiliquguanggao:
+  bilibiliquguanggao17:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
     interval: 86400
-  bilibiliquguanggao:
+  bilibiliquguanggao18:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
     interval: 86400
-  bilibiliquguanggao:
+  bilibiliquguanggao19:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
     interval: 86400
-  bilibiliquguanggao:
+  bilibiliquguanggao20:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
     interval: 86400
-  bilibiliquguanggao:
+  bilibiliquguanggao21:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
     interval: 86400
-  bilibiliquguanggao:
+  bilibiliquguanggao22:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
     interval: 86400
-  bilibiliquguanggao:
+  bilibiliquguanggao23:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
     interval: 86400
-  bilibiliquguanggao:
+  bilibiliquguanggao24:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
     interval: 86400
-  bilibiliquguanggao:
+  bilibiliquguanggao25:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
     interval: 86400
-  bilibiliquguanggao:
+  bilibiliquguanggao26:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
     interval: 86400
-  bilibiliquguanggao:
+  bilibiliquguanggao27:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
     interval: 86400
-  bilibiliquguanggao:
+  bilibiliquguanggao28:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-proto.js
     interval: 86400
-  bilibiliquguanggao:
+  bilibiliquguanggao29:
     url: https://raw.githubusercontent.com/yjqiang/surge_scripts/main/scripts/bilibili/bilibili_dynamic.js
     interval: 86400
-  bilibiliquguanggao:
+  bilibiliquguanggao30:
     url: https://github.com/deezertidal/private/raw/master/js-backup/Rewrite/Function/Bilibili_CC.conf
     interval: 86400

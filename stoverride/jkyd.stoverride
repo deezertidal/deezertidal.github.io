@@ -9,11 +9,11 @@ http:
     - "ec.myjkyd.com"
   script:
     - match: http:\/\/ec\.myjkyd\.com\/ftec
-      name: jikeyundong
+      name: jikeyundong1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  jikeyundong:
+  jikeyundong2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/jkyd.js
     interval: 86400

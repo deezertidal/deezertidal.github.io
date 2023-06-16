@@ -9,11 +9,11 @@ http:
     - "www.freshhome.top"
   script:
     - match: ^https:\/\/www\.freshhome\.top\/mngruqi
-      name: ruqi
+      name: ruqi1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  ruqi:
+  ruqi2:
     url: https://raw.githubusercontent.com/deezertidal/private/main/rq.js
     interval: 86400

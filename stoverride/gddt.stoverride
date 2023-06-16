@@ -14,18 +14,18 @@ http:
     - ^https?:\/\/.*\.amap\.com\/uploadimg\/\w+\.gif - reject-img
     - ^https?:\/\/.*\.amap\.com\/ws\/valueadded\/weather - reject-dict
 script-providers:
-  gaodedituquguanggao:
+  gaodedituquguanggao1:
     url: ^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/main-page,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
     interval: 86400
-  gaodedituquguanggao:
+  gaodedituquguanggao2:
     url: ^https?:\/\/.*\.amap\.com\/ws\/valueadded\/alimama\/splash_screen,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
     interval: 86400
-  gaodedituquguanggao:
+  gaodedituquguanggao3:
     url: ^https?:\/\/.*\.amap\.com\/ws\/msgbox\/pull,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
     interval: 86400
-  gaodedituquguanggao:
+  gaodedituquguanggao4:
     url: ^https?:\/\/.*\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaas,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
     interval: 86400
-  gaodedituquguanggao:
+  gaodedituquguanggao5:
     url: ^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
     interval: 86400

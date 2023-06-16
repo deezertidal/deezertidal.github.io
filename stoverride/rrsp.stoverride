@@ -9,91 +9,91 @@ http:
     - "api.rr.tv"
   script:
     - match: ^https?:\/\/api\.rr\.tv\/\w{3}\/level\/info
-      name: renrenshipinquguanggao
+      name: renrenshipinquguanggao1
       type: response
       require-body: true
       timeout: 10
     - match: https://api.rr.tv/v3plus/index/channel\?pageNum=1&position=CHANNEL_INDEX
-      name: renrenshipinquguanggao
+      name: renrenshipinquguanggao2
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.rr\.tv\/app\/config\/h5NativeBar
-      name: renrenshipinquguanggao
+      name: renrenshipinquguanggao3
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.rr\.tv\/v3plus\/index\/channel\?pageNum=1&position=CHANNEL_MY
-      name: renrenshipinquguanggao
+      name: renrenshipinquguanggao4
       type: response
       require-body: true
       timeout: 10
     - match: ^https:\/\/api\.rr\.tv\/user\/privilege\/list
-      name: renrenshipinquguanggao
+      name: renrenshipinquguanggao5
       type: response
       require-body: true
       timeout: 10
     - match: ^https:\/\/api\.rr\.tv\/ad\/getAll
-      name: renrenshipinquguanggao
+      name: renrenshipinquguanggao6
       type: response
       require-body: true
       timeout: 10
     - match: ^https:\/\/api\.rr\.tv\/drama\/app\/get_combined_drama_detail
-      name: renrenshipinquguanggao
+      name: renrenshipinquguanggao7
       type: response
       require-body: true
       timeout: 10
     - match: ^https://api.rr.tv/watch/v4
-      name: renrenshipinquguanggao
+      name: renrenshipinquguanggao8
       type: response
       require-body: true
       timeout: 10
     - match: ^https://api.rr.tv/watch/v4
-      name: renrenshipinquguanggao
+      name: renrenshipinquguanggao9
       type: response
       require-body: true
       timeout: 10
     - match: ^https://api.rr.tv/user/profile
-      name: renrenshipinquguanggao
+      name: renrenshipinquguanggao10
       type: response
       require-body: true
       timeout: 10
     - match: ^https://api.rr.tv/watch/v4
-      name: renrenshipinquguanggao
+      name: renrenshipinquguanggao11
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  renrenshipinquguanggao:
+  renrenshipinquguanggao12:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/rrtv_json.js,script-update-interval=0
     interval: 86400
-  renrenshipinquguanggao:
+  renrenshipinquguanggao13:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/rrtv_json.js,script-update-interval=0
     interval: 86400
-  renrenshipinquguanggao:
+  renrenshipinquguanggao14:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/rrtv_json.js,script-update-interval=0
     interval: 86400
-  renrenshipinquguanggao:
+  renrenshipinquguanggao15:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/rrtv_json.js,script-update-interval=0
     interval: 86400
-  renrenshipinquguanggao:
+  renrenshipinquguanggao16:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/rrtv_json.js,script-update-interval=0
     interval: 86400
-  renrenshipinquguanggao:
+  renrenshipinquguanggao17:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/rrtv_json.js,script-update-interval=0
     interval: 86400
-  renrenshipinquguanggao:
+  renrenshipinquguanggao18:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/rrtv_json.js,script-update-interval=0
     interval: 86400
-  renrenshipinquguanggao:
+  renrenshipinquguanggao19:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/rrtv_json.js,script-update-interval=0
     interval: 86400
-  renrenshipinquguanggao:
+  renrenshipinquguanggao20:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/rrtv_json.js,script-update-interval=0
     interval: 86400
-  renrenshipinquguanggao:
+  renrenshipinquguanggao21:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/rrtv_json.js,script-update-interval=0
     interval: 86400
-  renrenshipinquguanggao:
+  renrenshipinquguanggao22:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/rrtv_json.js,script-update-interval=0
     interval: 86400

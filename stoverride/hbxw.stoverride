@@ -9,11 +9,11 @@ http:
     - "apiios_dq.xiangha.com"
   script:
     - match: ^https?:\/\/apiios_dq\.xiangha\.com\/v4\/(dish\/info|User\/getUserData)$
-      name: hongbeixiaowu
+      name: hongbeixiaowu1
       type: response
       require-body: false
       timeout: 10
 script-providers:
-  hongbeixiaowu:
+  hongbeixiaowu2:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/XiangHaBakeProCrack.js,requires-body=1
     interval: 86400

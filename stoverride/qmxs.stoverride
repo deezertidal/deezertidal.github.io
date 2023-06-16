@@ -9,11 +9,11 @@ http:
     - "*.wtzw.com"
   script:
     - match: ^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/
-      name: qimaoxiaoshuo
+      name: qimaoxiaoshuo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  qimaoxiaoshuo:
+  qimaoxiaoshuo2:
     url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js
     interval: 86400

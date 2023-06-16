@@ -9,11 +9,11 @@ http:
     - "www.40sishi.com"
   script:
     - match: ^https:\/\/www\.40sishi\.com\/list\/user\/profile$
-      name: wandouqingdan
+      name: wandouqingdan1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  wandouqingdan:
+  wandouqingdan2:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/wdqd.js
     interval: 86400

@@ -6,11 +6,11 @@ http:
     - "apic.musixmatch.com"
   script:
     - match: https://apic.musixmatch.com/ws/1.1/config.get
-      name: Musixmatchjiesuo
+      name: Musixmatchjiesuo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Musixmatchjiesuo:
+  Musixmatchjiesuo2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/musixmatch.js
     interval: 86400

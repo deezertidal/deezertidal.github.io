@@ -9,11 +9,11 @@ http:
     - "i.xinyulib.com.cn"
   script:
     - match: ^https?:\/\/i\.xinyulib\.com\.cn\/api\/querytoken.+
-      name: xinyutingshu
+      name: xinyutingshu1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  xinyutingshu:
+  xinyutingshu2:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/XinYuLibraryProCrack.js,requires-body=1,tag=新语听书解锁会员
     interval: 86400

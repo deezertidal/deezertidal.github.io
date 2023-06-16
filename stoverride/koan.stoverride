@@ -10,11 +10,11 @@ http:
     - "koan.bopulab.cn"
   script:
     - match: ^http[s]?:\/\/koan.bopulab.cn\/user\/getBriefByUserIdV3
-      name: Koan tiwenriji
+      name: Koan tiwenriji1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Koan tiwenriji:
+  Koan tiwenriji2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Koan.js
     interval: 86400

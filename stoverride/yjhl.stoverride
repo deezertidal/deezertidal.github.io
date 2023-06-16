@@ -9,11 +9,11 @@ http:
     - "c-api.wjpaa.cn"
   script:
     - match: ^https:\/\/c-api\.wjpaa\.cn\/capi\/wxRegisterLogin
-      name: yijianhuanlian
+      name: yijianhuanlian1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  yijianhuanlian:
+  yijianhuanlian2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/yjhl.js
     interval: 86400

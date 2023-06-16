@@ -8,6 +8,6 @@ http:
   mitm:
     - ""
 script-providers:
-  shenghuozhishu:
+  shenghuozhishu1:
     url: https://raw.githubusercontent.com/deezertidal/private/main/lifeindex.js,cronexpr="6 6 6 ? * *",timeout=10,script-update-interval=0,enable=true
     interval: 86400

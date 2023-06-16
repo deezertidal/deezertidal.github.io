@@ -9,11 +9,11 @@ http:
     - "cn.invit.vip"
   script:
     - match: ^https:\/\/cn\.invit\.vip\/users\/info
-      name: dianziqingjianzhizuo
+      name: dianziqingjianzhizuo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  dianziqingjianzhizuo:
+  dianziqingjianzhizuo2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/dzqjzz.js
     interval: 86400

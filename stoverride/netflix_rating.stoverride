@@ -7,27 +7,27 @@ http:
     - "ios.prod.ftl.netflix.com"
   script:
     - match: ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
-      name: Display Netflix Ratings
+      name: Display Netflix Ratings1
       type: request
       require-body: true
       timeout: 10
     - match: ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
-      name: Display Netflix Ratings
+      name: Display Netflix Ratings2
       type: response
       require-body: true
       timeout: 10
     - match: ^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath
-      name: Display Netflix Ratings
+      name: Display Netflix Ratings3
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Display Netflix Ratings:
+  Display Netflix Ratings4:
     url: https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js, requires-body=true, timeout=10
     interval: 86400
-  Display Netflix Ratings:
+  Display Netflix Ratings5:
     url: https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js, requires-body=true, timeout=10
     interval: 86400
-  Display Netflix Ratings:
+  Display Netflix Ratings6:
     url: https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating_season.js, requires-body=true, timeout=10
     interval: 86400

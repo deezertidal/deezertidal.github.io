@@ -9,11 +9,11 @@ http:
     - "api.shaolinzen.com"
   script:
     - match: ^https:\/\/api\.shaolinzen\.com\/user\/v1\/info
-      name: huanxiu
+      name: huanxiu1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  huanxiu:
+  huanxiu2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/HX.js
     interval: 86400

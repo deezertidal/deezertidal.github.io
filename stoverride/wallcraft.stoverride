@@ -9,11 +9,11 @@ http:
     - "*.wallpaperscraft.com"
   script:
     - match: ^https?:\/\/billing-ios\.wallpaperscraft\.com\/verify_receipt\/remove_ads$
-      name: WallCraft
+      name: WallCraft1
       type: response
       require-body: false
       timeout: 10
 script-providers:
-  WallCraft:
+  WallCraft2:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/WallCraftFProCrack.js,requires-body=1
     interval: 86400

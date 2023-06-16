@@ -10,11 +10,11 @@ http:
     - "bzpp2.iwzbz.com"
   script:
     - match: ^https?:\/\/bzpp2\.iwzbz\.com\/api\/v1\.1\/user\/getpwnewios
-      name: wenzhenbazi
+      name: wenzhenbazi1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  wenzhenbazi:
+  wenzhenbazi2:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/WzbzDiamondVipCrack.js
     interval: 86400

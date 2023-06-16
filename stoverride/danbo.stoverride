@@ -10,11 +10,11 @@ http:
     - "api-sub.meitu.com"
   script:
     - match: ^https:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json
-      name: danbo
+      name: danbo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  danbo:
+  danbo2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/db.js
     interval: 86400

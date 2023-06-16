@@ -1,0 +1,10 @@
+#!name=keep ybnet
+#!desc=恢复ybnet.ga远程资源
+name: keep ybnet
+desc: 恢复ybnet.ga远程资源
+http:
+  mitm:
+    - "ybnet.ga"
+    - "yfamily.ml"
+  rewrite:
+    - ^https:\/\/ybnet\.ga/(.*)$ https://yfamily.ml/$1 302

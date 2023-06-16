@@ -9,19 +9,19 @@ http:
     - "api.revenuecat.com"
   script:
     - match: ^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/(\$RCAnonymousID\%)?(\w)+$
-      name: Grow
+      name: Grow1
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.revenuecat\.com\/v\d\/receipts$
-      name: Grow
+      name: Grow2
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Grow:
+  Grow3:
     url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Grow.js
     interval: 86400
-  Grow:
+  Grow4:
     url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Grow.js
     interval: 86400

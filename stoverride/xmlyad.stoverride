@@ -10,17 +10,17 @@ http:
     - "*.xmcdn.*"
   script:
     - match: ^https?:\/\/.*\.xima.*\.com\/discovery-feed\/v\d\/mix
-      name: ximalayaquguanggao
+      name: ximalayaquguanggao1
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/.*\.xima.*\.com\/discovery-category\/v\d/category
-      name: ximalayaquguanggao
+      name: ximalayaquguanggao2
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/.*\.xima.*\.com\/mobile-user\/v\d\/homePage
-      name: ximalayaquguanggao
+      name: ximalayaquguanggao3
       type: response
       require-body: true
       timeout: 10
@@ -43,12 +43,12 @@ http:
     - ^https?:\/\/.*\.xima.*\.com\/ting\/(loading|feed|home)? - reject
     - ^https?:\/\/.*\.xima.*\.com\/discovery-feed\/focus\/queryF - reject
 script-providers:
-  ximalayaquguanggao:
+  ximalayaquguanggao4:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/xmly_json.js
     interval: 86400
-  ximalayaquguanggao:
+  ximalayaquguanggao5:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/xmly_json.js
     interval: 86400
-  ximalayaquguanggao:
+  ximalayaquguanggao6:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/xmly_json.js
     interval: 86400

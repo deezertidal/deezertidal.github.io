@@ -9,11 +9,11 @@ http:
     - "backend.getdrafts.com"
   script:
     - match: ^https:\/\/backend\.getdrafts\.com\/api\/v1\/verification\/verify_receipt
-      name: Drafts
+      name: Drafts1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Drafts:
+  Drafts2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Drafts.js
     interval: 86400

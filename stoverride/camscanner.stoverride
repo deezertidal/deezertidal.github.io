@@ -8,11 +8,11 @@ http:
     - "ap*.intsig.net"
   script:
     - match: https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?
-      name: saomiaoquannengwang
+      name: saomiaoquannengwang1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  saomiaoquannengwang:
+  saomiaoquannengwang2:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
     interval: 86400

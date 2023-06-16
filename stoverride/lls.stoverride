@@ -6,11 +6,11 @@ http:
     - "vira.llsapp.com"
   script:
     - match: ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$
-      name: liulishuo·yuedu
+      name: liulishuo·yuedu1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  liulishuo·yuedu:
+  liulishuo·yuedu2:
     url: https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/LiuLiShuoYueDu/Script/LiuLiShuoYueDu.js
     interval: 86400

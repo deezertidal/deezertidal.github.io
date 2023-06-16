@@ -6,11 +6,11 @@ http:
     - "buy.itunes.apple.com"
   script:
     - match: https://buy.itunes.apple.com/verifyReceipt
-      name: bazaarthuiyuanjiesuo
+      name: bazaarthuiyuanjiesuo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  bazaarthuiyuanjiesuo:
+  bazaarthuiyuanjiesuo2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/bazaart.js
     interval: 86400

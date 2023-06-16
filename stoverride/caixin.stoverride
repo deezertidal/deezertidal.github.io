@@ -6,11 +6,11 @@ http:
     - "gateway.caixin.com"
   script:
     - match: ^https?:\/\/gateway\.caixin\.com\/api\/app\-api\/auth\/(validate|validateAudioAuth)
-      name: caixinhuiyuan
+      name: caixinhuiyuan1
       type: request
       require-body: false
       timeout: 10
 script-providers:
-  caixinhuiyuan:
+  caixinhuiyuan2:
     url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/caixin.js
     interval: 86400

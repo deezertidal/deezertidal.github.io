@@ -9,11 +9,11 @@ http:
     - "getway.radio.cn"
   script:
     - match: http://getway.radio.cn/app*
-      name: yunting
+      name: yunting1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  yunting:
+  yunting2:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/yt.js
     interval: 86400

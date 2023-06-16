@@ -9,11 +9,11 @@ http:
     - "api-weather.andy.works"
   script:
     - match: ^https?:\/\/api-weather\.andy\.works\/v\d\/\w{18}$
-      name: Notboringtaozhuang
+      name: Notboringtaozhuang1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Notboringtaozhuang:
+  Notboringtaozhuang2:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/NotBoring/Script/NotBoring.js
     interval: 86400

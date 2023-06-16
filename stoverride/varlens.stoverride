@@ -9,11 +9,11 @@ http:
     - "mid.zineapi.com"
   script:
     - match: ^https:\/\/mid\.zineapi\.com\/@varlens\/api\/user\/info\/
-      name: Varlens
+      name: Varlens1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Varlens:
+  Varlens2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Varlens.js
     interval: 86400

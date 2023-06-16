@@ -9,11 +9,11 @@ http:
     - "api-production.endel.io"
   script:
     - match: ^https:\/\/api-production\.endel\.io\/v4\/call
-      name: Endel
+      name: Endel1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Endel:
+  Endel2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Endel.js
     interval: 86400

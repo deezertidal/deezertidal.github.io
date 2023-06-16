@@ -8,11 +8,11 @@ http:
     - "api.pxmage.com"
   script:
     - match: ^https?:\/\/api\.pxmage\.com\/egoreader\/user\/info
-      name: Ego Reader
+      name: Ego Reader1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Ego Reader:
+  Ego Reader2:
     url: https://raw.githubusercontent.com/deezertidal/private/main/ego.js
     interval: 86400

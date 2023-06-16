@@ -9,11 +9,11 @@ http:
     - "cnapi.qupeiyin.com"
   script:
     - match: ^https?:\/\/cnapi\.qupeiyin\.com\/(user\/memberData|member|top\/showTop)
-      name: yuwenqupeiyin
+      name: yuwenqupeiyin1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  yuwenqupeiyin:
+  yuwenqupeiyin2:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/wenyuqupeiyin/Script/yuwenqupeiyin.js
     interval: 86400

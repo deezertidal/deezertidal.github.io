@@ -1,0 +1,11 @@
+#!desc=多重搜索
+#!homepage=https://yfamily.ml
+#!author=deezertidal
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/multisearch.png
+name: MultiSearch
+desc: 多重搜索
+http:
+  mitm:
+    - "www.google.com"
+  rewrite:
+    - ^https:\/\/www\.google\.com\/search\?q=wk(\+|%20)(

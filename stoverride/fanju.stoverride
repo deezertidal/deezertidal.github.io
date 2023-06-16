@@ -10,11 +10,11 @@ http:
     - "funjoy-api.aiyouaiyou.cn"
   script:
     - match: ^https?:\/\/funjoy-api\.aiyouaiyou\.cn\/api\/User\/GetInfoByCode$
-      name: fanjujianfei
+      name: fanjujianfei1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  fanjujianfei:
+  fanjujianfei2:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/FunJoyVipCrack.js
     interval: 86400

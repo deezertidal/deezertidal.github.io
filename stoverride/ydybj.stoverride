@@ -9,11 +9,11 @@ http:
     - ""
   script:
     - match: https://note.youdao.com/yws/(mapi/payment|api/self)
-      name: youdaoyunbiji
+      name: youdaoyunbiji1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  youdaoyunbiji:
+  youdaoyunbiji2:
     url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/ydybj.js
     interval: 86400

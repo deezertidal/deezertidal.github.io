@@ -6,11 +6,11 @@ http:
     - "sub.store"
   script:
     - match: ^https?:\/\/sub\.store
-      name: Sub-Store
+      name: Sub-Store1
       type: request
       require-body: true
       timeout: 10
 script-providers:
-  Sub-Store:
+  Sub-Store2:
     url: https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
     interval: 86400

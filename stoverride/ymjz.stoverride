@@ -9,11 +9,11 @@ http:
     - "yimuapp.com"
   script:
     - match: ^https?:\/\/yimuapp\.com(:8082)?\/bookkeeping\/user\/getUser\/
-      name: yimujizhang
+      name: yimujizhang1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  yimujizhang:
+  yimujizhang2:
     url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/YiMuJiZhang.js
     interval: 86400

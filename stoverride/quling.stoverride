@@ -10,11 +10,11 @@ http:
     - "47.108.54.158"
   script:
     - match: ^http[s]?:\/\/47.108.54.158
-      name: quling
+      name: quling1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  quling:
+  quling2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/quling.js
     interval: 86400

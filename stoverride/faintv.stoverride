@@ -9,11 +9,11 @@ http:
     - "ftvn.hawsing.com"
   script:
     - match: ^http:\/\/ftvn\.hawsing\.com\.tw:3000\/client\/login
-      name: FainTV
+      name: FainTV1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  FainTV:
+  FainTV2:
     url: https://raw.githubusercontent.com/sngxmini/crack/master/s7aa.cn/fatv.js
     interval: 86400

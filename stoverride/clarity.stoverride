@@ -6,11 +6,11 @@ http:
     - "claritywallpaper.com"
   script:
     - match: ^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll)
-      name: kelabizhi
+      name: kelabizhi1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  kelabizhi:
+  kelabizhi2:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/clarity.js
     interval: 86400

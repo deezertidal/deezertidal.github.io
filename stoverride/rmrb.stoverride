@@ -9,11 +9,11 @@ http:
     - "app.peopleapp.com"
   script:
     - match: ^https:\/\/app\.peopleapp\.com\/Api\/\d+\/HomeApi\/getContentList
-      name: renminribaoquguanggao
+      name: renminribaoquguanggao1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  renminribaoquguanggao:
+  renminribaoquguanggao2:
     url: https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/people-news.js
     interval: 86400

@@ -7,11 +7,11 @@ http:
     - "ap?.bili*i.net"
   script:
     - match: ^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/v\d\/search\/defaultwords)\?access_key
-      name: bilibilizidonghuanqu
+      name: bilibilizidonghuanqu1
       type: response
       require-body: false
       timeout: 10
 script-providers:
-  bilibilizidonghuanqu:
+  bilibilizidonghuanqu2:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js, requires-body=true
     interval: 86400

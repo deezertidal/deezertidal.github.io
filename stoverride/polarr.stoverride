@@ -6,11 +6,11 @@ http:
     - "api.polaxiong.com"
   script:
     - match: ^https:\/\/api\.polaxiong\.com\/v1\/payments\/appleiap\/receipts\/confirmation
-      name: Polarr
+      name: Polarr1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Polarr:
+  Polarr2:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Polarr.js
     interval: 86400

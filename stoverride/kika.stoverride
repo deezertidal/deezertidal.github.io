@@ -6,11 +6,11 @@ http:
     - "api.kikakeyboard.com"
   script:
     - match: https://api.kikakeyboard.com/v1/ios/subscription/check/user
-      name: kikajiesuo
+      name: kikajiesuo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  kikajiesuo:
+  kikajiesuo2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/kika.js
     interval: 86400

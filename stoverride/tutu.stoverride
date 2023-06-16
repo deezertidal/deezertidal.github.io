@@ -9,11 +9,11 @@ http:
     - "api.revenuecat.com"
   script:
     - match: ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$
-      name: tutujizhang
+      name: tutujizhang1
       type: response
       require-body: false
       timeout: 10
 script-providers:
-  tutujizhang:
+  tutujizhang2:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/ToToWalletFProCrack.js,requires-body=1
     interval: 86400

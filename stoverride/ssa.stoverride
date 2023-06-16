@@ -9,11 +9,11 @@ http:
     - "www.ssalegs.store"
   script:
     - match: ^https?:\/\/www\.ssalegs\.store\/cms\/Appapi\/username\/username\/\d+
-      name: SSAsishe
+      name: SSAsishe1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  SSAsishe:
+  SSAsishe2:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/SSA/Script/SSA.js,script-update-interval=0
     interval: 86400

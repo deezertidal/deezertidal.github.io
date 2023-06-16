@@ -9,19 +9,19 @@ http:
     - "api.revenuecat.com"
   script:
     - match: ^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/
-      name: VSCO
+      name: VSCO1
       type: request
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/
-      name: VSCO
+      name: VSCO2
       type: response
       require-body: false
       timeout: 10
 script-providers:
-  VSCO:
+  VSCO3:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
     interval: 86400
-  VSCO:
+  VSCO4:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
     interval: 86400

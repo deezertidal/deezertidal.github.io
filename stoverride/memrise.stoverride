@@ -9,11 +9,11 @@ http:
     - "api.memrise.com"
   script:
     - match: ^https:\/\/api\.memrise\.com\/v1\.18
-      name: Memrise
+      name: Memrise1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Memrise:
+  Memrise2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Memrise.js
     interval: 86400

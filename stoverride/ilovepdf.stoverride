@@ -6,11 +6,11 @@ http:
     - "service.ilovepdf.com"
   script:
     - match: https://service.ilovepdf.com/v1/user
-      name: ILovePDF
+      name: ILovePDF1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  ILovePDF:
+  ILovePDF2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/lovePdf.js
     interval: 86400

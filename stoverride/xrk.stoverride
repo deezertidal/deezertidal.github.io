@@ -9,11 +9,11 @@ http:
     - "api.v1.esread.com"
   script:
     - match: ^https:\/\/api\.v1\.esread\.com
-      name: xiangrikuiyuedu
+      name: xiangrikuiyuedu1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  xiangrikuiyuedu:
+  xiangrikuiyuedu2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xiangrikui.js
     interval: 86400

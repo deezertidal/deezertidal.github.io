@@ -10,27 +10,27 @@ http:
     - "apiios.xiangha.com"
   script:
     - match: ^https?:\/\/apiios\.xiangha\.com\/main\d+\/
-      name: caipudaquan&xianghacaipu
+      name: caipudaquan&xianghacaipu1
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/apiios_dq\.xiangha\.com\/v\d\/
-      name: caipudaquan&xianghacaipu
+      name: caipudaquan&xianghacaipu2
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/appweb_dq\.xiangha\.com\/center\/pay\/home
-      name: caipudaquan&xianghacaipu
+      name: caipudaquan&xianghacaipu3
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  caipudaquan&xianghacaipu:
+  caipudaquan&xianghacaipu4:
     url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/XiangHaCaiPu.js
     interval: 86400
-  caipudaquan&xianghacaipu:
+  caipudaquan&xianghacaipu5:
     url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiPuDaQuan.js
     interval: 86400
-  caipudaquan&xianghacaipu:
+  caipudaquan&xianghacaipu6:
     url: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiPuDaQuan.js
     interval: 86400

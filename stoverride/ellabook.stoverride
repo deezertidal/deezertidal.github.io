@@ -6,11 +6,11 @@ http:
     - "bookapi.ellabook.cn"
   script:
     - match: https?:\/\/bookapi\.ellabook\.cn\/rest\/api\/service$
-      name: ellabook
+      name: ellabook1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  ellabook:
+  ellabook2:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/elabook.js
     interval: 86400

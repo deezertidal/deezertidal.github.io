@@ -10,11 +10,11 @@ http:
     - "buy.itunes.apple.com"
   script:
     - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
-      name: You're So Great
+      name: You're So Great1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  You're So Great:
+  You're So Great2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/You.js
     interval: 86400

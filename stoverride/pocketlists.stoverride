@@ -9,11 +9,11 @@ http:
     - "pocketlists.com"
   script:
     - match: ^https:\/\/pocketlists\.com\/api\/v1\/pocketlists.me.get
-      name: Pocket Lists
+      name: Pocket Lists1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Pocket Lists:
+  Pocket Lists2:
     url: https://raw.githubusercontent.com/deezertidal/private/main/pocketlists.js
     interval: 86400

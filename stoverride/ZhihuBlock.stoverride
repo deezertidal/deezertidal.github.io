@@ -17,92 +17,92 @@ http:
     - "103.41.167.226"
   script:
     - match: ^https?:\/\/api\.zhihu\.com\/people\/
-      name: zhihu
+      name: zhihu1
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.zhihu\.com\/feed-root\/block
-      name: zhihu
+      name: zhihu2
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\?
-      name: zhihu
+      name: zhihu3
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/appcloud2\.zhihu\.com\/v\d+\/config
-      name: zhihu
+      name: zhihu4
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.zhihu\.com\/user-credit\/basis
-      name: zhihu
+      name: zhihu5
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.zhihu\.com\/moments_v3\?
-      name: zhihu
+      name: zhihu6
       type: response
       require-body: true
       timeout: 10
     - match: ^https:\/\/api\.zhihu\.com\/topstory\/recommend
-      name: zhihu
+      name: zhihu7
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.zhihu\.com\/settings\/blocked_users
-      name: zhihu
+      name: zhihu8
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.zhihu\.com\/(v4\/)?questions\/\d+
-      name: zhihu
+      name: zhihu9
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.zhihu\.com\/next-data
-      name: zhihu
+      name: zhihu10
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/www\.zhihu\.com\/api\/v4\/comment_v5\/answers\/\d+\/abstract_comment\?
-      name: zhihu
+      name: zhihu11
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.zhihu\.com\/(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments?
-      name: zhihu
+      name: zhihu12
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.zhihu\.com\/notifications\/v3\/(message|timeline\/entry\/system_message)
-      name: zhihu
+      name: zhihu13
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/www\.zhihu\.com\/appview\/v2\/answer\/.*(entry=(?!(preload-topstory|preload-search|preload-subscription)))?
-      name: zhihu
+      name: zhihu14
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.zhihu\.com\/next\?
-      name: zhihu
+      name: zhihu15
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/www\.zhihu\.com\/api\/v\d\/articles\/\d+\/recommendation\?
-      name: zhihu
+      name: zhihu16
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.zhihu\.com\/topstory\/hot-lists?(\?|\/)
-      name: zhihu
+      name: zhihu17
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/api\.zhihu\.com\/search\/preset_words\?
-      name: zhihu
+      name: zhihu18
       type: response
       require-body: true
       timeout: 10
@@ -128,57 +128,57 @@ http:
     - ^https?:\/\/api\.zhihu\.com\/commercial_api\/banners_v3\/app_topstory_banner - reject-dict
     - ^https?:\/\/api\.zhihu\.com\/ad-style-service\/request - reject
 script-providers:
-  zhihu:
+  zhihu19:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu20:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu21:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu22:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu23:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu24:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu25:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu26:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu27:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu28:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu29:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu30:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu31:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu32:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu33:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu34:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu35:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
-  zhihu:
+  zhihu36:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400

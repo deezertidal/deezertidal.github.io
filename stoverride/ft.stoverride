@@ -6,11 +6,11 @@ http:
     - "user.ftmailbox.cn"
   script:
     - match: ^https?:\/\/user\.ftmailbox\.cn\/ios-receipt-validation\.php.*
-      name: FTzhongwenwang
+      name: FTzhongwenwang1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  FTzhongwenwang:
+  FTzhongwenwang2:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/ftchinese.js
     interval: 86400

@@ -9,11 +9,11 @@ http:
     - "api.flexibits.com"
   script:
     - match: ^https:\/\/api\.flexibits\.com\/(v1\/auth\/device|v1\/account\/details)
-      name: Fantastical
+      name: Fantastical1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Fantastical:
+  Fantastical2:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/fantastical.js
     interval: 86400

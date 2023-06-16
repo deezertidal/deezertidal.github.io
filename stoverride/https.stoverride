@@ -9,11 +9,11 @@ http:
     - "buy.itunes.apple.com"
   script:
     - match: ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
-      name: Httpszhuabao
+      name: Httpszhuabao1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Httpszhuabao:
+  Httpszhuabao2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/https.js
     interval: 86400

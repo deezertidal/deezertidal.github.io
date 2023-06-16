@@ -9,11 +9,11 @@ http:
     - "footprint-api.quthing.com"
   script:
     - match: ^https:\/\/footprint-api\.quthing\.com\/vip\/state
-      name: lingganzuji
+      name: lingganzuji1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  lingganzuji:
+  lingganzuji2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/lgzj.js
     interval: 86400

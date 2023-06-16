@@ -9,11 +9,11 @@ http:
     - "poetry.yuan9.cn"
   script:
     - match: ^https?:\/\/poetry\.yuan9\.cn\/api\/(order\/applesuccess|account\/login|User\/loginUserInfo)
-      name: zhangxiangsi
+      name: zhangxiangsi1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  zhangxiangsi:
+  zhangxiangsi2:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/cxs/Script/cxs.js
     interval: 86400

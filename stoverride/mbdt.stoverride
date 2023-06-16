@@ -9,11 +9,11 @@ http:
     - "api.revenuecat.com"
   script:
     - match: ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$
-      name: mubiaoditu
+      name: mubiaoditu1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  mubiaoditu:
+  mubiaoditu2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mbdt.js
     interval: 86400

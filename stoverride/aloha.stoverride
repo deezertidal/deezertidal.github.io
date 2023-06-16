@@ -6,11 +6,11 @@ http:
     - "api.alohaprofile.com"
   script:
     - match: https://api.alohaprofile.com/v1/profile_info
-      name: AlohaVPNliulanqi
+      name: AlohaVPNliulanqi1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  AlohaVPNliulanqi:
+  AlohaVPNliulanqi2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/aloha.js
     interval: 86400

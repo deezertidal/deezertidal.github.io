@@ -9,11 +9,11 @@ http:
     - "api.yonekura.cn"
   script:
     - match: ^https:\/\/api\.yonekura\.cn\/3\.7\.0\/uicommon\/getuser
-      name: chongdianzhushou
+      name: chongdianzhushou1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  chongdianzhushou:
+  chongdianzhushou2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/cdzs.js
     interval: 86400

@@ -9,11 +9,11 @@ http:
     - "api.revenuecat.com"
   script:
     - match: https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts)
-      name: Pillow
+      name: Pillow1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Pillow:
+  Pillow2:
     url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/pillow.js
     interval: 86400

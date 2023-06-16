@@ -8,6 +8,6 @@ http:
   mitm:
     - ""
 script-providers:
-  tianqitixing:
+  tianqitixing1:
     url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/tianqi.js,cronexpr="0 0 6-21/5 ? * *",timeout=10,script-update-interval=0,enable=true
     interval: 86400

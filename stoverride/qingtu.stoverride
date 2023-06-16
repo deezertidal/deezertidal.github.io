@@ -10,11 +10,11 @@ http:
     - "purchase-qingtu-api.b612kaji.com"
   script:
     - match: ^https?:\/\/purchase-qingtu-api\.b612kaji\.com\/v1\/purchase\/subscription\/subscriber/status$
-      name: qingtu
+      name: qingtu1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  qingtu:
+  qingtu2:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/PhotoVisionProCrack.js
     interval: 86400

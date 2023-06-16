@@ -9,11 +9,11 @@ http:
     - "iosapi.peiyinxiu.com"
   script:
     - match: ^https?:\/\/iosapi.peiyinxiu.com
-      name: peiyinxiu
+      name: peiyinxiu1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  peiyinxiu:
+  peiyinxiu2:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/peiyinxiu/Script/peiyinxiu.js
     interval: 86400

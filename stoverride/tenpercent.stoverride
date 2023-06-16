@@ -6,11 +6,11 @@ http:
     - "api.changecollective.com"
   script:
     - match: https://api.changecollective.com/api/v3/user
-      name: 10percentjiesuo
+      name: 10percentjiesuo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  10percentjiesuo:
+  10percentjiesuo2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/tenPercent.js
     interval: 86400

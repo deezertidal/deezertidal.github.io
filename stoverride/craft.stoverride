@@ -9,11 +9,11 @@ http:
     - "api.craft.do"
   script:
     - match: ^https:\/\/api\.craft\.do\/auth\/v2\/profile
-      name: Craft
+      name: Craft1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Craft:
+  Craft2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Craft.js
     interval: 86400

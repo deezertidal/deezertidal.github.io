@@ -10,11 +10,11 @@ http:
     - "sleep.navolove.com"
   script:
     - match: ^http[s]?:\/\/sleep.navolove.com\/api\/refresh_user_info
-      name: xiongmaoshuimian
+      name: xiongmaoshuimian1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  xiongmaoshuimian:
+  xiongmaoshuimian2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/navolove.js
     interval: 86400

@@ -9,11 +9,11 @@ http:
     - "aiqicha.baidu.com"
   script:
     - match: ^https:\//aiqicha.baidu.com\/usercenter\/getvipinfoajax
-      name: aiqicha
+      name: aiqicha1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  aiqicha:
+  aiqicha2:
     url: https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/aiqicha.js
     interval: 86400

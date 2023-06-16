@@ -10,11 +10,11 @@ http:
     - "mars-prod.whalean.com"
   script:
     - match: ^https?:\/\/mars-prod\.whalean\.com\/hestia-service\/api\/(wpUser\/getUserInfo|wallpaper\/ai\/count\/detail)
-      name: bohebizhi
+      name: bohebizhi1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  bohebizhi:
+  bohebizhi2:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/MintPaperVipCrack.js
     interval: 86400

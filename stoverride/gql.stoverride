@@ -9,11 +9,11 @@ http:
     - "expire.vanemu.com"
   script:
     - match: ^https:\/\/expire\.vanemu\.com\/1\.1\/functions\/getUserInfo
-      name: guoqila
+      name: guoqila1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  guoqila:
+  guoqila2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/gql.js
     interval: 86400

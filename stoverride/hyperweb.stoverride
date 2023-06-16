@@ -9,11 +9,11 @@ http:
     - "zy6kcqa01a.execute-api.us-east-2.amazonaws.com"
   script:
     - match: ^https://zy6kcqa01a.execute-api.us-east-2.amazonaws.com/prod/verifyReceipt
-      name: HyperWeb
+      name: HyperWeb1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  HyperWeb:
+  HyperWeb2:
     url: https://github.com/deezertidal/private/raw/master/js-backup/Crack/hyperweb.js
     interval: 86400

@@ -6,11 +6,11 @@ http:
     - "app.bilibili.com"
   script:
     - match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?
-      name: Bili1080P
+      name: Bili1080P1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Bili1080P:
+  Bili1080P2:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Script/bilibili_json.js
     interval: 86400

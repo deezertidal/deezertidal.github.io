@@ -6,11 +6,11 @@ http:
     - "piccollage.com"
   script:
     - match: https://piccollage.com/api/graphql
-      name: Piccollagejiesuo
+      name: Piccollagejiesuo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Piccollagejiesuo:
+  Piccollagejiesuo2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/picCollage.js
     interval: 86400

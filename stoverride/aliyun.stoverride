@@ -9,14 +9,14 @@ http:
     - "auth.aliyundrive.com"
   script:
     - match: https:\/\/auth.aliyundrive.com\/v2\/account\/token
-      name: aliyunpanqiandao
+      name: aliyunpanqiandao1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  aliyunpanqiandao:
+  aliyunpanqiandao2:
     url: https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
     interval: 86400
-  aliyunpanqiandao:
+  aliyunpanqiandao3:
     url: https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
     interval: 86400

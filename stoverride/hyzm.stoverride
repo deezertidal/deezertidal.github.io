@@ -9,11 +9,11 @@ http:
     - "api.bluepulse.cn"
   script:
     - match: ^https:\/\/api\.bluepulse\.cn\/bluepulse-caption-server-front\/api\/v1\/\/user\/app-vip-info
-      name: huiyingzimu
+      name: huiyingzimu1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  huiyingzimu:
+  huiyingzimu2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/hyzm.js
     interval: 86400

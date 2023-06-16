@@ -9,13 +9,13 @@ http:
     - "*.caiyunapp.cn"
   script:
     - match: ^http[s]?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)\/v2\/user.*$
-      name: caiyuntianqipro
+      name: caiyuntianqipro1
       type: response
       require-body: true
       timeout: 10
   rewrite:
     - ^https:\/\/ad\.caiyunapp\.com\/ - - reject
 script-providers:
-  caiyuntianqipro:
+  caiyuntianqipro2:
     url: https://raw.githubusercontent.com/WeiRen0/Scripts/main/cytq.js
     interval: 86400

@@ -6,11 +6,11 @@ http:
     - "api.revenuecat.com"
   script:
     - match: https://api.revenuecat.com/v1/(receipts|subscribers)/*
-      name: Darkroom
+      name: Darkroom1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Darkroom:
+  Darkroom2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/darkroom.js
     interval: 86400

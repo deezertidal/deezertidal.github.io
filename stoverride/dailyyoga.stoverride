@@ -6,11 +6,11 @@ http:
     - "pre.dailyyoga.com/h2oapi/user/getUserDetail"
   script:
     - match: https://pre.dailyyoga.com/h2oapi/user/getUserDetail
-      name: DailyYoga
+      name: DailyYoga1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  DailyYoga:
+  DailyYoga2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/dailyYoga.js
     interval: 86400

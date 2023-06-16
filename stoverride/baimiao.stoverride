@@ -9,11 +9,11 @@ http:
     - "baimiao.uzero.cn"
   script:
     - match: ^https?:\/\/baimiao\.uzero\.cn\/api\/v\d\.user\/appLaunchWithUser$
-      name: baimiao
+      name: baimiao1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  baimiao:
+  baimiao2:
     url: https://raw.githubusercontent.com/iEwha/Profiles/master/Script/baimiao.js
     interval: 86400

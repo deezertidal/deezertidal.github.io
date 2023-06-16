@@ -9,11 +9,11 @@ http:
     - "api.diyidan.net"
   script:
     - match: ^https:\/\/api\.diyidan\.net\/v0\.3\/(user\/personal_homepage|vip_user\/info|tv_series\/index\?appChanne)
-      name: diyidan
+      name: diyidan1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  diyidan:
+  diyidan2:
     url: https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/js/dyd.js
     interval: 86400

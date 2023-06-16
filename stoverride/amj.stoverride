@@ -9,11 +9,11 @@ http:
     - "api.bjxkhc.com"
   script:
     - match: ^https?:\/\/api.bjxkhc.com\/index\.php\/app\/ios\/(vod\/show|(user|vod|topic|type)\/index)
-      name: aimeijujiesuo
+      name: aimeijujiesuo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  aimeijujiesuo:
+  aimeijujiesuo2:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/aimeiju.js
     interval: 86400

@@ -8,11 +8,11 @@ http:
     - "mb3admin.com"
   script:
     - match: ^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice
-      name: EMBY
+      name: EMBY1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  EMBY:
+  EMBY2:
     url: https://raw.githubusercontent.com/Tartarus2014/Script/master/Emby.js
     interval: 86400

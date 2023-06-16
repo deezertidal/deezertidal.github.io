@@ -9,11 +9,11 @@ http:
     - "open3.vistastory.com"
   script:
     - match: ^https?:\/\/open3\.vistastory\.com\/v\d\/api\/(article\/article_detail|vip\/get_vip|my\/home\/get_home_center)
-      name: Vistakantianxia
+      name: Vistakantianxia1
       type: response
       require-body: false
       timeout: 10
 script-providers:
-  Vistakantianxia:
+  Vistakantianxia2:
     url: https://github.com/deezertidal/private/raw/master/js-backup/Crack/ktx.js
     interval: 86400

@@ -10,11 +10,11 @@ http:
     - "api.keyboard.buzhedie.com"
   script:
     - match: ^http[s]?:\/\/api.keyboard.buzhedie.com\/input\/member_info\/
-      name: buzhedieshurufa
+      name: buzhedieshurufa1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  buzhedieshurufa:
+  buzhedieshurufa2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/bzdsrf.js
     interval: 86400

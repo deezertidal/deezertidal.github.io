@@ -9,11 +9,11 @@ http:
     - "qianji.xxoojoke.com"
   script:
     - match: ^https:\/\/qianji\.xxoojoke\.com\/vip\/configios
-      name: qianji
+      name: qianji1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  qianji:
+  qianji2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/qj.js
     interval: 86400

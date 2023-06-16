@@ -9,11 +9,11 @@ http:
     - "lcs-mobile-cops.adobe.io"
   script:
     - match: ^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile
-      name: PhotoshopExpress
+      name: PhotoshopExpress1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  PhotoshopExpress:
+  PhotoshopExpress2:
     url: https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/photoshop.js
     interval: 86400

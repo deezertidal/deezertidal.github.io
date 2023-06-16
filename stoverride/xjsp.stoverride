@@ -14,11 +14,11 @@ http:
     - "*.pipiapps.com"
   script:
     - match: https?:\/\/.+?\.(pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|(\/|)vod\/reqplay\/)
-      name: xiangjiaoshipin
+      name: xiangjiaoshipin1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  xiangjiaoshipin:
+  xiangjiaoshipin2:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js
     interval: 86400

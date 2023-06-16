@@ -9,11 +9,11 @@ http:
     - "shimo.im"
   script:
     - match: ^https:\//shimo.im\/lizard-api\/users\/me
-      name: shimowendang
+      name: shimowendang1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  shimowendang:
+  shimowendang2:
     url: https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/shimo.js
     interval: 86400

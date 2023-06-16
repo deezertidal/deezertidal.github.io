@@ -10,11 +10,11 @@ http:
     - "api.gogoup.com"
   script:
     - match: ^https:\/\/api\.gogoup\.com
-      name: zhankugaogaoshou
+      name: zhankugaogaoshou1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  zhankugaogaoshou:
+  zhankugaogaoshou2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zkggs.js
     interval: 86400

@@ -9,11 +9,11 @@ http:
     - "widget-box-api.codefuture.top"
   script:
     - match: ^https:\/\/widget-box-api\.codefuture\.top\/v1\/users\/me
-      name: xiaozujianhezi
+      name: xiaozujianhezi1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  xiaozujianhezi:
+  xiaozujianhezi2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xzjhz.js
     interval: 86400

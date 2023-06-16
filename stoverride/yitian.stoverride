@@ -9,11 +9,11 @@ http:
     - "m2u-api.getkwai.com"
   script:
     - match: ^https?:\/\/m2u-api\.getkwai\.com\/api-server\/api\/v2\/vip\/vipUserInfo
-      name: yitianxiangji
+      name: yitianxiangji1
       type: response
       require-body: false
       timeout: 10
 script-providers:
-  yitianxiangji:
+  yitianxiangji2:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/1TianCamVipCrack.js,requires-body=1
     interval: 86400

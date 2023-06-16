@@ -6,11 +6,11 @@ http:
     - "payments.invideo.io"
   script:
     - match: https://payments.invideo.io/(verify_purchase|subscription)
-      name: invideohuiyuan
+      name: invideohuiyuan1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  invideohuiyuan:
+  invideohuiyuan2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/filmr.js
     interval: 86400

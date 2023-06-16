@@ -10,11 +10,11 @@ http:
     - "donate-api.recorder.duapps.com"
   script:
     - match: ^http[s]?:\/\/donate-api.recorder.duapps.com
-      name: xiaoxiongluping
+      name: xiaoxiongluping1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  xiaoxiongluping:
+  xiaoxiongluping2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/XXLP.js
     interval: 86400

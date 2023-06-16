@@ -6,11 +6,11 @@ http:
     - "xluser-ssl.xunlei.com"
   script:
     - match: https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo
-      name: xunleihuiyuan
+      name: xunleihuiyuan1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  xunleihuiyuan:
+  xunleihuiyuan2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/xunlei.js
     interval: 86400

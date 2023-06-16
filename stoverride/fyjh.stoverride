@@ -9,11 +9,11 @@ http:
     - "getway-plan.abuddz.com"
   script:
     - match: ^https:\/\/getway-plan\.abuddz\.com\/api\/sync\/putNeedUpdateData
-      name: feiyujihua
+      name: feiyujihua1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  feiyujihua:
+  feiyujihua2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fyjh.js
     interval: 86400

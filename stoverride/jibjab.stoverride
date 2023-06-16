@@ -6,11 +6,11 @@ http:
     - "origin-prod-phoenix.jibjab.com"
   script:
     - match: https:\/\/origin-prod-phoenix\.jibjab\.com\/v1\/user
-      name: JibJab
+      name: JibJab1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  JibJab:
+  JibJab2:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/jibjab.js
     interval: 86400

@@ -8,6 +8,6 @@ http:
   mitm:
     - ""
 script-providers:
-  youjiatixing:
+  youjiatixing1:
     url: https://raw.githubusercontent.com/deezertidal/private/main/oil.js,cronexpr="9 9 9 * * ?",timeout=10,script-update-interval=0,enable=true
     interval: 86400

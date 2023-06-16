@@ -10,11 +10,11 @@ http:
     - "api-chn.rthdo.com"
   script:
     - match: ^https:\/\/(xy-viva\.kakalili|api-chn.rthdo)\.com\/api\/rest\/u\/vipVerifyReceipt
-      name: xiaoying
+      name: xiaoying1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  xiaoying:
+  xiaoying2:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
     interval: 86400

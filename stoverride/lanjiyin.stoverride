@@ -10,11 +10,11 @@ http:
     - "*.lanjiyin.com.cn"
   script:
     - match: ^https:\/\/(tk|course)\.lanjiyin\.com\.cn
-      name: lanjiyin
+      name: lanjiyin1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  lanjiyin:
+  lanjiyin2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/lanjiyin.js
     interval: 86400

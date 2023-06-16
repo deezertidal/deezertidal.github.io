@@ -11,19 +11,19 @@ http:
     - "account.wps.cn"
   script:
     - match: ^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips
-      name: WPSdaokehuiyuan
+      name: WPSdaokehuiyuan1
       type: response
       require-body: true
       timeout: 10
     - match: ^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail)
-      name: WPSdaokehuiyuan
+      name: WPSdaokehuiyuan2
       type: request
       require-body: false
       timeout: 10
 script-providers:
-  WPSdaokehuiyuan:
+  WPSdaokehuiyuan3:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js
     interval: 86400
-  WPSdaokehuiyuan:
+  WPSdaokehuiyuan4:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPowerCrack.js
     interval: 86400

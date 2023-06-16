@@ -9,11 +9,11 @@ http:
     - "prod.ukids.cn"
   script:
     - match: ^https?:\/\/prod\.ukids\.cn\/uch5\/getUser
-      name: xiaoxiaoyouqu
+      name: xiaoxiaoyouqu1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  xiaoxiaoyouqu:
+  xiaoxiaoyouqu2:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/xiaoxiaoyouqu/Script/xxyq.js
     interval: 86400

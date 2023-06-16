@@ -8,11 +8,11 @@ http:
     - "wallpaper.soutushenqi.com"
   script:
     - match: http:\/\/wallpaper\.soutushenqi\.com\/api\/v1\/account\/token
-      name: soutushenqi
+      name: soutushenqi1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  soutushenqi:
+  soutushenqi2:
     url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/SearchArtifact.js
     interval: 86400

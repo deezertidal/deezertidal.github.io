@@ -9,11 +9,11 @@ http:
     - "dict.youdao.com"
   script:
     - match: ^https:\/\/dict\.youdao\.com\/vip\/user\/status
-      name: youdaocidian
+      name: youdaocidian1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  youdaocidian:
+  youdaocidian2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/wyydcd.js
     interval: 86400

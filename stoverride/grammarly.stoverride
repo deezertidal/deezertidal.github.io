@@ -9,11 +9,11 @@ http:
     - "subscription.grammarly.com"
   script:
     - match: ^https?:\/\/subscription\.grammarly\.com\/api\/v1\/subscription$
-      name: Grammarly
+      name: Grammarly1
       type: response
       require-body: false
       timeout: 10
 script-providers:
-  Grammarly:
+  Grammarly2:
     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/GrammarlyPremiumCrack.js,requires-body=1
     interval: 86400

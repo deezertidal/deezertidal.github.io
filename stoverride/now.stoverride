@@ -6,11 +6,11 @@ http:
     - "nowapi.navoinfo.cn"
   script:
     - match: https://nowapi.navoinfo.cn/h2/user/*
-      name: nowmingxianghuiyuan
+      name: nowmingxianghuiyuan1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  nowmingxianghuiyuan:
+  nowmingxianghuiyuan2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/nowPonder.js
     interval: 86400

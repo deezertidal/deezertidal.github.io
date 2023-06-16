@@ -6,11 +6,11 @@ http:
     - "api.calm.com"
   script:
     - match: https://api.calm.com/(me|device|ios/receipt)
-      name: Calmjiesuoxianzhi
+      name: Calmjiesuoxianzhi1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Calmjiesuoxianzhi:
+  Calmjiesuoxianzhi2:
     url: https://raw.githubusercontent.com/Alex0510/Eric/Alex0510/surge/surge/Script/caml.js,script-update-interval=0
     interval: 86400

@@ -9,11 +9,11 @@ http:
     - "apigate.zymk.cn"
   script:
     - match: ^https:\/\/apigate\.zymk\.cn\/(zymk-getuserinfo-api\/v1\/getuserinfo|zymk-userpurchased-api\/v1\/userpurchased\/paychapters)\/
-      name: zhiyinmanke
+      name: zhiyinmanke1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  zhiyinmanke:
+  zhiyinmanke2:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js
     interval: 86400

@@ -9,11 +9,11 @@ http:
     - "lapi.photomath.net"
   script:
     - match: https://lapi.photomath.net/v4/me
-      name: Photomath
+      name: Photomath1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Photomath:
+  Photomath2:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/poh.js
     interval: 86400

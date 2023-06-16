@@ -6,11 +6,11 @@ http:
     - "api.revenuecat.com"
   script:
     - match: https://api.revenuecat.com/v1/(receipts|subscribers)/*
-      name: Widgetsmithjiesuo
+      name: Widgetsmithjiesuo1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Widgetsmithjiesuo:
+  Widgetsmithjiesuo2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/widgetSmith.js
     interval: 86400

@@ -9,11 +9,11 @@ http:
     - "app.yiyan.art"
   script:
     - match: ^https:\/\/app\.yiyan\.art\/yiyan\/
-      name: yiyan
+      name: yiyan1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  yiyan:
+  yiyan2:
     url: https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/yiyan.js
     interval: 86400

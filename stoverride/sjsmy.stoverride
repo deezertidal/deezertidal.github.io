@@ -9,11 +9,11 @@ http:
     - "saomiao.34354.com"
   script:
     - match: ^https?:\/\/saomiao\.34354\.com\/api\/open\/member\/level$
-      name: shoujisaomiaoyi
+      name: shoujisaomiaoyi1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  shoujisaomiaoyi:
+  shoujisaomiaoyi2:
     url: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/yidondsaomianyi/Script/jdsmy.js
     interval: 86400

@@ -9,7 +9,7 @@ http:
     - "api.sevenworkouts.com"
   script:
     - match: ^https:\/\/api\.sevenworkouts\.com\/api\/v(\d)\/(verify-purchases|account/verify-purchases)
-      name: 7fenzhongHIITyundong
+      name: 7fenzhongHIITyundong1
       type: response
       require-body: true
       timeout: 10
@@ -17,6 +17,6 @@ http:
     - ^https:\/\/api\.sevenworkouts\.com\/api\/v1\/account\/subscription-purchases - reject
     - ^https:\/\/api\.sevenworkouts\.com\/api\/v1\/buyers\/ - reject
 script-providers:
-  7fenzhongHIITyundong:
+  7fenzhongHIITyundong2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Seven.js
     interval: 86400

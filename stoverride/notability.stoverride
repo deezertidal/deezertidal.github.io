@@ -9,11 +9,11 @@ http:
     - "notability.com"
   script:
     - match: ^https://notability.com/subscriptions
-      name: Notability Plus
+      name: Notability Plus1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Notability Plus:
+  Notability Plus2:
     url: https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/notability.js
     interval: 86400

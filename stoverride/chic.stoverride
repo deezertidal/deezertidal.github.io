@@ -9,11 +9,11 @@ http:
     - "api-sub.meitu.com"
   script:
     - match: ^https:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info\.json
-      name: Chic
+      name: Chic1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  Chic:
+  Chic2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Chic.js
     interval: 86400

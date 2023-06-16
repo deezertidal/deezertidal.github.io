@@ -10,11 +10,11 @@ http:
     - "buy.itunes.apple.com"
   script:
     - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
-      name: xiguanguanjia
+      name: xiguanguanjia1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  xiguanguanjia:
+  xiguanguanjia2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/XGGj.js
     interval: 86400

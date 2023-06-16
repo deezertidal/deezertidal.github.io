@@ -9,11 +9,11 @@ http:
     - "www.livestrong.com"
   script:
     - match: https://www.livestrong.com/service/user/profile/*
-      name: My Plate
+      name: My Plate1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  My Plate:
+  My Plate2:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/myPlate.js,requires-body=1,max-size=0
     interval: 86400

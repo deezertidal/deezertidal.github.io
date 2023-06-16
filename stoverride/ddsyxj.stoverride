@@ -9,11 +9,11 @@ http:
     - "zip.jinzitao.com"
   script:
     - match: https://zip.jinzitao.com/refreshuinfo
-      name: dingdingshuiyinxiangji
+      name: dingdingshuiyinxiangji1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  dingdingshuiyinxiangji:
+  dingdingshuiyinxiangji2:
     url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/ddCamera.js
     interval: 86400

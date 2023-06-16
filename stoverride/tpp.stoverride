@@ -9,11 +9,11 @@ http:
     - "guide-acs.m.taobao.com"
   script:
     - match: ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopshowapi\.getextendshowbyid
-      name: taopiaopiaopingfen
+      name: taopiaopiaopingfen1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  taopiaopiaopingfen:
+  taopiaopiaopingfen2:
     url: https://raw.githubusercontent.com/98kevinxiao/javascript/main/taopiaopiao.js
     interval: 86400

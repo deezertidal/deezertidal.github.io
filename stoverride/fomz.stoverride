@@ -9,11 +9,11 @@ http:
     - "fz68resapi.imendon.com"
   script:
     - match: ^https:\/\/fz68resapi\.imendon\.com\/v2\/purchase\/vip\/verification
-      name: FoMz
+      name: FoMz1
       type: response
       require-body: true
       timeout: 10
 script-providers:
-  FoMz:
+  FoMz2:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/FoMz.js
     interval: 86400

@@ -8,6 +8,6 @@ http:
   mitm:
     - "buy.itunes.apple.com"
 script-providers:
-  Retake:
+  Retake1:
     url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Retake.js
     interval: 86400
