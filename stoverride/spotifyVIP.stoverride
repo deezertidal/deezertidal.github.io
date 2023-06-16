@@ -13,7 +13,6 @@ http:
       name: smile_spotify_json
       type: request
       timeout: 10
-
 script-providers:
   smile_spotify:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js

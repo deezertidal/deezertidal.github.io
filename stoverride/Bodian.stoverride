@@ -9,9 +9,6 @@ http:
     - ""
   rewrite:
     - ^http:\/\/bd-api\.kuwo\.cn\/api\/service\/resource\/musicResource\/.+ - - reject
-    - 
     - ^https:\/\/bodiancdn\.kuwo\.cn\/.+\.mp4 - - reject
-    - 
     - ^http:\/\/bd-api\.kuwo\.cn\/api\/service\/resource\/view\?uid - - reject
-    - 
     - ^http:\/\/bd-api\.kuwo\.cn\/api\/service\/music\/recommendList\?uid - - reject

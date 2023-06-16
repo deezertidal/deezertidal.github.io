@@ -15,7 +15,6 @@ http:
       timeout: 10
   rewrite:
     - ^https:\/\/api\.sevenworkouts\.com\/api\/v1\/account\/subscription-purchases - reject
-    - 
     - ^https:\/\/api\.sevenworkouts\.com\/api\/v1\/buyers\/ - reject
 script-providers:
   7fenzhongHIITyundong:

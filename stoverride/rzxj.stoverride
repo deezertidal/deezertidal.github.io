@@ -17,7 +17,6 @@ http:
       timeout: 10
   rewrite:
     - ^https:\/\/rzres86api\.imendon\.com\/v2\/advert\/homelist - - reject
-    - 
     - ^https:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/stats\/batch\/?aid=5000546&version_code=4\.8\.0\.8&device_platform=iphone - - reject
 script-providers:
   rizaxiangji:

@@ -27,24 +27,10 @@ http:
       require-body: true
       timeout: 10
   rewrite:
-    - # ～ WeiboLite_微博国际版_sdkad
-    - 
     - ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php - reject
-    - 
-    - # ～ WeiboLite_微博国际版_屏蔽search_suggest
-    - 
     - ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/page\/get_search_suggest - reject-dict
-    - 
-    - # ～ WeiboLite_微博国际版_屏蔽searching_info
-    - 
     - ^ttps?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*user&a=get_searching_info - reject
-    - 
-    - # ～ WeiboLite_微博国际版_屏蔽search_topic
-    - 
     - ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=search_topic - reject
-    - 
-    - # ～ WeiboLite_微博国际版_屏蔽开屏广告
-    - 
     - ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*ads - reject
 script-providers:
   weiboqingxiangbanquguanggao:
