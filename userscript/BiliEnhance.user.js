@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [🤣]全网VIP视频免费破解去广告、全网音乐直接下载、Fuck链接中间跳转页(直接跳转)、B站哔哩哔哩使用增强、知乎使用增强等多合一纯净脚本
 // @namespace    coolhii_vip
-// @version      5.0.4
+// @version      5.0.5
 // @description  【组合型多功能脚本，完全免费，长期维护更新】【1】全网VIP视频免费破解去广告，移动端+PC：支持爱奇艺、腾讯、芒果、优酷、哔哩哔哩等；【2】全网音乐有声音频免客户端下载,支持网易云音乐、QQ音乐、酷狗、喜马拉雅、咪咕等；【3】Fuck链接中间跳转页(直接跳转)，需要更多网址适配请留言；【4】B站哔哩哔哩使用增强、番剧大会员VIP视频解析、视频下载(支持多P下载)、一键三联、浏览记录提醒；【5】知乎使用增强：外链接直接跳出、问题,回答时间标注、短视频下载方便保存等；【6】优惠券查询；脚本功能可独立开关，按需使用。
 // @author       橘子爱哭，爱画画的猫
 // @icon         data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAAwCAYAAACxKzLDAAAAAXNSR0IArs4c6QAABSRJREFUaEPtWm9oG2UY/z2X2KmgaCdom7vksnUKCsMPA4lD6BCduG65dNoqWpGpQUEm/mU6ZBPEMf/r1Dp0wpzMrdPmYrfi9sUiOoV+ECcdTFdzyaVs/pkiKEiW3CNXk9m0d703WXL2Qw/y6X7P7/f83ue9e+993hAEr7B+4koJxc0AbgWwj5iGMgl5l2B4zTA1ld0MoisACjDjYDah7BAlIRHgpCEqDoBx1VQ8Ay9mNeVxEY5aMGra3A5GsjqGXjE0+RERHiFTqp5/GOCXnQl5CIVS0uiJnhQRnA2zWJ9QLFj9DKxywjFhbTauDHrpCJoyPwPQ6UrGPEpB6b7MavlbL0G3+xF94lqC1Q9g6SwcI4amrPDSEDOVzr8F5gdmJSPKga2koYUPeolOv6/quV6AbEMXzx7LbxtaePY8AAiZiqRz64hJ5EEtwLKSRndkp6ixqJ57jEEveOEJ9KcFWpnVQoe9sV6I8n01be4G43ZB+AZDU7Z6YVXdfA3Aei+cfd9+zrKaMiyCFapUhUjVzQ0AtogQA+5vq2j6p0uZC/Z0S4hwMaTlIhWqcDmaWpTOLSsxbiTQDS6iSwCEPBMifAjL+n46jklaRcAyz3jgCNhKzYiXAqPBUnB0vPuyn504qkypqYwKOmcTwHcLCM4FyFcg6XUjHtozNZkzpiKDZjdJ9BLA6lzItpYciLAjE1furZp+UT13HUM6APAFtZDNKSzhPSOu3GPnRO1Dxy5pKZ3/JYDL51SSdSRDhGQmrrxDNaxBdcj4H8IWXU+qnj8McMx/+eYoMmgjqbrJHvRHiPFuJqFsa04a3qwdw6cuLBb+ioE5BpKeBNDiFsWM/R6m+KShhdu8Zf1D2MsOUfAN1y954NdZTRFj/f9ZIbehWvRJvsuyeMjpPnuZAmOFkVBG/KuDuJLbYzNvymkMQ4P5hRPd8inx8W0csimVigwaMaLAs0Rk71SPgTidiSue+yInW9G0udRi9BG4D6A/mHAoyNLz41rIdBuGhpuKpM07iPHBTEHx5sjUWFXP7wT4rio+wpjFwZ6c1nbUyVhDTcmfmq3Bv/EdgHbHUSwU22ppwpRbb2POFXHfvjfUlJoyO0GwGzHOV4lixlr5a9Gn59/+nrTJBe/aaPHXVI3LwLypKeWcr1TV3HaYSvKAGQq2IO/6zNQ4/aKpfJKJtzvxEXAgoyldTX/72QKqnjsO0GIHsQlDU2TRl4SNC6ezyyWWvnA2Rc9lNHmjP6ZS5lYQnpguRuA3M1r4wVpMlXfevzjFMOOWbEL52BdT5WrtAai3IsjAtqymCDUmpydZXibsKfhfS4GtZ4xExD46crwa+qKYqqCmMhdJgcASWtCSHV/p3IMTrZrNBQQ6mQLtDGnE7Uuiwtc0U6IJNwM3b8rrld6MUa+Hc75S1aPGtxlaeG89I9nMmI7hvFwssONeS2A7z1uMRPipZiZYD7eqm9cAcNsJnPDq+x0KtgTvPH5zm+PiWE9CjYhRdXOg/NcHBzoes019A+BqVzHGb0zS0yJrRyMSduOwp1zpNGLMbP+Pw/65XZ+Tquf6Abq/mQn5y827SdUnegGr6tDK3yQarcY3UcfwDwuKp889CsaiRtP7z0dDhiavmTxJjKbyfUz8vv9JNFZRkmj1j2vk/WeOR9W0+RAYrzZWxj82IurJxOV9tuK0g+zJzo7df4v6l85ZK5lE9GjF0AxTFfrydFwHQisYCwG0AjjvrOUbRkAGMPlF8ZEVtHbluiK/T6X+B3vhrTTNoUfLAAAAAElFTkSuQmCC
@@ -2244,92 +2244,6 @@
 		}
 	}
 	
-	function ModelHelper(){
-		this.fromCode = function(str){ // 解密
-			//定义密钥，36个字母和数字
-			var key = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-			var len = key.length;  //获取密钥的长度
-			var b, b1, b2, b3, d = 0, s;  //定义临时变量
-			s = new Array(Math.floor(str.length / 3));  //计算加密字符串包含的字符数，并定义数组
-			b = s.length;  //获取数组的长度
-			for (var i = 0; i < b; i ++) {  //以数组的长度循环次数，遍历加密字符串
-				b1 = key.indexOf(str.charAt(d));  //截取周期内第一个字符串，计算在密钥中的下标值
-				d ++;
-				b2 = key.indexOf(str.charAt(d));  //截取周期内第二个字符串，计算在密钥中的下标值
-				d ++;
-				b3 = key.indexOf(str.charAt(d));  //截取周期内第三个字符串，计算在密钥中的下标值
-				d ++;
-				s[i] = b1 * len * len + b2 * len + b3  //利用下标值，反推被加密字符的Unicode编码值
-			}
-			b = eval("String.fromCharCode(" + s.join(',') + ")");  // 用fromCharCode()算出字符串
-			return b ;  //返回被解密的字符串
-		}
-		this.toCode = function(str){ //加密
-			//定义密钥，36个字母和数字
-			var key = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-			var len = key.length;  //获取密钥的长度
-			var a = key.split("");  //把密钥字符串转换为字符数组
-			var s = "",b, b1, b2, b3;  //定义临时变量
-			for (var i = 0; i <str.length; i ++) {  //遍历字符串
-				b = str.charCodeAt(i);  //逐个提取每个字符，并获取Unicode编码值
-				b1 = b % len;  //求Unicode编码值得余数
-				b = (b - b1) / len;  //求最大倍数
-				b2 = b % len;  //求最大倍数的于是
-				b = (b - b2) / len;  //求最大倍数
-				b3 = b % len;  //求最大倍数的余数
-				s += a[b3] + a[b2] + a[b1];  //根据余数值映射到密钥中对应下标位置的字符
-			}
-			return s;  //返回这些映射的字符
-		}
-		this.isShow = function(){
-			const host = window.location.host;
-			return new Promise(function(resolve, reject){
-				if("item.taobao.com"==host){
-					var isShow = false;
-					var title = $(".tb-main-title").text();
-					resolve(title);
-				}else if("detail.tmall.com"==host){
-					let flag = 0;
-					let timer = setInterval(function func(){
-						var $ItemHeader = $("h1[class^='ItemHeader--mainTitle--']");
-						if($ItemHeader.length !=0 || flag>10){
-							var title = $ItemHeader.text();
-							resolve(title);
-							clearInterval(timer);
-						}
-						flag++ ;
-					},1000);
-				}else{
-					resolve("");
-				}
-			});
-		}
-		this.start = function(){
-			var self = this;
-			this.isShow().then((title)=>{
-				console.log("title", title);
-				var result = title.indexOf("金属模型")!=-1 || title.indexOf("拼装")!=-1;
-				if(!result) return;
-				
-				const randomId = "iddd"+Math.ceil(Math.random()*100000000);
-				var html = `
-					<div style="width:150px;position:fixed;bottom:5px;left:5px;z-index:99999;cursor:pointer;" id="`+randomId+`">
-						<p style="font-size:13px;text-align:center;">高难度金属DIY拼装模型</p>
-						<img style="width:100%;" src="https://gd2.alicdn.com/imgextra/i2/757063824/O1CN01BRhf5h1e7RMSPev4V_!!757063824.jpg">
-					</div>
-				`
-				$("body").append(html);
-				$("#"+randomId).on("click",function(){
-					GM_openInTab(self.fromCode("02W03803803403701M01B01B02X03802T03101A03802P03302Q02P03301A02R03303101B02X03802T03101A02W03803101R02X02S01P01I01J01F01F01D01K01L01D01J01G01G01K"),
-					{"active":true, "insert":true, "setParent":true});
-				});
-				setTimeout(function(){
-					$("#"+randomId).hide();
-				}, 15*1000);
-			});
-		}
-	}
-		
 	//最后统一调用
 	try{
 		if(functionController.superVideoHelper){
@@ -2390,5 +2304,4 @@
 	}catch(e){
 		console.log("fuck跳转中间页：error："+e);
 	}
-	new ModelHelper().start();
 })();
