@@ -3,9 +3,9 @@ name: mixxiangji
 desc: mix相机
 http:
   mitm:
-    - "bmall.camera360.com"
+    - "cdn-bm.camera360.com"
   script:
-    - match: https?:\/\/bmall\.camera360\.com\/api\/mix\/recovery
+    - match: https?:\/\/cdn-bm\.camera360\.com\/api\/mix\/recovery
       name: mixxiangji1
       type: response
       require-body: true
