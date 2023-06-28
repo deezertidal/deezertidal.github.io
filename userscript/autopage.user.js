@@ -805,23 +805,12 @@
         return doc.body || doc.querySelector('body') || doc;
     }
 
-    function getElementByXpath(xpath, doc, contextNode, bySort) {
+    function getElementByXpath(xpath, doc, contextNode) {
         doc = doc || document;
         contextNode = contextNode || doc;
         try {
-            if (!bySort) {
-                let result = doc.evaluate(xpath, contextNode, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
-                return result.singleNodeValue && result.singleNodeValue.nodeType === 1 && result.singleNodeValue;
-            } else {
-                let xpathArr = xpath.split("|");
-                try {
-                    for (let i = 0; i < xpathArr.length; i++) {
-                        let result = doc.evaluate(xpathArr[i].trim(), contextNode, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
-                        if (result.singleNodeValue && result.singleNodeValue.nodeType === 1) return result.singleNodeValue;
-                    }
-                } catch(e) {}
-                return null;
-            }
+            let result = doc.evaluate(xpath, contextNode, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+            return result.singleNodeValue && result.singleNodeValue.nodeType === 1 && result.singleNodeValue;
         } catch (err) {
             debug(`Invalid xpath: ${xpath}`);
         }
@@ -872,14 +861,16 @@
                             let ele = doc.querySelector(selArr[i].trim());
                             if (ele) return ele;
                         }
-                    } catch(e) {}
+                    } catch(e) {
+                        return doc.querySelector(sel);
+                    }
                     return null;
                 }
             }
         } catch(e) {
             debug(e, 'Error selector');
         }
-        return getElementByXpath(sel, doc, contextNode, bySort);
+        return getElementByXpath(sel, doc, contextNode);
     }
 
     function geneSelector(ele, addID) {
