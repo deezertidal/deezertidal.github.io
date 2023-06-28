@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://yfamily.ml
 #!author=Mixed
-# 由yfamily.ml自动维护 202306272243
+# 由yfamily.ml自动维护 202306280217
 [URL Rewrite]
 ^https?://(www.)?(g|google)\.cn https://www.google.com 302
 ^https?://(ditu|maps)\.google\.cn https://maps.google.com 302
@@ -824,6 +824,8 @@ bilibili_json=type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/reso
 bilibili_json=type=http-response,pattern=^https://app.bilibili.com/x/v2/search/square,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
 BiliBili.ADBlock.response=type=http-response,pattern=^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.polymer\.app\.search\.v1\.Search\/SearchAll$,requires-body=1,script-path=https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/js/BiliBili.ADBlock.response.js
+
+BiliBili.ADBlock.response=type=http-response,pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Teenagers\/ModeStatus,requires-body=1,script-path=https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/js/BiliBili.ADBlock.response.js
 
 bilibili_proto=type=http-response,pattern=^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.view\.v1\.View\/View$,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto.js
 
