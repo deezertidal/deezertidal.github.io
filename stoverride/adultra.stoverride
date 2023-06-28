@@ -2263,19 +2263,19 @@ script-providers:
     url: https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
     interval: 86400
   APPqidongyequguanggaoultra89:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/xmly_json.js
+    url: https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js
     interval: 86400
   APPqidongyequguanggaoultra90:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/xmly_json.js
+    url: https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js
     interval: 86400
   APPqidongyequguanggaoultra91:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/xmly_json.js
+    url: https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js
     interval: 86400
   APPqidongyequguanggaoultra92:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/xmly_json.js
+    url: https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js
     interval: 86400
   APPqidongyequguanggaoultra93:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/xmly_json.js
+    url: https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js
     interval: 86400
   APPqidongyequguanggaoultra94:
     url: https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
