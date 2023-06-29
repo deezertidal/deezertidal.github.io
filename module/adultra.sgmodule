@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://yfamily.ml
 #!author=Mixed
-# 由yfamily.ml自动维护 202306290214
+# 由yfamily.ml自动维护 202306290219
 [URL Rewrite]
 ^https?://(www.)?(g|google)\.cn https://www.google.com 302
 ^https?://(ditu|maps)\.google\.cn https://maps.google.com 302
@@ -772,25 +772,25 @@ UnblockURLinWeChat=type=http-response,pattern=^https\:\/\/(weixin110\.qq|securit
 
 zhihu_openads=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/commercial_api.*launch_v2,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/zhihu_openads.js
 
-amdc=type=http-response,pattern=^http:\/\/amdc\.m\.taobao\.com,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amdc.js
+amdc2=type=http-response,pattern=^http:\/\/amdc\.m\.taobao\.com,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amdc.js
 
 amap=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/message\/notice\/list,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 
-amap=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
+amap2=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 
-amap=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/nearbyrec_smart,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
+amap3=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/nearbyrec_smart,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 
-amap=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/promotion-web\/resource,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
+amap4=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/promotion-web\/resource,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 
-amap=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/main-page,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
+amap5=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/main-page,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 
-amap=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/valueadded\/alimama\/splash_screen,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
+amap6=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/valueadded\/alimama\/splash_screen,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 
-amap=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/msgbox\/pull,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
+amap7=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/msgbox\/pull,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 
-amap=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaas,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
+amap8=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaas,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 
-amap=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
+amap9=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 
 zhangshanggongjiao=type=http-response,pattern=^https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/zhangshanggongjiao.js
 
@@ -798,235 +798,235 @@ xcx=type=http-response,pattern=^(https?://)?([a-zA-Z0-9]+(-[a-zA-Z0-9]+)*\.)+[a-
 
 bilibili_json=type=http-response,pattern=^https?:\/\/api\.bili(api|bili)\.(net|com)\/pgc\/season\/app\/related\/recommend\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
-bilibili_json=type=http-response,pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v\d\/ecommerce-user\/get_shopping_info\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
+bilibili_json2=type=http-response,pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v\d\/ecommerce-user\/get_shopping_info\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
-bilibili_json=type=http-response,pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
+bilibili_json3=type=http-response,pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
-bilibili_json=type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
+bilibili_json4=type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
-bilibili_json=type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
+bilibili_json5=type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
-bilibili_json=type=http-response,pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-interface\/v2\/index\/feed,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
+bilibili_json6=type=http-response,pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-interface\/v2\/index\/feed,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
-bilibili_json=type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
+bilibili_json7=type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
-bilibili_json=type=http-response,pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/bangumi,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
+bilibili_json8=type=http-response,pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/bangumi,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
-bilibili_json=type=http-response,pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
+bilibili_json9=type=http-response,pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
-bilibili_json=type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
+bilibili_json10=type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
-bilibili_json=type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
+bilibili_json11=type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
-bilibili_json=type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
+bilibili_json12=type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
-bilibili_json=type=http-response,pattern=^https://app.bilibili.com/x/v2/search/square,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
+bilibili_json13=type=http-response,pattern=^https://app.bilibili.com/x/v2/search/square,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
 
 BiliBili.ADBlock.response=type=http-response,pattern=^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.polymer\.app\.search\.v1\.Search\/SearchAll$,requires-body=1,script-path=https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/js/BiliBili.ADBlock.response.js
 
-BiliBili.ADBlock.response=type=http-response,pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Teenagers\/ModeStatus,requires-body=1,script-path=https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/js/BiliBili.ADBlock.response.js
+BiliBili.ADBlock.response2=type=http-response,pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Teenagers\/ModeStatus,requires-body=1,script-path=https://raw.githubusercontent.com/BiliUniverse/ADBlock/main/js/BiliBili.ADBlock.response.js
 
 bilibili_proto=type=http-response,pattern=^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.view\.v1\.View\/View$,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto.js
 
-bilibili_proto=type=http-response,pattern=^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.dynamic\.v2\.Dynamic\/DynAll$,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto.js
+bilibili_proto2=type=http-response,pattern=^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.dynamic\.v2\.Dynamic\/DynAll$,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto.js
 
-amdc=type=http-response,pattern=^http:\/\/amdc\.m\.taobao\.com,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amdc.js
+amdc3=type=http-response,pattern=^http:\/\/amdc\.m\.taobao\.com,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amdc.js
 
 cainiao_json=type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.protocol\.homepage\.get\.cn,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js
 
-cainiao_json=type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js
+cainiao_json2=type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js
 
-cainiao_json=type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.index\.cn,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js
+cainiao_json3=type=http-response,pattern=^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.index\.cn,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js
 
-cainiao_json=type=http-response,pattern=^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js
+cainiao_json4=type=http-response,pattern=^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js
 
 bing=type=http-response,pattern=^https?:\/\/sapphire\.api\.microsoftapp\.net\/config\/api\/v1\/get,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/bing.js
 
 keepStyle=type=http-response,pattern=^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my$,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
 
-keepStyle=type=http-response,pattern=^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
+keepStyle2=type=http-response,pattern=^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
 
-keepStyle=type=http-response,pattern=https://api.gotokeep.com/homepage/v\d/tab,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
+keepStyle3=type=http-response,pattern=https://api.gotokeep.com/homepage/v\d/tab,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
 
-keepStyle=type=http-response,pattern=https://api.gotokeep.com/nuocha/course/v2/\w+/preview,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
+keepStyle4=type=http-response,pattern=https://api.gotokeep.com/nuocha/course/v2/\w+/preview,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
 
-keepStyle=type=http-response,pattern=https://api.gotokeep.com/sportpage/sport/v3/mysport,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
+keepStyle5=type=http-response,pattern=https://api.gotokeep.com/sportpage/sport/v3/mysport,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
 
 suishouji=type=http-response,pattern=https://userapi.feidee.net/v1/profile/basic_info,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/MoYu/master/suishouji.js
 
-suishouji=type=http-response,pattern=https://yun.feidee.net/cab-vip-ws/terminal/v1/vip-users/show-info,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/MoYu/master/suishouji.js
+suishouji2=type=http-response,pattern=https://yun.feidee.net/cab-vip-ws/terminal/v1/vip-users/show-info,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/MoYu/master/suishouji.js
 
 weibo_json=type=http-response,pattern=^https?:\/\/boot.*weibo\.com\/v\d\/ad\/preload,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/api\.weibo\.cn\/\d\/\w{5}\/(statuses_unread_hot_timeline|timeline),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json2=type=http-response,pattern=^https?:\/\/api\.weibo\.cn\/\d\/\w{5}\/(statuses_unread_hot_timeline|timeline),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/api\.weibo\.cn\/\d\/video\/tiny_stream_mid_detail,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json3=type=http-response,pattern=^https?:\/\/api\.weibo\.cn\/\d\/video\/tiny_stream_mid_detail,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/\w{5}\/cardlist,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json4=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/\w{5}\/cardlist,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https://api.weibo.cn/2/!/client/light_skin,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json5=type=http-response,pattern=^https://api.weibo.cn/2/!/client/light_skin,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https://new.vip.weibo.cn/littleskin/preview,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json6=type=http-response,pattern=^https://new.vip.weibo.cn/littleskin/preview,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/(searchall|page\?|messageflow),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json7=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/(searchall|page\?|messageflow),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses/(unread_)?friends(/|_)timeline,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json8=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses/(unread_)?friends(/|_)timeline,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/groups/timeline,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json9=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/groups/timeline,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses/(container_timeline|unread_hot_timeline|extend|video_mixtimeline|unread_topic_timeline),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json10=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses/(container_timeline|unread_hot_timeline|extend|video_mixtimeline|unread_topic_timeline),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/profile/(me|container_timeline),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json11=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/profile/(me|container_timeline),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/video/(community_tab|remind_info|tiny_stream_video_list),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json12=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/video/(community_tab|remind_info|tiny_stream_video_list),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/search/(finder|container_timeline|container_discover),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json13=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/search/(finder|container_timeline|container_discover),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/(checkin/show|\!/live/media_homelist|comments/build_comments|container/get_item),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json14=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/(checkin/show|\!/live/media_homelist|comments/build_comments|container/get_item),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/cardlist,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json15=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/cardlist,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*get_coopen_ads,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json16=type=http-response,pattern=^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*get_coopen_ads,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json17=type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=trends,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json18=type=http-response,pattern=^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=trends,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=user_center,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json19=type=http-response,pattern=^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=user_center,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
-weibo_json=type=http-response,pattern=^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=search_topic,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+weibo_json20=type=http-response,pattern=^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=search_topic,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 
 redbook_json=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/widgets,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
 
-redbook_json=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/redtube\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
+redbook_json2=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/redtube\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
 
-redbook_json=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/videofeed\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
+redbook_json3=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/videofeed\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
 
-redbook_json=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/feed\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
+redbook_json4=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/feed\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
 
-redbook_json=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
+redbook_json5=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
 
-redbook_json=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/homefeed\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
+redbook_json6=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/homefeed\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
 
-redbook_json=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
+redbook_json7=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\?,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
 
-redbook_json=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/hot_list,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
+redbook_json8=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/hot_list,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
 
-redbook_json=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/hint,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
+redbook_json9=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/hint,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
 
-redbook_json=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/homefeed\/categories,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
+redbook_json10=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/homefeed\/categories,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
 
-redbook_json=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/trending,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
+redbook_json11=type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/trending,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
 
 ximalaya_json=type=http-response,pattern=^https?:\/\/.*\.xima.*\.com\/discovery-category\/customCategories,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js
 
-ximalaya_json=type=http-response,pattern=^https?:\/\/.*\.xima.*\.com\/focus-mobile\/focusPic,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js
+ximalaya_json2=type=http-response,pattern=^https?:\/\/.*\.xima.*\.com\/focus-mobile\/focusPic,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js
 
-ximalaya_json=type=http-response,pattern=^https?:\/\/.*\.xima.*\.com\/discovery-feed\/v\d\/mix,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js
+ximalaya_json3=type=http-response,pattern=^https?:\/\/.*\.xima.*\.com\/discovery-feed\/v\d\/mix,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js
 
-ximalaya_json=type=http-response,pattern=^https?:\/\/.*\.xima.*\.com\/discovery-category\/v\d/category,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js
+ximalaya_json4=type=http-response,pattern=^https?:\/\/.*\.xima.*\.com\/discovery-category\/v\d/category,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js
 
-ximalaya_json=type=http-response,pattern=^https?:\/\/.*\.xima.*\.com\/mobile-user\/v\d\/homePage,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js
+ximalaya_json5=type=http-response,pattern=^https?:\/\/.*\.xima.*\.com\/mobile-user\/v\d\/homePage,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js
 
 youku.adblock=type=http-response,pattern=^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.relationrecommend\.wirelessrecommend\.recommend,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
 
-youku.adblock=type=http-response,pattern=^https?:\/\/iyes\.youku\.com\/uts\/v1\/start,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+youku.adblock2=type=http-response,pattern=^https?:\/\/iyes\.youku\.com\/uts\/v1\/start,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
 
-youku.adblock=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.haidai\.lantern\.appconfig\.get,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+youku.adblock3=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.haidai\.lantern\.appconfig\.get,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
 
-youku.adblock=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.home\.query,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+youku.adblock4=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.home\.query,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
 
-youku.adblock=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.uc\.query,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+youku.adblock5=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.uc\.query,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
 
-youku.adblock=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+youku.adblock6=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
 
-youku.adblock=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.soku\.yksearch,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+youku.adblock7=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.soku\.yksearch,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
 
-youku.adblock=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.gateway\.new\.execute,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+youku.adblock8=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.gateway\.new\.execute,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
 
-youku.adblock=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.huluwa\.dispatcher\.youthmode\.config,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+youku.adblock9=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.huluwa\.dispatcher\.youthmode\.config,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
 
-youku.adblock=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.ycp\.query,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+youku.adblock10=type=http-response,pattern=^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.ycp\.query,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
 
 rrtv_json=type=http-response,pattern=^https:\/\/api.juxingclub.com\/ad\/getAll,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
 
-rrtv_json=type=http-response,pattern=^https?:\/\/api.juxingclub.com\/v3plus\/index\/channel\?pageNum=1&position=CHANNEL_MY,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
+rrtv_json2=type=http-response,pattern=^https?:\/\/api.juxingclub.com\/v3plus\/index\/channel\?pageNum=1&position=CHANNEL_MY,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
 
-rrtv_json=type=http-response,pattern=https://api.juxingclub.com/v3plus/index/channel\?pageNum=1&position=CHANNEL_INDEX,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
+rrtv_json3=type=http-response,pattern=https://api.juxingclub.com/v3plus/index/channel\?pageNum=1&position=CHANNEL_INDEX,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
 
-rrtv_json=type=http-response,pattern=^https?:\/\/api.juxingclub.com\/app\/config\/h5NativeBar,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
+rrtv_json4=type=http-response,pattern=^https?:\/\/api.juxingclub.com\/app\/config\/h5NativeBar,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
 
-coolapk=type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/dataList,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
+coolapk2=type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/dataList,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
 
-coolapk=type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/main\/indexV8,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
+coolapk3=type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/main\/indexV8,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
 
-coolapk=type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/feed\/replyList,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
+coolapk4=type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/feed\/replyList,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
 
-coolapk=type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/feed\/detail,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
+coolapk5=type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/feed\/detail,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
 
 pixivAds=type=http-response,pattern=^https?:\/\/oauth\.secure\.pixiv\.net\/(auth\/token),requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/pixivAds.js
 
 zheye.min=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/people\/,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/feed-root\/block,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min2=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/feed-root\/block,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min3=type=http-response,pattern=^https?:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/appcloud2\.zhihu\.com\/v\d+\/config,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min4=type=http-response,pattern=^https?:\/\/appcloud2\.zhihu\.com\/v\d+\/config,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/user-credit\/basis,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min5=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/user-credit\/basis,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/moments_v3\?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min6=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/moments_v3\?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https:\/\/api\.zhihu\.com\/topstory\/recommend,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min7=type=http-response,pattern=^https:\/\/api\.zhihu\.com\/topstory\/recommend,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/settings\/blocked_users,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min8=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/settings\/blocked_users,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/(v4\/)?questions\/\d+,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min9=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/(v4\/)?questions\/\d+,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/next-data,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min10=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/next-data,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/www\.zhihu\.com\/api\/v4\/comment_v5\/answers\/\d+\/abstract_comment\?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min11=type=http-response,pattern=^https?:\/\/www\.zhihu\.com\/api\/v4\/comment_v5\/answers\/\d+\/abstract_comment\?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min12=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/notifications\/v3\/(message|timeline\/entry\/system_message),requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min13=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/notifications\/v3\/(message|timeline\/entry\/system_message),requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/www\.zhihu\.com\/appview\/v2\/answer\/.*(entry=(?!(preload-topstory|preload-search|preload-subscription)))?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min14=type=http-response,pattern=^https?:\/\/www\.zhihu\.com\/appview\/v2\/answer\/.*(entry=(?!(preload-topstory|preload-search|preload-subscription)))?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/next\?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min15=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/next\?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/www\.zhihu\.com\/api\/v\d\/articles\/\d+\/recommendation\?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min16=type=http-response,pattern=^https?:\/\/www\.zhihu\.com\/api\/v\d\/articles\/\d+\/recommendation\?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/topstory\/hot-lists?(\?|\/),requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min17=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/topstory\/hot-lists?(\?|\/),requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/search\/preset_words\?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+zheye.min18=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/search\/preset_words\?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-12306=type=http-response,pattern=^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/12306.js
+123062=type=http-response,pattern=^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/12306.js
 
 changyuan=type=http-response,pattern=^https:\/\/www\.washpayer\.com\/(common\/getReceipt|user\/message\/equipmentPara)\?,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/changyuan.js
 
 myBlockAds=type=http-response,pattern=^https:\/\/(jdforrepam|api\.huikaiju)\.com\/api\/v1\/startup\?,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
 
-myBlockAds=type=http-response,pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
+myBlockAds2=type=http-response,pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
 
-coolapk=type=http-response,pattern=^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\?,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
+coolapk6=type=http-response,pattern=^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\?,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
 
-coolapk=type=http-response,pattern=^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8)\?,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
+coolapk7=type=http-response,pattern=^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8)\?,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
 
-coolapk=type=http-response,pattern=^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\?,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
+coolapk8=type=http-response,pattern=^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\?,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
 
 tiebaJson=type=http-response,pattern=^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(excellent\/personalized|frs\/(generalTabList|page|threadlist)|pb\/(pic)?page)$,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js
 
 tiebaProto=type=http-response,pattern=^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(excellent\/personalized|frs\/(generalTabList|page|threadlist)|pb\/(pic)?page)\?cmd,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaProto.js
 
-tiebaJson=type=http-response,pattern=^http:\/\/c\.tieba\.baidu\.com\/c\/s\/sync$,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js
+tiebaJson2=type=http-response,pattern=^http:\/\/c\.tieba\.baidu\.com\/c\/s\/sync$,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js
 
-tiebaJson=type=http-response,pattern=^https:\/\/tiebac\.baidu\.com\/tiebaads\/commonbatch\?,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js
+tiebaJson3=type=http-response,pattern=^https:\/\/tiebac\.baidu\.com\/tiebaads\/commonbatch\?,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js
 
 wechat110=type=http-response,pattern=^https\:\/\/(weixin110\.qq|security\.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/wechat/wechat110.js
 
-myBlockAds=type=http-response,pattern=^https:\/\/api\.m\.mi\.com\/v1\/app\/start$,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
+myBlockAds3=type=http-response,pattern=^https:\/\/api\.m\.mi\.com\/v1\/app\/start$,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
 
 
 [MITM]
