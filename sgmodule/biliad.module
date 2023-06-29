@@ -124,7 +124,7 @@ biliad13=type=http-response,pattern=^https://app\.bilibili\.com/bilibili\.app\.d
 
 # CC字幕转中文简=type=http-response,pattern=^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$,requires-body=1,script-path=https://github.com/deezertidal/private/raw/master/js-backup/Rewrite/Function/Bilibili_CC.conf
 
-[MAP Local]
+[Map Local]
 ^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https://app.bilibili.com/x/v2/splash/show data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https://app.bilibili.com/x/v2/search/defaultwords data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"

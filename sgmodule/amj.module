@@ -27,6 +27,6 @@ hostname = %APPEND% api.bjxkhc.com
 
 ^https?://api.bjxkhc.com/index.php/app/ios/ver/index_ios$ - reject
 
-[MAP Local]
+[Map Local]
 ^https?://api.bjxkhc.com/index.php/app/ios/ads/index data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https?://api.bjxkhc.com/index.php/app/ios/pay/ok$ data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"

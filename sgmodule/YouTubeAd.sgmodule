@@ -18,7 +18,7 @@ youtube.request.beta=type=http-request,pattern=^https:\/\/youtubei\.googleapis\.
 
 [MITM]
 hostname = %APPEND% -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com
-[MAP Local]
+[Map Local]
 ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"

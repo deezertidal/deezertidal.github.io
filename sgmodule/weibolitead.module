@@ -43,5 +43,5 @@
 
 hostname = %APPEND% *api.weibo*,sdkapp.uve.weibo.com
 
-[MAP Local]
+[Map Local]
 ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/page\/get_search_suggest data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
