@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://yfamily.ml
 #!author=Mixed
-# 由yfamily.ml自动维护 202306291043
+# 由yfamily.ml自动维护 202306291302
 [URL Rewrite]
 ^https?://(www.)?(g|google)\.cn https://www.google.com 302
 ^https?://(ditu|maps)\.google\.cn https://maps.google.com 302
@@ -594,7 +594,7 @@ https://moneymarket.ssjlicai.com/finance-common-operation-ws/api/actShelve/v1/ac
 ^https:\/\/www1.elecfans.com\/www\/delivery _ reject
 ^http:\/\/image1\.ccb\.com\/newsinfo\/eBranch\/check\/nf\/newfin\/activity\/xjr_\w+\.png$ _ reject
 ^http:\/\/imageadv\.ccb\.com\/adpic\/(nctm\/ad|sszserver\/upload\/activity)\/\d{8}\/\w+\.(gif|png|jpg)$ _ reject
-^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=queryMaterialAdverts _ reject
+^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start _ reject
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ _ reject
 ^https:\/\/res\.kfc\.com\.cn\/advertisement _ reject
 ^https:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash _ reject
@@ -875,8 +875,6 @@ changyuan=type=http-response,pattern=^https:\/\/www\.washpayer\.com\/(common\/ge
 
 myBlockAds=type=http-response,pattern=^https:\/\/(jdforrepam|api\.huikaiju)\.com\/api\/v1\/startup\?,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
 
-myBlockAds2=type=http-response,pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
-
 coolapk6=type=http-response,pattern=^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\?,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
 
 coolapk7=type=http-response,pattern=^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8)\?,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
@@ -893,7 +891,7 @@ tiebaJson3=type=http-response,pattern=^https:\/\/tiebac\.baidu\.com\/tiebaads\/c
 
 wechat110=type=http-response,pattern=^https\:\/\/(weixin110\.qq|security\.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/wechat/wechat110.js
 
-myBlockAds3=type=http-response,pattern=^https:\/\/api\.m\.mi\.com\/v1\/app\/start$,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
+myBlockAds2=type=http-response,pattern=^https:\/\/api\.m\.mi\.com\/v1\/app\/start$,requires-body=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
 
 
 [MITM]
@@ -1026,7 +1024,7 @@ https://api.juxingclub.com/storage/business/rootName/app/homePage\?dataType=JSON
 ^https:\/\/flowplus\.meituan\.net\/v1\/mss_\w+\/linglong\/\d+\.jpg data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/img\.meituan\.net\/bizad\/bizad_brandCpt_\d+\.jpg data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(brandcpt-vedio|waimai-alita)\/\w+\.zip$ data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
-^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|relatedarticle)\? data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
+^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|masonryfeed|relatedarticle)\? data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/api\.m\.mi\.com\/v1\/app\/popup_info$ data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/api\.m\.mi\.com\/v1\/misearch\/search_input$ data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/api\.m\.mi\.com\/v2\/search\/search_default$ data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"

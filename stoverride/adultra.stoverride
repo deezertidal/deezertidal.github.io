@@ -1210,53 +1210,48 @@ http:
       type: response
       require-body: true
       timeout: 10
-    - match: ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start
+    - match: ^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\?
       name: APPqidongyequguanggaoultra134
       type: response
       require-body: true
       timeout: 10
-    - match: ^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\?
+    - match: ^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8)\?
       name: APPqidongyequguanggaoultra135
       type: response
       require-body: true
       timeout: 10
-    - match: ^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8)\?
+    - match: ^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\?
       name: APPqidongyequguanggaoultra136
       type: response
       require-body: true
       timeout: 10
-    - match: ^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\?
+    - match: ^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(excellent\/personalized|frs\/(generalTabList|page|threadlist)|pb\/(pic)?page)$
       name: APPqidongyequguanggaoultra137
       type: response
       require-body: true
       timeout: 10
-    - match: ^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(excellent\/personalized|frs\/(generalTabList|page|threadlist)|pb\/(pic)?page)$
+    - match: ^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(excellent\/personalized|frs\/(generalTabList|page|threadlist)|pb\/(pic)?page)\?cmd
       name: APPqidongyequguanggaoultra138
       type: response
       require-body: true
       timeout: 10
-    - match: ^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(excellent\/personalized|frs\/(generalTabList|page|threadlist)|pb\/(pic)?page)\?cmd
+    - match: ^http:\/\/c\.tieba\.baidu\.com\/c\/s\/sync$
       name: APPqidongyequguanggaoultra139
       type: response
       require-body: true
       timeout: 10
-    - match: ^http:\/\/c\.tieba\.baidu\.com\/c\/s\/sync$
+    - match: ^https:\/\/tiebac\.baidu\.com\/tiebaads\/commonbatch\?
       name: APPqidongyequguanggaoultra140
       type: response
       require-body: true
       timeout: 10
-    - match: ^https:\/\/tiebac\.baidu\.com\/tiebaads\/commonbatch\?
+    - match: ^https\:\/\/(weixin110\.qq|security\.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?
       name: APPqidongyequguanggaoultra141
       type: response
       require-body: true
       timeout: 10
-    - match: ^https\:\/\/(weixin110\.qq|security\.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?
-      name: APPqidongyequguanggaoultra142
-      type: response
-      require-body: true
-      timeout: 10
     - match: ^https:\/\/api\.m\.mi\.com\/v1\/app\/start$
-      name: APPqidongyequguanggaoultra143
+      name: APPqidongyequguanggaoultra142
       type: response
       require-body: true
       timeout: 10
@@ -1972,7 +1967,7 @@ http:
     - ^https:\/\/www1.elecfans.com\/www\/delivery - reject
     - ^http:\/\/image1\.ccb\.com\/newsinfo\/eBranch\/check\/nf\/newfin\/activity\/xjr_\w+\.png$ - reject
     - ^http:\/\/imageadv\.ccb\.com\/adpic\/(nctm\/ad|sszserver\/upload\/activity)\/\d{8}\/\w+\.(gif|png|jpg)$ - reject
-    - ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=queryMaterialAdverts - reject
+    - ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject
     - ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ - reject
     - ^https:\/\/res\.kfc\.com\.cn\/advertisement - reject
     - ^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch - reject-dict
@@ -1982,7 +1977,7 @@ http:
     - ^https:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(brandcpt-vedio|waimai-alita)\/\w+\.zip$ - reject-dict
     - ^https:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash - reject
     - https:\/\/ehome\.esgcc\.com\.cn\/mobile\/$ - reject
-    - ^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|relatedarticle)\? - reject-dict
+    - ^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|masonryfeed|relatedarticle)\? - reject-dict
     - ^https:\/\/gw\.alicdn\.com\/mt\/ - reject
     - ^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} - reject
     - ^https:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4} - reject
@@ -2398,7 +2393,7 @@ script-providers:
     url: https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
     interval: 86400
   APPqidongyequguanggaoultra134:
-    url: https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
+    url: https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
     interval: 86400
   APPqidongyequguanggaoultra135:
     url: https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
@@ -2407,23 +2402,20 @@ script-providers:
     url: https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
     interval: 86400
   APPqidongyequguanggaoultra137:
-    url: https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
-    interval: 86400
-  APPqidongyequguanggaoultra138:
     url: https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js
     interval: 86400
-  APPqidongyequguanggaoultra139:
+  APPqidongyequguanggaoultra138:
     url: https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaProto.js
+    interval: 86400
+  APPqidongyequguanggaoultra139:
+    url: https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js
     interval: 86400
   APPqidongyequguanggaoultra140:
     url: https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js
     interval: 86400
   APPqidongyequguanggaoultra141:
-    url: https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js
-    interval: 86400
-  APPqidongyequguanggaoultra142:
     url: https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/wechat/wechat110.js
     interval: 86400
-  APPqidongyequguanggaoultra143:
+  APPqidongyequguanggaoultra142:
     url: https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
     interval: 86400
