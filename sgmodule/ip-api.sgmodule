@@ -1,0 +1,6 @@
+#!name=IP信息
+#!desc=IP信息面板
+[Panel]
+IP信息=script-name=IP信息
+[Script]
+IP信息=type=generic,script-path=https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/ip-api.js
