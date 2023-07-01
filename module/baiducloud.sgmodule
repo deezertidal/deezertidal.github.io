@@ -3,7 +3,7 @@
 #!author=NobyDa
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/baiducloud.png
 
-[Mitm]
+[MITM]
 hostname =%APPEND% pan.baidu.com
 
 [Script]

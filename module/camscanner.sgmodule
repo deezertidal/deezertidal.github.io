@@ -3,7 +3,7 @@
 #!author=NobyDa
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/cs.png
 
-[Mitm]
+[MITM]
 hostname =%APPEND% ap*.intsig.net
 
 [Script]

@@ -3,7 +3,7 @@
 #!author=NobyDa
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/kuwo.png
 
-[Mitm]
+[MITM]
 hostname =%APPEND% vip1.kuwo.cn
 
 [Script]

@@ -4,4 +4,4 @@
 #!icon= https://raw.githubusercontent.com/deezertidal/private/main/icons/lifeindex.png
 #!openUrl=https://github.com/deezertidal/private
 [Script]
-江苏油价提醒 = type=cron,script-path=https://raw.githubusercontent.com/deezertidal/private/main/oil.js,cronexpr="9 9 9 * * ?",timeout=10,script-update-interval=0,enable=true
+江苏油价提醒 = type=cron,script-path=https://raw.githubusercontent.com/deezertidal/private/main/oil.js,cronexp="9 9 9 * * ?",wake-system=1,timeout=10,script-update-interval=0,enable=true

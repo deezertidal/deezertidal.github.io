@@ -2,7 +2,7 @@
 #!desc=哔哩哔哩, 港澳台番剧自动切换地区 & 显示豆瓣评分
 
 
-[Mitm]
+[MITM]
 hostname = %APPEND% ap?.bili*i.com, ap?.bili*i.net
 
 [Script]
