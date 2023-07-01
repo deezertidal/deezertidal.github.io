@@ -333,9 +333,6 @@ http:
     - "180.76.76.200"
     - "newclient.map.baidu.com"
     - "httpdns.baidubce.com"
-    - "acs.youku.com"
-    - "iyes.youku.com"
-    - "acs.m.taobao.com"
     - "api.juxingclub.com"
     - "api.coolapk.com"
     - "oauth.secure.pixiv.net"
@@ -817,188 +814,138 @@ http:
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.relationrecommend\.wirelessrecommend\.recommend
+    - match: ^https:\/\/api.juxingclub.com\/ad\/getAll
       name: APPqidongyequguanggao94
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/iyes\.youku\.com\/uts\/v1\/start
+    - match: ^https?:\/\/api.juxingclub.com\/v3plus\/index\/channel\?pageNum=1&position=CHANNEL_MY
       name: APPqidongyequguanggao95
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.haidai\.lantern\.appconfig\.get
+    - match: https://api.juxingclub.com/v3plus/index/channel\?pageNum=1&position=CHANNEL_INDEX
       name: APPqidongyequguanggao96
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.home\.query
+    - match: ^https?:\/\/api.juxingclub.com\/app\/config\/h5NativeBar
       name: APPqidongyequguanggao97
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.uc\.query
+    - match: ^https?:\/\/api.coolapk.com\/v6\/dataList
       name: APPqidongyequguanggao98
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get
+    - match: ^https?:\/\/api.coolapk.com\/v6\/main\/indexV8
       name: APPqidongyequguanggao99
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.soku\.yksearch
+    - match: ^https?:\/\/api.coolapk.com\/v6\/feed\/replyList
       name: APPqidongyequguanggao100
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.gateway\.new\.execute
+    - match: ^https?:\/\/api.coolapk.com\/v6\/feed\/detail
       name: APPqidongyequguanggao101
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.huluwa\.dispatcher\.youthmode\.config
+    - match: ^https?:\/\/oauth\.secure\.pixiv\.net\/(auth\/token)
       name: APPqidongyequguanggao102
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.ycp\.query
+    - match: ^https?:\/\/api\.zhihu\.com\/people\/
       name: APPqidongyequguanggao103
       type: response
       require-body: true
       timeout: 10
-    - match: ^https:\/\/api.juxingclub.com\/ad\/getAll
+    - match: ^https?:\/\/api\.zhihu\.com\/feed-root\/block
       name: APPqidongyequguanggao104
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/api.juxingclub.com\/v3plus\/index\/channel\?pageNum=1&position=CHANNEL_MY
+    - match: ^https?:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\?
       name: APPqidongyequguanggao105
       type: response
       require-body: true
       timeout: 10
-    - match: https://api.juxingclub.com/v3plus/index/channel\?pageNum=1&position=CHANNEL_INDEX
+    - match: ^https?:\/\/appcloud2\.zhihu\.com\/v\d+\/config
       name: APPqidongyequguanggao106
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/api.juxingclub.com\/app\/config\/h5NativeBar
+    - match: ^https?:\/\/api\.zhihu\.com\/user-credit\/basis
       name: APPqidongyequguanggao107
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/api.coolapk.com\/v6\/dataList
+    - match: ^https?:\/\/api\.zhihu\.com\/moments_v3\?
       name: APPqidongyequguanggao108
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/api.coolapk.com\/v6\/main\/indexV8
+    - match: ^https:\/\/api\.zhihu\.com\/topstory\/recommend
       name: APPqidongyequguanggao109
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/api.coolapk.com\/v6\/feed\/replyList
+    - match: ^https?:\/\/api\.zhihu\.com\/settings\/blocked_users
       name: APPqidongyequguanggao110
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/api.coolapk.com\/v6\/feed\/detail
+    - match: ^https?:\/\/api\.zhihu\.com\/(v4\/)?questions\/\d+
       name: APPqidongyequguanggao111
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/oauth\.secure\.pixiv\.net\/(auth\/token)
+    - match: ^https?:\/\/api\.zhihu\.com\/next-data
       name: APPqidongyequguanggao112
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/api\.zhihu\.com\/people\/
+    - match: ^https?:\/\/www\.zhihu\.com\/api\/v4\/comment_v5\/answers\/\d+\/abstract_comment\?
       name: APPqidongyequguanggao113
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/api\.zhihu\.com\/feed-root\/block
+    - match: ^https?:\/\/api\.zhihu\.com\/(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments?
       name: APPqidongyequguanggao114
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\?
+    - match: ^https?:\/\/api\.zhihu\.com\/notifications\/v3\/(message|timeline\/entry\/system_message)
       name: APPqidongyequguanggao115
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/appcloud2\.zhihu\.com\/v\d+\/config
+    - match: ^https?:\/\/www\.zhihu\.com\/appview\/v2\/answer\/.*(entry=(?!(preload-topstory|preload-search|preload-subscription)))?
       name: APPqidongyequguanggao116
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/api\.zhihu\.com\/user-credit\/basis
+    - match: ^https?:\/\/api\.zhihu\.com\/next\?
       name: APPqidongyequguanggao117
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/api\.zhihu\.com\/moments_v3\?
+    - match: ^https?:\/\/www\.zhihu\.com\/api\/v\d\/articles\/\d+\/recommendation\?
       name: APPqidongyequguanggao118
       type: response
       require-body: true
       timeout: 10
-    - match: ^https:\/\/api\.zhihu\.com\/topstory\/recommend
+    - match: ^https?:\/\/api\.zhihu\.com\/topstory\/hot-lists?(\?|\/)
       name: APPqidongyequguanggao119
       type: response
       require-body: true
       timeout: 10
-    - match: ^https?:\/\/api\.zhihu\.com\/settings\/blocked_users
-      name: APPqidongyequguanggao120
-      type: response
-      require-body: true
-      timeout: 10
-    - match: ^https?:\/\/api\.zhihu\.com\/(v4\/)?questions\/\d+
-      name: APPqidongyequguanggao121
-      type: response
-      require-body: true
-      timeout: 10
-    - match: ^https?:\/\/api\.zhihu\.com\/next-data
-      name: APPqidongyequguanggao122
-      type: response
-      require-body: true
-      timeout: 10
-    - match: ^https?:\/\/www\.zhihu\.com\/api\/v4\/comment_v5\/answers\/\d+\/abstract_comment\?
-      name: APPqidongyequguanggao123
-      type: response
-      require-body: true
-      timeout: 10
-    - match: ^https?:\/\/api\.zhihu\.com\/(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments?
-      name: APPqidongyequguanggao124
-      type: response
-      require-body: true
-      timeout: 10
-    - match: ^https?:\/\/api\.zhihu\.com\/notifications\/v3\/(message|timeline\/entry\/system_message)
-      name: APPqidongyequguanggao125
-      type: response
-      require-body: true
-      timeout: 10
-    - match: ^https?:\/\/www\.zhihu\.com\/appview\/v2\/answer\/.*(entry=(?!(preload-topstory|preload-search|preload-subscription)))?
-      name: APPqidongyequguanggao126
-      type: response
-      require-body: true
-      timeout: 10
-    - match: ^https?:\/\/api\.zhihu\.com\/next\?
-      name: APPqidongyequguanggao127
-      type: response
-      require-body: true
-      timeout: 10
-    - match: ^https?:\/\/www\.zhihu\.com\/api\/v\d\/articles\/\d+\/recommendation\?
-      name: APPqidongyequguanggao128
-      type: response
-      require-body: true
-      timeout: 10
-    - match: ^https?:\/\/api\.zhihu\.com\/topstory\/hot-lists?(\?|\/)
-      name: APPqidongyequguanggao129
-      type: response
-      require-body: true
-      timeout: 10
     - match: ^https?:\/\/api\.zhihu\.com\/search\/preset_words\?
-      name: APPqidongyequguanggao130
+      name: APPqidongyequguanggao120
       type: response
       require-body: true
       timeout: 10
@@ -1357,8 +1304,6 @@ http:
     - ^https?:\/\/httpdns\.baidubce\.com - reject-200
     - ^https?:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing - reject-200
     - ^https?:\/\/newclient\.map\.baidu\.com\/client\/usersystem\/home\/dynamic - reject-200
-    - ^https?:\/\/iyes\.youku\.com\/uts\/v1\/video - reject-200
-    - ^https?:\/\/amdc\.m\.youku\.com - reject-200
     - https://api.juxingclub.com/storage/business/rootName/app/homePage\?dataType=JSON - reject-dict
     - ^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch - reject-dict
     - ^https?:\/\/118\.89\.204\.198 - reject-dict
@@ -1662,61 +1607,61 @@ script-providers:
     url: https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js
     interval: 86400
   APPqidongyequguanggao94:
-    url: https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+    url: https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
     interval: 86400
   APPqidongyequguanggao95:
-    url: https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+    url: https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
     interval: 86400
   APPqidongyequguanggao96:
-    url: https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+    url: https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
     interval: 86400
   APPqidongyequguanggao97:
-    url: https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+    url: https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
     interval: 86400
   APPqidongyequguanggao98:
-    url: https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+    url: https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
     interval: 86400
   APPqidongyequguanggao99:
-    url: https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+    url: https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
     interval: 86400
   APPqidongyequguanggao100:
-    url: https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+    url: https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
     interval: 86400
   APPqidongyequguanggao101:
-    url: https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+    url: https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
     interval: 86400
   APPqidongyequguanggao102:
-    url: https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+    url: https://github.com/ddgksf2013/Scripts/raw/master/pixivAds.js
     interval: 86400
   APPqidongyequguanggao103:
-    url: https://gist.githubusercontent.com/ddgksf2013/5b431857f8b88acbc7ac2453a21e676a/raw/youku.adblock.js
+    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
   APPqidongyequguanggao104:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
+    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
   APPqidongyequguanggao105:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
+    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
   APPqidongyequguanggao106:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
+    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
   APPqidongyequguanggao107:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
+    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
   APPqidongyequguanggao108:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
+    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
   APPqidongyequguanggao109:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
+    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
   APPqidongyequguanggao110:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
+    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
   APPqidongyequguanggao111:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
+    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
   APPqidongyequguanggao112:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/pixivAds.js
+    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
   APPqidongyequguanggao113:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
@@ -1740,35 +1685,5 @@ script-providers:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
   APPqidongyequguanggao120:
-    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
-    interval: 86400
-  APPqidongyequguanggao121:
-    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
-    interval: 86400
-  APPqidongyequguanggao122:
-    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
-    interval: 86400
-  APPqidongyequguanggao123:
-    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
-    interval: 86400
-  APPqidongyequguanggao124:
-    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
-    interval: 86400
-  APPqidongyequguanggao125:
-    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
-    interval: 86400
-  APPqidongyequguanggao126:
-    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
-    interval: 86400
-  APPqidongyequguanggao127:
-    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
-    interval: 86400
-  APPqidongyequguanggao128:
-    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
-    interval: 86400
-  APPqidongyequguanggao129:
-    url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
-    interval: 86400
-  APPqidongyequguanggao130:
     url: https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
     interval: 86400
