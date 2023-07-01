@@ -3,4 +3,4 @@
 [Panel]
 生活指数=script-name=生活指数
 [Script]
-生活指数=type=generic,script-path=https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/lifeindex.js
+生活指数=type=generic,script-path=https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/lifeindex.js,argument=icon=umbrella.fill&icon-color=#a30b0b
