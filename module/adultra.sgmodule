@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://yfamily.ml
 #!author=Mixed
-# 由yfamily.ml自动维护 202307011043
+# 由yfamily.ml自动维护 202307011258
 [URL Rewrite]
 ^https?://(www.)?(g|google)\.cn https://www.google.com 302
 ^https?://(ditu|maps)\.google\.cn https://maps.google.com 302
@@ -287,7 +287,6 @@
 ^https?://syh\.zybang\.com/com/adx/ _ reject
 ^https?://api\.izuiyou\.com/ad/ _ reject
 ^https?://tiku\.zhan\.com/Common/newAd/ _ reject
-^https?:\/\/2023.06.28\/v2.0.324 _ reject
 ^https?:\/\/ftapi\.10jqka\.com\.cn\/futgwapi\/api\/om\/v\d\/ad\/common\/transfer _ reject
 ^https?:\/\/app\.58\.com\/api\/home\/(advertising|appadv) _ reject
 ^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}:\d+\/api\/v\d\/advert _ reject
@@ -895,6 +894,7 @@ hostname = %APPEND% *.google.cn,www.firefox.com.cn,api.abema.io,app.biliintl.com
 ^https?://.+?\.ott\.cibntv\.net/[\w/-]+.mp4\?sid= data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?://gw\.kaola\.com/gw/dgmobile/newOpenAd data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?://api\.m\.jd.com/client\.action\?functionId=start data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-img.gif"
+^https?:\/\/2023.07.01\/v2.0.325 data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v\d\/anime_get_question\.php data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https?:\/\/cdn-evone-ceph\.echargenet\.com\/gw-emas-cdn\/63c4e3b558bb610008969f89 data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?:\/\/i\d\.hoopchina\.com\.cn/blogfile\//d+\//d+\/BbsImg\.(?<=(big.(png|jpg)))$ data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-img.gif"
