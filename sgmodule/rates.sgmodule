@@ -3,4 +3,4 @@
 [Panel]
 当前汇率=script-name=当前汇率
 [Script]
-当前汇率=type=generic,script-path=https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/rates.js,argument=icon=bitcoinsign.circle&icon-color=#D4AF37
+当前汇率=type=generic,script-path=https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/rates.js,argument=icon=yensign.circle&icon-color=#D4AF37
