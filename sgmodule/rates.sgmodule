@@ -1,4 +1,4 @@
-#!name=当前汇率
+﻿#!name=当前汇率
 #!desc=汇率面板
 [Panel]
 当前汇率=script-name=当前汇率

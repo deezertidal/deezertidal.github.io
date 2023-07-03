@@ -1,4 +1,4 @@
-#!name=生活指数
+﻿#!name=生活指数
 #!desc=生活指数面板
 [Panel]
 生活指数=script-name=生活指数

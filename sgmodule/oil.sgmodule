@@ -1,4 +1,4 @@
-#!name=油价
+﻿#!name=油价
 #!desc=油价面板
 [Panel]
 油价=script-name=油价
