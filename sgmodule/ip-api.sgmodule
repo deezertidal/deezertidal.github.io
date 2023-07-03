@@ -3,4 +3,4 @@
 [Panel]
 IP信息=script-name=IP信息
 [Script]
-IP信息=type=generic,script-path=https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/ip-api.js
+IP信息=type=generic,script-path=https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/ip-api.js,argument=icon=mappin.and.ellipse&icon-color=#f50505
