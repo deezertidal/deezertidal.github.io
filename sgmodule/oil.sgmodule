@@ -3,4 +3,4 @@
 [Panel]
 油价=script-name=油价
 [Script]
-油价=type=generic,script-path=https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/oil.js,argument=icon=car&color=#a66505
+油价=type=generic,script-path=https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/oil.js,argument=icon=car&color=#c932a9
