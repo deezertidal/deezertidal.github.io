@@ -263,6 +263,7 @@ http:
     - "goblin.hupu.com"
     - "spclient.wg.spotify.com"
     - "*.amap.com"
+    - "ucmp.sf-express.com"
     - "www.bbkj.work"
     - "wx.wxqqurl.cn"
     - "wp3.lobdol.cn"
@@ -1223,6 +1224,7 @@ http:
     - ^https?:\/\/.*\.amap\.com\/ws\/shield\/scene\/recommend - reject-dict
     - ^https?:\/\/.*\.amap\.com\/uploadimg\/\w+\.gif - reject-img
     - ^https?:\/\/.*\.amap\.com\/ws\/valueadded\/weather - reject-dict
+    - ^https?:\/\/ucmp\.sf-express\.com\/proxy\/operation-platform\/info-flow-adver\/query - reject-200
     - ^https?:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive - reject-dict
     - ^https?:\/\/api\.bilibili\.com\/x\/vip\/ads\/material\/report - reject-dict
     - ^https://api.bilibili.com/pgc/season/player/cards - reject-dict
@@ -1415,7 +1417,7 @@ script-providers:
     url: https://github.com/ddgksf2013/Scripts/raw/master/zhangshanggongjiao.js
     interval: 86400
   APPqidongyequguanggao28:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/xcx.js
+    url: https://github.com/ddgksf2013/Scripts/raw/master/applet.js
     interval: 86400
   APPqidongyequguanggao29:
     url: https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
