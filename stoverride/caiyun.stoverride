@@ -14,7 +14,7 @@ http:
       require-body: true
       timeout: 10
   rewrite:
-    - ^https:\/\/ad\.caiyunapp\.com\/ - - reject
+    - ^https:\/\/ad\.caiyunapp\.com\/ - reject
 script-providers:
   caiyuntianqipro1:
     url: https://raw.githubusercontent.com/WeiRen0/Scripts/main/cytq.js
