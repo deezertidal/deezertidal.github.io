@@ -1,0 +1,1 @@
+cron "17 7-19/4 * * *" script-path=https://yfamily.ml/plugin/tianqi.js, timeout=10, tag=今日天气, argument=
