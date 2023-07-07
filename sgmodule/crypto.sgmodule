@@ -1,0 +1,6 @@
+﻿#!name=汇率-加密货币
+#!desc=加密货币面板
+[Panel]
+crypto=script-name=crypto
+[Script]
+crypto=type=generic,script-path=https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/crypto.js
