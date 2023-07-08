@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://yfamily.ml
 #!author=Mixed
-# 由yfamily.ml自动维护 202307081258
+# 由yfamily.ml自动维护 202307081443
 [URL Rewrite]
 https?:\/\/t7z\.cupid\.iqiyi\.com\/show _ reject
 https?:\/\/static\.iqiyi\.com\/js\/common\/.+\.js _ reject
@@ -880,6 +880,7 @@ http:\/\/analytics\.163\.com\/ntes _ reject
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start _ reject
 ^https:\/\/api\.jr\.mi\.com\/v\d\/adv _ reject
 ^https:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen _ reject
+^https:\/\/api\.hengdianfilm\.com\/\/cinema\/queryAvailableBannerInfo\/1 https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/hengdian.json 302
 ^https:\/\/api\.gameplus\.qq\.com\/community\.OnloadSrv\/GetPreloadScreenInfo _ reject
 ^https:\/\/api\.douban\.com\b.*\/common_ads\? _ reject
 ^https:\/\/api\.douban\.com\/v2\/app_ads\/splash _ reject
@@ -1912,6 +1913,7 @@ https://api.feidee.net/v1/configs/client/configs data="https://raw.githubusercon
 ^https:\/\/wallet\.lakala\.com\/m\/a\/message\/v3\/fetchMsgList data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/wallet\.lakala\.com\/m\/a\/lama\/mgt\/activity\/biz\/query\/byMerInfo data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/update\.pan\.baidu\.com\/statistics\? data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
+^https:\/\/ump\.sz\.creditcard\.ecitic\.com\/citiccard\/cm-ump\/ump-gateway\/ump-net-app\/ump-net-app\/adv data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/tbgapplet\.carlsberg\.asia\/tuborg\/banner\/(loading|index) data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/szdmobile\.suzhou\.gov\.cn\/thirdapp-center\/appUpdate\/update data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/static.xyzq.cn\/image\/splash\/opera3.*.jpg data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
@@ -2022,6 +2024,8 @@ https://api.feidee.net/v1/configs/client/configs data="https://raw.githubusercon
 ^https:\/\/api\.m\.mi\.com\/v1\/home\/page_feed(_v5)?$ data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/api\.m\.mi\.com\/v1\/app\/popup_info$ data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v1\/ecommerce-user\/get_shopping_info\? data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
+^https:\/\/api\.hengdianfilm\.com\/\/cinema\/queryAvailableBannerInfo\/4\?cid= data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
+^https:\/\/api\.hengdianfilm\.com\/\/cinema\/queryAvailableBannerInfo\/2\?cid= data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/api\.gameplus\.qq\.com\/community\.OnloadSrv\/GetPreloadScreenInfo data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https:\/\/api\.futunn\.com\/v2\/config\/promote-config data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
