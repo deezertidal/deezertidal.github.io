@@ -1,0 +1,7 @@
+﻿#!name=热映电影
+#!desc= 热映电影&评分
+#!icon=https://raw.githubusercontent.com/Orz-3/mini/master/Color/MovieCalendar.png
+#!homepage=https://yfamily.ml
+
+[Script]
+cron "9 9 9 ? * *" script-path=https://yfamily.ml/plugin/movie.js,  tag=热映电影
