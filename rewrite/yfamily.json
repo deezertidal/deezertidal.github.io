@@ -3,8 +3,9 @@
     "description": "yfamily任务",
     "task": [
         "9 9 * * * https://yfamily.ml/plugin/movie.js, tag=热映电影, img-url=film,enabled=true",
-        "8 8 * * * https://raw.githubusercontent.com/deezertidal/private/main/lifeindex.js, tag=生活指数, img-url=https://raw.githubusercontent.com/deezertidal/private/main/icons/lifeindex.png, enabled=true",
-        "10 10 * * * https://raw.githubusercontent.com/deezertidal/private/main/rates.js, tag=汇率,  enabled=true",
-        "11 11 * * * https://raw.githubusercontent.com/deezertidal/private/main/crypto.js, tag=加密货币汇率, enabled=true",
+        "8 8 * * * https://raw.githubusercontent.com/deezertidal/private/main/lifeindex.js, tag=生活指数, img-url=umbrella.fill.system, enabled=true",
+        "10 10 * * * https://raw.githubusercontent.com/deezertidal/private/main/rates.js, tag=汇率, img-url=yansign.circle.system, enabled=true",
+        "11 11 * * * https://raw.githubusercontent.com/deezertidal/private/main/crypto.js, tag=加密货币汇率,img-url=bitcoinsign.circle.system, enabled=true",
+        "12 12 * * * https://raw.githubusercontent.com/deezertidal/private/main/oil.js, tag=今日油价, img-url=car.fill.system,enabled=true",
     ]
 }
