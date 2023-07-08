@@ -1,0 +1,4 @@
+﻿#!name=加密货币#!desc=加密货币汇率#!icon= 
+
+[Script]
+cron "10 10 10 ? * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/crypto.js,tag=加密货币
