@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://yfamily.ml
 #!author=Mixed
-# 由yfamily.ml自动维护 202307090320
+# 由yfamily.ml自动维护 202307090443
 [URL Rewrite]
 https?:\/\/t7z\.cupid\.iqiyi\.com\/show _ reject
 https?:\/\/static\.iqiyi\.com\/js\/common\/.+\.js _ reject
