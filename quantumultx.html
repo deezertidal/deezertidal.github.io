@@ -525,23 +525,33 @@
     event.preventDefault();
 
     var link = $(this).parent().attr("href");
-
+    var linkExtension = link.split('.').pop().toLowerCase();
     var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-    if (isIOS) {
-      window.location.href = "quantumult-x:///add-resource?remote-resource={\"rewrite_remote\":[\"" + link + "\"]}";
+    if (isIOS && linkExtension === 'json') {
+      var quantumultLink = "quantumult-x:///ui?module=gallery&type=task&action=add&content=[\"" + link + "\"]";
+      window.location.href = quantumultLink;
     } else {
-      var dummyInput = document.createElement("input");
-      dummyInput.setAttribute("value", link);
-      document.body.appendChild(dummyInput);
-      dummyInput.select();
-      document.execCommand("copy");
-      document.body.removeChild(dummyInput);
+      if (linkExtension === 'json') {
+        window.open(link);
+      } else {
+        if (isIOS) {
+          window.location.href = "quantumult-x:///add-resource?remote-resource={\"rewrite_remote\":[\"" + link + "\"]}";
+        } else {
+          var dummyInput = document.createElement("input");
+          dummyInput.setAttribute("value", link);
+          document.body.appendChild(dummyInput);
+          dummyInput.select();
+          document.execCommand("copy");
+          document.body.removeChild(dummyInput);
 
-      alert("链接已复制！");
+          alert("链接已复制！");
+        }
+      }
     }
   });
 </script>
+
 
 	<script>
 var colors = ['#4285F4', '#DB4437', '#0F9D58'];
@@ -585,17 +595,28 @@ for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function(event) {
       event.preventDefault();
       var link = this.parentElement.getAttribute("href");
+      var linkExtension = link.split('.').pop().toLowerCase();
       var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-      if (isIOS) {
-        window.location.href = "quantumult-x:///add-resource?remote-resource={\"rewrite_remote\":[\"" + link + "\"]}";
+
+      if (isIOS && linkExtension === 'json') {
+        var quantumultLink = "quantumult-x:///ui?module=gallery&type=task&action=add&content=[\"" + link + "\"]";
+        window.location.href = quantumultLink;
       } else {
-        var dummyInput = document.createElement("input");
-        dummyInput.setAttribute("value", link);
-        document.body.appendChild(dummyInput);
-        dummyInput.select();
-        document.execCommand("copy");
-        document.body.removeChild(dummyInput);
-        alert("链接已复制！");
+        if (linkExtension === 'json') {
+          window.open(link);
+        } else {
+          if (isIOS) {
+            window.location.href = "quantumult-x:///add-resource?remote-resource={\"rewrite_remote\":[\"" + link + "\"]}";
+          } else {
+            var dummyInput = document.createElement("input");
+            dummyInput.setAttribute("value", link);
+            document.body.appendChild(dummyInput);
+            dummyInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummyInput);
+            alert("链接已复制！");
+          }
+        }
       }
     });
   }
