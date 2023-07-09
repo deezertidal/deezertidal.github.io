@@ -1,0 +1,6 @@
+﻿#!name=新书速递
+#!desc=新书速递面板
+[Panel]
+新书速递=script-name=新书速递
+[Script]
+新书速递= type=generic,script-path=https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/book.js,argument=icon=book.fill&color=#4a748c

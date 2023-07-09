@@ -1,0 +1,5 @@
+﻿#!name=新书速递
+#!desc=新书定时通知
+
+[Script]
+新书速递=type=cron,script-path=https://raw.githubusercontent.com/deezertidal/private/main/book.js, cronexp="0 0 10 1/3 * ?" ,wake-system=1,timeout=10,enable=true
