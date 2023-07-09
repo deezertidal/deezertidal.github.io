@@ -35,7 +35,7 @@ function showNotification(data) {
   for (let i = 0; i < movieTitles.length; i++) {
     const score = movieScores[i] === "0" ? "暂无" : movieScores[i];
     const actors = movieActors[i] || "暂无";
-    notificationBody += "🎞️" + movieTitles[i] + "🤡" + actors + "🍿" + score + "\n";
+    notificationBody += "🎞️" + movieTitles[i] + "-" + actors + "🍿" + score + "\n";
   }
 
   if (isQuantumultX) {
