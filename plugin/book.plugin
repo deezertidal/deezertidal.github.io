@@ -1,5 +1,5 @@
 ﻿#!name=新书速递
 #!desc=新书定时通知
-
+#!homepage=https://yfamily.ml
 [Script]
 cron "0 0 10 1/3 * ?" script-path=https://raw.githubusercontent.com/deezertidal/private/main/book.js, timeout=10, tag=新书速递

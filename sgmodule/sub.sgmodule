@@ -1,6 +1,7 @@
 ﻿#!name=机场流量
 #!desc=复制该文件内容至本地模块 修改URL encode后的机场节点链接
 #!anthor=mieqq
+#!homepage=https://yfamily.ml
 [Panel]
 Sub_info = script-name=Sub_info
 [Script]

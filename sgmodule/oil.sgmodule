@@ -1,5 +1,6 @@
 ﻿#!name=油价
 #!desc=复制内容到本地模块 在provname=后面填写所在省份名，如不填写 默认江苏油价。provname的值不带"省"字 范例：provname=江苏，provname=上海，provname=广东。此脚本使用的公开apikey ，建议自行申请apikey 然后自行修改脚本内的apikey 
+#!homepage=https://yfamily.ml
 [Panel]
 油价=script-name=油价
 [Script]

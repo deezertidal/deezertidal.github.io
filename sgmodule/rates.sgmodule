@@ -1,5 +1,6 @@
 ﻿#!name=当前汇率
 #!desc=汇率面板
+#!homepage=https://yfamily.ml
 [Panel]
 当前汇率=script-name=当前汇率
 [Script]

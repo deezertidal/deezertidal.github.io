@@ -1,5 +1,6 @@
 ﻿#!name=生活指数
 #!desc=生活指数面板
+#!homepage=https://yfamily.ml
 [Panel]
 生活指数=script-name=生活指数
 [Script]

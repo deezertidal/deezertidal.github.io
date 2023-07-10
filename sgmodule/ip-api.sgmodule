@@ -1,5 +1,6 @@
 #!name=IP信息
 #!desc=IP信息面板
+#!homepage=https://yfamily.ml
 [Panel]
 IP信息=script-name=IP信息
 [Script]

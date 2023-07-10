@@ -1,6 +1,6 @@
 ﻿#!name=加密货币
 #!desc=加密货币汇率
 #!icon= 
-
+#!homepage=https://yfamily.ml
 [Script]
 加密货币汇率=type=cron,script-path=https://raw.githubusercontent.com/deezertidal/private/main/crypto.js,cronexp="10 10 10 ? * *",wake-system=1,timeout=10,script-update-interval=0,enable=true

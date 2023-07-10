@@ -2,6 +2,6 @@
 #!desc=复制 油价提醒 = type=cron,script-path=https://raw.githubusercontent.com/deezertidal/private/main/oil.js,cronexp="9 9 9 * * ?",wake-system=1,timeout=10,script-update-interval=0,enable=true,argument= 到配置文件[Script]下 在argument=后面填写"所在省份名"，不带"省"字 范例：argument="江苏"，argument="上海"，argument="广东"。或在本地脚本的参数中填写不带引号的省份名。此脚本使用的公开apikey ，建议自行申请apikey 然后自行修改脚本内的apikey 
 #!author=deezertidal
 #!icon= https://raw.githubusercontent.com/deezertidal/private/main/icons/lifeindex.png
-#!openUrl=https://github.com/deezertidal/private
+#!homepage=https://yfamily.ml
 [Script]
 油价提醒 = type=cron,script-path=https://raw.githubusercontent.com/deezertidal/private/main/oil.js,cronexp="9 9 9 * * ?",wake-system=1,timeout=10,script-update-interval=0,enable=true,argument=

@@ -1,5 +1,6 @@
 ﻿#!name=新书速递
 #!desc=新书速递面板
+#!homepage=https://yfamily.ml
 [Panel]
 新书速递=script-name=新书速递
 [Script]

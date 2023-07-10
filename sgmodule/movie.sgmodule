@@ -1,5 +1,6 @@
 ﻿#!name=热映电影
 #!desc=热映电影面板
+#!homepage=https://yfamily.ml
 [Panel]
 热映电影=script-name=热映电影
 [Script]
