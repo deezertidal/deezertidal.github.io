@@ -1,13 +1,9 @@
-#!desc=生活指数提醒
-#!author=deezertidal
-#!icon= https://raw.githubusercontent.com/deezertidal/private/main/icons/lifeindex.png
-#!openUrl=https://github.com/deezertidal/private
-name: shenghuozhishu
-desc: 生活指数提醒
-http:
-  mitm:
-    - ""
+name: 生活指数
+desc: 生活指数面板
+tiles:
+  - name: shenghuozhishu
+    icon: 'umbrella.fill'
+    backgroundColor: '#4287f5'
 script-providers:
-  shenghuozhishu1:
-    url: https://raw.githubusercontent.com/deezertidal/private/main/lifeindex.js,cronexpr="6 6 6 ? * *",timeout=10,script-update-interval=0,enable=true
-    interval: 86400
+  shenghuozhishu:
+    url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/lifeindex.js
