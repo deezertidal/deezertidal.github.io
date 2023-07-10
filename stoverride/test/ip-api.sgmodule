@@ -1,0 +1,7 @@
+name: IP信息
+desc: IP信息面板
+tiles:
+  - name: IPxinxi
+script-providers:
+  IPxinxi:
+    url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/ip-api.js

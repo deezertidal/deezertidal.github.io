@@ -1,0 +1,7 @@
+name: 新书速递
+desc: 新书速递面板
+tiles:
+  - name: xinshusudi
+script-providers:
+  xinshusudi:
+    url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/book.js

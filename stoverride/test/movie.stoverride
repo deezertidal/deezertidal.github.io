@@ -1,0 +1,7 @@
+name: 热映电影
+desc: 热映电影面板
+tiles:
+  - name: reyingdianying
+script-providers:
+  reyingdianying:
+    url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/movie.js

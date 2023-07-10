@@ -1,0 +1,7 @@
+name: ChatGPT检测
+desc: ChatGPT检测
+tiles:
+  - name: ChatGPTjiance
+script-providers:
+  ChatGPTjiance:
+    url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/gpt.js
