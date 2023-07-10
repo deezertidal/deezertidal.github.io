@@ -15,7 +15,7 @@ http:
       name: Spotify(iOS15)2
       type: response
       require-body: true
-	  binary-mode: true
+      binary-mode: true
       timeout: 10
 script-providers:
   Spotify(iOS15)1:
