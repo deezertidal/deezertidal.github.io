@@ -2,6 +2,8 @@ name: 热映电影
 desc: 热映电影面板
 tiles:
   - name: reyingdianying
+    icon: 'film'
+    backgroundColor: '#d66969'
 script-providers:
   reyingdianying:
     url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/movie.js

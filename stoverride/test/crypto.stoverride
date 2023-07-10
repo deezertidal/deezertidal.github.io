@@ -2,6 +2,8 @@ name: 汇率-加密货币
 desc: 加密货币面板
 tiles:
   - name: crypto
+    icon: 'bitcoinsign.circle'
+    backgroundColor: '#EF8F1C'
 script-providers:
   crypto:
     url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/crypto.js

@@ -2,6 +2,8 @@ name: 生活指数
 desc: 生活指数面板
 tiles:
   - name: shenghuozhishu
+    icon: 'umbrella.fill'
+    backgroundColor: '#4287f5'
 script-providers:
   shenghuozhishu:
     url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/lifeindex.js

@@ -2,6 +2,9 @@ name: 今日天气
 desc: 复制内容到本地模块 在cityId=后面填写所在城市对应的代码 如cityId=101020100 如不填写 默认苏州天气
 tiles:
   - name: tianqi
+    icon: 'sun.max.fill'
+    backgroundColor: '#ffc400'
+	argument:''
 script-providers:
   tianqi:
     url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/tianqi.js

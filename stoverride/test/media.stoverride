@@ -2,6 +2,8 @@ name: 流媒体检测
 desc: 流媒体检测面板
 tiles:
   - name: liumeitijiance
+    icon: 'play.tv.fill'
+    backgroundColor: '#FF2D55'
 script-providers:
   liumeitijiance:
     url: https://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/JS/stream-all.js

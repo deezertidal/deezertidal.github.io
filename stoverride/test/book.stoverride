@@ -2,7 +2,6 @@ name: 新书速递
 desc: 新书速递面板
 tiles:
   - name: xinshusudi
-  #argument:"icon=book.fill&color=#4a748c"
     icon: 'book.fill'
     backgroundColor: '#4a748c'
 script-providers:
