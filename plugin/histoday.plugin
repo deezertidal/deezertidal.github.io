@@ -1,0 +1,7 @@
+#!name=历史上的今天
+#!desc=histoday提醒
+
+#!homepage=https://yfamily.ml
+
+[Script]
+cron "10 10 10 ? * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/histoday.js, timeout=10, tag=历史上的今天
