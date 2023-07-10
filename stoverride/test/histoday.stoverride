@@ -4,6 +4,7 @@ tiles:
   - name: Histoday
     icon: 'calendar'
     backgroundColor: '#bf2f24'
+    argument: 'count='
 script-providers:
   Histoday:
     url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/histoday.js
