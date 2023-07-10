@@ -10,11 +10,12 @@ http:
       name: Spotify(iOS15)1
       type: request
       require-body: false
-	  binary-mode: true
       timeout: 10
     - match: ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
       name: Spotify(iOS15)2
-      type: request
+      type: response
+      require-body: true
+	  binary-mode: true
       timeout: 10
 script-providers:
   Spotify(iOS15)1:
