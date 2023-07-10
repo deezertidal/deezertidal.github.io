@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://yfamily.ml
 #!author=Mixed
-# 由yfamily.ml自动维护 202307101303
+# 由yfamily.ml自动维护 202307101443
 [URL Rewrite]
 https?:\/\/t7z\.cupid\.iqiyi\.com\/show _ reject
 https?:\/\/static\.iqiyi\.com\/js\/common\/.+\.js _ reject
@@ -1528,6 +1528,8 @@ https://api.feidee.net/v1/configs/client/configs data="https://raw.githubusercon
 ^https?:\/\/openapi\.boc\.cn\/unlogin\/app\/cbsp\/query_ad_list data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?:\/\/open\.qyer\.com\/qyer\/startpage\/ data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?:\/\/open3\.vistastory\.com\/v\d\/api\/inde/loading_ad data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
+^https?:\/\/one-app-h5\.faw-vw\.com\/prod-api\/mobile\/one-app\/general\/public\/v1\/official_activity\/get_animation_putaway_list\?appkey.* data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
+^https?:\/\/one-app-h5\.faw-vw\.com\/prod-api\/mobile\/one-app\/general\/public\/v1\/first_page\/get_carousel_list?appkey.* data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?:\/\/omgup[0-9]{1}\.xiaojukeji\.com\/api data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?:\/\/omgup*\.xiaojukeji\.com\/api data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?:\/\/ok\.166\.net\/reunionpub\/202[2-9]{1}-[0-9]{2}-[0-9]{2}\/ntesgod_cms\/.*.jpg$ data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
@@ -1588,6 +1590,7 @@ https://api.feidee.net/v1/configs/client/configs data="https://raw.githubusercon
 ^https?:\/\/luckman\.suning\.com\/luck-web\/policy\/v\d\/msf\/index\.do data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?:\/\/lofter\.lf127\.net\/ad\-material data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?:\/\/lives\.l\.qq\.com\/livemsg\?sdtfrom= data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-img.gif"
+^https?:\/\/lens\.leoao\.com\/lens\/conduct\/app\/rpc\/v2\/com\.lefit\.dubbo\.cms\.api\.front\.AppAdvertisingFrontService\/getAppAdvertisingNew data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?:\/\/l[0-9]{1}\.51fanli\.net\/app\/images\/splash\/202\d{1}\/\d{2}\/.*.jpg data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?:\/\/l[0-9]{1}\.51fanli\.net\/app\/images\/splash\/2022\/1[0-2]{1}\/.*.jpg data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https?:\/\/l[0-9]{1}\.51fanli\.net\/app\/images\/splash\/2022\/0[4-9]{1}\/.*.jpg data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
@@ -1909,6 +1912,7 @@ https://api.feidee.net/v1/configs/client/configs data="https://raw.githubusercon
 ^https:\/\/www\.washpayer\.com\/(ad\/getBannerAd|ad\/user-adword|user\/getBannerList)\? data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/www\.onstar\.com\.cn\/mssos\/sos\/social\/v1\/community\/article\/page data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/www\.cmbc\.com\.cn\/m\/image\/banner\/.*.png data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
+^https:\/\/www\.(binance|yingwangtech)\.(com|info|net)\/bapi\/composite\/v1\/public\/market\/holiday-atmosphere data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/wallet\.lakala\.com\/m\/lama\/mgt\/activity\/bank\/query\/list data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/wallet\.lakala\.com\/m\/a\/message\/v3\/fetchMsgList data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/wallet\.lakala\.com\/m\/a\/lama\/mgt\/activity\/biz\/query\/byMerInfo data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
@@ -1922,6 +1926,7 @@ https://api.feidee.net/v1/configs/client/configs data="https://raw.githubusercon
 ^https:\/\/ssp\.soulapp\.cn\/api\/q\?bi data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https:\/\/smarket\.dian\.so data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/shopapi\.io\.mi\.com\/mtop\/mf\/resource\/homePage\/pageConfig data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
+^https:\/\/shcss\.suning\.com\/shcss-web\/api\/appImage\/queryAppImage\.do data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https:\/\/s\.jiediankeji\.com\/adv data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(brandcpt-vedio|waimai-alita)\/\w+\.zip$ data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https:\/\/router-app-api\.jdcloud\.com\/v\d\/board\/routerAppSplash data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"

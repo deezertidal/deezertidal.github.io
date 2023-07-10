@@ -1772,6 +1772,8 @@ http:
     - ^https?:\/\/open\.qyer\.com\/qyer\/startpage\/ - reject-200
     - ^https?:\/\/open\.qyer\.com\/qyer\/config\/get - reject
     - ^https?:\/\/open3\.vistastory\.com\/v\d\/api\/inde/loading_ad - reject-200
+    - ^https?:\/\/one-app-h5\.faw-vw\.com\/prod-api\/mobile\/one-app\/general\/public\/v1\/official_activity\/get_animation_putaway_list\?appkey.* - reject-200
+    - ^https?:\/\/one-app-h5\.faw-vw\.com\/prod-api\/mobile\/one-app\/general\/public\/v1\/first_page\/get_carousel_list?appkey.* - reject-200
     - ^https?:\/\/omgup[0-9]{1}\.xiaojukeji\.com\/api - reject-200
     - ^https?:\/\/omgup*\.xiaojukeji\.com\/api - reject-200
     - ^https?:\/\/ok\.166\.net\/reunionpub\/202[2-9]{1}-[0-9]{2}-[0-9]{2}\/ntesgod_cms\/.*.jpg$ - reject-200
@@ -1897,6 +1899,7 @@ http:
     - ^https?:\/\/lofter\.lf127\.net\/ad\-material - reject-200
     - ^https?:\/\/lives\.l\.qq\.com\/livemsg\?sdtfrom= - reject-img
     - ^https?:\/\/list-app-m\.i4\.cn\/getopfstadinfo\.xhtml - reject
+    - ^https?:\/\/lens\.leoao\.com\/lens\/conduct\/app\/rpc\/v2\/com\.lefit\.dubbo\.cms\.api\.front\.AppAdvertisingFrontService\/getAppAdvertisingNew - reject-200
     - ^https?:\/\/learn\.chaoxing\.com\/apis\/service\/appConfig\? - reject
     - ^https?:\/\/learn\.chaoxing\.com\/apis\/service\/appConfig - reject
     - ^https?:\/\/lchttpapi\.xczim\.com\/1\.1\/functions\/getLaunchImageForIOS - reject
@@ -2821,6 +2824,7 @@ http:
     - ^https:\/\/www\.washpayer\.com\/(ad\/getBannerAd|ad\/user-adword|user\/getBannerList)\? - reject-dict
     - ^https:\/\/www\.onstar\.com\.cn\/mssos\/sos\/social\/v1\/community\/article\/page - reject-dict
     - ^https:\/\/www\.cmbc\.com\.cn\/m\/image\/banner\/.*.png - reject-200
+    - ^https:\/\/www\.(binance|yingwangtech)\.(com|info|net)\/bapi\/composite\/v1\/public\/market\/holiday-atmosphere - reject-dict
     - ^https:\/\/www1.elecfans.com\/www\/delivery - reject
     - ^https:\/\/web\.chelaile\.net\.cn\/api\/adpub - reject
     - ^https:\/\/wap\.spdb\.com\.cn\/mspmk-web-homeassist\/OpenScreenAdv\.ah$ - reject
@@ -2842,6 +2846,7 @@ http:
     - ^https:\/\/ssp\.soulapp\.cn\/api\/q\?bi - reject-200
     - ^https:\/\/smarket\.dian\.so - reject-dict
     - ^https:\/\/shopapi\.io\.mi\.com\/mtop\/mf\/resource\/homePage\/pageConfig - reject-200
+    - ^https:\/\/shcss\.suning\.com\/shcss-web\/api\/appImage\/queryAppImage\.do - reject-200
     - ^https:\/\/s\.jiediankeji\.com\/adv - reject-dict
     - ^https:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(brandcpt-vedio|waimai-alita)\/\w+\.zip$ - reject-dict
     - ^https:\/\/router-app-api\.jdcloud\.com\/v\d\/board\/routerAppSplash - reject-200
