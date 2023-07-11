@@ -1,4 +1,4 @@
-# 内置一元机场订阅 自行替换
+﻿# 内置一元机场订阅 自行替换
 allow-lan: false
 bind-address: '*'
 dns:
