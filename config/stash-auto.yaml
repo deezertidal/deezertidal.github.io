@@ -1,0 +1,677 @@
+# 内置一元机场订阅 自行替换
+allow-lan: false
+bind-address: '*'
+dns:
+  default-nameserver:
+    - 119.29.29.29
+    - 119.28.28.28
+    - 223.5.5.5
+    - 114.114.114.114
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+    - '*.lan'
+    - localhost.ptlogin2.qq.com
+    - '+.srv.nintendo.net'
+    - '+.stun.playstation.net'
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    - '+.xboxlive.com'
+    - 'msftconnecttest.com'
+    - 'xbox.*.microsoft.com'
+    - '*.battlenet.com.cn'
+    - '*.battlenet.com'
+    - '*.blzstatic.cn'
+    - '*.battle.net'
+  fake-ip-range: 198.18.0.1/16
+  listen: 0.0.0.0:1053
+external-controller: 127.0.0.1:9090
+log-level: silent
+mixed-port: 7890
+mode: Rule
+proxies:
+proxy-groups:
+  - name: "🚀 策略选择"
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇷🇺 俄罗斯节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇮🇳 印度
+      - 🇩🇪 德国
+      - 🇨🇦 加拿大
+      - 🌐 全球直连
+      - 🤖️ 人工智能
+      - 📲 Telegram
+      - 📹 YouTube
+      - 🎥 Netflix
+      - 🎬 Disney+
+      - 🎻 Spotify
+      - 📄 Twitter
+      - 🪙 Paypal
+      - 👤 Facebook
+      - 📖 Reddit
+      - 🐦 Discord
+      - 📽 哔哩哔哩
+      - 🍿 国外媒体
+      - 🍔 国内媒体
+      - 🍟 新浪微博
+      - Ⓜ️ 微软服务
+      - 🍎 苹果服务
+      - 🎮 游戏平台
+    type: select
+    use:
+      - MyProxy
+  - name: ♻️ ALL
+    proxies: null
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 600
+    use:
+      - MyProxy
+  - name: 🤖️ 人工智能
+    proxies:
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇩🇪 德国
+    type: select
+    use: []
+  - name: 📲 Telegram
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 📹 YouTube
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 🎥 Netflix
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 🎬 Disney+
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 🎻 Spotify
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 📄 Twitter
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 🪙 Paypal
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 👤 Facebook
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 📖 Reddit
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 🐦 Discord
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 📽 哔哩哔哩
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 🍿 国外媒体
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 🍔 国内媒体
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 🍟 新浪微博
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: Ⓜ️ 微软服务
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 🍎 苹果服务
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - name: 🎮 游戏平台
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: null
+  - icon: null
+    interval: 600
+    name: "🇭🇰 香港节点"
+    proxies: null
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-HK
+  - icon: null
+    interval: 600
+    name: "🇨🇳 台湾节点"
+    proxies: null
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-TW
+  - icon: null
+    interval: 600
+    name: "🇺🇸 美国节点"
+    proxies: null
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-US
+  - icon: null
+    interval: 600
+    name: "🇰🇷 韩国节点"
+    proxies: null
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-KR
+  - icon: null
+    interval: 600
+    name: "🇷🇺 俄罗斯节点"
+    proxies: null
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-RU
+  - icon: null
+    interval: 600
+    name: "🇬🇧 英国节点"
+    proxies: null
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-UK
+  - icon: null
+    interval: 600
+    name: "🇯🇵 日本节点"
+    proxies: null
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-JP
+  - icon: null
+    interval: 600
+    name: "🇸🇬 新加坡节点"
+    proxies: null
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-SG
+  - icon: null
+    interval: 600
+    name: "🇮🇳 印度"
+    proxies: null
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-IN
+  - icon: null
+    interval: 600
+    name: "🇩🇪 德国"
+    proxies: null
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-DE
+  - icon: null
+    interval: 600
+    name: "🇨🇦 加拿大"
+    proxies: null
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-CA
+  - icon: null
+    name: "🌐 全球直连"
+    proxies:
+      - DIRECT
+    type: select
+  - icon: null
+    name: FINAL
+    proxies:
+      - 🚀 策略选择
+    type: select
+proxy-providers:
+  MyProxy:
+    health-check:
+      enable: true
+      interval: 3600
+      url: http://cp.cloudflare.com/generate_204
+    interval: 86400
+    url: "https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=48691bc671811fcecd9c2b2adf87c3c7"
+    filter: ""
+  MyProxy-HK:
+    !!merge <<:
+      health-check:
+        enable: true
+        interval: 3600
+        url: http://cp.cloudflare.com/generate_204
+      interval: 86400
+      url: "https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=48691bc671811fcecd9c2b2adf87c3c7"
+    filter: "(?=.*(港|HK|(?i)Hong))^((?!(台湾|日本|新加坡|美国|韩国|狮城|南朝鲜|US|SG|JP|KR|TW|台灣|美國|韓國|獅城)).)*$"
+  MyProxy-TW:
+    !!merge <<:
+      health-check:
+        enable: true
+        interval: 3600
+        url: http://cp.cloudflare.com/generate_204
+      interval: 86400
+      url: "https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=48691bc671811fcecd9c2b2adf87c3c7"
+    filter: "(?=.*(台|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$"
+  MyProxy-US:
+    !!merge <<:
+      health-check:
+        enable: true
+        interval: 3600
+        url: http://cp.cloudflare.com/generate_204
+      interval: 86400
+      url: "https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=48691bc671811fcecd9c2b2adf87c3c7"
+    filter: "(?=.*(美国|美國|US|洛杉矶|西雅图|(?i)States|American))^((?!(香港|台湾|日本|新加坡|韩国|狮城|南朝鲜|SG|JP|KR|HK|TW|台灣|韓國|獅城)).)*$"
+  MyProxy-KR:
+    !!merge <<:
+      health-check:
+        enable: true
+        interval: 3600
+        url: http://cp.cloudflare.com/generate_204
+      interval: 86400
+      url: "https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=48691bc671811fcecd9c2b2adf87c3c7"
+    filter: "(?=.*(KR|Korea|KOR|首尔|韩|韓|(?i)Korea))^((?!(香港|台湾|新加坡|美国|狮城|南朝鲜|US|SG|HK|TW|台灣|美國|獅城)).)*$"
+  MyProxy-RU:
+    !!merge <<:
+      health-check:
+        enable: true
+        interval: 3600
+        url: http://cp.cloudflare.com/generate_204
+      interval: 86400
+      url: "https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=48691bc671811fcecd9c2b2adf87c3c7"
+    filter: "🇷🇺|俄罗斯|RU|莫斯科|圣彼得堡|喀山|哈尔科夫|乌法|新西伯利亚|下诺夫哥罗德|沃罗涅什"
+  MyProxy-UK:
+    !!merge <<:
+      health-check:
+        enable: true
+        interval: 3600
+        url: http://cp.cloudflare.com/generate_204
+      interval: 86400
+      url: "https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=48691bc671811fcecd9c2b2adf87c3c7"
+    filter: "🇬🇧|英国|UK|伦敦|英格兰|伯明翰|泰恩河畔纽卡斯尔|利兹|爱丁堡|格拉斯哥|苏格兰"
+  MyProxy-JP:
+    !!merge <<:
+      health-check:
+        enable: true
+        interval: 3600
+        url: http://cp.cloudflare.com/generate_204
+      interval: 86400
+      url: "https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=48691bc671811fcecd9c2b2adf87c3c7"
+    filter: "(?=.*(日本|JP|(?i)Japan))^((?!(香港|台湾|新加坡|美国|韩国|狮城|南朝鲜|US|SG|KR|HK|TW|台灣|美國|韓國|獅城)).)*$"
+  MyProxy-SG:
+    !!merge <<:
+      health-check:
+        enable: true
+        interval: 3600
+        url: http://cp.cloudflare.com/generate_204
+      interval: 86400
+      url: "https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=48691bc671811fcecd9c2b2adf87c3c7"
+    filter: "(?=.*(新加坡|狮城|SG|(?i)Singapore))^((?!(香港|台湾|日本|美国|韩国|南朝鲜|US|JP|KR|HK|TW|台灣|美國|韓國)).)*$"
+  MyProxy-IN:
+    !!merge <<:
+      health-check:
+        enable: true
+        interval: 3600
+        url: http://cp.cloudflare.com/generate_204
+      interval: 86400
+      url: "https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=48691bc671811fcecd9c2b2adf87c3c7"
+    filter: "🇮🇳|印度|IN|IND|孟买|新德里|高知|Republic of India|India"
+  MyProxy-DE:
+    !!merge <<:
+      health-check:
+        enable: true
+        interval: 3600
+        url: http://cp.cloudflare.com/generate_204
+      interval: 86400
+      url: "https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=48691bc671811fcecd9c2b2adf87c3c7"
+    filter: "🇩🇪|德国|DEU|DE|柏林|慕尼黑|汉堡|科隆|Germany"
+  MyProxy-CA:
+    !!merge <<:
+      health-check:
+        enable: true
+        interval: 3600
+        url: http://cp.cloudflare.com/generate_204
+      interval: 86400
+      url: "https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=48691bc671811fcecd9c2b2adf87c3c7"
+    filter: "🇨🇦|加拿大|CA|渥太华"
+rule-providers:
+  去广告:
+    behavior: classical
+    interval: 86400
+    url: https://yfamily.ml/rule/AntiAD.rule
+  人工智能:
+    behavior: classical
+    interval: 86400
+    url: https://yfamily.ml/rule/ai.rule
+  微软服务:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+  苹果服务:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml
+  苹果服务2:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppStore/AppStore.yaml
+  策略选择:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleProxy/AppleProxy.yaml
+  TELEGRAM:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+  新浪微博:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Weibo/Weibo.yaml
+  TWITTER:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml
+  游戏平台:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PlayStation/PlayStation.yaml
+  游戏平台2:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.yaml
+  游戏平台3:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Sony/Sony.yaml
+  游戏平台4:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml
+  游戏平台5:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.yaml
+  游戏平台6:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WanMeiShiJie/WanMeiShiJie.yaml
+  游戏平台7:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard.yaml
+  SPOTIFY:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
+  PAYPAL:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PayPal/PayPal.yaml
+  FACEBOOK:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.yaml
+  REDDIT:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.yaml
+  DISCORD:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord.yaml
+  YOUTUBE:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+  YOUTUBE2:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTubeMusic/YouTubeMusic.yaml
+  NETFLIX:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
+  DISNEY+:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml
+  哔哩哔哩:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml
+  国内媒体:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+  国外媒体:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyMedia.yaml
+  策略选择2:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitch/Twitch.yaml
+  全球直连:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Douyu/Douyu.yaml
+  策略选择3:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+  策略选择4:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy.yaml
+  策略选择5:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Domain.yaml
+  全球直连2:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml
+  全球直连3:
+    behavior: classical
+    interval: 86400
+    url: https://yfamily.ml/rule/ASN-CN.rule
+  全球直连4:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml
+rules:
+  - RULE-SET,去广告,REJECT
+  - RULE-SET,人工智能,🤖️ 人工智能
+  - RULE-SET,微软服务,Ⓜ️ 微软服务
+  - RULE-SET,苹果服务,🍎 苹果服务
+  - RULE-SET,苹果服务2,🍎 苹果服务
+  - RULE-SET,策略选择,🚀 策略选择
+  - RULE-SET,策略选择2,🚀 策略选择
+  - RULE-SET,策略选择3,🚀 策略选择
+  - RULE-SET,策略选择4,🚀 策略选择
+  - RULE-SET,策略选择5,🚀 策略选择
+  - RULE-SET,TELEGRAM,📲 Telegram
+  - RULE-SET,新浪微博,🍟 新浪微博
+  - RULE-SET,全球直连,🌐 全球直连
+  - RULE-SET,全球直连2,🌐 全球直连
+  - RULE-SET,全球直连3,🌐 全球直连
+  - RULE-SET,全球直连4,🌐 全球直连
+  - RULE-SET,TWITTER,📄 Twitter
+  - RULE-SET,游戏平台,🎮 游戏平台
+  - RULE-SET,游戏平台2,🎮 游戏平台
+  - RULE-SET,游戏平台3,🎮 游戏平台
+  - RULE-SET,游戏平台4,🎮 游戏平台
+  - RULE-SET,游戏平台5,🎮 游戏平台
+  - RULE-SET,游戏平台6,🎮 游戏平台
+  - RULE-SET,游戏平台7,🎮 游戏平台
+  - RULE-SET,SPOTIFY,🎻 Spotify
+  - RULE-SET,PAYPAL,🪙 Paypal
+  - RULE-SET,FACEBOOK,👤 Facebook
+  - RULE-SET,REDDIT,📖 Reddit
+  - RULE-SET,DISCORD,🐦 Discord
+  - RULE-SET,YOUTUBE,📹 YouTube
+  - RULE-SET,YOUTUBE2,📹 YouTube
+  - RULE-SET,NETFLIX,🎥 Netflix
+  - RULE-SET,DISNEY+,🎬 Disney+
+  - RULE-SET,哔哩哔哩,📽 哔哩哔哩
+  - RULE-SET,国内媒体,🍔 国内媒体
+  - RULE-SET,国外媒体,🍿 国外媒体
+  - MATCH,FINAL
+subscribe-url: https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=48691bc671811fcecd9c2b2adf87c3c7
