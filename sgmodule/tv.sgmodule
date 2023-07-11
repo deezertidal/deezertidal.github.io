@@ -1,0 +1,6 @@
+﻿#!name=电视剧热度榜
+#!desc=电视热度面板
+[Panel]
+tv=script-name=tv
+[Script]
+tv= type=generic,script-path=https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/tv.js,argument=icon=appletv&color=#b8b8b8

@@ -1,0 +1,9 @@
+name: 电视剧热度榜
+desc: 电视热度面板
+tiles:
+  - name: dianshijuredubang
+    icon: 'appletv'
+    backgroundColor: '#b8b8b8'
+script-providers:
+  dianshijuredubang:
+    url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/tv.js
