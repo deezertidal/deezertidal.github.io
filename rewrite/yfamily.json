@@ -9,5 +9,6 @@
         "12 12 * * * https://raw.githubusercontent.com/deezertidal/private/main/oil.js, tag=今日油价, img-url=car.fill.system,enabled=true",
         "0 0 10 1/3 * ? https://raw.githubusercontent.com/deezertidal/private/main/book.js,tag=新书速递, img-url=book.fill.system,enabled=true",
         "13 13 * * * https://raw.githubusercontent.com/deezertidal/private/main/histoday.js,tag=历史上的今天, img-url=calendar.system,enabled=true",
+        "14 14 * * * https://raw.githubusercontent.com/deezertidal/private/main/tv.js,tag=电视热门榜, img-url=appletv.system,enabled=true",
     ]
 }
