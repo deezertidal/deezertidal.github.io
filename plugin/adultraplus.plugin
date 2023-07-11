@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://yfamily.ml
 #!author=Mixed
-# 由yfamily.ml自动维护 202307111303
+# 由yfamily.ml自动维护 202307111443
 [URL Rewrite]
 https?:\/\/t7z\.cupid\.iqiyi\.com\/show reject
 https?:\/\/static\.iqiyi\.com\/js\/common\/.+\.js reject
@@ -1575,6 +1575,7 @@ http:\/\/analytics\.163\.com\/ntes reject
 ^https://api.xiaoyi.com\/v5\/app\/config\?userid=.* reject
 ^https://api.bilibili.com/pgc/season/player/cards reject-dict
 ^https://acs.m.taobao.com\/gw\/mtop.film.mtopadvertiseapi.queryadvertise\/5.0.* reject
+^http?:\/\/tianqi\.2345\.com\/api\/content\/getContentFeeds\.php reject-dict
 ^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/version reject-200
 ^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/top_notice\? reject-200
 ^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/advert\?position=[^2]+ reject-200

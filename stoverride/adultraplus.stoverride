@@ -3072,6 +3072,7 @@ http:
     - ^https://api.xiaoyi.com\/v5\/app\/config\?userid=.* - reject
     - ^https://api.bilibili.com/pgc/season/player/cards - reject-dict
     - ^https://acs.m.taobao.com\/gw\/mtop.film.mtopadvertiseapi.queryadvertise\/5.0.* - reject
+    - ^http?:\/\/tianqi\.2345\.com\/api\/content\/getContentFeeds\.php - reject-dict
     - ^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/version - reject-200
     - ^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/top_notice\? - reject-200
     - ^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/advert\?position=[^2]+ - reject-200

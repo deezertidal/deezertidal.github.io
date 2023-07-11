@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
 #!homepage=https://yfamily.ml
 #!author=Mixed
-# 由yfamily.ml自动维护 202307111303
+# 由yfamily.ml自动维护 202307111443
 [URL Rewrite]
 https?:\/\/t7z\.cupid\.iqiyi\.com\/show _ reject
 https?:\/\/static\.iqiyi\.com\/js\/common\/.+\.js _ reject
@@ -2044,6 +2044,7 @@ https://api.feidee.net/v1/configs/client/configs data="https://raw.githubusercon
 ^https://rs.creditcard.cmbc.com.cn/mmc/img/126f35586ece469aa2daf2e451ba7b4d.jpg data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^https://app.bilibili.com/x/v2/splash/show data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^https://api.bilibili.com/pgc/season/player/cards data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
+^http?:\/\/tianqi\.2345\.com\/api\/content\/getContentFeeds\.php data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-dict.json"
 ^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/version data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/top_notice\? data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
 ^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/advert\?position=[^2]+ data="https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/reject-200.txt"
