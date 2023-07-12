@@ -248,6 +248,7 @@ http:
     - "i.ys7.com"
     - "ib-soft.net"
     - "icc.one"
+    - "igetcool-gateway.igetcool.com"
     - "ih2.ireader.com"
     - "imeclient.openspeech.cn"
     - "img*.10101111cdn.com"
@@ -1987,6 +1988,7 @@ http:
     - ^https?:\/\/ih2\.ireader\.com\/zyapi\/self\/screen\/ad - reject
     - ^https?:\/\/ih2\.ireader\.com\/zyapi\/bookstore\/ad\/ - reject-200
     - ^https?:\/\/ih2\.ireader\.com\/zyapi\/bookstore\/ad - reject
+    - ^https?:\/\/igetcool-gateway\.igetcool\.com\/app-api-other-server\/white\/open\/ads.json - reject-200
     - ^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo - reject-200
     - ^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo - reject
     - ^https?:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/fusion_switch - reject-img
@@ -2426,7 +2428,7 @@ http:
     - ^https?:\/\/3g\.csair\.com\/CSMBP\/bookProcess\/homepopup\/queryAdvertisement - reject-200
     - ^https?:\/\/3g\.csair\.com\/CSMBP\/bookProcess\/homepopup\/queryAdvertisement - reject
     - ^https?:\/\/2402:4e00:1200:ed00:0:9089:6dac:96b6 - reject-200
-    - ^https?:\/\/2023.07.02\/v2.0.327 - reject-200
+    - ^https?:\/\/2023.07.12\/v2.0.328 - reject-200
     - ^https?:\/\/118\.89\.204\.198 - reject-dict
     - ^https?:\/\/118\.178\.214\.118\/yyting\/advertclient\/ClientAdvertList\.action - reject-img
     - ^https?:\/\/103\.91\.210\.141\:2515\/xgapp\.php\/v2\/top_notice - reject
